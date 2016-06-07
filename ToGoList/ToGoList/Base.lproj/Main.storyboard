@@ -70,6 +70,9 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="attrationPin" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-NC-nQh">
+                                                    <rect key="frame" x="12" y="8" width="27" height="25"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="tintColor" red="0.15686274510000001" green="0.38431372549999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,9 +82,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="attrationPin" translatesAutoresizingMaskIntoConstraints="NO" id="Feo-NC-nQh">
-                                <rect key="frame" x="12" y="145" width="27" height="25"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50030612379348471" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji9-rp-Ih2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3506.5" y="-393.5"/>
+            <point key="canvasLocation" x="3522.5" y="-477.5"/>
         </scene>
         <!--Search Google Map-->
         <scene sceneID="vQh-od-7CH">
@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2t-OH-Co7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4125.5" y="1148.5"/>
+            <point key="canvasLocation" x="4177.5" y="1180.5"/>
         </scene>
         <!--Pin Detail-->
         <scene sceneID="aSa-b7-pmQ">
@@ -891,8 +891,8 @@
         <image name="toGoIcon" width="170" height="153"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hCl-XN-xOR"/>
-        <segue reference="6wn-8h-qzr"/>
+        <segue reference="k41-7w-2V6"/>
+        <segue reference="Z8o-YJ-Qi0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.15686274510000001" green="0.38431372549999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

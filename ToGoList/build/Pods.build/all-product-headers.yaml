@@ -1,0 +1,81 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-ToGoList-umbrella.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_ToGoList-Swift.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Headers/Pods_ToGoList-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/Pods-ToGoList.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SQLite-Bridging.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.h"
+        },
+        {
+          'type': 'file',
+          'name': "SQLite-Swift.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SQLite.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/SQLite.h"
+        },
+        {
+          'type': 'file',
+          'name': "SQLite.swift-umbrella.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/Target Support Files/SQLite.swift/SQLite.swift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/SQLite.swift.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "fts3_tokenizer.h",
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Core/fts3_tokenizer.h"
+        }
+      ]
+    }
+  ]
+}

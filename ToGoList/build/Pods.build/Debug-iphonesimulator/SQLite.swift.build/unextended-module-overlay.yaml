@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/SQLite.swift.build/unextended-module.modulemap',
+    }]
+  }]
+}
