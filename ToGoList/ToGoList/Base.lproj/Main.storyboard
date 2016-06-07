@@ -154,9 +154,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI3-38-zQe">
                                                     <rect key="frame" x="334" y="8" width="22" height="22"/>
                                                     <state key="normal" image="Search Icon"/>
-                                                    <connections>
-                                                        <segue destination="ily-P8-xEK" kind="show" id="Z8o-YJ-Qi0"/>
-                                                    </connections>
                                                 </button>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="Euc-F9-oy9">
                                                     <rect key="frame" x="13" y="13" width="18" height="18"/>
@@ -185,25 +182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ji9-rp-Ih2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3522.5" y="-477.5"/>
-        </scene>
-        <!--Search Google Map-->
-        <scene sceneID="vQh-od-7CH">
-            <objects>
-                <viewController id="ily-P8-xEK" userLabel="Search Google Map" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YYV-MK-67D"/>
-                        <viewControllerLayoutGuide type="bottom" id="59H-RJ-6Db"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5a0-ha-ACE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k2t-OH-Co7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4142.5" y="1148.5"/>
         </scene>
         <!--Pin Detail-->
         <scene sceneID="aSa-b7-pmQ">
@@ -645,106 +623,6 @@
             </objects>
             <point key="canvasLocation" x="4130.5" y="1914.5"/>
         </scene>
-        <!--Add Pin to Map-->
-        <scene sceneID="BMD-th-5UV">
-            <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="eH7-zK-qj7" userLabel="Add Pin to Map" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aUX-Rh-F3I"/>
-                        <viewControllerLayoutGuide type="bottom" id="RcO-wa-gfR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XfP-Vm-9dA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rhb-0r-Oji">
-                                <rect key="frame" x="0.0" y="64" width="375" height="287"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-c1-YNe">
-                                        <rect key="frame" x="106" y="62" width="163" height="163"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.74242424240000005" green="0.7249905593136925" blue="0.56738362684948029" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-2l-nJF">
-                                <rect key="frame" x="0.0" y="347" width="375" height="320"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Pin Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joI-mA-2ql">
-                                        <rect key="frame" x="13" y="19" width="109" height="26"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Pin Type)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQ7-7b-S0d">
-                                        <rect key="frame" x="13" y="43" width="62" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aAp-kI-a0E">
-                                        <rect key="frame" x="13" y="64" width="125" height="23"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-r3-X3G">
-                                                <rect key="frame" x="0.0" y="0.0" width="25" height="23"/>
-                                                <state key="normal" image="Star "/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-MV-UuQ">
-                                                <rect key="frame" x="25" y="0.0" width="25" height="23"/>
-                                                <state key="normal" image="Star "/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZv-ZA-7JC">
-                                                <rect key="frame" x="50" y="0.0" width="25" height="23"/>
-                                                <state key="normal" image="Star "/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-0P-2ee">
-                                                <rect key="frame" x="75" y="0.0" width="25" height="23"/>
-                                                <state key="normal" image="Star "/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-zA-oiV">
-                                                <rect key="frame" x="100" y="0.0" width="25" height="23"/>
-                                                <state key="normal" image="StarNull"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-16-gR8">
-                                        <rect key="frame" x="0.0" y="96" width="375" height="224"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wz5-dN-YWy">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wz5-dN-YWy" id="1Ea-EW-zaX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="d7P-nn-quF">
-                                                            <rect key="frame" x="17" y="13" width="18" height="18"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcV-Y7-hsf">
-                                                            <rect key="frame" x="51" y="11" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                </subviews>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="(Pin Name)" id="Sw8-4C-dv9">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ebA-zX-vXA"/>
-                    </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pCN-Mr-jia" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4715.5" y="1148.5"/>
-        </scene>
         <!--Edit Pin-->
         <scene sceneID="kfS-Jt-HXm">
             <objects>
@@ -775,9 +653,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT4-kp-Fh1">
                                                     <rect key="frame" x="334" y="8" width="22" height="22"/>
                                                     <state key="normal" image="Search Icon"/>
-                                                    <connections>
-                                                        <segue destination="ily-P8-xEK" kind="show" id="6wn-8h-qzr"/>
-                                                    </connections>
                                                 </button>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="FdR-qS-6za">
                                                     <rect key="frame" x="13" y="13" width="18" height="18"/>
@@ -838,9 +713,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jD0-ln-kLn">
                                                     <rect key="frame" x="334" y="8" width="22" height="22"/>
                                                     <state key="normal" image="Search Icon"/>
-                                                    <connections>
-                                                        <segue destination="ily-P8-xEK" kind="show" id="3Ys-H1-t9x"/>
-                                                    </connections>
                                                 </button>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-iX-JCB">
                                                     <rect key="frame" x="13" y="13" width="18" height="18"/>
@@ -893,7 +765,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="k41-7w-2V6"/>
-        <segue reference="6wn-8h-qzr"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.15686274510000001" green="0.38431372549999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>
