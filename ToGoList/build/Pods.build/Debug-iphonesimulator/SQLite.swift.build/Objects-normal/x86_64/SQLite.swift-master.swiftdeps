@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "9f27c4c2278e2a862f101b1662be6c5b"
-build_time: [518582512, 703622000]
+options: "f5427acb3c34d7b505bc13a693f8cc64"
+build_time: [518595466, 534121000]
 inputs:
   "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Typed/AggregateFunctions.swift": [518582381, 0]
   "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Core/Blob.swift": [518582381, 0]

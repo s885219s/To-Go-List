@@ -81,6 +81,7 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.50030612379348471" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -202,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2t-OH-Co7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4177.5" y="1180.5"/>
+            <point key="canvasLocation" x="4142.5" y="1148.5"/>
         </scene>
         <!--Pin Detail-->
         <scene sceneID="aSa-b7-pmQ">
@@ -892,7 +893,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="k41-7w-2V6"/>
-        <segue reference="Z8o-YJ-Qi0"/>
+        <segue reference="6wn-8h-qzr"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.15686274510000001" green="0.38431372549999998" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
 </document>

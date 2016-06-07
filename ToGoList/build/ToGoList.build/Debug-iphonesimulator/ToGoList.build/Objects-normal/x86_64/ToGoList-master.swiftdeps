@@ -1,7 +1,7 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "93524c24fe482170979c2284f7915ea0"
-build_time: [518582757, 912782000]
+options: "8dbc935a316f96ccfb8de41a926e5ef5"
+build_time: [518595471, 245591000]
 inputs:
   "/Users/Arick/Documents/swift/To-Go-List/ToGoList/ToGoList/ViewController.swift": [518582381, 0]
   "/Users/Arick/Documents/swift/To-Go-List/ToGoList/ToGoList/AppDelegate.swift": [518582381, 0]
-  "/Users/Arick/Documents/swift/To-Go-List/ToGoList/ToGoList/LocationsData.swift": [518582468, 0]
+  "/Users/Arick/Documents/swift/To-Go-List/ToGoList/ToGoList/LocationsData.swift": [518594557, 0]
