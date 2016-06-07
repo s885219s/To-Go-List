@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationDidEnterBackground"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
-- "application"
+- "applicationDidEnterBackground"
+- "window"
 - "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "application"
+- "applicationWillResignActive"
 depends-top-level:
+- "UIWindow"
+- "UIApplicationDelegate"
+- !private "BooleanLiteralType"
 - "Bool"
+- "AnyObject"
 - "UIApplication"
 - "NSObject"
-- "AnyObject"
-- "UIApplicationDelegate"
-- "AppDelegate"
 - "UIResponder"
-- !private "BooleanLiteralType"
-- "UIWindow"
+- "AppDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -225,6 +225,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
 - "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.h"
 - "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Bridging.h"
