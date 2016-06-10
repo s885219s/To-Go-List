@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
-    var locations:Location = []
+//    var locations:Location = []
     
 //    @IBOutlet weak var mapSearchBar: UISearchBar!
     @IBOutlet weak var searchBar: UISearchBar!
