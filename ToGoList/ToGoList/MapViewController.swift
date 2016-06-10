@@ -13,7 +13,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //    var locations:Location = []
     
 //    @IBOutlet weak var mapSearchBar: UISearchBar!
-    @IBOutlet weak var searchBar: UISearchBar!
+//    @IBOutlet weak var searchBar: UISearchBar!
     
     //現在位置
     var locationManager = CLLocationManager()
@@ -30,7 +30,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.myLocationEnabled = true
         self.view = mapView
         
-        self.view.bringSubviewToFront(searchBar)
+//        self.view.bringSubviewToFront(searchBar)
         
 //        let searchController = UISearchController(searchResultsController: nil)
 //        searchController.searchBar.sizeToFit()
