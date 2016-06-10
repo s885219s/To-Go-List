@@ -9,9 +9,26 @@
 import UIKit
 
 class EditLocationTableViewController: UITableViewController {
+    
+    var oldLocation: Location!
+    var newLocation: Location!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var typesTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var linkTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        newLocation = oldLocation
+        
+        nameTextField.text = newLocation.name
+        typesTextField.text = newLocation.tagsToStr()
+        phoneNumberTextField.text = newLocation.phoneNumber
+        addressTextField.text = newLocation.address
+        linkTextField.text = newLocation.url
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,11 +36,15 @@ class EditLocationTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func clickSvaeButton(sender: AnyObject) {
+        LocationsSource.sharedInstance.insertLocationToList(newLocation)
     }
+
+    override func viewWillDisappear(animated: Bool) {
+        LocationsSource.sharedInstance.insertLocationToList(oldLocation)
+    }
+    
+    
 
     // MARK: - Table view data source
 

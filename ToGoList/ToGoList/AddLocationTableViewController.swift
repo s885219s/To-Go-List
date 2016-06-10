@@ -10,6 +10,27 @@ import UIKit
 
 class AddLocationTableViewController: UITableViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var typesTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var linkTextField: UITextField!
+    
+    @IBAction func clickSaveButton(sender: AnyObject) {
+        if newLocation.getLati() == 0.0 && newLocation.getLong() == 0.0{
+            let alertController = UIAlertController(title: "Alert", message: "Location(Address) not set", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alertController.addAction(okAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else{
+            LocationsSource.sharedInstance.insertLocationToList(newLocation)
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+    }
+    
+    var newLocation = Location(_name: "", _tags: "", _url: "", _address: "", _lati: 0.0, _long: 0.0, _visited: 0, _phoneNumber: "", _imagePath: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +41,6 @@ class AddLocationTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
 
