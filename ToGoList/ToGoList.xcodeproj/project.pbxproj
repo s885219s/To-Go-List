@@ -14,6 +14,8 @@
 		43E3ED121CF303F000DAAB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED101CF303F000DAAB54 /* Main.storyboard */; };
 		43E3ED141CF303F000DAAB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED131CF303F000DAAB54 /* Assets.xcassets */; };
 		43E3ED171CF303F000DAAB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED151CF303F000DAAB54 /* LaunchScreen.storyboard */; };
+		66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7B61D1D098AB200E02847 /* MapViewController.swift */; };
+		66C7B6201D099AEA00E02847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C7B61F1D099AEA00E02847 /* MapKit.framework */; };
 		A39F6EB91D06CADB00DFF2E8 /* EditLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */; };
 		A39F6EBB1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */; };
 		A3CB5A2A1D06C500000E9BB8 /* AddLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB5A291D06C500000E9BB8 /* AddLocationTableViewController.swift */; };
@@ -30,6 +32,8 @@
 		43E3ED131CF303F000DAAB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E3ED161CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E3ED181CF303F000DAAB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C7B61D1D098AB200E02847 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		66C7B61F1D099AEA00E02847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationTableViewController.swift; sourceTree = "<group>"; };
 		A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewController.swift; sourceTree = "<group>"; };
 		A3CB5A291D06C500000E9BB8 /* AddLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationTableViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C7B6201D099AEA00E02847 /* MapKit.framework in Frameworks */,
 				2EF0ED398B06E7851D07BFA6 /* Pods_ToGoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +93,7 @@
 				43E3ED151CF303F000DAAB54 /* LaunchScreen.storyboard */,
 				43E3ED181CF303F000DAAB54 /* Info.plist */,
 				2E9888D21CFC339C00521030 /* LocationsData.swift */,
+				66C7B61D1D098AB200E02847 /* MapViewController.swift */,
 			);
 			path = ToGoList;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 		6478596AFA8E34E8EBB85512 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66C7B61F1D099AEA00E02847 /* MapKit.framework */,
 				B1C6968FDA1FA7ED1549AD82 /* Pods_ToGoList.framework */,
 			);
 			name = Frameworks;
@@ -113,6 +120,7 @@
 				43E3ED071CF303F000DAAB54 /* Resources */,
 				0D03FDD2CCC4BF24B925CA6E /* 📦 Embed Pods Frameworks */,
 				818E8244643706CFDC292F8A /* 📦 Copy Pods Resources */,
+				6B069A6376067DEC09B2F814 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,7 +143,7 @@
 				TargetAttributes = {
 					43E3ED081CF303F000DAAB54 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 993TN7KGWA;
+						DevelopmentTeam = ADPWP9D9KM;
 					};
 				};
 			};
@@ -201,6 +209,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		6B069A6376067DEC09B2F814 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		818E8244643706CFDC292F8A /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +252,7 @@
 				A39F6EBB1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift in Sources */,
 				A3CB5A2A1D06C500000E9BB8 /* AddLocationTableViewController.swift in Sources */,
 				2E9888D31CFC339C00521030 /* LocationsData.swift in Sources */,
+				66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +366,13 @@
 			baseConfigurationReference = 1760762955E5EA4FCCF94460 /* Pods-ToGoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToGoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = group7.ToGoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,10 +381,13 @@
 			baseConfigurationReference = 4255E24077F53FC612F441BC /* Pods-ToGoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ToGoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = group7.ToGoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
