@@ -8,13 +8,14 @@
 
 import UIKit
 
-class AddLocationTableViewController: UITableViewController {
+class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typesTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func clickSaveButton(sender: AnyObject) {
         if newLocation.getLati() == 0.0 && newLocation.getLong() == 0.0{
@@ -39,6 +40,62 @@ class AddLocationTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //點選照片蘭增加照片
+        if indexPath.row == 0 {
+            //照片建立動作清單
+            let optionMenu = UIAlertController(title: nil, message: "Where do you want to choose photo?", preferredStyle: .ActionSheet)
+            
+            //定義從圖庫加入照片動作 或是 利用相機來輸入照片
+            let photoLibraryActionHandler = { (action:UIAlertAction!) -> () in
+                if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+                    let imagePicker = UIImagePickerController()
+                    imagePicker.delegate = self
+                    imagePicker.allowsEditing = false
+                    imagePicker.sourceType = .PhotoLibrary
+                    
+                    self.presentViewController(imagePicker, animated: true, completion: nil)
+                }
+            }
+            
+            let cameraActionHandler = { (action:UIAlertAction!) -> () in
+                if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+                    let imagePicker = UIImagePickerController()
+                    imagePicker.delegate = self
+                    imagePicker.allowsEditing = false
+                    imagePicker.sourceType = .Camera
+                    
+                    self.presentViewController(imagePicker, animated: true, completion: nil)
+                }
+            }
+            
+            
+            //加入動作制清單
+            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+            optionMenu.addAction(cancelAction)
+            
+            let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .Default, handler: photoLibraryActionHandler)
+            optionMenu.addAction(photoLibraryAction)
+            
+            let cameraAction = UIAlertAction(title: "Camera", style: .Default, handler: cameraActionHandler)
+            optionMenu.addAction(cameraAction)
+            
+            //顯示動作清單
+            self.presentViewController(optionMenu, animated: true, completion: nil)
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    // MARK: - UIImagePickerControllerDelegate
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView.clipsToBounds = true
+        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 
