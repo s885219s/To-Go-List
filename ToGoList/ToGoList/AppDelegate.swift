@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //for reverce of google map geocode
         GMSServices.provideAPIKey("AIzaSyAI1ncGtBm9pMxWFv58brRBK3hWwV6_ydE")
         
         return true

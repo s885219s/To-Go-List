@@ -1,16 +1,23 @@
 //
-//  LocationDetailTableViewController.swift
+//  MapLocationDetailTableViewController.swift
 //  ToGoList
 //
-//  Created by 陳宥丞 on 2016/6/7.
+//  Created by 林紹瑾 on 2016/6/11.
 //  Copyright © 2016年 group7. All rights reserved.
 //
 
 import UIKit
 
-class LocationDetailTableViewController: UITableViewController {
+class MapLocationDetailTableViewController: UITableViewController {
     var location:Location?
-
+    
+    @IBOutlet weak var locationNameLabel: UILabel!
+    @IBOutlet weak var locationTypeLabel: UILabel!
+    @IBOutlet weak var locationPhoneNumberLabel: UILabel!
+    @IBOutlet weak var locationAddressLabel: UILabel!
+    @IBOutlet weak var locationWebsiteLabel: UILabel!
+    @IBOutlet weak var locationVisitedButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +26,10 @@ class LocationDetailTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+        print("name: \(location!.name)")
+        locationNameLabel.text = location?.name
+        locationPhoneNumberLabel.text = location?.phoneNumber
+        locationAddressLabel.text = location?.address
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +37,19 @@ class LocationDetailTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /*
     // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+    */
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

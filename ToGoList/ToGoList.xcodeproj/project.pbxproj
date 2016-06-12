@@ -14,6 +14,7 @@
 		43E3ED121CF303F000DAAB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED101CF303F000DAAB54 /* Main.storyboard */; };
 		43E3ED141CF303F000DAAB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED131CF303F000DAAB54 /* Assets.xcassets */; };
 		43E3ED171CF303F000DAAB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED151CF303F000DAAB54 /* LaunchScreen.storyboard */; };
+		665DC6DA1D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */; };
 		66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7B61D1D098AB200E02847 /* MapViewController.swift */; };
 		66C7B6201D099AEA00E02847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C7B61F1D099AEA00E02847 /* MapKit.framework */; };
 		A39F6EB91D06CADB00DFF2E8 /* EditLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */; };
@@ -32,6 +33,7 @@
 		43E3ED131CF303F000DAAB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E3ED161CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E3ED181CF303F000DAAB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationDetailTableViewController.swift; sourceTree = "<group>"; };
 		66C7B61D1D098AB200E02847 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		66C7B61F1D099AEA00E02847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationTableViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				43E3ED181CF303F000DAAB54 /* Info.plist */,
 				2E9888D21CFC339C00521030 /* LocationsData.swift */,
 				66C7B61D1D098AB200E02847 /* MapViewController.swift */,
+				665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */,
 			);
 			path = ToGoList;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				A39F6EBB1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift in Sources */,
 				A3CB5A2A1D06C500000E9BB8 /* AddLocationTableViewController.swift in Sources */,
 				2E9888D31CFC339C00521030 /* LocationsData.swift in Sources */,
+				665DC6DA1D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift in Sources */,
 				66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

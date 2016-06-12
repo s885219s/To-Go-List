@@ -9,13 +9,15 @@
 import Foundation
 import SQLite
 import CoreLocation
+import CoreLocation
+import AddressBookUI
 
 struct Location{
     var name: String
     var tags: [String] = []
     var url: String = ""
     var address: String = ""
-    var coordinate: CLLocationCoordinate2D!
+    var coordinate: CLLocationCoordinate2D?
     var visited: Bool! = false
     var phoneNumber: String = ""
     var imagePath: String = ""
@@ -29,11 +31,17 @@ struct Location{
         }
         if _url != nil{
             self.url = _url!
-        } else
-            if _address != nil{
-                self.address = _address!
         }
+        // 原本有寫錯 無法正常輸入address
+        if _address != nil{
+            self.address = _address!
+//            setCoordinate(_address!)
+        }
+        //原本宗彥寫的 設定coordinate
         self.coordinate = CLLocationCoordinate2DMake(_lati, _long)
+        //紹瑾改的
+//        self.forwardGeocoding(self.address)
+        
         self.visited = Bool(_visited)
         if _phoneNumber != nil{
             self.phoneNumber = _phoneNumber!
@@ -52,11 +60,42 @@ struct Location{
     }
     
     func getLati() -> Double {
-        return self.coordinate.latitude
+        return self.coordinate!.latitude
     }
     
     func getLong() -> Double {
-        return self.coordinate.longitude
+        return self.coordinate!.longitude
+    }
+    // MARK: - Apple MapKit
+    //將地址轉換為座標
+    func forwardGeocoding(address: String){
+        var coords:CLLocationCoordinate2D?
+        CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) in
+            if error != nil {
+                print(error)
+                return
+            }
+            if placemarks?.count > 0 {
+                let placemark = placemarks?[0]
+                let location = placemark?.location
+                let coordinate = location?.coordinate
+                //                let position = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
+                print("LocationData  \nlat: \(coordinate!.latitude), long: \(coordinate!.longitude)")
+//                coords = coordinate
+                coords = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
+                //                if placemark?.areasOfInterest?.count > 0 {
+                //                    let areaOfInterest = placemark!.areasOfInterest![0]
+                //                    print(areaOfInterest)
+                //                } else {
+                //                    print("No area of interest found.")
+                //                }
+            }
+        })
+//        return coords!
+    }
+    
+    mutating func setCoordinate(coordinate: CLLocationCoordinate2D) {
+        self.coordinate = coordinate
     }
 }
 
