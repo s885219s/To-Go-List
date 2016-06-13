@@ -8,15 +8,32 @@
 
 import UIKit
 import GoogleMaps
+//for foward and reverse Geoceding
+import CoreLocation
+import AddressBookUI
 
 class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate {
+    //曲現在位置用
+    let locationManager = CLLocationManager()
     
     //儲存資料用
     var locationCoordinate: CLLocationCoordinate2D?
-    let locationManager = CLLocationManager()
+
     var locationVisited = 0
     var didSetNewImage = false
     var imageFileLocation = ""
+
+    var locationName:String?
+    var locationType:String?
+    var locationPhoneNumber:String?
+    var locationAddress:String?
+    var locationLink:String?
+    
+    //判斷用
+    var checkSetCurrentLocation: Bool = false
+    var checkPlacePickerButton: Bool = false
+    
+    //storyboard 物件
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typesTextField: UITextField!
@@ -25,51 +42,137 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var locationVisitButton: UIButton!
+    @IBOutlet weak var setCurrentCoordinateButton: UIButton!
+    @IBOutlet weak var placePickerButton: UIButton!
     
     @IBAction func locationVisited(sender: AnyObject) {
-        
+        if locationVisited == 0 {
+//            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
+            locationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+            print("set locationVisited true")
+            locationVisited = 1
+        } else {
+//            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
+            locationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+            print("set locationVisited false")
+            locationVisited = 0
+        }
     }
     //從google map pick place to textField
     @IBAction func searchLocationInfoFromGoogleMap(sender: AnyObject) {
+//        //若鍵盤在的話 關掉鍵盤
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        view.addGestureRecognizer(tap)
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
-        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
-        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
-        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-        let config = GMSPlacePickerConfig(viewport: viewport)
-        let placePicker = GMSPlacePicker(config: config)
-        
-        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
-            if let error = error {
-                print("Pick Place error: \(error.localizedDescription)")
-                return
-            }
+        if checkPlacePickerButton == false {
+            let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
+            let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+            let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+            let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+            let config = GMSPlacePickerConfig(viewport: viewport)
+            let placePicker = GMSPlacePicker(config: config)
             
-            if let place = place {
-                print("Place name \(place.name)")
-                print("Place address \(place.formattedAddress)")
-                print("Place attributions \(place.attributions)")
-                self.nameTextField.text = place.name
-                self.addressTextField.text = place.formattedAddress
-                if place.phoneNumber != nil {
-                    self.phoneNumberTextField.text = place.phoneNumber!
+            placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+                if let error = error {
+                    print("Pick Place error: \(error.localizedDescription)")
+                    return
                 }
-                self.typesTextField.text = place.types[0]
-                if place.website != nil {
-                    self.linkTextField.text = place.website?.absoluteString
+                
+                if let place = place {
+                    print("Place name \(place.name)")
+                    print("Place address \(place.formattedAddress)")
+                    print("Place attributions \(place.attributions)")
+                    self.nameTextField.text = place.name
+                    self.locationName = place.name
+                    
+                    self.addressTextField.text = place.formattedAddress
+                    self.locationAddress = place.formattedAddress
+                    
+                    if place.phoneNumber != nil {
+                        self.phoneNumberTextField.text = place.phoneNumber!
+                        self.locationPhoneNumber = place.phoneNumber
+                    }
+                    
+                    self.typesTextField.text = place.types[0]
+                    self.locationType = place.types[0]
+                    
+                    if place.website != nil {
+                        self.linkTextField.text = place.website?.absoluteString
+                        self.locationLink = place.website?.absoluteString
+                    }
+                    
+                    self.locationCoordinate = place.coordinate
+                    
+                } else {
+                    print("No place selected")
                 }
-            } else {
-                print("No place selected")
-            }
-        })
+            })
+            checkPlacePickerButton = true
+            placePickerButton.setImage(UIImage(named: "placePickerBlue"), forState: .Normal)
+        } else {
+            checkPlacePickerButton = false
+            placePickerButton.setImage(UIImage(named: "placePickerGray"), forState: .Normal)
+        }
+//        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
+//        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+//        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+//        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+//        let config = GMSPlacePickerConfig(viewport: viewport)
+//        let placePicker = GMSPlacePicker(config: config)
+//        
+//        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+//            if let error = error {
+//                print("Pick Place error: \(error.localizedDescription)")
+//                return
+//            }
+//            
+//            if let place = place {
+//                print("Place name \(place.name)")
+//                print("Place address \(place.formattedAddress)")
+//                print("Place attributions \(place.attributions)")
+//                self.nameTextField.text = place.name
+//                self.locationName = place.name
+//                
+//                self.addressTextField.text = place.formattedAddress
+//                self.locationAddress = place.formattedAddress
+//                
+//                if place.phoneNumber != nil {
+//                    self.phoneNumberTextField.text = place.phoneNumber!
+//                    self.locationPhoneNumber = place.phoneNumber
+//                }
+//                
+//                self.typesTextField.text = place.types[0]
+//                self.locationType = place.types[0]
+//                
+//                if place.website != nil {
+//                    self.linkTextField.text = place.website?.absoluteString
+//                    self.locationLink = place.website?.absoluteString
+//                }
+//                
+//                self.locationCoordinate = place.coordinate
+//                
+//            } else {
+//                print("No place selected")
+//            }
+//        })
     }
     
     @IBAction func setCurrentCoordinate(sender: AnyObject) {
-        print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
-        locationCoordinate = locationManager.location?.coordinate
-        
-        //update address
+
+        if checkSetCurrentLocation == false {
+            print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
+            locationCoordinate = locationManager.location?.coordinate
+            reverseGeocoding((locationCoordinate?.latitude)!, longitude: (locationCoordinate?.longitude)!)
+            checkSetCurrentLocation = true
+//            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlue")
+            setCurrentCoordinateButton.setImage(UIImage(named: "navigationBlue"), forState: .Normal)
+        } else {
+            checkSetCurrentLocation = false
+//            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlueLine")
+            setCurrentCoordinateButton.setImage(UIImage(named: "navigationBlueLine"), forState: .Normal)
+        }
     }
     
     @IBAction func clickSaveButton(sender: AnyObject) {
@@ -189,6 +292,31 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // MARK: - MAPkit
+    func reverseGeocoding(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let location = CLLocation(latitude: latitude, longitude: longitude)
+        CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
+            if error != nil {
+                print(error)
+                return
+            }
+            else if placemarks?.count > 0 {
+                let pm = placemarks![0]
+                let address = ABCreateStringWithAddressDictionary(pm.addressDictionary!, false)
+                
+                self.addressTextField.text = address
+                self.locationAddress = address
+                
+                print("\n\(address)")
+                if pm.areasOfInterest?.count > 0 {
+                    let areaOfInterest = pm.areasOfInterest?[0]
+                    print(areaOfInterest!)
+                } else {
+                    print("No area of interest found.")
+                }
+            }
+        })
+    }
 
     // MARK: - Table view data source
 
