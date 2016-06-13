@@ -8,14 +8,25 @@
 
 import UIKit
 import GoogleMaps
+//for foward and reverse Geoceding
+import CoreLocation
+import AddressBookUI
 
 class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate {
+    //曲現在位置用
+    let locationManager = CLLocationManager()
     
     //儲存資料用
     var locationCoordinate: CLLocationCoordinate2D?
-    let locationManager = CLLocationManager()
-    var locationVisited:Bool?
-
+    var locationVisited:Bool = false
+    var checkSetCurrentLocation: Bool = false
+    var locationName:String?
+    var locationType:String?
+    var locationPhoneNumber:String?
+    var locationAddress:String?
+    var locationLink:String?
+    
+    //storyboard 物件
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typesTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
@@ -23,12 +34,27 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var locationVisitButton: UIButton!
+    @IBOutlet weak var setCurrentCoordinateButton: UIButton!
     
     @IBAction func locationVisited(sender: AnyObject) {
-        
+        if locationVisited == false {
+//            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
+            locationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+            print("set locationVisited true")
+            locationVisited = true
+        } else {
+//            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
+            locationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+            print("set locationVisited false")
+            locationVisited = false
+        }
     }
     //從google map pick place to textField
     @IBAction func searchLocationInfoFromGoogleMap(sender: AnyObject) {
+//        //若鍵盤在的話 關掉鍵盤
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        view.addGestureRecognizer(tap)
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
@@ -49,14 +75,26 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
                 print("Place address \(place.formattedAddress)")
                 print("Place attributions \(place.attributions)")
                 self.nameTextField.text = place.name
+                self.locationName = place.name
+                
                 self.addressTextField.text = place.formattedAddress
+                self.locationAddress = place.formattedAddress
+                
                 if place.phoneNumber != nil {
                     self.phoneNumberTextField.text = place.phoneNumber!
+                    self.locationPhoneNumber = place.phoneNumber
                 }
+                
                 self.typesTextField.text = place.types[0]
+                self.locationType = place.types[0]
+                
                 if place.website != nil {
                     self.linkTextField.text = place.website?.absoluteString
+                    self.locationLink = place.website?.absoluteString
                 }
+                
+                self.locationCoordinate = place.coordinate
+                
             } else {
                 print("No place selected")
             }
@@ -64,8 +102,18 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     @IBAction func setCurrentCoordinate(sender: AnyObject) {
-        print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
-        locationCoordinate = locationManager.location?.coordinate
+        if checkSetCurrentLocation == false {
+            print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
+            locationCoordinate = locationManager.location?.coordinate
+            reverseGeocoding((locationCoordinate?.latitude)!, longitude: (locationCoordinate?.longitude)!)
+            checkSetCurrentLocation = true
+//            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlue")
+            setCurrentCoordinateButton.setImage(UIImage(named: "navigationBlue"), forState: .Normal)
+        } else {
+            checkSetCurrentLocation = false
+//            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlueLine")
+            setCurrentCoordinateButton.setImage(UIImage(named: "navigationBlueLine"), forState: .Normal)
+        }
     }
     
     @IBAction func clickSaveButton(sender: AnyObject) {
@@ -162,6 +210,31 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // MARK: - MAPkit
+    func reverseGeocoding(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let location = CLLocation(latitude: latitude, longitude: longitude)
+        CLGeocoder().reverseGeocodeLocation(location, completionHandler: {(placemarks, error) -> Void in
+            if error != nil {
+                print(error)
+                return
+            }
+            else if placemarks?.count > 0 {
+                let pm = placemarks![0]
+                let address = ABCreateStringWithAddressDictionary(pm.addressDictionary!, false)
+                
+                self.addressTextField.text = address
+                self.locationAddress = address
+                
+                print("\n\(address)")
+                if pm.areasOfInterest?.count > 0 {
+                    let areaOfInterest = pm.areasOfInterest?[0]
+                    print(areaOfInterest!)
+                } else {
+                    print("No area of interest found.")
+                }
+            }
+        })
+    }
 
     // MARK: - Table view data source
 
