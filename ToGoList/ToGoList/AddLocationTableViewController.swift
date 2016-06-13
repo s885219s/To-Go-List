@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate {
+    
+    //儲存資料用
+    var locationCoordinate: CLLocationCoordinate2D?
+    let locationManager = CLLocationManager()
+    var locationVisited:Bool?
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typesTextField: UITextField!
@@ -16,6 +22,51 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var locationVisitButton: UIButton!
+    
+    @IBAction func locationVisited(sender: AnyObject) {
+        
+    }
+    //從google map pick place to textField
+    @IBAction func searchLocationInfoFromGoogleMap(sender: AnyObject) {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
+        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+        let config = GMSPlacePickerConfig(viewport: viewport)
+        let placePicker = GMSPlacePicker(config: config)
+        
+        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+            if let error = error {
+                print("Pick Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let place = place {
+                print("Place name \(place.name)")
+                print("Place address \(place.formattedAddress)")
+                print("Place attributions \(place.attributions)")
+                self.nameTextField.text = place.name
+                self.addressTextField.text = place.formattedAddress
+                if place.phoneNumber != nil {
+                    self.phoneNumberTextField.text = place.phoneNumber!
+                }
+                self.typesTextField.text = place.types[0]
+                if place.website != nil {
+                    self.linkTextField.text = place.website?.absoluteString
+                }
+            } else {
+                print("No place selected")
+            }
+        })
+    }
+    
+    @IBAction func setCurrentCoordinate(sender: AnyObject) {
+        print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
+        locationCoordinate = locationManager.location?.coordinate
+    }
     
     @IBAction func clickSaveButton(sender: AnyObject) {
         if newLocation.getLati() == 0.0 && newLocation.getLong() == 0.0{
@@ -40,6 +91,10 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //Looks for single or multiple taps.   偵測點擊位置 為了收回鍵盤
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        view.addGestureRecognizer(tap)
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -87,7 +142,16 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
+    
+    //Calls this function when the tap is recognized.  收回鍵盤用
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
     
     // MARK: - UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -97,7 +161,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         
         dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
 
     // MARK: - Table view data source
 

@@ -503,19 +503,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8B-kz-B9e">
-                                                    <rect key="frame" x="334" y="8" width="22" height="22"/>
-                                                    <state key="normal" image="Search Icon"/>
-                                                </button>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="BdJ-jw-SW3">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="pinName" translatesAutoresizingMaskIntoConstraints="NO" id="BdJ-jw-SW3">
                                                     <rect key="frame" x="13" y="13" width="18" height="18"/>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0w-fV-UCg">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0w-fV-UCg">
                                                     <rect key="frame" x="47" y="7" width="247" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8B-kz-B9e">
+                                                    <rect key="frame" x="334" y="11" width="22" height="22"/>
+                                                    <state key="normal" image="Search Icon"/>
+                                                    <connections>
+                                                        <action selector="searchLocationInfoFromGoogleMap:" destination="pD0-il-EvV" eventType="touchUpInside" id="kWe-IJ-qtp"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="R0w-fV-UCg" firstAttribute="leading" secondItem="BdJ-jw-SW3" secondAttribute="trailing" constant="16" id="389-7O-6d8"/>
+                                                <constraint firstItem="L8B-kz-B9e" firstAttribute="leading" secondItem="R0w-fV-UCg" secondAttribute="trailing" constant="40" id="Wfp-PU-JSl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="L8B-kz-B9e" secondAttribute="trailing" constant="11" id="c1Y-3w-6ZH"/>
+                                                <constraint firstItem="BdJ-jw-SW3" firstAttribute="leading" secondItem="NoI-kq-iYl" secondAttribute="leadingMargin" constant="5" id="qgg-nb-NOD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6BE-Xe-dA3">
@@ -561,15 +570,35 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="place" translatesAutoresizingMaskIntoConstraints="NO" id="DF8-Zb-JgT">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="place" translatesAutoresizingMaskIntoConstraints="NO" id="DF8-Zb-JgT">
                                                     <rect key="frame" x="13" y="13" width="18" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="18" id="o8B-Vf-5RA"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-sw-6vL">
-                                                    <rect key="frame" x="47" y="7" width="247" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-sw-6vL">
+                                                    <rect key="frame" x="47" y="7" width="255" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyK-Wm-MiY">
+                                                    <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                                    <state key="normal" image="place"/>
+                                                    <connections>
+                                                        <action selector="setCurrentCoordinate:" destination="pD0-il-EvV" eventType="touchUpInside" id="vWc-3h-xk6"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DF8-Zb-JgT" firstAttribute="centerY" secondItem="ZXF-sw-6vL" secondAttribute="centerY" id="6ZZ-Pe-Vwf"/>
+                                                <constraint firstItem="DF8-Zb-JgT" firstAttribute="leading" secondItem="PLb-kW-Fep" secondAttribute="leadingMargin" constant="5" id="LcY-cb-XxP"/>
+                                                <constraint firstItem="DF8-Zb-JgT" firstAttribute="centerY" secondItem="yyK-Wm-MiY" secondAttribute="centerY" id="Ono-fY-mRD"/>
+                                                <constraint firstItem="DF8-Zb-JgT" firstAttribute="top" secondItem="PLb-kW-Fep" secondAttribute="topMargin" constant="5" id="Qxa-99-zK4"/>
+                                                <constraint firstItem="ZXF-sw-6vL" firstAttribute="leading" secondItem="DF8-Zb-JgT" secondAttribute="trailing" constant="16" id="SZ0-rg-p9x"/>
+                                                <constraint firstItem="yyK-Wm-MiY" firstAttribute="leading" secondItem="ZXF-sw-6vL" secondAttribute="trailing" constant="43" id="UVv-Dk-Ciq"/>
+                                                <constraint firstItem="DF8-Zb-JgT" firstAttribute="centerY" secondItem="PLb-kW-Fep" secondAttribute="centerY" id="swp-r6-op1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yyK-Wm-MiY" secondAttribute="trailing" constant="8" id="xnl-IT-Wuy"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yJ1-vs-Ayw">
@@ -597,11 +626,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-FA-R4g">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lud-FA-R4g">
                                                     <rect key="frame" x="154" y="21" width="66" height="57"/>
                                                     <state key="normal" image="beenHere"/>
+                                                    <connections>
+                                                        <action selector="locationVisited:" destination="pD0-il-EvV" eventType="touchUpInside" id="ytD-pu-l13"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Lud-FA-R4g" secondAttribute="trailing" constant="147" id="cL0-v4-QiM"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -626,6 +661,7 @@
                         <outlet property="addressTextField" destination="ZXF-sw-6vL" id="Wso-lm-Oy6"/>
                         <outlet property="imageView" destination="ezr-l3-x3I" id="Tzx-Id-LK5"/>
                         <outlet property="linkTextField" destination="iFA-tf-r0Z" id="CCg-Df-Ajg"/>
+                        <outlet property="locationVisitButton" destination="Lud-FA-R4g" id="ATb-oH-49q"/>
                         <outlet property="nameTextField" destination="R0w-fV-UCg" id="SON-mF-YPk"/>
                         <outlet property="phoneNumberTextField" destination="Bvt-9w-bV0" id="iPk-mh-pT2"/>
                         <outlet property="typesTextField" destination="sWP-PV-Ia5" id="EwM-cG-YoO"/>
