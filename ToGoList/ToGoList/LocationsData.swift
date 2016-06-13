@@ -66,33 +66,6 @@ struct Location{
     func getLong() -> Double {
         return self.coordinate!.longitude
     }
-    // MARK: - Apple MapKit
-    //將地址轉換為座標
-    func forwardGeocoding(address: String){
-        var coords:CLLocationCoordinate2D?
-        CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) in
-            if error != nil {
-                print(error)
-                return
-            }
-            if placemarks?.count > 0 {
-                let placemark = placemarks?[0]
-                let location = placemark?.location
-                let coordinate = location?.coordinate
-                //                let position = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
-                print("LocationData  \nlat: \(coordinate!.latitude), long: \(coordinate!.longitude)")
-//                coords = coordinate
-                coords = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
-                //                if placemark?.areasOfInterest?.count > 0 {
-                //                    let areaOfInterest = placemark!.areasOfInterest![0]
-                //                    print(areaOfInterest)
-                //                } else {
-                //                    print("No area of interest found.")
-                //                }
-            }
-        })
-//        return coords!
-    }
     
     mutating func setCoordinate(coordinate: CLLocationCoordinate2D) {
         self.coordinate = coordinate

@@ -18,7 +18,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     @IBOutlet weak var searchController: UISearchBar!
     
     
-    var locations = [Location(_name: "home", _tags: "", _url: "", _address: "台北市內湖區成功路五段450巷21弄33號7樓", _lati: 12, _long: 21, _visited: 0, _phoneNumber: "0987654321", _imagePath: ""), Location(_name: "taipei 101", _tags: "", _url: "", _address: "臺北市信義區西村里8鄰信義路五段7號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "", _imagePath: ""), Location(_name: "覺旅", _tags: "", _url: "", _address: "114台北市內湖區瑞光路583巷24號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "1234567890", _imagePath: "")]
+//    var locations1 = [Location(_name: "home", _tags: "", _url: "", _address: "台北市內湖區成功路五段450巷21弄33號7樓", _lati: 12, _long: 21, _visited: 0, _phoneNumber: "0987654321", _imagePath: ""), Location(_name: "taipei 101", _tags: "", _url: "", _address: "臺北市信義區西村里8鄰信義路五段7號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "", _imagePath: ""), Location(_name: "覺旅", _tags: "", _url: "", _address: "114台北市內湖區瑞光路583巷24號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "1234567890", _imagePath: "")]
+    var locations:[Location]?
     //for google map reverce geocodeing
 //    let baseUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
     
@@ -28,6 +29,21 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("MapView")
+        
+        //抓DB資料
+        print(LocationsSource.sharedInstance.getLocationList())
+//        print(locations1)
+        locations = LocationsSource.sharedInstance.getLocationList()
+        //測試DB  把資料塞到db
+        /*
+        print(LocationsSource.sharedInstance.filePath)
+        for location in locations {
+            LocationsSource.sharedInstance.insertLocationToList(location)
+        }
+        LocationsSource.sharedInstance.writeBacktoDB()
+        */
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         // 4
@@ -40,7 +56,12 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         self.mapView.delegate = self
         
         //顯示標記
-        for location in locations {
+//        print("location1")
+//        for location in locations1 {
+//            print("location name\(location.name) lati\(location.coordinate!.latitude) long\(location.coordinate!.longitude)")
+//        }
+//        print("location2")
+        for location in locations! {
             print("location name\(location.name) lati\(location.coordinate!.latitude) long\(location.coordinate!.longitude)")
             forwardGeocoding(location.address, findedLocation: location)
         }
@@ -146,7 +167,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         if segue.identifier == "MapLocationShowDetail" {
             let controller = segue.destinationViewController as! MapLocationDetailTableViewController
-            for location in locations {
+            for location in locations! {
                 let name = sender as! String
                 if location.name == name {
                     controller.location = location

@@ -5,6 +5,7 @@
 //  Created by Frank Wang on 2016/5/23.
 //  Copyright © 2016年 group7. All rights reserved.
 //
+//  實作DB對稱
 
 import UIKit
 import GoogleMaps
@@ -19,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //for reverce of google map geocode
         GMSServices.provideAPIKey("AIzaSyAI1ncGtBm9pMxWFv58brRBK3hWwV6_ydE")
+        
+        LocationsSource.sharedInstance.loadFromDB()
+        print("AppDelegate")
+//        print(LocationsSource.sharedInstance.getLocationList())
         
         return true
     }

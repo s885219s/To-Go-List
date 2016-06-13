@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToGoList/MapViewController.swift"
-            timestampString = "487414492.155907"
+            timestampString = "487479852.149137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -77,70 +77,6 @@
                   startingLineNumber = "21"
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ToGoList/LocationsData.swift"
-            timestampString = "487414662.486726"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "forwardGeocoding(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ToGoList/LocationsData.swift"
-            timestampString = "487414665.330608"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "forwardGeocoding(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ToGoList.Location.(forwardGeocoding (Swift.String) -&gt; __C.CLLocationCoordinate2D).(closure #1)"
-                  moduleName = "ToGoList"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/JamesLin/Desktop/To-Go-List/ToGoList/ToGoList/LocationsData.swift"
-                  timestampString = "487415966.361234"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "1712">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ToGoList.Location.(forwardGeocoding (Swift.String) -&gt; __C.CLLocationCoordinate2D).(closure #1)"
-                  moduleName = "ToGoList"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/JamesLin/Desktop/To-Go-List/ToGoList/ToGoList/LocationsData.swift"
-                  timestampString = "487415966.361421"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "2012">
                </Location>
             </Locations>
          </BreakpointContent>
