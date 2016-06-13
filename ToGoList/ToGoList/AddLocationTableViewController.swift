@@ -19,12 +19,15 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     //儲存資料用
     var locationCoordinate: CLLocationCoordinate2D?
     var locationVisited:Bool = false
-    var checkSetCurrentLocation: Bool = false
     var locationName:String?
     var locationType:String?
     var locationPhoneNumber:String?
     var locationAddress:String?
     var locationLink:String?
+    
+    //判斷用
+    var checkSetCurrentLocation: Bool = false
+    var checkPlacePickerButton: Bool = false
     
     //storyboard 物件
     @IBOutlet weak var nameTextField: UITextField!
@@ -35,6 +38,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var locationVisitButton: UIButton!
     @IBOutlet weak var setCurrentCoordinateButton: UIButton!
+    @IBOutlet weak var placePickerButton: UIButton!
     
     @IBAction func locationVisited(sender: AnyObject) {
         if locationVisited == false {
@@ -57,48 +61,97 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
-        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
-        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
-        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-        let config = GMSPlacePickerConfig(viewport: viewport)
-        let placePicker = GMSPlacePicker(config: config)
-        
-        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
-            if let error = error {
-                print("Pick Place error: \(error.localizedDescription)")
-                return
-            }
+        if checkPlacePickerButton == false {
+            let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
+            let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+            let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+            let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+            let config = GMSPlacePickerConfig(viewport: viewport)
+            let placePicker = GMSPlacePicker(config: config)
             
-            if let place = place {
-                print("Place name \(place.name)")
-                print("Place address \(place.formattedAddress)")
-                print("Place attributions \(place.attributions)")
-                self.nameTextField.text = place.name
-                self.locationName = place.name
-                
-                self.addressTextField.text = place.formattedAddress
-                self.locationAddress = place.formattedAddress
-                
-                if place.phoneNumber != nil {
-                    self.phoneNumberTextField.text = place.phoneNumber!
-                    self.locationPhoneNumber = place.phoneNumber
+            placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+                if let error = error {
+                    print("Pick Place error: \(error.localizedDescription)")
+                    return
                 }
                 
-                self.typesTextField.text = place.types[0]
-                self.locationType = place.types[0]
-                
-                if place.website != nil {
-                    self.linkTextField.text = place.website?.absoluteString
-                    self.locationLink = place.website?.absoluteString
+                if let place = place {
+                    print("Place name \(place.name)")
+                    print("Place address \(place.formattedAddress)")
+                    print("Place attributions \(place.attributions)")
+                    self.nameTextField.text = place.name
+                    self.locationName = place.name
+                    
+                    self.addressTextField.text = place.formattedAddress
+                    self.locationAddress = place.formattedAddress
+                    
+                    if place.phoneNumber != nil {
+                        self.phoneNumberTextField.text = place.phoneNumber!
+                        self.locationPhoneNumber = place.phoneNumber
+                    }
+                    
+                    self.typesTextField.text = place.types[0]
+                    self.locationType = place.types[0]
+                    
+                    if place.website != nil {
+                        self.linkTextField.text = place.website?.absoluteString
+                        self.locationLink = place.website?.absoluteString
+                    }
+                    
+                    self.locationCoordinate = place.coordinate
+                    
+                } else {
+                    print("No place selected")
                 }
-                
-                self.locationCoordinate = place.coordinate
-                
-            } else {
-                print("No place selected")
-            }
-        })
+            })
+            checkPlacePickerButton = true
+            placePickerButton.setImage(UIImage(named: "placePickerBlue"), forState: .Normal)
+        } else {
+            checkPlacePickerButton = false
+            placePickerButton.setImage(UIImage(named: "placePickerGray"), forState: .Normal)
+        }
+//        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
+//        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
+//        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
+//        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+//        let config = GMSPlacePickerConfig(viewport: viewport)
+//        let placePicker = GMSPlacePicker(config: config)
+//        
+//        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
+//            if let error = error {
+//                print("Pick Place error: \(error.localizedDescription)")
+//                return
+//            }
+//            
+//            if let place = place {
+//                print("Place name \(place.name)")
+//                print("Place address \(place.formattedAddress)")
+//                print("Place attributions \(place.attributions)")
+//                self.nameTextField.text = place.name
+//                self.locationName = place.name
+//                
+//                self.addressTextField.text = place.formattedAddress
+//                self.locationAddress = place.formattedAddress
+//                
+//                if place.phoneNumber != nil {
+//                    self.phoneNumberTextField.text = place.phoneNumber!
+//                    self.locationPhoneNumber = place.phoneNumber
+//                }
+//                
+//                self.typesTextField.text = place.types[0]
+//                self.locationType = place.types[0]
+//                
+//                if place.website != nil {
+//                    self.linkTextField.text = place.website?.absoluteString
+//                    self.locationLink = place.website?.absoluteString
+//                }
+//                
+//                self.locationCoordinate = place.coordinate
+//                
+//            } else {
+//                print("No place selected")
+//            }
+//        })
     }
     
     @IBAction func setCurrentCoordinate(sender: AnyObject) {

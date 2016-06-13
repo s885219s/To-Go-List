@@ -513,7 +513,7 @@
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8B-kz-B9e">
                                                     <rect key="frame" x="334" y="11" width="22" height="22"/>
-                                                    <state key="normal" image="Search Icon"/>
+                                                    <state key="normal" image="placePickerGray"/>
                                                     <connections>
                                                         <action selector="searchLocationInfoFromGoogleMap:" destination="pD0-il-EvV" eventType="touchUpInside" id="kWe-IJ-qtp"/>
                                                     </connections>
@@ -668,6 +668,7 @@
                         <outlet property="locationVisitButton" destination="Lud-FA-R4g" id="ATb-oH-49q"/>
                         <outlet property="nameTextField" destination="R0w-fV-UCg" id="SON-mF-YPk"/>
                         <outlet property="phoneNumberTextField" destination="Bvt-9w-bV0" id="iPk-mh-pT2"/>
+                        <outlet property="placePickerButton" destination="L8B-kz-B9e" id="y72-ee-SLr"/>
                         <outlet property="setCurrentCoordinateButton" destination="yyK-Wm-MiY" id="6cB-B7-fHv"/>
                         <outlet property="typesTextField" destination="sWP-PV-Ia5" id="EwM-cG-YoO"/>
                     </connections>
@@ -1728,6 +1729,7 @@
         <image name="phone" width="18" height="18"/>
         <image name="pinName" width="18" height="18"/>
         <image name="place" width="14" height="20"/>
+        <image name="placePickerGray" width="24" height="24"/>
         <image name="routeIcon" width="27" height="27"/>
         <image name="subtext" width="212" height="26"/>
         <image name="toGoIcon" width="170" height="153"/>
