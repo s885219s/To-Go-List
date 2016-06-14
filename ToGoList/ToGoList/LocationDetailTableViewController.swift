@@ -9,17 +9,76 @@
 import UIKit
 
 class LocationDetailTableViewController: UITableViewController {
-    var location:Location?
-
+    var locationVisited = 0
+    @IBOutlet weak var LocationPhoto: UIImageView!
+    @IBOutlet weak var LocationName: UILabel!
+    @IBOutlet weak var LocationPhone: UILabel!
+    @IBOutlet weak var LocationAddress: UILabel!
+    @IBOutlet weak var LocationTypes: UILabel!
+    @IBOutlet weak var LocationWebsite: UILabel!
+    @IBOutlet weak var LocationVisitButton: UIButton!
+    @IBAction func callLocationPhoneNumber(sender: AnyObject) {
+        let optionMenu = UIAlertController(title: nil, message: "Call \(location!.name)", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        let callActionHandler = {(action:UIAlertAction!) -> () in
+            //            if let phoneCallURL:NSURL = NSURL(string: "tel://\(self.location?.phoneNumber)") {
+            //                let application:UIApplication = UIApplication.sharedApplication()
+            //                if (application.canOpenURL(phoneCallURL)) {
+            //                    application.openURL(phoneCallURL);
+            //                }
+            //            }
+            if let url = NSURL(string: "tel://\(self.location!.phoneNumber)") {
+                UIApplication.sharedApplication().openURL(url)
+            }
+        }
+        let callAction = UIAlertAction(title: "Call "+"\(location!.name)?", style: UIAlertActionStyle.Default, handler: callActionHandler)
+        optionMenu.addAction(callAction)
+        
+        //show alertSheet
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    
+    var location: Location? {
+        didSet(newLocation) {
+            if self.isViewLoaded(){
+                self.fillData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.fillData()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+    }
+    
+    func fillData(){
+        guard let location = self.location else{
+            return
+        }
+        //self.LocationName.text = UIImage(named: locaiton.imageName)
+        if(location.name != ""){
+            self.LocationName.text = location.name
+        }
+        if(location.tags.joinWithSeparator(" ") != ""){
+            self.LocationTypes.text = location.tags.joinWithSeparator(" ")
+        }
+        if(location.phoneNumber != ""){
+            self.LocationPhone.text = location.phoneNumber
+        }
+        if(location.address != ""){
+            self.LocationAddress.text = location.address
+        }
+        if(location.url != ""){
+            self.LocationWebsite.text = location.url
+        }
+        if(location.visited == true){
+            LocationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+        }
+        else{
+            LocationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

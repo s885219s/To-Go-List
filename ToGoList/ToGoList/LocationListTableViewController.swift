@@ -18,12 +18,18 @@ class LocationListTableViewController: UITableViewController {
         super.viewDidLoad()
         
         locations = LocationsSource.sharedInstance.getLocationList()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(false)
+        self.tableView.reloadData()
+        print("viewwillappear")
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +63,18 @@ class LocationListTableViewController: UITableViewController {
 
         return cell
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ListShowDetail" {
+            let cell = sender as! UITableViewCell
+            let indexPath = self.tableView.indexPathForCell(cell)!
+            let location = self.locations![indexPath.row]
+            
+            let detailViewController = segue.destinationViewController as! LocationDetailTableViewController
+            detailViewController.location = location
+            
+        }
+    }
+
     
 
     /*

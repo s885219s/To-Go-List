@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2E9888D31CFC339C00521030 /* LocationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9888D21CFC339C00521030 /* LocationsData.swift */; };
-		2EF0ED398B06E7851D07BFA6 /* Pods_ToGoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6968FDA1FA7ED1549AD82 /* Pods_ToGoList.framework */; };
 		43E3ED0D1CF303F000DAAB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E3ED0C1CF303F000DAAB54 /* AppDelegate.swift */; };
 		43E3ED121CF303F000DAAB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED101CF303F000DAAB54 /* Main.storyboard */; };
 		43E3ED141CF303F000DAAB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED131CF303F000DAAB54 /* Assets.xcassets */; };
@@ -21,18 +20,19 @@
 		A39F6EB91D06CADB00DFF2E8 /* EditLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */; };
 		A39F6EBB1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */; };
 		A3CB5A2A1D06C500000E9BB8 /* AddLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CB5A291D06C500000E9BB8 /* AddLocationTableViewController.swift */; };
+		C47A3E9FEF58C277BE0B3EB4 /* Pods_ToGoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5DB8DE954C1028FEEF68D /* Pods_ToGoList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1760762955E5EA4FCCF94460 /* Pods-ToGoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToGoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList.debug.xcconfig"; sourceTree = "<group>"; };
 		2E9888D21CFC339C00521030 /* LocationsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsData.swift; sourceTree = "<group>"; };
-		4255E24077F53FC612F441BC /* Pods-ToGoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToGoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList.release.xcconfig"; sourceTree = "<group>"; };
+		408E3FA59E27FB58F31B2FB8 /* Pods-ToGoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToGoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList.release.xcconfig"; sourceTree = "<group>"; };
 		43E3ED091CF303F000DAAB54 /* ToGoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToGoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E3ED0C1CF303F000DAAB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E3ED111CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E3ED131CF303F000DAAB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E3ED161CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E3ED181CF303F000DAAB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC5DB8DE954C1028FEEF68D /* Pods_ToGoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToGoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationDetailTableViewController.swift; sourceTree = "<group>"; };
 		6675DC531D0F1FFF00433548 /* LocationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListTableViewController.swift; sourceTree = "<group>"; };
 		6675DC551D0F227500433548 /* LocationListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListTableViewCell.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationTableViewController.swift; sourceTree = "<group>"; };
 		A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewController.swift; sourceTree = "<group>"; };
 		A3CB5A291D06C500000E9BB8 /* AddLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationTableViewController.swift; sourceTree = "<group>"; };
-		B1C6968FDA1FA7ED1549AD82 /* Pods_ToGoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToGoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB23C8C10E3842020AE45439 /* Pods-ToGoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToGoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,18 +50,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C7B6201D099AEA00E02847 /* MapKit.framework in Frameworks */,
-				2EF0ED398B06E7851D07BFA6 /* Pods_ToGoList.framework in Frameworks */,
+				C47A3E9FEF58C277BE0B3EB4 /* Pods_ToGoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24617388DBBECF7C48502E52 /* Pods */ = {
+		3051F83706587CE5CB3488E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1760762955E5EA4FCCF94460 /* Pods-ToGoList.debug.xcconfig */,
-				4255E24077F53FC612F441BC /* Pods-ToGoList.release.xcconfig */,
+				FB23C8C10E3842020AE45439 /* Pods-ToGoList.debug.xcconfig */,
+				408E3FA59E27FB58F31B2FB8 /* Pods-ToGoList.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -71,8 +71,8 @@
 			children = (
 				43E3ED0B1CF303F000DAAB54 /* ToGoList */,
 				43E3ED0A1CF303F000DAAB54 /* Products */,
-				24617388DBBECF7C48502E52 /* Pods */,
 				6478596AFA8E34E8EBB85512 /* Frameworks */,
+				3051F83706587CE5CB3488E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				66C7B61F1D099AEA00E02847 /* MapKit.framework */,
-				B1C6968FDA1FA7ED1549AD82 /* Pods_ToGoList.framework */,
+				4CC5DB8DE954C1028FEEF68D /* Pods_ToGoList.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +126,6 @@
 				43E3ED071CF303F000DAAB54 /* Resources */,
 				0D03FDD2CCC4BF24B925CA6E /* 📦 Embed Pods Frameworks */,
 				818E8244643706CFDC292F8A /* 📦 Copy Pods Resources */,
-				6B069A6376067DEC09B2F814 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,7 +148,7 @@
 				TargetAttributes = {
 					43E3ED081CF303F000DAAB54 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = ADPWP9D9KM;
+						DevelopmentTeam = CDG5NKXX5Y;
 					};
 				};
 			};
@@ -213,21 +212,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6B069A6376067DEC09B2F814 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		818E8244643706CFDC292F8A /* 📦 Copy Pods Resources */ = {
@@ -371,7 +355,7 @@
 		};
 		43E3ED1C1CF303F000DAAB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1760762955E5EA4FCCF94460 /* Pods-ToGoList.debug.xcconfig */;
+			baseConfigurationReference = FB23C8C10E3842020AE45439 /* Pods-ToGoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -386,7 +370,7 @@
 		};
 		43E3ED1D1CF303F000DAAB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4255E24077F53FC612F441BC /* Pods-ToGoList.release.xcconfig */;
+			baseConfigurationReference = 408E3FA59E27FB58F31B2FB8 /* Pods-ToGoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -6,24 +6,29 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
-- "applicationDidEnterBackground"
-- "window"
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
 - "application"
+- "applicationWillEnterForeground"
+- "window"
+- "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
 depends-top-level:
+- !private "GMSServices"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "NSObject"
 - "UIWindow"
 - "UIApplicationDelegate"
-- !private "BooleanLiteralType"
 - "Bool"
-- "AnyObject"
 - "UIApplication"
-- "NSObject"
-- "UIResponder"
 - "AppDelegate"
+- !private "LocationsSource"
+- "AnyObject"
+- !private "StringLiteralType"
 depends-member:
+- !private ["Ps9AnyObject", "GMSServices"]
+- !private ["Ps9AnyObject", "LocationsSource"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -37,10 +42,15 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "loadFromDB"]
+- !private ["Ps9AnyObject", "provideAPIKey"]
+- !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C8ToGoList11AppDelegate", "AnyObject"]
 - ["C8ToGoList11AppDelegate", "Bool"]
+- !private ["C8ToGoList11AppDelegate", "GMSServices"]
+- !private ["C8ToGoList11AppDelegate", "LocationsSource"]
 - ["C8ToGoList11AppDelegate", "NSObject"]
 - ["C8ToGoList11AppDelegate", "UIApplication"]
 - ["C8ToGoList11AppDelegate", "UIWindow"]
@@ -59,6 +69,8 @@ depends-member:
 - ["C8ToGoList11AppDelegate", "deinit"]
 - ["C8ToGoList11AppDelegate", "init"]
 - ["C8ToGoList11AppDelegate", "window"]
+- !private ["Ps11CVarArgType", "GMSServices"]
+- !private ["Ps11CVarArgType", "LocationsSource"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -72,8 +84,11 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "provideAPIKey"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "GMSServices"]
+- !private ["Ps28CustomDebugStringConvertible", "LocationsSource"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -87,8 +102,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "provideAPIKey"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "GMSServices"]
+- !private ["Ps23CustomStringConvertible", "LocationsSource"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -102,8 +120,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "provideAPIKey"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "GMSServices"]
+- !private ["Ps9Equatable", "LocationsSource"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -117,8 +138,12 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "provideAPIKey"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["CSo11GMSServices", "provideAPIKey"]
+- !private ["Ps8Hashable", "GMSServices"]
+- !private ["Ps8Hashable", "LocationsSource"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -132,10 +157,15 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "provideAPIKey"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["C8ToGoList15LocationsSource", "loadFromDB"]
+- !private ["C8ToGoList15LocationsSource", "sharedInstance"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "GMSServices"]
+- !private ["CSo8NSObject", "LocationsSource"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
@@ -152,7 +182,10 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "provideAPIKey"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "GMSServices"]
+- !private ["PSo16NSObjectProtocol", "LocationsSource"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -166,8 +199,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "provideAPIKey"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo21UIApplicationDelegate", "GMSServices"]
+- !private ["PSo21UIApplicationDelegate", "LocationsSource"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -184,6 +220,8 @@ depends-member:
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "GMSServices"]
+- !private ["CSo11UIResponder", "LocationsSource"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -209,7 +247,9 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "CSo11GMSServices"
 - "Ps8Hashable"
+- !private "C8ToGoList15LocationsSource"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo21UIApplicationDelegate"
@@ -224,12 +264,72 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/module.modulemap"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Bridging.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceTypes.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUserAddedPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesErrors.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesClient.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePickerConfig.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePicker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadata.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihoodList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteResultsViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompletePrediction.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFilter.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddressComponent.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Bridging.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/module.modulemap"
+interface-hash: "5f33eb569ad8bdcf2de0a628cb8e128f"

@@ -1,0 +1,652 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EditLocationTableViewController"
+provides-nominal:
+- "C8ToGoList31EditLocationTableViewController"
+provides-member:
+- ["C8ToGoList31EditLocationTableViewController", ""]
+provides-dynamic-lookup:
+- "nameTextField"
+- "viewDidLoad"
+- "viewWillDisappear"
+- "clickSvaeButton"
+- "addressTextField"
+- "typesTextField"
+- "phoneNumberTextField"
+- "linkTextField"
+depends-top-level:
+- "EditLocationTableViewController"
+- !private "UIAlertActionStyle"
+- !private "UIAlertAction"
+- "Bool"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "UITextField"
+- "UITableViewController"
+- "Location"
+- !private "UIAlertControllerStyle"
+- !private "LocationsSource"
+- !private "=="
+- !private "StringLiteralType"
+- !private "UIAlertController"
+depends-member:
+- !private ["Ps9AnyObject", "LocationsSource"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertActionStyle"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIAlertControllerStyle"]
+- !private ["Ps9AnyObject", "addAction"]
+- ["Ps9AnyObject", "addressTextField"]
+- ["Ps9AnyObject", "clickSvaeButton"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "insertLocationToList"]
+- ["Ps9AnyObject", "linkTextField"]
+- ["Ps9AnyObject", "nameTextField"]
+- ["Ps9AnyObject", "newLocation"]
+- ["Ps9AnyObject", "oldLocation"]
+- ["Ps9AnyObject", "phoneNumberTextField"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "typesTextField"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillDisappear"]
+- ["Ps9AnyObject", ""]
+- !private ["P6SQLite7Binding", "_getBuiltinLogicValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "LocationsSource"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertActionStyle"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UIAlertControllerStyle"]
+- !private ["Ps11CVarArgType", "addAction"]
+- ["Ps11CVarArgType", "addressTextField"]
+- ["Ps11CVarArgType", "clickSvaeButton"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "linkTextField"]
+- ["Ps11CVarArgType", "nameTextField"]
+- ["Ps11CVarArgType", "newLocation"]
+- ["Ps11CVarArgType", "oldLocation"]
+- ["Ps11CVarArgType", "phoneNumberTextField"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "typesTextField"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", "viewWillDisappear"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "LocationsSource"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- ["Ps28CustomDebugStringConvertible", "addressTextField"]
+- ["Ps28CustomDebugStringConvertible", "clickSvaeButton"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "linkTextField"]
+- ["Ps28CustomDebugStringConvertible", "nameTextField"]
+- ["Ps28CustomDebugStringConvertible", "newLocation"]
+- ["Ps28CustomDebugStringConvertible", "oldLocation"]
+- ["Ps28CustomDebugStringConvertible", "phoneNumberTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "typesTextField"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "LocationsSource"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- ["Ps23CustomStringConvertible", "addressTextField"]
+- ["Ps23CustomStringConvertible", "clickSvaeButton"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "linkTextField"]
+- ["Ps23CustomStringConvertible", "nameTextField"]
+- ["Ps23CustomStringConvertible", "newLocation"]
+- ["Ps23CustomStringConvertible", "oldLocation"]
+- ["Ps23CustomStringConvertible", "phoneNumberTextField"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "typesTextField"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillDisappear"]
+- ["Ps23CustomStringConvertible", ""]
+- ["C8ToGoList31EditLocationTableViewController", "AnyObject"]
+- ["C8ToGoList31EditLocationTableViewController", "Bool"]
+- ["C8ToGoList31EditLocationTableViewController", "Location"]
+- !private ["C8ToGoList31EditLocationTableViewController", "LocationsSource"]
+- !private ["C8ToGoList31EditLocationTableViewController", "UIAlertAction"]
+- !private ["C8ToGoList31EditLocationTableViewController", "UIAlertActionStyle"]
+- !private ["C8ToGoList31EditLocationTableViewController", "UIAlertController"]
+- !private ["C8ToGoList31EditLocationTableViewController", "UIAlertControllerStyle"]
+- ["C8ToGoList31EditLocationTableViewController", "UITextField"]
+- ["C8ToGoList31EditLocationTableViewController", "addressTextField"]
+- ["C8ToGoList31EditLocationTableViewController", "clickSvaeButton"]
+- ["C8ToGoList31EditLocationTableViewController", "deinit"]
+- ["C8ToGoList31EditLocationTableViewController", "init"]
+- ["C8ToGoList31EditLocationTableViewController", "linkTextField"]
+- ["C8ToGoList31EditLocationTableViewController", "nameTextField"]
+- ["C8ToGoList31EditLocationTableViewController", "newLocation"]
+- ["C8ToGoList31EditLocationTableViewController", "oldLocation"]
+- ["C8ToGoList31EditLocationTableViewController", "phoneNumberTextField"]
+- !private ["C8ToGoList31EditLocationTableViewController", "presentViewController"]
+- ["C8ToGoList31EditLocationTableViewController", "typesTextField"]
+- ["C8ToGoList31EditLocationTableViewController", "viewDidLoad"]
+- ["C8ToGoList31EditLocationTableViewController", "viewWillDisappear"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "LocationsSource"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertActionStyle"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIAlertControllerStyle"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- ["Ps9Equatable", "addressTextField"]
+- ["Ps9Equatable", "clickSvaeButton"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "linkTextField"]
+- ["Ps9Equatable", "nameTextField"]
+- ["Ps9Equatable", "newLocation"]
+- ["Ps9Equatable", "oldLocation"]
+- ["Ps9Equatable", "phoneNumberTextField"]
+- !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "typesTextField"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillDisappear"]
+- ["Ps9Equatable", ""]
+- !private ["P6SQLite11Expressible", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "Alert"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "LocationsSource"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertActionStyle"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIAlertControllerStyle"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- ["Ps8Hashable", "addressTextField"]
+- ["Ps8Hashable", "clickSvaeButton"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "linkTextField"]
+- ["Ps8Hashable", "nameTextField"]
+- ["Ps8Hashable", "newLocation"]
+- ["Ps8Hashable", "oldLocation"]
+- ["Ps8Hashable", "phoneNumberTextField"]
+- !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "typesTextField"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillDisappear"]
+- ["Ps8Hashable", ""]
+- !private ["V8ToGoList8Location", "address"]
+- !private ["V8ToGoList8Location", "name"]
+- !private ["V8ToGoList8Location", "phoneNumber"]
+- !private ["V8ToGoList8Location", "tagsToStr"]
+- !private ["V8ToGoList8Location", "url"]
+- !private ["C8ToGoList15LocationsSource", "insertLocationToList"]
+- !private ["C8ToGoList15LocationsSource", "sharedInstance"]
+- !private ["PSo8NSCoding", "LocationsSource"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertActionStyle"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
+- !private ["PSo8NSCoding", "addAction"]
+- ["PSo8NSCoding", "addressTextField"]
+- ["PSo8NSCoding", "clickSvaeButton"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "linkTextField"]
+- ["PSo8NSCoding", "nameTextField"]
+- ["PSo8NSCoding", "newLocation"]
+- ["PSo8NSCoding", "oldLocation"]
+- ["PSo8NSCoding", "phoneNumberTextField"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "typesTextField"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillDisappear"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "LocationsSource"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "addressTextField"]
+- ["PSo26NSExtensionRequestHandling", "clickSvaeButton"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "linkTextField"]
+- ["PSo26NSExtensionRequestHandling", "nameTextField"]
+- ["PSo26NSExtensionRequestHandling", "newLocation"]
+- ["PSo26NSExtensionRequestHandling", "oldLocation"]
+- ["PSo26NSExtensionRequestHandling", "phoneNumberTextField"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "typesTextField"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Location"]
+- !private ["CSo8NSObject", "LocationsSource"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIAlertControllerStyle"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "addAction"]
+- ["CSo8NSObject", "addressTextField"]
+- ["CSo8NSObject", "clickSvaeButton"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "linkTextField"]
+- ["CSo8NSObject", "nameTextField"]
+- ["CSo8NSObject", "newLocation"]
+- ["CSo8NSObject", "oldLocation"]
+- ["CSo8NSObject", "phoneNumberTextField"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "typesTextField"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillDisappear"]
+- !private ["PSo16NSObjectProtocol", "LocationsSource"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- ["PSo16NSObjectProtocol", "addressTextField"]
+- ["PSo16NSObjectProtocol", "clickSvaeButton"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "linkTextField"]
+- ["PSo16NSObjectProtocol", "nameTextField"]
+- ["PSo16NSObjectProtocol", "newLocation"]
+- ["PSo16NSObjectProtocol", "oldLocation"]
+- ["PSo16NSObjectProtocol", "phoneNumberTextField"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "typesTextField"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillDisappear"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "LocationsSource"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- ["PSo21UIAppearanceContainer", "addressTextField"]
+- ["PSo21UIAppearanceContainer", "clickSvaeButton"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "linkTextField"]
+- ["PSo21UIAppearanceContainer", "nameTextField"]
+- ["PSo21UIAppearanceContainer", "newLocation"]
+- ["PSo21UIAppearanceContainer", "oldLocation"]
+- ["PSo21UIAppearanceContainer", "phoneNumberTextField"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "typesTextField"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillDisappear"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "LocationsSource"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "addressTextField"]
+- ["PSo18UIContentContainer", "clickSvaeButton"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "linkTextField"]
+- ["PSo18UIContentContainer", "nameTextField"]
+- ["PSo18UIContentContainer", "newLocation"]
+- ["PSo18UIContentContainer", "oldLocation"]
+- ["PSo18UIContentContainer", "phoneNumberTextField"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "typesTextField"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillDisappear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "LocationsSource"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- ["PSo18UIFocusEnvironment", "addressTextField"]
+- ["PSo18UIFocusEnvironment", "clickSvaeButton"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "linkTextField"]
+- ["PSo18UIFocusEnvironment", "nameTextField"]
+- ["PSo18UIFocusEnvironment", "newLocation"]
+- ["PSo18UIFocusEnvironment", "oldLocation"]
+- ["PSo18UIFocusEnvironment", "phoneNumberTextField"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "typesTextField"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "Location"]
+- !private ["CSo11UIResponder", "LocationsSource"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertActionStyle"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
+- ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "addressTextField"]
+- ["CSo11UIResponder", "clickSvaeButton"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "linkTextField"]
+- ["CSo11UIResponder", "nameTextField"]
+- ["CSo11UIResponder", "newLocation"]
+- ["CSo11UIResponder", "oldLocation"]
+- ["CSo11UIResponder", "phoneNumberTextField"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "typesTextField"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillDisappear"]
+- !private ["PSo20UIScrollViewDelegate", "LocationsSource"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertActionStyle"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertControllerStyle"]
+- ["PSo20UIScrollViewDelegate", "addressTextField"]
+- ["PSo20UIScrollViewDelegate", "clickSvaeButton"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- ["PSo20UIScrollViewDelegate", "linkTextField"]
+- ["PSo20UIScrollViewDelegate", "nameTextField"]
+- ["PSo20UIScrollViewDelegate", "newLocation"]
+- ["PSo20UIScrollViewDelegate", "oldLocation"]
+- ["PSo20UIScrollViewDelegate", "phoneNumberTextField"]
+- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
+- ["PSo20UIScrollViewDelegate", "typesTextField"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", "viewWillDisappear"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "LocationsSource"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "addressTextField"]
+- ["PSo16UIStateRestoring", "clickSvaeButton"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "linkTextField"]
+- ["PSo16UIStateRestoring", "nameTextField"]
+- ["PSo16UIStateRestoring", "newLocation"]
+- ["PSo16UIStateRestoring", "oldLocation"]
+- ["PSo16UIStateRestoring", "phoneNumberTextField"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "typesTextField"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillDisappear"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo21UITableViewController", "AnyObject"]
+- ["CSo21UITableViewController", "Bool"]
+- ["CSo21UITableViewController", "Location"]
+- !private ["CSo21UITableViewController", "LocationsSource"]
+- !private ["CSo21UITableViewController", "UIAlertAction"]
+- !private ["CSo21UITableViewController", "UIAlertActionStyle"]
+- !private ["CSo21UITableViewController", "UIAlertController"]
+- !private ["CSo21UITableViewController", "UIAlertControllerStyle"]
+- ["CSo21UITableViewController", "UITextField"]
+- ["CSo21UITableViewController", "addressTextField"]
+- ["CSo21UITableViewController", "clickSvaeButton"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "linkTextField"]
+- ["CSo21UITableViewController", "nameTextField"]
+- ["CSo21UITableViewController", "newLocation"]
+- ["CSo21UITableViewController", "oldLocation"]
+- ["CSo21UITableViewController", "phoneNumberTextField"]
+- !private ["CSo21UITableViewController", "presentViewController"]
+- ["CSo21UITableViewController", "typesTextField"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillDisappear"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "LocationsSource"]
+- !private ["PSo21UITableViewDataSource", "UIAlertAction"]
+- !private ["PSo21UITableViewDataSource", "UIAlertActionStyle"]
+- !private ["PSo21UITableViewDataSource", "UIAlertController"]
+- !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
+- ["PSo21UITableViewDataSource", "addressTextField"]
+- ["PSo21UITableViewDataSource", "clickSvaeButton"]
+- ["PSo21UITableViewDataSource", "init"]
+- ["PSo21UITableViewDataSource", "linkTextField"]
+- ["PSo21UITableViewDataSource", "nameTextField"]
+- ["PSo21UITableViewDataSource", "newLocation"]
+- ["PSo21UITableViewDataSource", "oldLocation"]
+- ["PSo21UITableViewDataSource", "phoneNumberTextField"]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
+- ["PSo21UITableViewDataSource", "typesTextField"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", "viewWillDisappear"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "LocationsSource"]
+- !private ["PSo19UITableViewDelegate", "UIAlertAction"]
+- !private ["PSo19UITableViewDelegate", "UIAlertActionStyle"]
+- !private ["PSo19UITableViewDelegate", "UIAlertController"]
+- !private ["PSo19UITableViewDelegate", "UIAlertControllerStyle"]
+- ["PSo19UITableViewDelegate", "addressTextField"]
+- ["PSo19UITableViewDelegate", "clickSvaeButton"]
+- ["PSo19UITableViewDelegate", "init"]
+- ["PSo19UITableViewDelegate", "linkTextField"]
+- ["PSo19UITableViewDelegate", "nameTextField"]
+- ["PSo19UITableViewDelegate", "newLocation"]
+- ["PSo19UITableViewDelegate", "oldLocation"]
+- ["PSo19UITableViewDelegate", "phoneNumberTextField"]
+- !private ["PSo19UITableViewDelegate", "presentViewController"]
+- ["PSo19UITableViewDelegate", "typesTextField"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", "viewWillDisappear"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "LocationsSource"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- ["PSo18UITraitEnvironment", "addressTextField"]
+- ["PSo18UITraitEnvironment", "clickSvaeButton"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "linkTextField"]
+- ["PSo18UITraitEnvironment", "nameTextField"]
+- ["PSo18UITraitEnvironment", "newLocation"]
+- ["PSo18UITraitEnvironment", "oldLocation"]
+- ["PSo18UITraitEnvironment", "phoneNumberTextField"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "typesTextField"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillDisappear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "Location"]
+- !private ["CSo16UIViewController", "LocationsSource"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertActionStyle"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIAlertControllerStyle"]
+- ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "addressTextField"]
+- ["CSo16UIViewController", "clickSvaeButton"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "linkTextField"]
+- ["CSo16UIViewController", "nameTextField"]
+- ["CSo16UIViewController", "newLocation"]
+- ["CSo16UIViewController", "oldLocation"]
+- ["CSo16UIViewController", "phoneNumberTextField"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "typesTextField"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillDisappear"]
+- !private ["P6SQLite5Value", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "text"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "P6SQLite7Binding"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C8ToGoList31EditLocationTableViewController"
+- "Ps9Equatable"
+- !private "P6SQLite11Expressible"
+- "Ps8Hashable"
+- !private "V8ToGoList8Location"
+- !private "C8ToGoList15LocationsSource"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "P6SQLite5Value"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceTypes.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUserAddedPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesErrors.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesClient.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePickerConfig.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePicker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadata.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihoodList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteResultsViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompletePrediction.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFilter.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddressComponent.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/SQLite.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/include/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite-Bridging.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
+interface-hash: "e65ec258682ee58be66b9fe5044f0087"

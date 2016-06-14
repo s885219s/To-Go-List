@@ -22,10 +22,10 @@ struct Location{
     var phoneNumber: String = ""
     var imagePath: String = ""
     
-    init(_name: String, _tags: String?, _url: String?, _address: String?, _lati: Double, _long: Double , _visited: Int, _phoneNumber: String?, _imagePath: String?){
+    init(_name: String, _tags: String?, _url: String?, _address: String?, _lati: Double, _long: Double , _visited: Bool, _phoneNumber: String?, _imagePath: String?){
         self.name = _name
         if _tags != nil {
-            self.tags = _tags!.componentsSeparatedByString(",")
+            self.tags = _tags!.componentsSeparatedByString(" ")
         } else {
             self.tags = []
         }
@@ -42,7 +42,7 @@ struct Location{
         //紹瑾改的
 //        self.forwardGeocoding(self.address)
         
-        self.visited = Bool(_visited)
+        self.visited = _visited
         if _phoneNumber != nil{
             self.phoneNumber = _phoneNumber!
         }
@@ -53,7 +53,7 @@ struct Location{
     
     func tagsToStr() -> String {
         if tags != []{
-            return self.tags.joinWithSeparator(",")
+            return self.tags.joinWithSeparator(" ")
         } else {
             return ""
         }
@@ -136,7 +136,7 @@ class LocationsSource{
                                  _address: l[LocationTable.address],
                                  _lati: l[LocationTable.lati],
                                  _long: l[LocationTable.long],
-                                 _visited: l[LocationTable.visited],
+                                 _visited: Bool(l[LocationTable.visited]),
                                  _phoneNumber: l[LocationTable.phoneNumber],
                                  _imagePath: l[LocationTable.imagePath])
                 _list.append(l)
