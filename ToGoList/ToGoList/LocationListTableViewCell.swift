@@ -10,10 +10,10 @@ import UIKit
 
 class LocationListTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var locationTypeImage: UIImageView!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationAddressLabel: UILabel!
     @IBOutlet weak var locationPhoneNumberLabel: UILabel!
+    @IBOutlet weak var locationTypeImage: UIImageView!
     
 
     override func awakeFromNib() {
