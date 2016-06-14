@@ -9,24 +9,63 @@
 import UIKit
 
 class LocationDetailTableViewController: UITableViewController {
-    var location:Location?
-
+    var locationVisited = 0
     @IBOutlet weak var LocationPhoto: UIImageView!
     @IBOutlet weak var LocationName: UILabel!
-    @IBOutlet weak var LocaitonTypes: UILabel!
     @IBOutlet weak var LocationPhone: UILabel!
     @IBOutlet weak var LocationAddress: UILabel!
+    @IBOutlet weak var LocationTypes: UILabel!
     @IBOutlet weak var LocationWebsite: UILabel!
-    @IBOutlet weak var LocationBeenHere: UIButton!
+    @IBOutlet weak var LocationVisitButton: UIButton!
+    
+    var location: Location? {
+        didSet(newLocation) {
+            if self.isViewLoaded(){
+                self.fillData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.fillData()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+    }
+    @IBAction func LocationVisited(sender: AnyObject) {
+        if locationVisited == 0 {
+            //            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
+            LocationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+            print("set locationVisited true")
+            locationVisited = 1
+        } else {
+            //            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
+            LocationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+            print("set locationVisited false")
+            locationVisited = 0
+        }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
         
+    func fillData(){
+        guard let location = self.location else{
+            return
+        }
+        //self.LocationName.text = UIImage(named: locaiton.imageName)
+        if(location.name != ""){
+            self.LocationName.text = location.name
+        }
+        if(location.tags.joinWithSeparator(" ") != ""){
+            self.LocationTypes.text = location.tags.joinWithSeparator(" ")
+        }
+        if(location.phoneNumber != ""){
+            self.LocationPhone.text = location.phoneNumber
+        }
+        if(location.address != ""){
+            self.LocationAddress.text = location.address
+        }
+        if(location.url != ""){
+            self.LocationWebsite.text = location.url
+        }
+        //self.LocationBeenHere = locaiton.visited
     }
 
     override func didReceiveMemoryWarning() {

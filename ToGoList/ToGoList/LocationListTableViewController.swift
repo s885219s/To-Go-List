@@ -57,6 +57,18 @@ class LocationListTableViewController: UITableViewController {
 
         return cell
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ListShowDetail" {
+            let cell = sender as! UITableViewCell
+            let indexPath = self.tableView.indexPathForCell(cell)!
+            let location = self.locations![indexPath.row]
+            
+            let detailViewController = segue.destinationViewController as! LocationDetailTableViewController
+            detailViewController.location = location
+            
+        }
+    }
+
     
 
     /*
