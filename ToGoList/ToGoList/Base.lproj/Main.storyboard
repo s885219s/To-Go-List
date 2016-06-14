@@ -951,9 +951,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYo-bN-v5E">
                                                     <rect key="frame" x="154" y="21" width="66" height="57"/>
                                                     <state key="normal" image="beenHere"/>
-                                                    <connections>
-                                                        <action selector="LocationVisited:" destination="BN7-87-TGg" eventType="touchUpInside" id="bfr-t7-sFo"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>

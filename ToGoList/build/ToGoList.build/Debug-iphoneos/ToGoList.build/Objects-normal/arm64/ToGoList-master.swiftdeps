@@ -1,13 +1,13 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "a3701b01b6980db766586a61136bd7a9"
-build_time: [519209872, 434031000]
+build_time: [519211454, 526506000]
 inputs:
   "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/EditLocationTableViewController.swift": [519198896, 0]
   "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/AppDelegate.swift": [519206074, 0]
-  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationListTableViewController.swift": [519202420, 0]
-  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationDetailTableViewController.swift": [519209866, 0]
-  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/AddLocationTableViewController.swift": [519200102, 0]
-  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationsData.swift": [519198896, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationListTableViewController.swift": [519210382, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationDetailTableViewController.swift": [519211447, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/AddLocationTableViewController.swift": [519210382, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationsData.swift": [519210382, 0]
   "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/MapLocationDetailTableViewController.swift": [519198896, 0]
   "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/MapViewController.swift": [519198896, 0]
   "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/ToGoList/LocationListTableViewCell.swift": [519198896, 0]

@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList31EditLocationTableViewController", ""]
 provides-dynamic-lookup:
-- "addressTextField"
 - "nameTextField"
 - "viewDidLoad"
+- "viewWillDisappear"
 - "clickSvaeButton"
+- "addressTextField"
+- "typesTextField"
 - "phoneNumberTextField"
 - "linkTextField"
-- "viewWillDisappear"
-- "typesTextField"
 depends-top-level:
-- "UITableViewController"
-- !private "BooleanLiteralType"
-- !private "LocationsSource"
-- !private "=="
-- "UITextField"
-- !private "StringLiteralType"
-- "AnyObject"
-- !private "UIAlertAction"
 - "EditLocationTableViewController"
 - !private "UIAlertActionStyle"
+- !private "UIAlertAction"
 - "Bool"
-- !private "UIAlertController"
-- !private "UIAlertControllerStyle"
+- "AnyObject"
+- !private "BooleanLiteralType"
+- "UITextField"
+- "UITableViewController"
 - "Location"
+- !private "UIAlertControllerStyle"
+- !private "LocationsSource"
+- !private "=="
+- !private "StringLiteralType"
+- !private "UIAlertController"
 depends-member:
 - !private ["Ps9AnyObject", "LocationsSource"]
 - !private ["Ps9AnyObject", "UIAlertAction"]

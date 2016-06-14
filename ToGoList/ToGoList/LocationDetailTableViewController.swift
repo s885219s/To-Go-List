@@ -30,21 +30,7 @@ class LocationDetailTableViewController: UITableViewController {
         self.fillData()
 
     }
-    @IBAction func LocationVisited(sender: AnyObject) {
-        if locationVisited == 0 {
-            //            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
-            LocationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
-            print("set locationVisited true")
-            locationVisited = 1
-        } else {
-            //            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
-            LocationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
-            print("set locationVisited false")
-            locationVisited = 0
-        }
-
-    }
-        
+    
     func fillData(){
         guard let location = self.location else{
             return
@@ -65,7 +51,12 @@ class LocationDetailTableViewController: UITableViewController {
         if(location.url != ""){
             self.LocationWebsite.text = location.url
         }
-        //self.LocationBeenHere = locaiton.visited
+        if(location.visited == true){
+            LocationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+        }
+        else{
+            LocationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

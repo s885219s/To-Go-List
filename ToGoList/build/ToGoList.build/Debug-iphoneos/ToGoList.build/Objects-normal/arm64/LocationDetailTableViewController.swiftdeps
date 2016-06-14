@@ -6,32 +6,30 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList33LocationDetailTableViewController", ""]
 provides-dynamic-lookup:
-- "LocationName"
-- "LocationVisitButton"
-- "LocationAddress"
-- "LocationWebsite"
-- "viewDidLoad"
-- "LocationPhoto"
-- "LocationVisited"
 - "fillData"
-- "didReceiveMemoryWarning"
+- "LocationWebsite"
 - "locationVisited"
-- "LocationPhone"
+- "LocationPhoto"
 - "LocationTypes"
+- "viewDidLoad"
+- "LocationPhone"
+- "LocationVisitButton"
+- "didReceiveMemoryWarning"
+- "LocationName"
+- "LocationAddress"
 depends-top-level:
 - "UILabel"
-- "Location"
 - !private "=="
-- !private "UnicodeScalarType"
 - !private "!="
+- "UITableViewController"
 - !private "StringLiteralType"
-- "AnyObject"
 - "LocationDetailTableViewController"
 - !private "UIImage"
+- "Location"
 - "UIButton"
-- "UITableViewController"
+- !private "BooleanLiteralType"
+- !private "UnicodeScalarType"
 - "UIImageView"
-- !private "print"
 depends-member:
 - ["Ps9AnyObject", "LocationAddress"]
 - ["Ps9AnyObject", "LocationName"]
@@ -39,7 +37,6 @@ depends-member:
 - ["Ps9AnyObject", "LocationPhoto"]
 - ["Ps9AnyObject", "LocationTypes"]
 - ["Ps9AnyObject", "LocationVisitButton"]
-- ["Ps9AnyObject", "LocationVisited"]
 - ["Ps9AnyObject", "LocationWebsite"]
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -48,7 +45,6 @@ depends-member:
 - !private ["Ps9AnyObject", "isViewLoaded"]
 - ["Ps9AnyObject", "location"]
 - ["Ps9AnyObject", "locationVisited"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -80,7 +76,6 @@ depends-member:
 - ["Ps11CVarArgType", "LocationPhoto"]
 - ["Ps11CVarArgType", "LocationTypes"]
 - ["Ps11CVarArgType", "LocationVisitButton"]
-- ["Ps11CVarArgType", "LocationVisited"]
 - ["Ps11CVarArgType", "LocationWebsite"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -89,7 +84,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "isViewLoaded"]
 - ["Ps11CVarArgType", "location"]
 - ["Ps11CVarArgType", "locationVisited"]
-- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "setImage"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "viewDidLoad"]
@@ -108,7 +102,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "LocationPhoto"]
 - ["Ps28CustomDebugStringConvertible", "LocationTypes"]
 - ["Ps28CustomDebugStringConvertible", "LocationVisitButton"]
-- ["Ps28CustomDebugStringConvertible", "LocationVisited"]
 - ["Ps28CustomDebugStringConvertible", "LocationWebsite"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
@@ -120,7 +113,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "joinWithSeparator"]
 - ["Ps28CustomDebugStringConvertible", "location"]
 - ["Ps28CustomDebugStringConvertible", "locationVisited"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -135,7 +127,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "LocationPhoto"]
 - ["Ps23CustomStringConvertible", "LocationTypes"]
 - ["Ps23CustomStringConvertible", "LocationVisitButton"]
-- ["Ps23CustomStringConvertible", "LocationVisited"]
 - ["Ps23CustomStringConvertible", "LocationWebsite"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -147,7 +138,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "joinWithSeparator"]
 - ["Ps23CustomStringConvertible", "location"]
 - ["Ps23CustomStringConvertible", "locationVisited"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -160,7 +150,6 @@ depends-member:
 - ["Ps9Equatable", "LocationPhoto"]
 - ["Ps9Equatable", "LocationTypes"]
 - ["Ps9Equatable", "LocationVisitButton"]
-- ["Ps9Equatable", "LocationVisited"]
 - ["Ps9Equatable", "LocationWebsite"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "UIImage"]
@@ -171,7 +160,6 @@ depends-member:
 - !private ["Ps9Equatable", "isViewLoaded"]
 - ["Ps9Equatable", "location"]
 - ["Ps9Equatable", "locationVisited"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -190,7 +178,6 @@ depends-member:
 - ["Ps8Hashable", "LocationPhoto"]
 - ["Ps8Hashable", "LocationTypes"]
 - ["Ps8Hashable", "LocationVisitButton"]
-- ["Ps8Hashable", "LocationVisited"]
 - ["Ps8Hashable", "LocationWebsite"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -200,7 +187,6 @@ depends-member:
 - !private ["Ps8Hashable", "isViewLoaded"]
 - ["Ps8Hashable", "location"]
 - ["Ps8Hashable", "locationVisited"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -223,7 +209,7 @@ depends-member:
 - !private ["V8ToGoList8Location", "phoneNumber"]
 - !private ["V8ToGoList8Location", "tags"]
 - !private ["V8ToGoList8Location", "url"]
-- ["C8ToGoList33LocationDetailTableViewController", "AnyObject"]
+- !private ["V8ToGoList8Location", "visited"]
 - ["C8ToGoList33LocationDetailTableViewController", "Location"]
 - ["C8ToGoList33LocationDetailTableViewController", "LocationAddress"]
 - ["C8ToGoList33LocationDetailTableViewController", "LocationName"]
@@ -231,7 +217,6 @@ depends-member:
 - ["C8ToGoList33LocationDetailTableViewController", "LocationPhoto"]
 - ["C8ToGoList33LocationDetailTableViewController", "LocationTypes"]
 - ["C8ToGoList33LocationDetailTableViewController", "LocationVisitButton"]
-- ["C8ToGoList33LocationDetailTableViewController", "LocationVisited"]
 - ["C8ToGoList33LocationDetailTableViewController", "LocationWebsite"]
 - ["C8ToGoList33LocationDetailTableViewController", "UIButton"]
 - !private ["C8ToGoList33LocationDetailTableViewController", "UIImage"]
@@ -244,7 +229,6 @@ depends-member:
 - !private ["C8ToGoList33LocationDetailTableViewController", "isViewLoaded"]
 - ["C8ToGoList33LocationDetailTableViewController", "location"]
 - ["C8ToGoList33LocationDetailTableViewController", "locationVisited"]
-- !private ["C8ToGoList33LocationDetailTableViewController", "print"]
 - ["C8ToGoList33LocationDetailTableViewController", "viewDidLoad"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
@@ -266,7 +250,6 @@ depends-member:
 - ["PSo8NSCoding", "LocationPhoto"]
 - ["PSo8NSCoding", "LocationTypes"]
 - ["PSo8NSCoding", "LocationVisitButton"]
-- ["PSo8NSCoding", "LocationVisited"]
 - ["PSo8NSCoding", "LocationWebsite"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -275,7 +258,6 @@ depends-member:
 - !private ["PSo8NSCoding", "isViewLoaded"]
 - ["PSo8NSCoding", "location"]
 - ["PSo8NSCoding", "locationVisited"]
-- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -286,7 +268,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "LocationPhoto"]
 - ["PSo26NSExtensionRequestHandling", "LocationTypes"]
 - ["PSo26NSExtensionRequestHandling", "LocationVisitButton"]
-- ["PSo26NSExtensionRequestHandling", "LocationVisited"]
 - ["PSo26NSExtensionRequestHandling", "LocationWebsite"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -295,10 +276,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "isViewLoaded"]
 - ["PSo26NSExtensionRequestHandling", "location"]
 - ["PSo26NSExtensionRequestHandling", "locationVisited"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Location"]
 - ["CSo8NSObject", "LocationAddress"]
 - ["CSo8NSObject", "LocationName"]
@@ -306,7 +285,6 @@ depends-member:
 - ["CSo8NSObject", "LocationPhoto"]
 - ["CSo8NSObject", "LocationTypes"]
 - ["CSo8NSObject", "LocationVisitButton"]
-- ["CSo8NSObject", "LocationVisited"]
 - ["CSo8NSObject", "LocationWebsite"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIImage"]
@@ -318,7 +296,6 @@ depends-member:
 - !private ["CSo8NSObject", "isViewLoaded"]
 - ["CSo8NSObject", "location"]
 - ["CSo8NSObject", "locationVisited"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -328,7 +305,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "LocationPhoto"]
 - ["PSo16NSObjectProtocol", "LocationTypes"]
 - ["PSo16NSObjectProtocol", "LocationVisitButton"]
-- ["PSo16NSObjectProtocol", "LocationVisited"]
 - ["PSo16NSObjectProtocol", "LocationWebsite"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -337,7 +313,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isViewLoaded"]
 - ["PSo16NSObjectProtocol", "location"]
 - ["PSo16NSObjectProtocol", "locationVisited"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -380,7 +355,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "LocationPhoto"]
 - ["PSo21UIAppearanceContainer", "LocationTypes"]
 - ["PSo21UIAppearanceContainer", "LocationVisitButton"]
-- ["PSo21UIAppearanceContainer", "LocationVisited"]
 - ["PSo21UIAppearanceContainer", "LocationWebsite"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -389,7 +363,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "isViewLoaded"]
 - ["PSo21UIAppearanceContainer", "location"]
 - ["PSo21UIAppearanceContainer", "locationVisited"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -401,7 +374,6 @@ depends-member:
 - ["PSo18UIContentContainer", "LocationPhoto"]
 - ["PSo18UIContentContainer", "LocationTypes"]
 - ["PSo18UIContentContainer", "LocationVisitButton"]
-- ["PSo18UIContentContainer", "LocationVisited"]
 - ["PSo18UIContentContainer", "LocationWebsite"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -410,7 +382,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "isViewLoaded"]
 - ["PSo18UIContentContainer", "location"]
 - ["PSo18UIContentContainer", "locationVisited"]
-- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "setImage"]
@@ -425,7 +396,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "LocationPhoto"]
 - ["PSo18UIFocusEnvironment", "LocationTypes"]
 - ["PSo18UIFocusEnvironment", "LocationVisitButton"]
-- ["PSo18UIFocusEnvironment", "LocationVisited"]
 - ["PSo18UIFocusEnvironment", "LocationWebsite"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -434,14 +404,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "isViewLoaded"]
 - ["PSo18UIFocusEnvironment", "location"]
 - ["PSo18UIFocusEnvironment", "locationVisited"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UILabel", "text"]
-- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Location"]
 - ["CSo11UIResponder", "LocationAddress"]
 - ["CSo11UIResponder", "LocationName"]
@@ -449,7 +417,6 @@ depends-member:
 - ["CSo11UIResponder", "LocationPhoto"]
 - ["CSo11UIResponder", "LocationTypes"]
 - ["CSo11UIResponder", "LocationVisitButton"]
-- ["CSo11UIResponder", "LocationVisited"]
 - ["CSo11UIResponder", "LocationWebsite"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIImage"]
@@ -461,7 +428,6 @@ depends-member:
 - !private ["CSo11UIResponder", "isViewLoaded"]
 - ["CSo11UIResponder", "location"]
 - ["CSo11UIResponder", "locationVisited"]
-- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -471,7 +437,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "LocationPhoto"]
 - ["PSo20UIScrollViewDelegate", "LocationTypes"]
 - ["PSo20UIScrollViewDelegate", "LocationVisitButton"]
-- ["PSo20UIScrollViewDelegate", "LocationVisited"]
 - ["PSo20UIScrollViewDelegate", "LocationWebsite"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
@@ -480,7 +445,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "isViewLoaded"]
 - ["PSo20UIScrollViewDelegate", "location"]
 - ["PSo20UIScrollViewDelegate", "locationVisited"]
-- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "LocationAddress"]
@@ -489,7 +453,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "LocationPhoto"]
 - ["PSo16UIStateRestoring", "LocationTypes"]
 - ["PSo16UIStateRestoring", "LocationVisitButton"]
-- ["PSo16UIStateRestoring", "LocationVisited"]
 - ["PSo16UIStateRestoring", "LocationWebsite"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -498,10 +461,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "isViewLoaded"]
 - ["PSo16UIStateRestoring", "location"]
 - ["PSo16UIStateRestoring", "locationVisited"]
-- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- ["CSo21UITableViewController", "AnyObject"]
 - ["CSo21UITableViewController", "Location"]
 - ["CSo21UITableViewController", "LocationAddress"]
 - ["CSo21UITableViewController", "LocationName"]
@@ -509,7 +470,6 @@ depends-member:
 - ["CSo21UITableViewController", "LocationPhoto"]
 - ["CSo21UITableViewController", "LocationTypes"]
 - ["CSo21UITableViewController", "LocationVisitButton"]
-- ["CSo21UITableViewController", "LocationVisited"]
 - ["CSo21UITableViewController", "LocationWebsite"]
 - ["CSo21UITableViewController", "UIButton"]
 - !private ["CSo21UITableViewController", "UIImage"]
@@ -521,7 +481,6 @@ depends-member:
 - !private ["CSo21UITableViewController", "isViewLoaded"]
 - ["CSo21UITableViewController", "location"]
 - ["CSo21UITableViewController", "locationVisited"]
-- !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
 - ["PSo21UITableViewDataSource", "LocationAddress"]
@@ -530,7 +489,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "LocationPhoto"]
 - ["PSo21UITableViewDataSource", "LocationTypes"]
 - ["PSo21UITableViewDataSource", "LocationVisitButton"]
-- ["PSo21UITableViewDataSource", "LocationVisited"]
 - ["PSo21UITableViewDataSource", "LocationWebsite"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
@@ -539,7 +497,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "isViewLoaded"]
 - ["PSo21UITableViewDataSource", "location"]
 - ["PSo21UITableViewDataSource", "locationVisited"]
-- !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
 - ["PSo19UITableViewDelegate", "LocationAddress"]
@@ -548,7 +505,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "LocationPhoto"]
 - ["PSo19UITableViewDelegate", "LocationTypes"]
 - ["PSo19UITableViewDelegate", "LocationVisitButton"]
-- ["PSo19UITableViewDelegate", "LocationVisited"]
 - ["PSo19UITableViewDelegate", "LocationWebsite"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
@@ -557,7 +513,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "isViewLoaded"]
 - ["PSo19UITableViewDelegate", "location"]
 - ["PSo19UITableViewDelegate", "locationVisited"]
-- !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
 - ["PSo18UITraitEnvironment", "LocationAddress"]
@@ -566,7 +521,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "LocationPhoto"]
 - ["PSo18UITraitEnvironment", "LocationTypes"]
 - ["PSo18UITraitEnvironment", "LocationVisitButton"]
-- ["PSo18UITraitEnvironment", "LocationVisited"]
 - ["PSo18UITraitEnvironment", "LocationWebsite"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -575,14 +529,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "isViewLoaded"]
 - ["PSo18UITraitEnvironment", "location"]
 - ["PSo18UITraitEnvironment", "locationVisited"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
-- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Location"]
 - ["CSo16UIViewController", "LocationAddress"]
 - ["CSo16UIViewController", "LocationName"]
@@ -590,7 +542,6 @@ depends-member:
 - ["CSo16UIViewController", "LocationPhoto"]
 - ["CSo16UIViewController", "LocationTypes"]
 - ["CSo16UIViewController", "LocationVisitButton"]
-- ["CSo16UIViewController", "LocationVisited"]
 - ["CSo16UIViewController", "LocationWebsite"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIImage"]
@@ -602,7 +553,6 @@ depends-member:
 - !private ["CSo16UIViewController", "isViewLoaded"]
 - ["CSo16UIViewController", "location"]
 - ["CSo16UIViewController", "locationVisited"]
-- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["P6SQLite5Value", "Distance"]
 - !private ["P6SQLite5Value", "IntegerLiteralType"]
@@ -812,4 +762,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "b3d589fdefe04502b19a7b373bdf10a6"
+interface-hash: "ab8ac1d765e374d28ac40c502eede6f4"

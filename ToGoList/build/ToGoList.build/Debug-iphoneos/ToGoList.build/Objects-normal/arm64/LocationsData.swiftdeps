@@ -13,34 +13,35 @@ provides-member:
 - ["C8ToGoList15LocationsSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- "CLLocationCoordinate2D"
-- !private "CLLocationCoordinate2DMake"
-- !private "<-"
-- !private "=="
-- "StringLiteralType"
-- "Int"
-- "LocationsSource"
 - "Connection"
-- "String"
+- !private "<-"
+- "BooleanLiteralType"
+- "Int"
+- !private "UnicodeScalarType"
+- !private "exit"
 - "Double"
+- "Table"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "NSString"
+- "Bool"
 - "Location"
 - !private "!="
-- !private "NSSearchPathForDirectoriesInDomains"
-- "Table"
-- !private "UnicodeScalarType"
-- "Bool"
-- !private "NSString"
-- !private "exit"
+- !private "CLLocationCoordinate2DMake"
+- !private "=="
+- "String"
+- "LocationsSource"
+- "Int64"
+- "Expression"
+- !private "print"
+- "StringLiteralType"
 - "LocationTable"
 - !private "Array"
-- "Expression"
-- "Int64"
-- "BooleanLiteralType"
+- "CLLocationCoordinate2D"
 depends-member:
 - ["Ps16AbsoluteValuable", "Datatype"]
 - ["Ps16AbsoluteValuable", "WrappedType"]
 - !private ["Vs12AnyGenerator", "Element"]
+- !private ["Ps9AnyObject", "Bool"]
 - !private ["Ps9AnyObject", "Connection"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "Location"]
@@ -283,7 +284,6 @@ depends-member:
 - ["V8ToGoList8Location", "CLLocationCoordinate2D"]
 - !private ["V8ToGoList8Location", "CLLocationCoordinate2DMake"]
 - ["V8ToGoList8Location", "Double"]
-- ["V8ToGoList8Location", "Int"]
 - ["V8ToGoList8Location", "String"]
 - ["V8ToGoList8Location", "address"]
 - ["V8ToGoList8Location", "coordinate"]
@@ -316,6 +316,7 @@ depends-member:
 - ["V8ToGoList13LocationTable", "tags"]
 - ["V8ToGoList13LocationTable", "url"]
 - ["V8ToGoList13LocationTable", "visited"]
+- !private ["C8ToGoList15LocationsSource", "Bool"]
 - ["C8ToGoList15LocationsSource", "Connection"]
 - !private ["C8ToGoList15LocationsSource", "Int"]
 - ["C8ToGoList15LocationsSource", "Location"]
@@ -812,4 +813,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "9ccc88146a72d0fa0660d4e0523aabb0"
+interface-hash: "66640bb13605f721184801d5a330388e"

@@ -6,88 +6,89 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList30AddLocationTableViewController", ""]
 provides-dynamic-lookup:
-- "imageFileLocation"
-- "getDocumentsDirectory"
 - "linkTextField"
-- "imageView"
-- "locationPhoneNumber"
-- "setCurrentCoordinateButton"
-- "viewDidLoad"
-- "phoneNumberTextField"
-- "reverseGeocoding"
-- "nameTextField"
+- "setCurrentCoordinate"
+- "locationType"
+- "locationVisitButton"
 - "didSetNewImage"
 - "locationManager"
-- "typesTextField"
-- "clickSaveButton"
-- "checkPlacePickerButton"
-- "locationType"
-- "locationAddress"
+- "phoneNumberTextField"
+- "reverseGeocoding"
 - "dismissKeyboard"
-- "locationVisited"
-- "locationVisited"
-- "locationVisitButton"
-- "checkSetCurrentLocation"
-- "setCurrentCoordinate"
-- "addressTextField"
-- "searchLocationInfoFromGoogleMap"
-- "locationLink"
-- "locationName"
-- "placePickerButton"
-- "tableView"
+- "forwardGeocoding"
+- "typesTextField"
 - "imagePickerController"
+- "placePickerButton"
+- "checkSetCurrentLocation"
+- "imageFileLocation"
+- "locationPhoneNumber"
+- "locationAddress"
+- "setCurrentCoordinateButton"
+- "locationName"
+- "tableView"
+- "getDocumentsDirectory"
+- "imageView"
+- "checkPlacePickerButton"
+- "addressTextField"
+- "locationVisited"
+- "locationVisited"
+- "clickSaveButton"
+- "locationLink"
+- "nameTextField"
+- "searchLocationInfoFromGoogleMap"
+- "viewDidLoad"
 depends-top-level:
-- !private "NSError"
-- "AddLocationTableViewController"
-- !private "CLLocation"
-- !private "UIImage"
-- !private "UIAlertControllerStyle"
-- "StringLiteralType"
-- !private "GMSPlacePicker"
-- !private "CLLocationCoordinate2DMake"
-- !private "ABCreateStringWithAddressDictionary"
-- "UITableViewController"
-- !private "UIAlertController"
-- "UIButton"
-- "UIImagePickerController"
-- !private "UIAlertActionStyle"
 - "UINavigationControllerDelegate"
-- "GMSMapViewDelegate"
-- "String"
-- !private "Location"
-- !private "UIAlertAction"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "UITableView"
-- !private "+"
-- "UIImagePickerControllerDelegate"
-- !private "CLGeocoder"
-- !private "!="
-- "NSString"
-- !private "GMSPlacePickerConfig"
-- "AnyObject"
 - "BooleanLiteralType"
-- "UIImageView"
-- "CLLocationDegrees"
-- !private "=="
-- "CLLocationManager"
+- !private "+"
+- !private "ABCreateStringWithAddressDictionary"
+- !private "CLGeocoder"
+- "NSIndexPath"
+- !private "GMSPlacePickerConfig"
+- "NSString"
+- !private "UIAlertController"
+- !private "!="
+- !private "Location"
+- !private "UIAlertControllerStyle"
+- !private "UIImage"
 - "UITextField"
-- !private "GMSCoordinateBounds"
-- !private "UIImagePNGRepresentation"
-- !private "LocationsSource"
-- !private "Void"
+- !private "||"
+- "CLLocationCoordinate2D"
+- !private "GMSPlacePicker"
+- !private "UIViewContentMode"
+- "StringLiteralType"
+- "UIImageView"
 - !private "UITapGestureRecognizer"
 - "UnicodeScalarType"
-- !private "||"
 - !private "-"
-- !private ">"
+- "UIButton"
+- !private "CLLocation"
+- "AnyObject"
+- !private "NSError"
 - !private "UIImagePickerControllerOriginalImage"
 - "Bool"
-- !private "print"
-- "NSIndexPath"
-- "CLLocationCoordinate2D"
-- !private "GMSPlace"
-- !private "UIViewContentMode"
 - "CLLocationManagerDelegate"
+- !private "GMSPlace"
+- !private ">"
+- !private "print"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "CLLocationCoordinate2DMake"
+- !private "UIImagePNGRepresentation"
+- "CLLocationManager"
+- "AddLocationTableViewController"
+- !private "GMSCoordinateBounds"
+- "CLLocationDegrees"
+- !private "UIAlertActionStyle"
+- !private "UIAlertAction"
+- "UIImagePickerController"
+- "UITableView"
+- "UIImagePickerControllerDelegate"
+- !private "Void"
+- "UITableViewController"
+- "GMSMapViewDelegate"
+- "String"
+- !private "=="
+- !private "LocationsSource"
 depends-member:
 - !private ["C8ToGoList30AddLocationTableViewController", "ABCreateStringWithAddressDictionary"]
 - ["C8ToGoList30AddLocationTableViewController", "AnyObject"]
@@ -133,6 +134,7 @@ depends-member:
 - ["C8ToGoList30AddLocationTableViewController", "didTapMyLocationButtonForMapView"]
 - ["C8ToGoList30AddLocationTableViewController", "dismissKeyboard"]
 - !private ["C8ToGoList30AddLocationTableViewController", "dismissViewControllerAnimated"]
+- ["C8ToGoList30AddLocationTableViewController", "forwardGeocoding"]
 - ["C8ToGoList30AddLocationTableViewController", "getDocumentsDirectory"]
 - ["C8ToGoList30AddLocationTableViewController", "imageFileLocation"]
 - ["C8ToGoList30AddLocationTableViewController", "imagePickerController"]
@@ -215,6 +217,8 @@ depends-member:
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - !private ["Ps9AnyObject", "endEditing"]
 - !private ["Ps9AnyObject", "formattedAddress"]
+- ["Ps9AnyObject", "forwardGeocoding"]
+- !private ["Ps9AnyObject", "geocodeAddressString"]
 - ["Ps9AnyObject", "getDocumentsDirectory"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageFileLocation"]
@@ -302,6 +306,7 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo10CLGeocoder", "geocodeAddressString"]
 - !private ["CSo10CLGeocoder", "init"]
 - !private ["CSo10CLGeocoder", "reverseGeocodeLocation"]
 - !private ["CSo10CLLocation", "coordinate"]
@@ -340,6 +345,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo25CLLocationManagerDelegate", "dismissKeyboard"]
 - !private ["PSo25CLLocationManagerDelegate", "dismissViewControllerAnimated"]
+- !private ["PSo25CLLocationManagerDelegate", "forwardGeocoding"]
 - !private ["PSo25CLLocationManagerDelegate", "getDocumentsDirectory"]
 - !private ["PSo25CLLocationManagerDelegate", "imageFileLocation"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerController"]
@@ -377,6 +383,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", ""]
 - !private ["CSo11CLPlacemark", "addressDictionary"]
 - !private ["CSo11CLPlacemark", "areasOfInterest"]
+- !private ["CSo11CLPlacemark", "location"]
 - !private ["Ps11CVarArgType", "ABCreateStringWithAddressDictionary"]
 - !private ["Ps11CVarArgType", "CLGeocoder"]
 - !private ["Ps11CVarArgType", "CLLocation"]
@@ -422,6 +429,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "endEditing"]
 - !private ["Ps11CVarArgType", "formattedAddress"]
+- ["Ps11CVarArgType", "forwardGeocoding"]
+- !private ["Ps11CVarArgType", "geocodeAddressString"]
 - ["Ps11CVarArgType", "getDocumentsDirectory"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "imageFileLocation"]
@@ -538,6 +547,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "formattedAddress"]
+- ["Ps28CustomDebugStringConvertible", "forwardGeocoding"]
+- !private ["Ps28CustomDebugStringConvertible", "geocodeAddressString"]
 - ["Ps28CustomDebugStringConvertible", "getDocumentsDirectory"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageFileLocation"]
@@ -647,6 +658,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
 - !private ["Ps23CustomStringConvertible", "formattedAddress"]
+- ["Ps23CustomStringConvertible", "forwardGeocoding"]
+- !private ["Ps23CustomStringConvertible", "geocodeAddressString"]
 - ["Ps23CustomStringConvertible", "getDocumentsDirectory"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageFileLocation"]
@@ -768,6 +781,8 @@ depends-member:
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - !private ["Ps9Equatable", "endEditing"]
 - !private ["Ps9Equatable", "formattedAddress"]
+- ["Ps9Equatable", "forwardGeocoding"]
+- !private ["Ps9Equatable", "geocodeAddressString"]
 - ["Ps9Equatable", "getDocumentsDirectory"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageFileLocation"]
@@ -866,6 +881,7 @@ depends-member:
 - ["PSo18GMSMapViewDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo18GMSMapViewDelegate", "dismissKeyboard"]
 - !private ["PSo18GMSMapViewDelegate", "dismissViewControllerAnimated"]
+- !private ["PSo18GMSMapViewDelegate", "forwardGeocoding"]
 - !private ["PSo18GMSMapViewDelegate", "getDocumentsDirectory"]
 - !private ["PSo18GMSMapViewDelegate", "imageFileLocation"]
 - ["PSo18GMSMapViewDelegate", "imagePickerController"]
@@ -966,6 +982,8 @@ depends-member:
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - !private ["Ps8Hashable", "endEditing"]
 - !private ["Ps8Hashable", "formattedAddress"]
+- ["Ps8Hashable", "forwardGeocoding"]
+- !private ["Ps8Hashable", "geocodeAddressString"]
 - ["Ps8Hashable", "getDocumentsDirectory"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageFileLocation"]
@@ -1106,6 +1124,7 @@ depends-member:
 - ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "endEditing"]
+- ["PSo8NSCoding", "forwardGeocoding"]
 - ["PSo8NSCoding", "getDocumentsDirectory"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageFileLocation"]
@@ -1116,6 +1135,7 @@ depends-member:
 - !private ["PSo8NSCoding", "isSourceTypeAvailable"]
 - ["PSo8NSCoding", "linkTextField"]
 - !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo8NSCoding", "location"]
 - ["PSo8NSCoding", "locationAddress"]
 - ["PSo8NSCoding", "locationCoordinate"]
 - ["PSo8NSCoding", "locationLink"]
@@ -1162,6 +1182,7 @@ depends-member:
 - !private ["PSo9NSCopying", "coordinate"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "location"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "stringByAppendingPathComponent"]
 - !private ["PSo9NSCopying", "writeToFile"]
@@ -1199,6 +1220,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didTapMyLocationButtonForMapView"]
 - ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "forwardGeocoding"]
 - ["PSo26NSExtensionRequestHandling", "getDocumentsDirectory"]
 - ["PSo26NSExtensionRequestHandling", "imageFileLocation"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
@@ -1303,6 +1325,8 @@ depends-member:
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "endEditing"]
 - !private ["CSo8NSObject", "formattedAddress"]
+- ["CSo8NSObject", "forwardGeocoding"]
+- !private ["CSo8NSObject", "geocodeAddressString"]
 - ["CSo8NSObject", "getDocumentsDirectory"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageFileLocation"]
@@ -1403,6 +1427,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - !private ["PSo16NSObjectProtocol", "formattedAddress"]
+- ["PSo16NSObjectProtocol", "forwardGeocoding"]
+- !private ["PSo16NSObjectProtocol", "geocodeAddressString"]
 - ["PSo16NSObjectProtocol", "getDocumentsDirectory"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageFileLocation"]
@@ -1469,6 +1495,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "coordinate"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "location"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
 - !private ["PSo14NSSecureCoding", "writeToFile"]
@@ -1587,6 +1614,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "dismissKeyboard"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
+- ["PSo21UIAppearanceContainer", "forwardGeocoding"]
 - ["PSo21UIAppearanceContainer", "getDocumentsDirectory"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imageFileLocation"]
@@ -1666,6 +1694,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didTapMyLocationButtonForMapView"]
 - ["PSo18UIContentContainer", "dismissKeyboard"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "forwardGeocoding"]
 - ["PSo18UIContentContainer", "getDocumentsDirectory"]
 - ["PSo18UIContentContainer", "imageFileLocation"]
 - ["PSo18UIContentContainer", "imagePickerController"]
@@ -1765,6 +1794,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "dismissKeyboard"]
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
+- ["PSo18UIFocusEnvironment", "forwardGeocoding"]
 - ["PSo18UIFocusEnvironment", "getDocumentsDirectory"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imageFileLocation"]
@@ -1846,6 +1876,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dismissKeyboard"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dismissViewControllerAnimated"]
+- !private ["PSo31UIImagePickerControllerDelegate", "forwardGeocoding"]
 - !private ["PSo31UIImagePickerControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo31UIImagePickerControllerDelegate", "imageFileLocation"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
@@ -1921,6 +1952,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissKeyboard"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissViewControllerAnimated"]
+- !private ["PSo30UINavigationControllerDelegate", "forwardGeocoding"]
 - !private ["PSo30UINavigationControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo30UINavigationControllerDelegate", "imageFileLocation"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
@@ -2007,6 +2039,7 @@ depends-member:
 - ["CSo11UIResponder", "dismissKeyboard"]
 - !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - !private ["CSo11UIResponder", "endEditing"]
+- ["CSo11UIResponder", "forwardGeocoding"]
 - ["CSo11UIResponder", "getDocumentsDirectory"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imageFileLocation"]
@@ -2082,6 +2115,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "didTapMyLocationButtonForMapView"]
 - ["PSo20UIScrollViewDelegate", "dismissKeyboard"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
+- ["PSo20UIScrollViewDelegate", "forwardGeocoding"]
 - ["PSo20UIScrollViewDelegate", "getDocumentsDirectory"]
 - ["PSo20UIScrollViewDelegate", "imageFileLocation"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
@@ -2154,6 +2188,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didTapMyLocationButtonForMapView"]
 - ["PSo16UIStateRestoring", "dismissKeyboard"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "forwardGeocoding"]
 - ["PSo16UIStateRestoring", "getDocumentsDirectory"]
 - ["PSo16UIStateRestoring", "imageFileLocation"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
@@ -2241,6 +2276,7 @@ depends-member:
 - ["CSo21UITableViewController", "didTapMyLocationButtonForMapView"]
 - ["CSo21UITableViewController", "dismissKeyboard"]
 - !private ["CSo21UITableViewController", "dismissViewControllerAnimated"]
+- ["CSo21UITableViewController", "forwardGeocoding"]
 - ["CSo21UITableViewController", "getDocumentsDirectory"]
 - ["CSo21UITableViewController", "imageFileLocation"]
 - ["CSo21UITableViewController", "imagePickerController"]
@@ -2310,6 +2346,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "didTapMyLocationButtonForMapView"]
 - ["PSo21UITableViewDataSource", "dismissKeyboard"]
 - !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
+- ["PSo21UITableViewDataSource", "forwardGeocoding"]
 - ["PSo21UITableViewDataSource", "getDocumentsDirectory"]
 - ["PSo21UITableViewDataSource", "imageFileLocation"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
@@ -2379,6 +2416,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "didTapMyLocationButtonForMapView"]
 - ["PSo19UITableViewDelegate", "dismissKeyboard"]
 - !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
+- ["PSo19UITableViewDelegate", "forwardGeocoding"]
 - ["PSo19UITableViewDelegate", "getDocumentsDirectory"]
 - ["PSo19UITableViewDelegate", "imageFileLocation"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
@@ -2460,6 +2498,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "dismissKeyboard"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
+- ["PSo18UITraitEnvironment", "forwardGeocoding"]
 - ["PSo18UITraitEnvironment", "getDocumentsDirectory"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imageFileLocation"]
@@ -2561,6 +2600,7 @@ depends-member:
 - ["CSo16UIViewController", "didTapMyLocationButtonForMapView"]
 - ["CSo16UIViewController", "dismissKeyboard"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "forwardGeocoding"]
 - ["CSo16UIViewController", "getDocumentsDirectory"]
 - ["CSo16UIViewController", "imageFileLocation"]
 - ["CSo16UIViewController", "imagePickerController"]
@@ -2909,4 +2949,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "ea5f3941751209cec2a09caea25a5856"
+interface-hash: "5b62ada56e0687f5a3f8201ea0812793"

@@ -113,7 +113,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC8ToGoList30AddLocationTableViewController")
 @interface AddLocationTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate>
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
-@property (nonatomic) NSInteger locationVisited;
+@property (nonatomic) BOOL locationVisited;
 @property (nonatomic) BOOL didSetNewImage;
 @property (nonatomic, copy) NSString * _Nonnull imageFileLocation;
 @property (nonatomic, copy) NSString * _Nullable locationName;
@@ -142,6 +142,7 @@ SWIFT_CLASS("_TtC8ToGoList30AddLocationTableViewController")
 - (void)dismissKeyboard;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)reverseGeocoding:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude;
+- (void)forwardGeocoding:(NSString * _Nonnull)address;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -192,7 +193,6 @@ SWIFT_CLASS("_TtC8ToGoList33LocationDetailTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified LocationWebsite;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified LocationVisitButton;
 - (void)viewDidLoad;
-- (IBAction)LocationVisited:(id _Nonnull)sender;
 - (void)fillData;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -218,6 +218,7 @@ SWIFT_CLASS("_TtC8ToGoList25LocationListTableViewCell")
 SWIFT_CLASS("_TtC8ToGoList31LocationListTableViewController")
 @interface LocationListTableViewController : UITableViewController
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
