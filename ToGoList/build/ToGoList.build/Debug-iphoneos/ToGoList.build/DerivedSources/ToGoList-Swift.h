@@ -192,6 +192,7 @@ SWIFT_CLASS("_TtC8ToGoList33LocationDetailTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified LocationTypes;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified LocationWebsite;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified LocationVisitButton;
+- (IBAction)callLocationPhoneNumber:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)fillData;
 - (void)didReceiveMemoryWarning;

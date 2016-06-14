@@ -6,33 +6,36 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList36MapLocationDetailTableViewController", ""]
 provides-dynamic-lookup:
-- "locationNameLabel"
 - "locationWebsiteLabel"
 - "locationTypeLabel"
+- "locationNameLabel"
+- "callLocationPhoneNumber"
 - "locationAddressLabel"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "locationPhoneNumberLabel"
 - "locationVisitedButton"
-- "callLocationPhoneNumber"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "UnicodeScalarType"
-- "UILabel"
-- !private "UIAlertAction"
-- "Location"
-- !private "UIAlertActionStyle"
-- !private "BooleanLiteralType"
-- !private "NSURL"
-- !private "UIAlertController"
-- "UIButton"
-- "MapLocationDetailTableViewController"
 - "UITableViewController"
-- !private "UIApplication"
-- !private "StringLiteralType"
+- !private "=="
 - !private "UIAlertControllerStyle"
-- "AnyObject"
+- "MapLocationDetailTableViewController"
+- !private "UIAlertController"
+- !private "StringLiteralType"
+- "UILabel"
+- !private "UIApplication"
+- !private "UIAlertActionStyle"
 - !private "print"
+- !private "UIAlertAction"
+- !private "UIImage"
 - !private "+"
+- !private "UnicodeScalarType"
+- "AnyObject"
+- !private "NSURL"
+- !private "BooleanLiteralType"
+- "UIButton"
+- !private "!="
+- "Location"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -40,6 +43,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIAlertControllerStyle"]
 - !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "callLocationPhoneNumber"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -54,18 +58,41 @@ depends-member:
 - !private ["Ps9AnyObject", "openURL"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "sharedApplication"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "joinWithSeparator"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "joinWithSeparator"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["P6SQLite7Binding", "Distance"]
+- !private ["P6SQLite7Binding", "IntegerLiteralType"]
+- !private ["P6SQLite7Binding", "_getBuiltinLogicValue"]
 - !private ["P6SQLite7Binding", "init"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSURL"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertActionStyle"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIAlertControllerStyle"]
 - !private ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "addAction"]
 - ["Ps11CVarArgType", "callLocationPhoneNumber"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -80,12 +107,21 @@ depends-member:
 - !private ["Ps11CVarArgType", "openURL"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "setImage"]
 - !private ["Ps11CVarArgType", "sharedApplication"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "joinWithSeparator"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - !private ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
@@ -93,10 +129,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertControllerStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "callLocationPhoneNumber"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "joinWithSeparator"]
 - ["Ps28CustomDebugStringConvertible", "location"]
 - ["Ps28CustomDebugStringConvertible", "locationAddressLabel"]
 - ["Ps28CustomDebugStringConvertible", "locationNameLabel"]
@@ -107,20 +146,29 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "openURL"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIAlertControllerStyle"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "callLocationPhoneNumber"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "joinWithSeparator"]
 - ["Ps23CustomStringConvertible", "location"]
 - ["Ps23CustomStringConvertible", "locationAddressLabel"]
 - ["Ps23CustomStringConvertible", "locationNameLabel"]
@@ -131,6 +179,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "openURL"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "sharedApplication"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -139,12 +188,17 @@ depends-member:
 - !private ["Ps9Equatable", "ActionSheet"]
 - !private ["Ps9Equatable", "Cancel"]
 - !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSURL"]
+- !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertActionStyle"]
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIAlertControllerStyle"]
 - !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "callLocationPhoneNumber"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -159,22 +213,33 @@ depends-member:
 - !private ["Ps9Equatable", "openURL"]
 - !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "sharedApplication"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["P6SQLite11Expressible", "Distance"]
+- !private ["P6SQLite11Expressible", "IntegerLiteralType"]
+- !private ["P6SQLite11Expressible", "_getBuiltinLogicValue"]
 - !private ["P6SQLite11Expressible", "init"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "ActionSheet"]
 - !private ["Ps8Hashable", "Cancel"]
 - !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertActionStyle"]
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIAlertControllerStyle"]
 - !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "callLocationPhoneNumber"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -189,18 +254,36 @@ depends-member:
 - !private ["Ps8Hashable", "openURL"]
 - !private ["Ps8Hashable", "presentViewController"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "sharedApplication"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "joinWithSeparator"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["V8ToGoList8Location", "address"]
 - !private ["V8ToGoList8Location", "name"]
 - !private ["V8ToGoList8Location", "phoneNumber"]
+- !private ["V8ToGoList8Location", "tags"]
+- !private ["V8ToGoList8Location", "url"]
+- !private ["V8ToGoList8Location", "visited"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "AnyObject"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "Location"]
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "NSURL"]
@@ -210,6 +293,7 @@ depends-member:
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "UIAlertControllerStyle"]
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "UIApplication"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "UIButton"]
+- !private ["C8ToGoList36MapLocationDetailTableViewController", "UIImage"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "UILabel"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "callLocationPhoneNumber"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "deinit"]
@@ -225,13 +309,28 @@ depends-member:
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "presentViewController"]
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "print"]
 - ["C8ToGoList36MapLocationDetailTableViewController", "viewDidLoad"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "joinWithSeparator"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "joinWithSeparator"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "joinWithSeparator"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIAlertControllerStyle"]
 - !private ["PSo8NSCoding", "UIApplication"]
+- !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "callLocationPhoneNumber"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -245,6 +344,7 @@ depends-member:
 - ["PSo8NSCoding", "locationWebsiteLabel"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
@@ -255,6 +355,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "callLocationPhoneNumber"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -280,6 +381,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "callLocationPhoneNumber"]
@@ -295,6 +397,7 @@ depends-member:
 - !private ["CSo8NSObject", "openURL"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "sharedApplication"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -304,6 +407,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "callLocationPhoneNumber"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -318,6 +422,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "openURL"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -327,16 +432,41 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
 - !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["P6SQLite6Number", "Distance"]
+- !private ["P6SQLite6Number", "IntegerLiteralType"]
+- !private ["Ps13OptionSetType", "Normal"]
 - !private ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "joinWithSeparator"]
 - !private ["Ps16RawRepresentable", "ActionSheet"]
 - !private ["Ps16RawRepresentable", "Cancel"]
 - !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "joinWithSeparator"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Cancel"]
@@ -344,6 +474,7 @@ depends-member:
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "ActionSheet"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
@@ -351,6 +482,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "callLocationPhoneNumber"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -364,17 +496,20 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationWebsiteLabel"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "openURL"]
 - !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
 - !private ["PSo18UIContentContainer", "UIApplication"]
+- !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "callLocationPhoneNumber"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -390,7 +525,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "setImage"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
@@ -398,6 +537,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "callLocationPhoneNumber"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -411,9 +551,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationWebsiteLabel"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UIImage", "init"]
 - !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Location"]
@@ -424,6 +566,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "callLocationPhoneNumber"]
@@ -439,6 +582,7 @@ depends-member:
 - !private ["CSo11UIResponder", "openURL"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "sharedApplication"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -448,6 +592,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertControllerStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIApplication"]
+- !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - ["PSo20UIScrollViewDelegate", "callLocationPhoneNumber"]
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo20UIScrollViewDelegate", "init"]
@@ -468,6 +613,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
 - !private ["PSo16UIStateRestoring", "UIApplication"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "callLocationPhoneNumber"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -492,6 +638,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "UIAlertControllerStyle"]
 - !private ["CSo21UITableViewController", "UIApplication"]
 - ["CSo21UITableViewController", "UIButton"]
+- !private ["CSo21UITableViewController", "UIImage"]
 - ["CSo21UITableViewController", "UILabel"]
 - ["CSo21UITableViewController", "callLocationPhoneNumber"]
 - ["CSo21UITableViewController", "didReceiveMemoryWarning"]
@@ -513,6 +660,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
 - !private ["PSo21UITableViewDataSource", "UIApplication"]
+- !private ["PSo21UITableViewDataSource", "UIImage"]
 - ["PSo21UITableViewDataSource", "callLocationPhoneNumber"]
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
 - ["PSo21UITableViewDataSource", "init"]
@@ -533,6 +681,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UIAlertControllerStyle"]
 - !private ["PSo19UITableViewDelegate", "UIApplication"]
+- !private ["PSo19UITableViewDelegate", "UIImage"]
 - ["PSo19UITableViewDelegate", "callLocationPhoneNumber"]
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo19UITableViewDelegate", "init"]
@@ -553,6 +702,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "callLocationPhoneNumber"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -566,9 +716,11 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationWebsiteLabel"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Location"]
@@ -579,6 +731,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertControllerStyle"]
 - !private ["CSo16UIViewController", "UIApplication"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "callLocationPhoneNumber"]
@@ -601,23 +754,71 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["P6SQLite5Value", "Distance"]
+- !private ["P6SQLite5Value", "IntegerLiteralType"]
+- !private ["P6SQLite5Value", "_getBuiltinLogicValue"]
 - !private ["P6SQLite5Value", "init"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "joinWithSeparator"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "joinWithSeparator"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "joinWithSeparator"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["P6SQLite13_OptionalType", "Some"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "joinWithSeparator"]
+- !private ["Ps12_Reflectable", "setImage"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
 - !private "P6SQLite7Binding"
+- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
+- !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -626,15 +827,26 @@ depends-nominal:
 - !private "P6SQLite11Expressible"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
 - "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
 - !private "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
 - !private "V8ToGoList8Location"
 - "C8ToGoList36MapLocationDetailTableViewController"
 - !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -645,10 +857,19 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "CSo5NSURL"
 - !private "Ps21NilLiteralConvertible"
+- !private "P6SQLite6Number"
+- !private "Ps13OptionSetType"
 - !private "Sq"
 - !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
 - !private "Ps10Streamable"
+- !private "Ps10Strideable"
 - !private "SS"
 - !private "Ps30StringInterpolationConvertible"
 - !private "Ps24StringLiteralConvertible"
@@ -660,10 +881,14 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo13UIApplication"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo20UIScrollViewDelegate"
@@ -682,14 +907,25 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "P6SQLite5Value"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 - !private "P6SQLite13_OptionalType"
+- !private "Ps22_RandomAccessAmbiguity"
 - !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"

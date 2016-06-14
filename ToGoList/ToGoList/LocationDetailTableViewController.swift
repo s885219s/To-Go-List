@@ -17,6 +17,28 @@ class LocationDetailTableViewController: UITableViewController {
     @IBOutlet weak var LocationTypes: UILabel!
     @IBOutlet weak var LocationWebsite: UILabel!
     @IBOutlet weak var LocationVisitButton: UIButton!
+    @IBAction func callLocationPhoneNumber(sender: AnyObject) {
+        let optionMenu = UIAlertController(title: nil, message: "Call \(location!.name)", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        let callActionHandler = {(action:UIAlertAction!) -> () in
+            //            if let phoneCallURL:NSURL = NSURL(string: "tel://\(self.location?.phoneNumber)") {
+            //                let application:UIApplication = UIApplication.sharedApplication()
+            //                if (application.canOpenURL(phoneCallURL)) {
+            //                    application.openURL(phoneCallURL);
+            //                }
+            //            }
+            if let url = NSURL(string: "tel://\(self.location!.phoneNumber)") {
+                UIApplication.sharedApplication().openURL(url)
+            }
+        }
+        let callAction = UIAlertAction(title: "Call "+"\(location!.name)?", style: UIAlertActionStyle.Default, handler: callActionHandler)
+        optionMenu.addAction(callAction)
+        
+        //show alertSheet
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
     
     var location: Location? {
         didSet(newLocation) {

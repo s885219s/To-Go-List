@@ -49,9 +49,27 @@ class MapLocationDetailTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         print("name: \(location!.name)")
-        locationNameLabel.text = location?.name
-        locationPhoneNumberLabel.text = location?.phoneNumber
-        locationAddressLabel.text = location?.address
+        if(location?.name != ""){
+            locationNameLabel.text = location?.name
+        }
+        if(location?.tags.joinWithSeparator(" ") != ""){
+            locationTypeLabel.text = location?.tags.joinWithSeparator(" ")
+        }
+        if(location?.phoneNumber != ""){
+            locationPhoneNumberLabel.text = location?.phoneNumber
+        }
+        if(location?.address != ""){
+            locationAddressLabel.text = location?.address
+        }
+        if(location?.url != ""){
+            locationWebsiteLabel.text = location?.url
+        }
+        if(location?.visited == true){
+            locationVisitedButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+        }
+        else{
+            locationVisitedButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

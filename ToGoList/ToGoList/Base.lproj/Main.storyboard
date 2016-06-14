@@ -892,6 +892,14 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiP-67-8F3">
+                                                    <rect key="frame" x="336" y="8" width="31" height="27"/>
+                                                    <state key="normal" image="phone"/>
+                                                    <connections>
+                                                        <action selector="callLocationPhoneNumber:" destination="i9Q-ml-hQ9" eventType="touchUpInside" id="Xpj-kb-AQD"/>
+                                                        <action selector="callLocationPhoneNumber:" destination="BN7-87-TGg" eventType="touchUpInside" id="XuL-b7-Esu"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
