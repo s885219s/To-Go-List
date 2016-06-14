@@ -6,14 +6,14 @@ provides-member:
 - ["V6SQLite6Module", "RTree"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Array"
-- !private "Expressible"
 - "Double"
+- "Expression"
 - "Int64"
-- "Module"
+- !private "Array"
 - "Value"
 - !private "StringLiteralType"
-- "Expression"
+- !private "Expressible"
+- "Module"
 depends-member:
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -228,11 +228,11 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/SQLite.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/Pods/Target Support Files/SQLite.swift/SQLite.swift-umbrella.h"
-- "/Users/Arick/Documents/swift/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/SQLite.swift.build/unextended-module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/SQLite.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/Target Support Files/SQLite.swift/SQLite.swift-umbrella.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/SQLite.swift.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"

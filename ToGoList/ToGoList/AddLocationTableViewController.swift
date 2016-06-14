@@ -176,17 +176,19 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     @IBAction func clickSaveButton(sender: AnyObject) {
-        if nameTextField.text == ""{
+        if (nameTextField.text == nil || nameTextField.text == ""){
             let alertController = UIAlertController(title: "Alert", message: "Need a name for new location", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
+            return
         }
-        if addressTextField.text == ""{
+        if (addressTextField.text == nil || addressTextField.text == ""){
             let alertController = UIAlertController(title: "Alert", message: "Location(Address) not set", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
+            return
         }
         
         if didSetNewImage{

@@ -11,6 +11,13 @@ import UIKit
 class LocationDetailTableViewController: UITableViewController {
     var location:Location?
 
+    @IBOutlet weak var LocationPhoto: UIImageView!
+    @IBOutlet weak var LocationName: UILabel!
+    @IBOutlet weak var LocaitonTypes: UILabel!
+    @IBOutlet weak var LocationPhone: UILabel!
+    @IBOutlet weak var LocationAddress: UILabel!
+    @IBOutlet weak var LocationWebsite: UILabel!
+    @IBOutlet weak var LocationBeenHere: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
