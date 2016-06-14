@@ -118,48 +118,6 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             checkPlacePickerButton = false
             placePickerButton.setImage(UIImage(named: "placePickerGray"), forState: .Normal)
         }
-//        let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
-//        let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
-//        let southWest = CLLocationCoordinate2DMake(center.latitude - 0.001, center.longitude - 0.001)
-//        let viewport = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-//        let config = GMSPlacePickerConfig(viewport: viewport)
-//        let placePicker = GMSPlacePicker(config: config)
-//        
-//        placePicker.pickPlaceWithCallback({ (place: GMSPlace?, error: NSError?) -> Void in
-//            if let error = error {
-//                print("Pick Place error: \(error.localizedDescription)")
-//                return
-//            }
-//            
-//            if let place = place {
-//                print("Place name \(place.name)")
-//                print("Place address \(place.formattedAddress)")
-//                print("Place attributions \(place.attributions)")
-//                self.nameTextField.text = place.name
-//                self.locationName = place.name
-//                
-//                self.addressTextField.text = place.formattedAddress
-//                self.locationAddress = place.formattedAddress
-//                
-//                if place.phoneNumber != nil {
-//                    self.phoneNumberTextField.text = place.phoneNumber!
-//                    self.locationPhoneNumber = place.phoneNumber
-//                }
-//                
-//                self.typesTextField.text = place.types[0]
-//                self.locationType = place.types[0]
-//                
-//                if place.website != nil {
-//                    self.linkTextField.text = place.website?.absoluteString
-//                    self.locationLink = place.website?.absoluteString
-//                }
-//                
-//                self.locationCoordinate = place.coordinate
-//                
-//            } else {
-//                print("No place selected")
-//            }
-//        })
     }
     
     @IBAction func setCurrentCoordinate(sender: AnyObject) {
@@ -167,7 +125,11 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         if checkSetCurrentLocation == false {
             print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
             locationCoordinate = locationManager.location?.coordinate
-            reverseGeocoding((locationCoordinate?.latitude)!, longitude: (locationCoordinate?.longitude)!)
+//            reverseGeocoding((locationCoordinate?.latitude)!, longitude: (locationCoordinate?.longitude)!)
+            let lati:String = String(locationCoordinate!.latitude)
+            let long:String = String(locationCoordinate!.longitude)
+            print(lati + " " + long)
+            getAddressForLatLng(lati, longitude: long)
             checkSetCurrentLocation = true
 //            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlue")
             setCurrentCoordinateButton.setImage(UIImage(named: "navigationBlue"), forState: .Normal)
@@ -340,6 +302,27 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
                     print("\n\(latitude), \(longitude)")
                 }
             }
+        }
+    }
+    
+    func getAddressForLatLng(latitude: String, longitude: String) {
+        let urlString: String = "https://maps.googleapis.com/maps/api/geocode/json?latlng=\(latitude),\(longitude)"
+        let url = NSURL(string: urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!)
+        let data = NSData(contentsOfURL: url!)
+        let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+        if let result = json["results"] as? NSArray {
+            let formatAddress = result[0]["formatted_address"] as! String
+            print("formatted address \(formatAddress)")
+            self.addressTextField.text = formatAddress
+            self.locationAddress = formatAddress
+//            if let address = result[0]["address_components"] as? NSArray {
+//                let number = address[0]["short_name"] as! String
+//                let street = address[1]["short_name"] as! String
+//                let city = address[2]["short_name"] as! String
+//                let state = address[4]["short_name"] as! String
+//                let zip = address[6]["short_name"] as! String
+//                print("\n\(number) \(street), \(city), \(state) \(zip)")
+//            }
         }
     }
 
