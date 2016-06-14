@@ -20,10 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //for reverce of google map geocode
         GMSServices.provideAPIKey("AIzaSyAI1ncGtBm9pMxWFv58brRBK3hWwV6_ydE")
-        
         LocationsSource.sharedInstance.loadFromDB()
-        print("AppDelegate")
-//        print(LocationsSource.sharedInstance.getLocationList())
         
         return true
     }

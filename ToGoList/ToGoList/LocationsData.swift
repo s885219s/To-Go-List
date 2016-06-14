@@ -153,6 +153,7 @@ class LocationsSource{
     
     func insertLocationToList(newLocation: Location){
         self.locations.append(newLocation)
+        self.writeBacktoDB()
     }
     
     func removeLocationFromList(targetLocation: Location){
@@ -161,6 +162,7 @@ class LocationsSource{
         } else {
             print("Target location to remove not found")
         }
+        self.writeBacktoDB()
     }
     
     func writeBacktoDB(){

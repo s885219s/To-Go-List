@@ -18,7 +18,11 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     
     //儲存資料用
     var locationCoordinate: CLLocationCoordinate2D?
-    var locationVisited:Bool = false
+
+    var locationVisited = 0
+    var didSetNewImage = false
+    var imageFileLocation = ""
+
     var locationName:String?
     var locationType:String?
     var locationPhoneNumber:String?
@@ -30,6 +34,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     var checkPlacePickerButton: Bool = false
     
     //storyboard 物件
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var typesTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
@@ -41,16 +46,16 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var placePickerButton: UIButton!
     
     @IBAction func locationVisited(sender: AnyObject) {
-        if locationVisited == false {
+        if locationVisited == 0 {
 //            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
             locationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
             print("set locationVisited true")
-            locationVisited = true
+            locationVisited = 1
         } else {
 //            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
             locationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
             print("set locationVisited false")
-            locationVisited = false
+            locationVisited = 0
         }
     }
     //從google map pick place to textField
@@ -155,6 +160,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     @IBAction func setCurrentCoordinate(sender: AnyObject) {
+
         if checkSetCurrentLocation == false {
             print("now location coordinate lat:\(locationManager.location?.coordinate.latitude) lon:\(locationManager.location?.coordinate.longitude)")
             locationCoordinate = locationManager.location?.coordinate
@@ -170,19 +176,41 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     @IBAction func clickSaveButton(sender: AnyObject) {
-        if newLocation.getLati() == 0.0 && newLocation.getLong() == 0.0{
+        if nameTextField.text == ""{
+            let alertController = UIAlertController(title: "Alert", message: "Need a name for new location", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alertController.addAction(okAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        if addressTextField.text == ""{
             let alertController = UIAlertController(title: "Alert", message: "Location(Address) not set", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
         }
-        else{
-            LocationsSource.sharedInstance.insertLocationToList(newLocation)
-            self.navigationController?.popViewControllerAnimated(true)
+        
+        if didSetNewImage{
+            if let image = self.imageView.image{
+                if let data = UIImagePNGRepresentation(image){
+                    self.imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(nameTextField.text! + ".png")
+                    data.writeToFile(imageFileLocation, atomically: true)
+                }
+            }
         }
+
+        let newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: self.imageFileLocation)
+        
+        LocationsSource.sharedInstance.insertLocationToList(newLocation)
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
     }
     
-    var newLocation = Location(_name: "", _tags: "", _url: "", _address: "", _lati: 0.0, _long: 0.0, _visited: 0, _phoneNumber: "", _imagePath: "")
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -256,6 +284,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     
     // MARK: - UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        self.didSetNewImage = true
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         imageView.clipsToBounds = true
