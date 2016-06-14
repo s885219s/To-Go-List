@@ -191,20 +191,10 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
-<<<<<<< HEAD
         } else {
             if self.locationCoordinate == nil {
                 getLatLngForZip(addressTextField.text!)
             }
-=======
-            return
-        } else {
-            print(addressTextField.text)
-//            forwardGeocoding(addressTextField.text!)
-            let address: String = addressTextField!.text!
-            print(forwardGeocoding(address))
-            forwardGeocoding(address)
->>>>>>> e71795a491bd36cc6898ad5ea17ea9720f5e5f16
         }
         
         if didSetNewImage{
@@ -220,7 +210,6 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         
         LocationsSource.sharedInstance.insertLocationToList(newLocation)
         self.navigationController?.popViewControllerAnimated(true)
-        
     }
     
     func getDocumentsDirectory() -> NSString {
@@ -335,7 +324,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         })
     }
     
-<<<<<<< HEAD
+
     // MARK: - Google Map Geocoding
     func getLatLngForZip(zipCode: String) {
         let urlString: String = "https://maps.googleapis.com/maps/api/geocode/json?address=\(zipCode)"
@@ -354,7 +343,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         }
     }
 
-=======
+
     func forwardGeocoding(address: String) {
         CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) in
             if error != nil {
@@ -391,7 +380,6 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             }
         })
     }
->>>>>>> e71795a491bd36cc6898ad5ea17ea9720f5e5f16
 
     // MARK: - Table view data source
 

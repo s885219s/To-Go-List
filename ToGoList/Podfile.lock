@@ -1,5 +1,5 @@
 PODS:
-  - GoogleMaps (1.13.0)
+  - GoogleMaps (1.13.2)
   - SQLite.swift (0.10.1)
 
 DEPENDENCIES:
@@ -7,9 +7,7 @@ DEPENDENCIES:
   - SQLite.swift (~> 0.10.1)
 
 SPEC CHECKSUMS:
-  GoogleMaps: 7a6caeb8336d7cb42982e969fc9b1b20a889fe79
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
 
-PODFILE CHECKSUM: 6dd89bbfd872a61c6f3101d648be70248ebfc9fe
-
-COCOAPODS: 1.0.0.beta.8
+COCOAPODS: 0.39.0
