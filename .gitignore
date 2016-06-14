@@ -7,3 +7,4 @@
 .gitignore
 ToGoList/Pods
 ToGoList/Pods/*
+.DS_Store

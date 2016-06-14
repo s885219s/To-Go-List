@@ -19,7 +19,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     //儲存資料用
     var locationCoordinate: CLLocationCoordinate2D?
 
-    var locationVisited = 0
+    var locationVisited = false
     var didSetNewImage = false
     var imageFileLocation = ""
 
@@ -46,16 +46,16 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     @IBOutlet weak var placePickerButton: UIButton!
     
     @IBAction func locationVisited(sender: AnyObject) {
-        if locationVisited == 0 {
+        if locationVisited == false {
 //            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
             locationVisitButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
             print("set locationVisited true")
-            locationVisited = 1
+            locationVisited = true
         } else {
 //            locationVisitButton.imageView?.image = UIImage(named: "BeenHereGray")
             locationVisitButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
             print("set locationVisited false")
-            locationVisited = 0
+            locationVisited = false
         }
     }
     //從google map pick place to textField
@@ -189,6 +189,12 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
             return
+        } else {
+            print(addressTextField.text)
+//            forwardGeocoding(addressTextField.text!)
+            let address: String = addressTextField!.text!
+            print(forwardGeocoding(address))
+            forwardGeocoding(address)
         }
         
         if didSetNewImage{
@@ -203,7 +209,6 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         let newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: self.imageFileLocation)
         
         LocationsSource.sharedInstance.insertLocationToList(newLocation)
-        
         self.navigationController?.popViewControllerAnimated(true)
         
     }
@@ -316,6 +321,43 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
                 } else {
                     print("No area of interest found.")
                 }
+            }
+        })
+    }
+    
+    func forwardGeocoding(address: String) {
+        CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) in
+            if error != nil {
+                print(error)
+                return
+            }
+            if placemarks?.count > 0 {
+                print("place > 0")
+                let placemark = placemarks?[0]
+                let location = placemark?.location
+                let coordinate = location?.coordinate
+                let  position = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
+                self.locationCoordinate = CLLocationCoordinate2DMake((coordinate?.latitude)!, (coordinate?.longitude)!)
+                print("lati \(coordinate?.latitude) long \(coordinate?.longitude)")
+//                self.locationCoordinate = position
+                /*
+                let marker = GMSMarker(position: position)
+                print("\nlat: \(coordinate!.latitude), long: \(coordinate!.longitude)")
+                if placemark?.areasOfInterest?.count > 0 {
+                    let areaOfInterest = placemark!.areasOfInterest![0]
+                    print(areaOfInterest)
+                    marker.title = findedLocation.name
+                    marker.snippet = findedLocation.phoneNumber
+                    marker.icon = UIImage(named: "place")
+//                    marker.map = self.mapView
+                } else {
+                    print("No area of interest found.")
+                    marker.icon = UIImage(named: "place")
+                    marker.title = findedLocation.name
+                    marker.snippet = findedLocation.phoneNumber
+//                    marker.map = self.mapView
+                }
+                */
             }
         })
     }
