@@ -10,11 +10,12 @@
 		2E9888D31CFC339C00521030 /* LocationsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9888D21CFC339C00521030 /* LocationsData.swift */; };
 		2EF0ED398B06E7851D07BFA6 /* Pods_ToGoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6968FDA1FA7ED1549AD82 /* Pods_ToGoList.framework */; };
 		43E3ED0D1CF303F000DAAB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E3ED0C1CF303F000DAAB54 /* AppDelegate.swift */; };
-		43E3ED0F1CF303F000DAAB54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E3ED0E1CF303F000DAAB54 /* ViewController.swift */; };
 		43E3ED121CF303F000DAAB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED101CF303F000DAAB54 /* Main.storyboard */; };
 		43E3ED141CF303F000DAAB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED131CF303F000DAAB54 /* Assets.xcassets */; };
 		43E3ED171CF303F000DAAB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E3ED151CF303F000DAAB54 /* LaunchScreen.storyboard */; };
 		665DC6DA1D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */; };
+		6675DC541D0F1FFF00433548 /* LocationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6675DC531D0F1FFF00433548 /* LocationListTableViewController.swift */; };
+		6675DC561D0F227500433548 /* LocationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6675DC551D0F227500433548 /* LocationListTableViewCell.swift */; };
 		66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7B61D1D098AB200E02847 /* MapViewController.swift */; };
 		66C7B6201D099AEA00E02847 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C7B61F1D099AEA00E02847 /* MapKit.framework */; };
 		A39F6EB91D06CADB00DFF2E8 /* EditLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */; };
@@ -28,12 +29,13 @@
 		4255E24077F53FC612F441BC /* Pods-ToGoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToGoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList.release.xcconfig"; sourceTree = "<group>"; };
 		43E3ED091CF303F000DAAB54 /* ToGoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToGoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E3ED0C1CF303F000DAAB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43E3ED0E1CF303F000DAAB54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43E3ED111CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E3ED131CF303F000DAAB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E3ED161CF303F000DAAB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E3ED181CF303F000DAAB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocationDetailTableViewController.swift; sourceTree = "<group>"; };
+		6675DC531D0F1FFF00433548 /* LocationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListTableViewController.swift; sourceTree = "<group>"; };
+		6675DC551D0F227500433548 /* LocationListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListTableViewCell.swift; sourceTree = "<group>"; };
 		66C7B61D1D098AB200E02847 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		66C7B61F1D099AEA00E02847 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationTableViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +90,8 @@
 				43E3ED0C1CF303F000DAAB54 /* AppDelegate.swift */,
 				A3CB5A291D06C500000E9BB8 /* AddLocationTableViewController.swift */,
 				A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */,
-				43E3ED0E1CF303F000DAAB54 /* ViewController.swift */,
+				6675DC531D0F1FFF00433548 /* LocationListTableViewController.swift */,
+				6675DC551D0F227500433548 /* LocationListTableViewCell.swift */,
 				43E3ED101CF303F000DAAB54 /* Main.storyboard */,
 				A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */,
 				43E3ED131CF303F000DAAB54 /* Assets.xcassets */,
@@ -250,13 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39F6EB91D06CADB00DFF2E8 /* EditLocationTableViewController.swift in Sources */,
-				43E3ED0F1CF303F000DAAB54 /* ViewController.swift in Sources */,
 				43E3ED0D1CF303F000DAAB54 /* AppDelegate.swift in Sources */,
+				6675DC541D0F1FFF00433548 /* LocationListTableViewController.swift in Sources */,
 				A39F6EBB1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift in Sources */,
 				A3CB5A2A1D06C500000E9BB8 /* AddLocationTableViewController.swift in Sources */,
 				2E9888D31CFC339C00521030 /* LocationsData.swift in Sources */,
 				665DC6DA1D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift in Sources */,
 				66C7B61E1D098AB200E02847 /* MapViewController.swift in Sources */,
+				6675DC561D0F227500433548 /* LocationListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
