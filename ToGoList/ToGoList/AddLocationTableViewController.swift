@@ -13,6 +13,9 @@ import CoreLocation
 import AddressBookUI
 
 class AddLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate {
+    let baseUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
+    let apikey = "AIzaSyAI1ncGtBm9pMxWFv58brRBK3hWwV6_ydE"
+    
     //曲現在位置用
     let locationManager = CLLocationManager()
     
@@ -187,6 +190,10 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alertController.addAction(okAction)
             self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            if self.locationCoordinate == nil {
+                getLatLngForZip(addressTextField.text!)
+            }
         }
         
         if didSetNewImage{
@@ -317,6 +324,25 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             }
         })
     }
+    
+    // MARK: - Google Map Geocoding
+    func getLatLngForZip(zipCode: String) {
+        let urlString: String = "https://maps.googleapis.com/maps/api/geocode/json?address=\(zipCode)"
+        let url = NSURL(string: urlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!)
+        let data = NSData(contentsOfURL: url!)
+        let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+        if let result = json["results"] as? NSArray {
+            if let geometry = result[0]["geometry"] as? NSDictionary {
+                if let location = geometry["location"] as? NSDictionary {
+                    let latitude = location["lat"] as! Float
+                    let longitude = location["lng"] as! Float
+                    self.locationCoordinate = CLLocationCoordinate2DMake(CLLocationDegrees(latitude), CLLocationDegrees(longitude))
+                    print("\n\(latitude), \(longitude)")
+                }
+            }
+        }
+    }
+
 
     // MARK: - Table view data source
 
