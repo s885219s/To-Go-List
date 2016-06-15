@@ -64,11 +64,9 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     //從google map pick place to textField
     @IBAction func searchLocationInfoFromGoogleMap(sender: AnyObject) {
 //        //若鍵盤在的話 關掉鍵盤
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-//        view.addGestureRecognizer(tap)
         
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+//        locationManager.delegate = self
+//        locationManager.requestWhenInUseAuthorization()
         if checkPlacePickerButton == false {
             let center = CLLocationCoordinate2DMake((locationManager.location?.coordinate.latitude)!, (locationManager.location?.coordinate.longitude)!)
             let northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001)
@@ -171,6 +169,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         let newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: self.imageFileLocation)
         
         LocationsSource.sharedInstance.insertLocationToList(newLocation)
+//        dismissViewControllerAnimated(true, completion: nil)
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -183,6 +182,10 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -411,7 +414,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -419,6 +422,6 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

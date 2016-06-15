@@ -26,11 +26,13 @@ class LocationListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
+    /*
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(false)
         self.tableView.reloadData()
         print("viewwillappear")
     }
+    */
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -90,12 +92,15 @@ class LocationListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            self.locations?.removeAtIndex(indexPath.row)
+//            LocationsSource.sharedInstance.removeLocationFromList(locations![indexPath.row])
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
+        
+        tableView.reloadData()
     }
     */
+    
 
     /*
     // Override to support rearranging the table view.
