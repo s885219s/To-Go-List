@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "locationNameLabel"
 - "locationTypeImage"
-- "locationAddressLabel"
-- "setSelected"
 - "locationPhoneNumberLabel"
+- "setSelected"
+- "locationAddressLabel"
 depends-top-level:
 - "UITableViewCell"
 - "Bool"

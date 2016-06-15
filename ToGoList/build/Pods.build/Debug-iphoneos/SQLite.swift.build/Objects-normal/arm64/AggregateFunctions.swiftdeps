@@ -21,18 +21,18 @@ provides-member:
 - ["P6SQLite14ExpressionType", "count"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Value"
-- "_OptionalType"
-- "count"
-- "Star"
-- "ExpressionType"
 - "Number"
-- "Int"
-- "Double"
+- "ExpressionType"
 - !private "wrap"
-- !private "StringLiteralType"
+- "count"
+- "_OptionalType"
+- "Star"
 - "Comparable"
+- !private "StringLiteralType"
 - "Expression"
+- "Double"
+- "Int"
+- "Value"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "wrap"]

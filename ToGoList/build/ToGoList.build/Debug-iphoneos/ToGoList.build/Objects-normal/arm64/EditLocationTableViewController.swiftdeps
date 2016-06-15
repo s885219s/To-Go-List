@@ -6,29 +6,31 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList31EditLocationTableViewController", ""]
 provides-dynamic-lookup:
-- "nameTextField"
+- "typesTextField"
 - "viewDidLoad"
+- "linkTextField"
+- "nameTextField"
+- "phoneNumberTextField"
+- "imageView"
 - "viewWillDisappear"
 - "clickSvaeButton"
 - "addressTextField"
-- "typesTextField"
-- "phoneNumberTextField"
-- "linkTextField"
 depends-top-level:
-- "EditLocationTableViewController"
-- !private "UIAlertActionStyle"
-- !private "UIAlertAction"
-- "Bool"
 - "AnyObject"
 - !private "BooleanLiteralType"
+- !private "LocationsSource"
 - "UITextField"
 - "UITableViewController"
-- "Location"
+- "Bool"
+- "EditLocationTableViewController"
 - !private "UIAlertControllerStyle"
-- !private "LocationsSource"
-- !private "=="
-- !private "StringLiteralType"
+- !private "UIAlertActionStyle"
 - !private "UIAlertController"
+- "Location"
+- !private "StringLiteralType"
+- !private "=="
+- !private "UIAlertAction"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "LocationsSource"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
@@ -38,6 +40,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addAction"]
 - ["Ps9AnyObject", "addressTextField"]
 - ["Ps9AnyObject", "clickSvaeButton"]
+- ["Ps9AnyObject", "imageView"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertLocationToList"]
 - ["Ps9AnyObject", "linkTextField"]
@@ -64,6 +67,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "addAction"]
 - ["Ps11CVarArgType", "addressTextField"]
 - ["Ps11CVarArgType", "clickSvaeButton"]
+- ["Ps11CVarArgType", "imageView"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "linkTextField"]
 - ["Ps11CVarArgType", "nameTextField"]
@@ -84,6 +88,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - ["Ps28CustomDebugStringConvertible", "addressTextField"]
 - ["Ps28CustomDebugStringConvertible", "clickSvaeButton"]
+- ["Ps28CustomDebugStringConvertible", "imageView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "linkTextField"]
 - ["Ps28CustomDebugStringConvertible", "nameTextField"]
@@ -105,6 +110,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addAction"]
 - ["Ps23CustomStringConvertible", "addressTextField"]
 - ["Ps23CustomStringConvertible", "clickSvaeButton"]
+- ["Ps23CustomStringConvertible", "imageView"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "linkTextField"]
 - ["Ps23CustomStringConvertible", "nameTextField"]
@@ -125,10 +131,12 @@ depends-member:
 - !private ["C8ToGoList31EditLocationTableViewController", "UIAlertActionStyle"]
 - !private ["C8ToGoList31EditLocationTableViewController", "UIAlertController"]
 - !private ["C8ToGoList31EditLocationTableViewController", "UIAlertControllerStyle"]
+- ["C8ToGoList31EditLocationTableViewController", "UIImageView"]
 - ["C8ToGoList31EditLocationTableViewController", "UITextField"]
 - ["C8ToGoList31EditLocationTableViewController", "addressTextField"]
 - ["C8ToGoList31EditLocationTableViewController", "clickSvaeButton"]
 - ["C8ToGoList31EditLocationTableViewController", "deinit"]
+- ["C8ToGoList31EditLocationTableViewController", "imageView"]
 - ["C8ToGoList31EditLocationTableViewController", "init"]
 - ["C8ToGoList31EditLocationTableViewController", "linkTextField"]
 - ["C8ToGoList31EditLocationTableViewController", "nameTextField"]
@@ -150,6 +158,7 @@ depends-member:
 - !private ["Ps9Equatable", "addAction"]
 - ["Ps9Equatable", "addressTextField"]
 - ["Ps9Equatable", "clickSvaeButton"]
+- ["Ps9Equatable", "imageView"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "linkTextField"]
 - ["Ps9Equatable", "nameTextField"]
@@ -174,6 +183,7 @@ depends-member:
 - !private ["Ps8Hashable", "addAction"]
 - ["Ps8Hashable", "addressTextField"]
 - ["Ps8Hashable", "clickSvaeButton"]
+- ["Ps8Hashable", "imageView"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "linkTextField"]
 - ["Ps8Hashable", "nameTextField"]
@@ -201,6 +211,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "addressTextField"]
 - ["PSo8NSCoding", "clickSvaeButton"]
+- ["PSo8NSCoding", "imageView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "linkTextField"]
 - ["PSo8NSCoding", "nameTextField"]
@@ -222,6 +233,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "addressTextField"]
 - ["PSo26NSExtensionRequestHandling", "clickSvaeButton"]
+- ["PSo26NSExtensionRequestHandling", "imageView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "linkTextField"]
 - ["PSo26NSExtensionRequestHandling", "nameTextField"]
@@ -241,10 +253,12 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertActionStyle"]
 - !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "addressTextField"]
 - ["CSo8NSObject", "clickSvaeButton"]
+- ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "linkTextField"]
 - ["CSo8NSObject", "nameTextField"]
@@ -264,6 +278,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "addressTextField"]
 - ["PSo16NSObjectProtocol", "clickSvaeButton"]
+- ["PSo16NSObjectProtocol", "imageView"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "linkTextField"]
 - ["PSo16NSObjectProtocol", "nameTextField"]
@@ -294,6 +309,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "addressTextField"]
 - ["PSo21UIAppearanceContainer", "clickSvaeButton"]
+- ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "linkTextField"]
 - ["PSo21UIAppearanceContainer", "nameTextField"]
@@ -314,6 +330,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "addressTextField"]
 - ["PSo18UIContentContainer", "clickSvaeButton"]
+- ["PSo18UIContentContainer", "imageView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "linkTextField"]
 - ["PSo18UIContentContainer", "nameTextField"]
@@ -336,6 +353,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "addressTextField"]
 - ["PSo18UIFocusEnvironment", "clickSvaeButton"]
+- ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "linkTextField"]
 - ["PSo18UIFocusEnvironment", "nameTextField"]
@@ -357,10 +375,12 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertActionStyle"]
 - !private ["CSo11UIResponder", "UIAlertController"]
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "addressTextField"]
 - ["CSo11UIResponder", "clickSvaeButton"]
+- ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "linkTextField"]
 - ["CSo11UIResponder", "nameTextField"]
@@ -379,6 +399,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertControllerStyle"]
 - ["PSo20UIScrollViewDelegate", "addressTextField"]
 - ["PSo20UIScrollViewDelegate", "clickSvaeButton"]
+- ["PSo20UIScrollViewDelegate", "imageView"]
 - ["PSo20UIScrollViewDelegate", "init"]
 - ["PSo20UIScrollViewDelegate", "linkTextField"]
 - ["PSo20UIScrollViewDelegate", "nameTextField"]
@@ -398,6 +419,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "addressTextField"]
 - ["PSo16UIStateRestoring", "clickSvaeButton"]
+- ["PSo16UIStateRestoring", "imageView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "linkTextField"]
 - ["PSo16UIStateRestoring", "nameTextField"]
@@ -417,9 +439,11 @@ depends-member:
 - !private ["CSo21UITableViewController", "UIAlertActionStyle"]
 - !private ["CSo21UITableViewController", "UIAlertController"]
 - !private ["CSo21UITableViewController", "UIAlertControllerStyle"]
+- ["CSo21UITableViewController", "UIImageView"]
 - ["CSo21UITableViewController", "UITextField"]
 - ["CSo21UITableViewController", "addressTextField"]
 - ["CSo21UITableViewController", "clickSvaeButton"]
+- ["CSo21UITableViewController", "imageView"]
 - ["CSo21UITableViewController", "init"]
 - ["CSo21UITableViewController", "linkTextField"]
 - ["CSo21UITableViewController", "nameTextField"]
@@ -438,6 +462,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
 - ["PSo21UITableViewDataSource", "addressTextField"]
 - ["PSo21UITableViewDataSource", "clickSvaeButton"]
+- ["PSo21UITableViewDataSource", "imageView"]
 - ["PSo21UITableViewDataSource", "init"]
 - ["PSo21UITableViewDataSource", "linkTextField"]
 - ["PSo21UITableViewDataSource", "nameTextField"]
@@ -456,6 +481,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertControllerStyle"]
 - ["PSo19UITableViewDelegate", "addressTextField"]
 - ["PSo19UITableViewDelegate", "clickSvaeButton"]
+- ["PSo19UITableViewDelegate", "imageView"]
 - ["PSo19UITableViewDelegate", "init"]
 - ["PSo19UITableViewDelegate", "linkTextField"]
 - ["PSo19UITableViewDelegate", "nameTextField"]
@@ -478,6 +504,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "addressTextField"]
 - ["PSo18UITraitEnvironment", "clickSvaeButton"]
+- ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "linkTextField"]
 - ["PSo18UITraitEnvironment", "nameTextField"]
@@ -499,10 +526,12 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertActionStyle"]
 - !private ["CSo16UIViewController", "UIAlertController"]
 - !private ["CSo16UIViewController", "UIAlertControllerStyle"]
+- ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "addressTextField"]
 - ["CSo16UIViewController", "clickSvaeButton"]
+- ["CSo16UIViewController", "imageView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "linkTextField"]
 - ["CSo16UIViewController", "nameTextField"]
@@ -649,4 +678,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "e65ec258682ee58be66b9fe5044f0087"
+interface-hash: "000ff2196d99f726808465f13ba974aa"

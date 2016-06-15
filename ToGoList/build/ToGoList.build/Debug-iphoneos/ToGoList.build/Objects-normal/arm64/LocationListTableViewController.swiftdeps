@@ -6,33 +6,38 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList31LocationListTableViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "viewWillAppear"
-- "numberOfSectionsInTableView"
 - "prepareForSegue"
+- "numberOfSectionsInTableView"
+- "viewDidLoad"
+- "viewWillAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "AnyObject"
-- "NSIndexPath"
-- "Bool"
-- "UIStoryboardSegue"
-- "LocationListTableViewController"
-- !private "LocationListTableViewCell"
-- "Int"
-- !private "LocationDetailTableViewController"
-- !private "BooleanLiteralType"
-- "UITableViewController"
-- "UITableViewCell"
-- "Location"
-- !private "=="
-- !private "print"
-- !private "StringLiteralType"
 - !private "LocationsSource"
 - "UITableView"
+- !private "BooleanLiteralType"
+- "NSIndexPath"
+- "UITableViewController"
+- "UIStoryboardSegue"
+- !private "LocationListTableViewCell"
+- !private "LocationDetailTableViewController"
+- !private "StringLiteralType"
+- "Int"
+- "LocationListTableViewController"
+- "Location"
+- "UITableViewCell"
+- "AnyObject"
+- "Bool"
+- !private "print"
+- "UITableViewCellEditingStyle"
+- !private "=="
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "LocationsSource"]
+- !private ["Ps9AnyObject", "deleteRowsAtIndexPaths"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "destinationViewController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -49,6 +54,7 @@ depends-member:
 - ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
+- !private ["Ps9AnyObject", "removeLocationFromList"]
 - !private ["Ps9AnyObject", "row"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "tableView"]
@@ -56,16 +62,22 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "removeAtIndex"]
 - !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "removeAtIndex"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
@@ -82,6 +94,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "LocationsSource"]
+- !private ["Ps11CVarArgType", "deleteRowsAtIndexPaths"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -103,19 +116,24 @@ depends-member:
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
+- !private ["Ps14CollectionType", "removeAtIndex"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "LocationsSource"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "deleteRowsAtIndexPaths"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -131,6 +149,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -139,13 +158,16 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "LocationsSource"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "deleteRowsAtIndexPaths"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -161,6 +183,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "removeAtIndex"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
@@ -168,10 +191,15 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Delete"]
 - !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Fade"]
+- !private ["Ps9Equatable", "Insert"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "LocationsSource"]
+- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "deleteRowsAtIndexPaths"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9Equatable", "destinationViewController"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -199,10 +227,15 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Delete"]
 - !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "Fade"]
+- !private ["Ps8Hashable", "Insert"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "LocationsSource"]
+- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "deleteRowsAtIndexPaths"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps8Hashable", "destinationViewController"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -224,11 +257,13 @@ depends-member:
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "removeAtIndex"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -258,6 +293,7 @@ depends-member:
 - ["C8ToGoList31LocationListTableViewController", "UIStoryboardSegue"]
 - ["C8ToGoList31LocationListTableViewController", "UITableView"]
 - ["C8ToGoList31LocationListTableViewController", "UITableViewCell"]
+- ["C8ToGoList31LocationListTableViewController", "UITableViewCellEditingStyle"]
 - ["C8ToGoList31LocationListTableViewController", "deinit"]
 - ["C8ToGoList31LocationListTableViewController", "didReceiveMemoryWarning"]
 - ["C8ToGoList31LocationListTableViewController", "init"]
@@ -269,25 +305,36 @@ depends-member:
 - ["C8ToGoList31LocationListTableViewController", "viewDidLoad"]
 - ["C8ToGoList31LocationListTableViewController", "viewWillAppear"]
 - !private ["C8ToGoList15LocationsSource", "getLocationList"]
+- !private ["C8ToGoList15LocationsSource", "removeLocationFromList"]
 - !private ["C8ToGoList15LocationsSource", "sharedInstance"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21MutableCollectionType", "Element"]
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps21MutableCollectionType", "removeAtIndex"]
 - !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "removeAtIndex"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Element"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "count"]
+- !private ["Ps16MutableSliceable", "removeAtIndex"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "LocationsSource"]
+- !private ["PSo8NSCoding", "deleteRowsAtIndexPaths"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
@@ -332,6 +379,8 @@ depends-member:
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "UITableViewCellEditingStyle"]
+- !private ["CSo8NSObject", "deleteRowsAtIndexPaths"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -353,6 +402,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "LocationsSource"]
+- !private ["PSo16NSObjectProtocol", "deleteRowsAtIndexPaths"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -380,17 +430,25 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps30RangeReplaceableCollectionType", "removeAtIndex"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "Delete"]
+- !private ["Ps16RawRepresentable", "Fade"]
+- !private ["Ps16RawRepresentable", "Insert"]
+- !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "removeAtIndex"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
@@ -402,6 +460,7 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "deleteRowsAtIndexPaths"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
 - !private ["PSo29UIAccessibilityIdentification", "locationAddressLabel"]
@@ -409,6 +468,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "locationPhoneNumberLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "deleteRowsAtIndexPaths"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "indexPathForCell"]
 - !private ["PSo12UIAppearance", "locationAddressLabel"]
@@ -417,6 +477,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "LocationsSource"]
+- !private ["PSo21UIAppearanceContainer", "deleteRowsAtIndexPaths"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
@@ -447,6 +508,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "deleteRowsAtIndexPaths"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "indexPathForCell"]
 - !private ["PSo17UICoordinateSpace", "locationAddressLabel"]
@@ -454,6 +516,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "locationPhoneNumberLabel"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "deleteRowsAtIndexPaths"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "indexPathForCell"]
 - !private ["PSo13UIDynamicItem", "locationAddressLabel"]
@@ -462,6 +525,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "LocationsSource"]
+- !private ["PSo18UIFocusEnvironment", "deleteRowsAtIndexPaths"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForCell"]
@@ -495,6 +559,8 @@ depends-member:
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "UITableViewCellEditingStyle"]
+- !private ["CSo11UIResponder", "deleteRowsAtIndexPaths"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
@@ -512,6 +578,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
+- !private ["CSo12UIScrollView", "deleteRowsAtIndexPaths"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "indexPathForCell"]
 - !private ["CSo12UIScrollView", "reloadData"]
@@ -541,6 +608,7 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo11UITableView", "deleteRowsAtIndexPaths"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "indexPathForCell"]
 - !private ["CSo11UITableView", "reloadData"]
@@ -548,6 +616,10 @@ depends-member:
 - !private ["CSo15UITableViewCell", "locationAddressLabel"]
 - !private ["CSo15UITableViewCell", "locationNameLabel"]
 - !private ["CSo15UITableViewCell", "locationPhoneNumberLabel"]
+- !private ["OSC27UITableViewCellEditingStyle", "Delete"]
+- !private ["OSC27UITableViewCellEditingStyle", "Insert"]
+- !private ["OSC27UITableViewCellEditingStyle", "RawValue"]
+- !private ["OSC27UITableViewCellEditingStyle", "deinit"]
 - ["CSo21UITableViewController", "AnyObject"]
 - ["CSo21UITableViewController", "Bool"]
 - ["CSo21UITableViewController", "Int"]
@@ -559,6 +631,7 @@ depends-member:
 - ["CSo21UITableViewController", "UIStoryboardSegue"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "UITableViewCellEditingStyle"]
 - ["CSo21UITableViewController", "didReceiveMemoryWarning"]
 - ["CSo21UITableViewController", "init"]
 - !private ["CSo21UITableViewController", "location"]
@@ -594,7 +667,9 @@ depends-member:
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", "viewWillAppear"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["OSC23UITableViewRowAnimation", "Fade"]
 - !private ["PSo18UITraitEnvironment", "LocationsSource"]
+- !private ["PSo18UITraitEnvironment", "deleteRowsAtIndexPaths"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
@@ -613,6 +688,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "deleteRowsAtIndexPaths"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "indexPathForCell"]
 - !private ["CSo6UIView", "locationAddressLabel"]
@@ -631,6 +707,7 @@ depends-member:
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "UITableViewCellEditingStyle"]
 - !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
@@ -645,18 +722,24 @@ depends-member:
 - !private ["P6SQLite5Value", "Distance"]
 - !private ["P6SQLite5Value", "IntegerLiteralType"]
 - !private ["P6SQLite5Value", "_getBuiltinLogicValue"]
+- !private ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "count"]
+- !private ["Ps10_ArrayType", "removeAtIndex"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "removeAtIndex"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -665,29 +748,36 @@ depends-member:
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeAtIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "deleteRowsAtIndexPaths"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "indexPathForCell"]
 - !private ["Ps12_Reflectable", "locationAddressLabel"]
 - !private ["Ps12_Reflectable", "locationNameLabel"]
 - !private ["Ps12_Reflectable", "locationPhoneNumberLabel"]
 - !private ["Ps12_Reflectable", "reloadData"]
+- !private ["Ps12_Reflectable", "removeAtIndex"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
@@ -739,6 +829,7 @@ depends-nominal:
 - !private "Sq"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
@@ -760,9 +851,11 @@ depends-nominal:
 - !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
+- !private "OSC27UITableViewCellEditingStyle"
 - "CSo21UITableViewController"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
+- !private "OSC23UITableViewRowAnimation"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
@@ -857,4 +950,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "192fa7c864f19045d8cfde663318b6f7"
+interface-hash: "11204c30617af36c89f8b409a94395e4"
