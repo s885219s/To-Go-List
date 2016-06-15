@@ -163,6 +163,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             if let image = self.imageView.image{
                 if let data = UIImagePNGRepresentation(image){
                     self.imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(nameTextField.text! + ".png")
+                    print(self.imageFileLocation)
                     data.writeToFile(imageFileLocation, atomically: true)
                 }
             }
@@ -175,14 +176,14 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
+        let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+        return path
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

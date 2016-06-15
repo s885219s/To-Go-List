@@ -106,7 +106,8 @@ class LocationsSource{
     
     func openDatabase(){
         do {
-            self.databaseConnection = try Connection(filePath)
+            self.databaseConnection = try Connection(self.filePath)
+            print(self.filePath)
             
             try self.databaseConnection!.run(LocationTable.table.create(ifNotExists: true) { t in
                 t.column(LocationTable.itemId, primaryKey: .Autoincrement)
