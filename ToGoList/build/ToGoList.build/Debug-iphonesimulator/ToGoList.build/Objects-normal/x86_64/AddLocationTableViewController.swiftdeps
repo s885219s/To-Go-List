@@ -8,118 +8,118 @@ provides-member:
 - ["CSo7UIImage", ""]
 - ["CSo7UIImage", "fixOrientation"]
 provides-dynamic-lookup:
-- "setCurrentCoordinateButton"
+- "linkTextField"
 - "locationAddress"
-- "dismissKeyboard"
-- "addressTextField"
-- "locationVisited"
-- "locationVisited"
-- "getAddressForLatLng"
-- "searchLocationInfoFromGoogleMap"
-- "setCurrentCoordinate"
 - "locationVisitButton"
-- "locationManager"
+- "locationPhoneNumber"
+- "tableView"
+- "dismissKeyboard"
+- "getDocumentsDirectory"
+- "getAddressForLatLng"
+- "locationLink"
+- "clickSaveButton"
+- "forwardGeocoding"
+- "reverseGeocoding"
+- "placePickerButton"
+- "getLatLngForZip"
+- "setCurrentCoordinate"
+- "imageView"
+- "searchLocationInfoFromGoogleMap"
+- "didSetNewImage"
+- "setCurrentCoordinateButton"
+- "nameTextField"
+- "imageFileName"
+- "phoneNumberTextField"
+- "checkPlacePickerButton"
+- "baseUrl"
+- "fixOrientation"
+- "checkSetCurrentLocation"
 - "viewDidLoad"
 - "typesTextField"
-- "forwardGeocoding"
-- "tableView"
-- "locationType"
-- "locationPhoneNumber"
-- "phoneNumberTextField"
-- "getDocumentsDirectory"
-- "reverseGeocoding"
-- "checkPlacePickerButton"
-- "nameTextField"
-- "imageView"
-- "baseUrl"
-- "locationName"
+- "addressTextField"
 - "imagePickerController"
 - "apikey"
-- "didSetNewImage"
-- "clickSaveButton"
-- "locationLink"
-- "fixOrientation"
-- "imageFileLocation"
-- "getLatLngForZip"
-- "checkSetCurrentLocation"
-- "linkTextField"
-- "placePickerButton"
+- "locationType"
+- "locationVisited"
+- "locationVisited"
+- "locationManager"
+- "locationName"
 depends-top-level:
-- "UITableView"
-- !private "UIImagePNGRepresentation"
-- !private "Void"
-- !private "!="
-- !private "Int"
-- !private "CGImageGetColorSpace"
-- !private "GMSCoordinateBounds"
-- "UIButton"
-- !private "CGBitmapContextCreateImage"
-- !private "print"
-- "CLLocationDegrees"
-- "CLLocationCoordinate2D"
-- "UIImagePickerController"
-- !private "CGImageGetBitsPerComponent"
-- "UITableViewController"
-- !private "NSURL"
+- !private "UIViewContentMode"
 - !private "ABCreateStringWithAddressDictionary"
-- "CLLocationManagerDelegate"
+- !private "CGBitmapContextCreateImage"
+- !private "M_PI"
+- !private "Int"
+- !private "UITapGestureRecognizer"
+- !private "CGImageGetBitmapInfo"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "Location"
+- !private "CGAffineTransformIdentity"
+- !private "CLGeocoder"
+- !private "Void"
+- !private "GMSCoordinateBounds"
+- !private "NSCharacterSet"
+- !private "NSDictionary"
+- !private "UIAlertController"
+- !private "=="
+- !private "-"
+- !private "CGImageGetBitsPerComponent"
+- "UITextField"
+- "NSIndexPath"
+- "Bool"
 - !private "CGContextDrawImage"
-- !private "UIAlertActionStyle"
-- !private "NSData"
-- !private "NSArray"
+- !private "UIImagePNGRepresentation"
+- !private "!="
+- !private "CLLocation"
+- "CLLocationCoordinate2D"
+- !private "CGAffineTransformScale"
+- "UIImageView"
+- "UITableView"
+- !private "GMSPlace"
+- "CLLocationDegrees"
+- "AddLocationTableViewController"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "CGImageGetColorSpace"
 - !private "CGAffineTransformTranslate"
 - !private "CGRectMake"
-- !private "UIAlertAction"
-- "UIImage"
-- !private "CGImageGetBitmapInfo"
-- "CLLocationManager"
-- "StringLiteralType"
-- !private "GMSPlacePickerConfig"
-- !private "CGAffineTransformScale"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "UnicodeScalarType"
-- !private "CLLocationCoordinate2DMake"
-- !private "LocationsSource"
-- "BooleanLiteralType"
-- !private "Float"
-- !private "M_PI_2"
-- !private "GMSPlacePicker"
-- !private "CGBitmapContextCreate"
-- !private "CGContextConcatCTM"
-- !private "UIAlertControllerStyle"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "NSString"
-- "String"
-- !private "||"
-- !private "+"
-- !private "CLLocation"
-- !private "CLGeocoder"
-- !private "UITapGestureRecognizer"
-- "UIImageView"
-- "NSIndexPath"
-- !private "-"
-- "UITextField"
-- !private "UIViewContentMode"
-- !private "UIAlertController"
-- !private "NSJSONSerialization"
-- !private "CGAffineTransformRotate"
-- "AddLocationTableViewController"
-- !private "NSError"
-- "Bool"
-- "AnyObject"
-- !private "GMSPlace"
-- !private "CGFloat"
-- !private "M_PI"
-- !private "Location"
-- !private ">"
-- "UIImagePickerControllerDelegate"
-- !private "NSCharacterSet"
-- !private "=="
-- !private "NSDictionary"
+- !private "NSURL"
 - "GMSMapViewDelegate"
-- !private "NSJSONReadingOptions"
-- !private "CGAffineTransformIdentity"
+- !private "M_PI_2"
 - "UINavigationControllerDelegate"
+- !private "NSData"
+- "UIImagePickerControllerDelegate"
+- "CLLocationManager"
+- !private "GMSPlacePickerConfig"
+- "UIImagePickerController"
+- !private "UIAlertAction"
+- !private "CLLocationCoordinate2DMake"
+- "BooleanLiteralType"
+- !private "GMSPlacePicker"
+- !private "Float"
+- !private "NSArray"
+- !private "UIAlertActionStyle"
+- !private "NSError"
+- !private "+"
+- !private "NSJSONSerialization"
+- "UIImage"
+- "AnyObject"
+- !private "UnicodeScalarType"
+- "UITableViewController"
+- !private "UIAlertControllerStyle"
+- !private "NSJSONReadingOptions"
+- !private "CGAffineTransformRotate"
+- !private "LocationsSource"
+- !private "||"
+- !private "CGBitmapContextCreate"
+- !private ">"
+- "CLLocationManagerDelegate"
+- !private "print"
+- "String"
+- "UIButton"
+- !private "CGFloat"
+- "NSString"
+- "StringLiteralType"
+- !private "CGContextConcatCTM"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C8ToGoList30AddLocationTableViewController", "ABCreateStringWithAddressDictionary"]
@@ -180,7 +180,7 @@ depends-member:
 - ["C8ToGoList30AddLocationTableViewController", "getAddressForLatLng"]
 - ["C8ToGoList30AddLocationTableViewController", "getDocumentsDirectory"]
 - ["C8ToGoList30AddLocationTableViewController", "getLatLngForZip"]
-- ["C8ToGoList30AddLocationTableViewController", "imageFileLocation"]
+- ["C8ToGoList30AddLocationTableViewController", "imageFileName"]
 - ["C8ToGoList30AddLocationTableViewController", "imagePickerController"]
 - ["C8ToGoList30AddLocationTableViewController", "imagePickerControllerDidCancel"]
 - ["C8ToGoList30AddLocationTableViewController", "imageView"]
@@ -296,7 +296,7 @@ depends-member:
 - ["Ps9AnyObject", "getDocumentsDirectory"]
 - ["Ps9AnyObject", "getLatLngForZip"]
 - !private ["Ps9AnyObject", "image"]
-- ["Ps9AnyObject", "imageFileLocation"]
+- ["Ps9AnyObject", "imageFileName"]
 - !private ["Ps9AnyObject", "imageOrientation"]
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
@@ -449,7 +449,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "getAddressForLatLng"]
 - !private ["PSo25CLLocationManagerDelegate", "getDocumentsDirectory"]
 - !private ["PSo25CLLocationManagerDelegate", "getLatLngForZip"]
-- !private ["PSo25CLLocationManagerDelegate", "imageFileLocation"]
+- !private ["PSo25CLLocationManagerDelegate", "imageFileName"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerController"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo25CLLocationManagerDelegate", "imageView"]
@@ -565,7 +565,7 @@ depends-member:
 - ["Ps11CVarArgType", "getDocumentsDirectory"]
 - ["Ps11CVarArgType", "getLatLngForZip"]
 - !private ["Ps11CVarArgType", "image"]
-- ["Ps11CVarArgType", "imageFileLocation"]
+- ["Ps11CVarArgType", "imageFileName"]
 - !private ["Ps11CVarArgType", "imageOrientation"]
 - ["Ps11CVarArgType", "imagePickerController"]
 - ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
@@ -722,7 +722,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "getDocumentsDirectory"]
 - ["Ps28CustomDebugStringConvertible", "getLatLngForZip"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
-- ["Ps28CustomDebugStringConvertible", "imageFileLocation"]
+- ["Ps28CustomDebugStringConvertible", "imageFileName"]
 - !private ["Ps28CustomDebugStringConvertible", "imageOrientation"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
@@ -869,7 +869,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "getDocumentsDirectory"]
 - ["Ps23CustomStringConvertible", "getLatLngForZip"]
 - !private ["Ps23CustomStringConvertible", "image"]
-- ["Ps23CustomStringConvertible", "imageFileLocation"]
+- ["Ps23CustomStringConvertible", "imageFileName"]
 - !private ["Ps23CustomStringConvertible", "imageOrientation"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
@@ -1038,7 +1038,7 @@ depends-member:
 - ["Ps9Equatable", "getLatLngForZip"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "image"]
-- ["Ps9Equatable", "imageFileLocation"]
+- ["Ps9Equatable", "imageFileName"]
 - !private ["Ps9Equatable", "imageOrientation"]
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
@@ -1155,7 +1155,7 @@ depends-member:
 - !private ["PSo18GMSMapViewDelegate", "getAddressForLatLng"]
 - !private ["PSo18GMSMapViewDelegate", "getDocumentsDirectory"]
 - !private ["PSo18GMSMapViewDelegate", "getLatLngForZip"]
-- !private ["PSo18GMSMapViewDelegate", "imageFileLocation"]
+- !private ["PSo18GMSMapViewDelegate", "imageFileName"]
 - ["PSo18GMSMapViewDelegate", "imagePickerController"]
 - ["PSo18GMSMapViewDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo18GMSMapViewDelegate", "imageView"]
@@ -1297,7 +1297,7 @@ depends-member:
 - ["Ps8Hashable", "getDocumentsDirectory"]
 - ["Ps8Hashable", "getLatLngForZip"]
 - !private ["Ps8Hashable", "image"]
-- ["Ps8Hashable", "imageFileLocation"]
+- ["Ps8Hashable", "imageFileName"]
 - !private ["Ps8Hashable", "imageOrientation"]
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
@@ -1487,7 +1487,7 @@ depends-member:
 - ["PSo8NSCoding", "getDocumentsDirectory"]
 - ["PSo8NSCoding", "getLatLngForZip"]
 - !private ["PSo8NSCoding", "image"]
-- ["PSo8NSCoding", "imageFileLocation"]
+- ["PSo8NSCoding", "imageFileName"]
 - !private ["PSo8NSCoding", "imageOrientation"]
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
@@ -1603,7 +1603,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getAddressForLatLng"]
 - ["PSo26NSExtensionRequestHandling", "getDocumentsDirectory"]
 - ["PSo26NSExtensionRequestHandling", "getLatLngForZip"]
-- ["PSo26NSExtensionRequestHandling", "imageFileLocation"]
+- ["PSo26NSExtensionRequestHandling", "imageFileName"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
 - ["PSo26NSExtensionRequestHandling", "imageView"]
@@ -1748,7 +1748,7 @@ depends-member:
 - ["CSo8NSObject", "getDocumentsDirectory"]
 - ["CSo8NSObject", "getLatLngForZip"]
 - !private ["CSo8NSObject", "image"]
-- ["CSo8NSObject", "imageFileLocation"]
+- ["CSo8NSObject", "imageFileName"]
 - !private ["CSo8NSObject", "imageOrientation"]
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
@@ -1885,7 +1885,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getDocumentsDirectory"]
 - ["PSo16NSObjectProtocol", "getLatLngForZip"]
 - !private ["PSo16NSObjectProtocol", "image"]
-- ["PSo16NSObjectProtocol", "imageFileLocation"]
+- ["PSo16NSObjectProtocol", "imageFileName"]
 - !private ["PSo16NSObjectProtocol", "imageOrientation"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
@@ -2161,7 +2161,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "getDocumentsDirectory"]
 - ["PSo21UIAppearanceContainer", "getLatLngForZip"]
 - !private ["PSo21UIAppearanceContainer", "image"]
-- ["PSo21UIAppearanceContainer", "imageFileLocation"]
+- ["PSo21UIAppearanceContainer", "imageFileName"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - ["PSo21UIAppearanceContainer", "imageView"]
@@ -2251,7 +2251,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getAddressForLatLng"]
 - ["PSo18UIContentContainer", "getDocumentsDirectory"]
 - ["PSo18UIContentContainer", "getLatLngForZip"]
-- ["PSo18UIContentContainer", "imageFileLocation"]
+- ["PSo18UIContentContainer", "imageFileName"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
 - ["PSo18UIContentContainer", "imageView"]
@@ -2363,7 +2363,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "getDocumentsDirectory"]
 - ["PSo18UIFocusEnvironment", "getLatLngForZip"]
 - !private ["PSo18UIFocusEnvironment", "image"]
-- ["PSo18UIFocusEnvironment", "imageFileLocation"]
+- ["PSo18UIFocusEnvironment", "imageFileName"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UIFocusEnvironment", "imageView"]
@@ -2483,7 +2483,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "getAddressForLatLng"]
 - !private ["PSo31UIImagePickerControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo31UIImagePickerControllerDelegate", "getLatLngForZip"]
-- !private ["PSo31UIImagePickerControllerDelegate", "imageFileLocation"]
+- !private ["PSo31UIImagePickerControllerDelegate", "imageFileName"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo31UIImagePickerControllerDelegate", "imageView"]
@@ -2566,7 +2566,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "getAddressForLatLng"]
 - !private ["PSo30UINavigationControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo30UINavigationControllerDelegate", "getLatLngForZip"]
-- !private ["PSo30UINavigationControllerDelegate", "imageFileLocation"]
+- !private ["PSo30UINavigationControllerDelegate", "imageFileName"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo30UINavigationControllerDelegate", "imageView"]
@@ -2665,7 +2665,7 @@ depends-member:
 - ["CSo11UIResponder", "getDocumentsDirectory"]
 - ["CSo11UIResponder", "getLatLngForZip"]
 - !private ["CSo11UIResponder", "image"]
-- ["CSo11UIResponder", "imageFileLocation"]
+- ["CSo11UIResponder", "imageFileName"]
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "imageView"]
@@ -2751,7 +2751,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "getAddressForLatLng"]
 - ["PSo20UIScrollViewDelegate", "getDocumentsDirectory"]
 - ["PSo20UIScrollViewDelegate", "getLatLngForZip"]
-- ["PSo20UIScrollViewDelegate", "imageFileLocation"]
+- ["PSo20UIScrollViewDelegate", "imageFileName"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo20UIScrollViewDelegate", "imageView"]
@@ -2835,7 +2835,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getAddressForLatLng"]
 - ["PSo16UIStateRestoring", "getDocumentsDirectory"]
 - ["PSo16UIStateRestoring", "getLatLngForZip"]
-- ["PSo16UIStateRestoring", "imageFileLocation"]
+- ["PSo16UIStateRestoring", "imageFileName"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
 - ["PSo16UIStateRestoring", "imageView"]
@@ -2935,7 +2935,7 @@ depends-member:
 - ["CSo21UITableViewController", "getAddressForLatLng"]
 - ["CSo21UITableViewController", "getDocumentsDirectory"]
 - ["CSo21UITableViewController", "getLatLngForZip"]
-- ["CSo21UITableViewController", "imageFileLocation"]
+- ["CSo21UITableViewController", "imageFileName"]
 - ["CSo21UITableViewController", "imagePickerController"]
 - ["CSo21UITableViewController", "imagePickerControllerDidCancel"]
 - ["CSo21UITableViewController", "imageView"]
@@ -3016,7 +3016,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "getAddressForLatLng"]
 - ["PSo21UITableViewDataSource", "getDocumentsDirectory"]
 - ["PSo21UITableViewDataSource", "getLatLngForZip"]
-- ["PSo21UITableViewDataSource", "imageFileLocation"]
+- ["PSo21UITableViewDataSource", "imageFileName"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
 - ["PSo21UITableViewDataSource", "imageView"]
@@ -3097,7 +3097,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "getAddressForLatLng"]
 - ["PSo19UITableViewDelegate", "getDocumentsDirectory"]
 - ["PSo19UITableViewDelegate", "getLatLngForZip"]
-- ["PSo19UITableViewDelegate", "imageFileLocation"]
+- ["PSo19UITableViewDelegate", "imageFileName"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo19UITableViewDelegate", "imageView"]
@@ -3191,7 +3191,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "getDocumentsDirectory"]
 - ["PSo18UITraitEnvironment", "getLatLngForZip"]
 - !private ["PSo18UITraitEnvironment", "image"]
-- ["PSo18UITraitEnvironment", "imageFileLocation"]
+- ["PSo18UITraitEnvironment", "imageFileName"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UITraitEnvironment", "imageView"]
@@ -3304,7 +3304,7 @@ depends-member:
 - ["CSo16UIViewController", "getAddressForLatLng"]
 - ["CSo16UIViewController", "getDocumentsDirectory"]
 - ["CSo16UIViewController", "getLatLngForZip"]
-- ["CSo16UIViewController", "imageFileLocation"]
+- ["CSo16UIViewController", "imageFileName"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
 - ["CSo16UIViewController", "imageView"]
@@ -3718,4 +3718,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "77579d3be523ba2aba0c9ce7fc82ec58"
+interface-hash: "7995c7f8465f087e1308ab9278f8ebac"

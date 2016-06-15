@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList25LocationListTableViewCell", ""]
 provides-dynamic-lookup:
-- "locationTypeImage"
-- "locationPhoneNumberLabel"
+- "locationNameLabel"
 - "locationAddressLabel"
 - "awakeFromNib"
-- "locationNameLabel"
+- "locationPhoneNumberLabel"
+- "locationTypeImage"
 - "setSelected"
 depends-top-level:
 - "UIImageView"
-- "LocationListTableViewCell"
-- "UILabel"
 - "Bool"
+- "UILabel"
+- "LocationListTableViewCell"
 - "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

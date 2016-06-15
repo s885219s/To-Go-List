@@ -117,7 +117,7 @@ SWIFT_CLASS("_TtC8ToGoList30AddLocationTableViewController")
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic) BOOL locationVisited;
 @property (nonatomic) BOOL didSetNewImage;
-@property (nonatomic, copy) NSString * _Nonnull imageFileLocation;
+@property (nonatomic, copy) NSString * _Nonnull imageFileName;
 @property (nonatomic, copy) NSString * _Nullable locationName;
 @property (nonatomic, copy) NSString * _Nullable locationType;
 @property (nonatomic, copy) NSString * _Nullable locationPhoneNumber;

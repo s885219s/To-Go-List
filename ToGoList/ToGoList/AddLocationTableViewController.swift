@@ -24,8 +24,9 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
 
     var locationVisited = false
     var didSetNewImage = false
-    var imageFileLocation = ""
+//    var imageFileLocation = ""
 
+    var imageFileName = ""
     var locationName:String?
     var locationType:String?
     var locationPhoneNumber:String?
@@ -162,14 +163,15 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
         if didSetNewImage{
             if let image = self.imageView.image{
                 if let data = UIImagePNGRepresentation(image){
-                    self.imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(nameTextField.text! + ".png")
-                    print(self.imageFileLocation)
+                    imageFileName = nameTextField.text! + ".png"
+                    let imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(imageFileName)
+                    print("save to :" + imageFileLocation)
                     data.writeToFile(imageFileLocation, atomically: true)
                 }
             }
         }
 
-        let newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: self.imageFileLocation)
+        let newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: imageFileName)
         
         LocationsSource.sharedInstance.insertLocationToList(newLocation)
         self.navigationController?.popViewControllerAnimated(true)

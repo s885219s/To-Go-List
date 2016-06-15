@@ -58,13 +58,11 @@ class LocationDetailTableViewController: UITableViewController {
             return
         }
         if(location.imagePath != ""){
-            let imagePath = location.imagePath
-            LocationPhoto.image = UIImage(contentsOfFile: imagePath)
+            let documentFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+            let filePath = (documentFolder as NSString).stringByAppendingPathComponent(location.imagePath)
+            LocationPhoto.image = UIImage(contentsOfFile: filePath)
             LocationPhoto.contentMode = UIViewContentMode.ScaleAspectFill
             LocationPhoto.clipsToBounds = true
-            print(location.imagePath)
-            print(LocationPhoto.image)
-            print(LocationPhoto.image?.imageOrientation)
         }
         if(location.name != ""){
             self.LocationName.text = location.name
