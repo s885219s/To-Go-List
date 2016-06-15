@@ -71,6 +71,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         locations = LocationsSource.sharedInstance.getLocationList()
+        for location in locations! {
+            print("location name\(location.name) lati\(location.coordinate!.latitude) long\(location.coordinate!.longitude)")
+            forwardGeocoding(location.address, findedLocation: location)
+        }
     }
 
     override func didReceiveMemoryWarning() {
