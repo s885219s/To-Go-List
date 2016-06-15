@@ -68,6 +68,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         //暫時無法用
 //        showMarker(locations)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        locations = LocationsSource.sharedInstance.getLocationList()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
