@@ -176,6 +176,7 @@ SWIFT_CLASS("_TtC8ToGoList31EditLocationTableViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneNumberTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified addressTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified linkTextField;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 - (void)viewDidLoad;
 - (IBAction)clickSvaeButton:(id _Nonnull)sender;
 - (void)viewWillDisappear:(BOOL)animated;
@@ -229,6 +230,8 @@ SWIFT_CLASS("_TtC8ToGoList31LocationListTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -262,6 +265,7 @@ SWIFT_CLASS("_TtC8ToGoList17MapViewController")
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 @property (nonatomic, weak) IBOutlet GMSMapView * _Null_unspecified mapView;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)mapView:(GMSMapView * _Nonnull)mapView didTapAtCoordinate:(CLLocationCoordinate2D)coordinate;
 - (void)mapView:(GMSMapView * _Nonnull)mapView didTapInfoWindowOfMarker:(GMSMarker * _Nonnull)marker;
@@ -275,6 +279,11 @@ SWIFT_CLASS("_TtC8ToGoList17MapViewController")
 @interface MapViewController (SWIFT_EXTENSION(ToGoList)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(ToGoList))
+- (UIImage * _Nonnull)fixOrientation;
 @end
 
 #pragma clang diagnostic pop
