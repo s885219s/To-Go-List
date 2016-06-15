@@ -22,6 +22,8 @@ class LocationDetailTableViewController: UITableViewController, PassNewLocation{
     @IBOutlet weak var LocationTypes: UILabel!
     @IBOutlet weak var LocationWebsite: UILabel!
     @IBOutlet weak var LocationVisitButton: UIButton!
+    
+    
     @IBAction func callLocationPhoneNumber(sender: AnyObject) {
         let optionMenu = UIAlertController(title: nil, message: "Call \(location!.name)", preferredStyle: UIAlertControllerStyle.ActionSheet)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
@@ -71,6 +73,7 @@ class LocationDetailTableViewController: UITableViewController, PassNewLocation{
         }
         if(location.name != ""){
             self.LocationName.text = location.name
+            navigationItem.title = location.name
         }
         if(location.tags.joinWithSeparator(" ") != ""){
             self.LocationTypes.text = location.tags.joinWithSeparator(" ")

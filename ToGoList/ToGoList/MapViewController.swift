@@ -109,6 +109,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView, didTapAtCoordinate coordinate: CLLocationCoordinate2D) {
         print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
+        UIApplication.sharedApplication().sendAction("resignFirstResponder", to:nil, from:nil, forEvent:nil)
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MapViewController.dismissKeyboard))
+//        view.addGestureRecognizer(tap)
     }
     
     func mapView(mapView: GMSMapView, didTapInfoWindowOfMarker marker: GMSMarker) {
@@ -133,6 +136,12 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             }
         }
         */
+    }
+    
+    //Calls this function when the tap is recognized.  收回鍵盤用
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        self.view.endEditing(true)
     }
     
     

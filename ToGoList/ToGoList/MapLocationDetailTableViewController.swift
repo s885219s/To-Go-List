@@ -67,6 +67,7 @@ class MapLocationDetailTableViewController: UITableViewController, PassNewLocati
         }
         if(location.name != ""){
             locationNameLabel.text = location.name
+            navigationItem.title = location.name
         }
         if(location.tags.joinWithSeparator(" ") != ""){
             locationTypeLabel.text = location.tags.joinWithSeparator(" ")

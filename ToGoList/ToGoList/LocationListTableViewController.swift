@@ -74,6 +74,20 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
         cell.locationNameLabel.text = location.name
         cell.locationAddressLabel.text = location.address
         cell.locationPhoneNumberLabel.text = location.phoneNumber
+        switch location.tags[0] {
+        case "bar":
+            cell.locationTypeImage.image = UIImage(named:"bar")
+        case "restaurant":
+            cell.locationTypeImage.image = UIImage(named:"restaurant")
+        case "hotel":
+            cell.locationTypeImage.image = UIImage(named:"hotel")
+        case "shopping":
+            cell.locationTypeImage.image = UIImage(named:"shopping")
+        case "recreation":
+            cell.locationTypeImage.image = UIImage(named:"recreation")
+        default:
+            cell.locationTypeImage.image = UIImage(named:"attrationPin")
+        }
         
         if let isVisited = location.visited {
             cell.accessoryType = isVisited ? .Checkmark : .None
