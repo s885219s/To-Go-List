@@ -176,6 +176,7 @@ SWIFT_CLASS("_TtC8ToGoList31EditLocationTableViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneNumberTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified addressTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified linkTextField;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 - (void)viewDidLoad;
 - (IBAction)clickSvaeButton:(id _Nonnull)sender;
 - (void)viewWillDisappear:(BOOL)animated;
