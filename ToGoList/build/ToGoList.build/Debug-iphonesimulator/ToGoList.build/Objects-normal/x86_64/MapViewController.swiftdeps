@@ -6,44 +6,46 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList17MapViewController", ""]
 provides-dynamic-lookup:
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "viewWillAppear"
+- "mapView"
+- "mapView"
+- "mapView"
 - "didReceiveMemoryWarning"
+- "searchController"
 - "prepareForSegue"
 - "viewDidLoad"
-- "searchController"
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "mapView"
-- "mapView"
-- "mapView"
 depends-top-level:
-- "CLLocationManagerDelegate"
-- "GMSMarker"
-- "String"
-- !private "GMSCameraPosition"
 - "UIViewController"
-- "CLLocationCoordinate2D"
-- "CLLocationManager"
-- !private "!="
-- "MapViewController"
-- !private "print"
-- !private "CLLocationCoordinate2DMake"
-- !private "LocationsSource"
 - !private "BooleanLiteralType"
+- "Bool"
+- !private "GMSCameraPosition"
 - !private "UIImage"
-- "UISearchBar"
-- "GMSMapView"
-- "GMSMapViewDelegate"
 - !private "MapLocationDetailTableViewController"
-- !private "CLGeocoder"
-- !private "=="
-- "AnyObject"
-- !private "StringLiteralType"
-- !private ">"
-- "UIStoryboardSegue"
-- "CLLocation"
-- "Location"
+- "MapViewController"
+- "CLLocationManager"
+- "GMSMarker"
+- !private "LocationsSource"
 - "CLAuthorizationStatus"
+- !private "CLGeocoder"
+- "String"
+- !private ">"
+- !private "print"
+- !private "!="
+- !private "CLLocationCoordinate2DMake"
+- "CLLocationCoordinate2D"
+- !private "StringLiteralType"
+- "CLLocation"
+- "CLLocationManagerDelegate"
+- "Location"
+- "AnyObject"
+- "GMSMapView"
+- "UISearchBar"
+- "GMSMapViewDelegate"
+- "UIStoryboardSegue"
+- !private "=="
 depends-member:
 - !private ["Ps9AnyObject", "CLGeocoder"]
 - !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
@@ -54,6 +56,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "areasOfInterest"]
 - !private ["Ps9AnyObject", "camera"]
+- !private ["Ps9AnyObject", "clear"]
 - !private ["Ps9AnyObject", "coordinate"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "destinationViewController"]
@@ -91,6 +94,7 @@ depends-member:
 - !private ["Ps9AnyObject", "stopUpdatingLocation"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -168,6 +172,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "areasOfInterest"]
 - !private ["Ps11CVarArgType", "camera"]
+- !private ["Ps11CVarArgType", "clear"]
 - !private ["Ps11CVarArgType", "coordinate"]
 - !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
@@ -203,6 +208,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "stopUpdatingLocation"]
 - !private ["Ps11CVarArgType", "title"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -229,6 +235,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "areasOfInterest"]
 - !private ["Ps28CustomDebugStringConvertible", "camera"]
+- !private ["Ps28CustomDebugStringConvertible", "clear"]
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -267,6 +274,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CLGeocoder"]
 - !private ["Ps23CustomStringConvertible", "CLLocationCoordinate2DMake"]
@@ -284,6 +292,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "areasOfInterest"]
 - !private ["Ps23CustomStringConvertible", "camera"]
+- !private ["Ps23CustomStringConvertible", "clear"]
 - !private ["Ps23CustomStringConvertible", "coordinate"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
@@ -322,6 +331,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "AuthorizedWhenInUse"]
@@ -338,6 +348,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "areasOfInterest"]
 - !private ["Ps9Equatable", "camera"]
+- !private ["Ps9Equatable", "clear"]
 - !private ["Ps9Equatable", "coordinate"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "destinationViewController"]
@@ -373,6 +384,7 @@ depends-member:
 - !private ["Ps9Equatable", "stopUpdatingLocation"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
 - !private ["P6SQLite11Expressible", "Distance"]
 - !private ["P6SQLite11Expressible", "IntegerLiteralType"]
@@ -384,6 +396,7 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["CSo17GMSCameraPosition", "init"]
 - !private ["CSo10GMSMapView", "camera"]
+- !private ["CSo10GMSMapView", "clear"]
 - !private ["CSo10GMSMapView", "delegate"]
 - !private ["CSo10GMSMapView", "myLocationEnabled"]
 - !private ["CSo10GMSMapView", "settings"]
@@ -434,6 +447,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "areasOfInterest"]
 - !private ["Ps8Hashable", "camera"]
+- !private ["Ps8Hashable", "clear"]
 - !private ["Ps8Hashable", "coordinate"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "destinationViewController"]
@@ -469,6 +483,7 @@ depends-member:
 - !private ["Ps8Hashable", "stopUpdatingLocation"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
@@ -500,6 +515,7 @@ depends-member:
 - !private ["C8ToGoList15LocationsSource", "sharedInstance"]
 - !private ["C8ToGoList36MapLocationDetailTableViewController", "location"]
 - ["C8ToGoList17MapViewController", "AnyObject"]
+- ["C8ToGoList17MapViewController", "Bool"]
 - ["C8ToGoList17MapViewController", "CLAuthorizationStatus"]
 - !private ["C8ToGoList17MapViewController", "CLGeocoder"]
 - ["C8ToGoList17MapViewController", "CLLocation"]
@@ -536,6 +552,7 @@ depends-member:
 - ["C8ToGoList17MapViewController", "searchController"]
 - ["C8ToGoList17MapViewController", "showMarker"]
 - ["C8ToGoList17MapViewController", "viewDidLoad"]
+- ["C8ToGoList17MapViewController", "viewWillAppear"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -569,6 +586,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "areasOfInterest"]
 - !private ["PSo8NSCoding", "camera"]
+- !private ["PSo8NSCoding", "clear"]
 - !private ["PSo8NSCoding", "coordinate"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -593,6 +611,7 @@ depends-member:
 - !private ["PSo8NSCoding", "settings"]
 - ["PSo8NSCoding", "showMarker"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "areasOfInterest"]
 - !private ["PSo9NSCopying", "coordinate"]
@@ -629,9 +648,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "searchController"]
 - ["PSo26NSExtensionRequestHandling", "showMarker"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CLAuthorizationStatus"]
 - !private ["CSo8NSObject", "CLGeocoder"]
 - ["CSo8NSObject", "CLLocation"]
@@ -650,6 +671,7 @@ depends-member:
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "areasOfInterest"]
 - !private ["CSo8NSObject", "camera"]
+- !private ["CSo8NSObject", "clear"]
 - !private ["CSo8NSObject", "coordinate"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "destinationViewController"]
@@ -685,6 +707,7 @@ depends-member:
 - !private ["CSo8NSObject", "stopUpdatingLocation"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "CLGeocoder"]
 - !private ["PSo16NSObjectProtocol", "CLLocationCoordinate2DMake"]
 - ["PSo16NSObjectProtocol", "CLLocationManager"]
@@ -694,6 +717,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "areasOfInterest"]
 - !private ["PSo16NSObjectProtocol", "camera"]
+- !private ["PSo16NSObjectProtocol", "clear"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
@@ -729,6 +753,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stopUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "areasOfInterest"]
 - !private ["PSo14NSSecureCoding", "coordinate"]
@@ -777,11 +802,13 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "camera"]
+- !private ["PSo29UIAccessibilityIdentification", "clear"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "myLocationEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "settings"]
 - !private ["PSo12UIAppearance", "camera"]
+- !private ["PSo12UIAppearance", "clear"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "myLocationEnabled"]
 - !private ["PSo12UIAppearance", "settings"]
@@ -793,6 +820,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "LocationsSource"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "camera"]
+- !private ["PSo21UIAppearanceContainer", "clear"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "didTapMyLocationButtonForMapView"]
@@ -816,6 +844,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "settings"]
 - ["PSo21UIAppearanceContainer", "showMarker"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CLGeocoder"]
 - !private ["PSo18UIContentContainer", "CLLocationCoordinate2DMake"]
@@ -844,12 +873,15 @@ depends-member:
 - ["PSo18UIContentContainer", "searchController"]
 - ["PSo18UIContentContainer", "showMarker"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "camera"]
+- !private ["PSo17UICoordinateSpace", "clear"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "myLocationEnabled"]
 - !private ["PSo17UICoordinateSpace", "settings"]
 - !private ["PSo13UIDynamicItem", "camera"]
+- !private ["PSo13UIDynamicItem", "clear"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "myLocationEnabled"]
 - !private ["PSo13UIDynamicItem", "settings"]
@@ -861,6 +893,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "LocationsSource"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "camera"]
+- !private ["PSo18UIFocusEnvironment", "clear"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "didTapMyLocationButtonForMapView"]
@@ -884,9 +917,11 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "settings"]
 - ["PSo18UIFocusEnvironment", "showMarker"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo7UIImage", "init"]
 - ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CLAuthorizationStatus"]
 - !private ["CSo11UIResponder", "CLGeocoder"]
 - ["CSo11UIResponder", "CLLocation"]
@@ -904,6 +939,7 @@ depends-member:
 - ["CSo11UIResponder", "UISearchBar"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "camera"]
+- !private ["CSo11UIResponder", "clear"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "didTapMyLocationButtonForMapView"]
@@ -927,6 +963,7 @@ depends-member:
 - !private ["CSo11UIResponder", "settings"]
 - ["CSo11UIResponder", "showMarker"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - !private ["PSo20UIScrollViewDelegate", "location"]
 - !private ["PSo16UIStateRestoring", "CLGeocoder"]
 - !private ["PSo16UIStateRestoring", "CLLocationCoordinate2DMake"]
@@ -955,6 +992,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "searchController"]
 - ["PSo16UIStateRestoring", "showMarker"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
@@ -969,6 +1007,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "LocationsSource"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "camera"]
+- !private ["PSo18UITraitEnvironment", "clear"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "didTapMyLocationButtonForMapView"]
@@ -992,12 +1031,15 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "settings"]
 - ["PSo18UITraitEnvironment", "showMarker"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "camera"]
+- !private ["CSo6UIView", "clear"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "myLocationEnabled"]
 - !private ["CSo6UIView", "settings"]
 - ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CLAuthorizationStatus"]
 - !private ["CSo16UIViewController", "CLGeocoder"]
 - ["CSo16UIViewController", "CLLocation"]
@@ -1035,6 +1077,7 @@ depends-member:
 - ["CSo16UIViewController", "searchController"]
 - ["CSo16UIViewController", "showMarker"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -1099,6 +1142,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "camera"]
+- !private ["Ps12_Reflectable", "clear"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "delegate"]
 - !private ["Ps12_Reflectable", "first"]
@@ -1310,4 +1354,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "228e27bdd22616044e718d0baea5a77c"
+interface-hash: "fb03ac3f92880def545bc098ebc960ea"

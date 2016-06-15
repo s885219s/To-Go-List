@@ -13,30 +13,30 @@ provides-member:
 - ["C8ToGoList15LocationsSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- !private "Array"
 - !private "print"
+- "Double"
 - !private "!="
+- !private "Array"
+- "Location"
+- "CLLocationCoordinate2D"
+- "Table"
+- "Connection"
+- !private "<-"
+- "BooleanLiteralType"
+- !private "UnicodeScalarType"
+- "Int"
+- "String"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "exit"
+- "LocationsSource"
+- !private "NSString"
+- !private "=="
+- "StringLiteralType"
 - "Bool"
+- "LocationTable"
 - "Expression"
 - "Int64"
-- !private "<-"
-- !private "UnicodeScalarType"
-- !private "=="
-- !private "exit"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "Connection"
 - !private "CLLocationCoordinate2DMake"
-- "Int"
-- !private "NSString"
-- "LocationsSource"
-- "BooleanLiteralType"
-- "LocationTable"
-- "Double"
-- "Location"
-- "String"
-- "Table"
-- "CLLocationCoordinate2D"
 depends-member:
 - ["Ps16AbsoluteValuable", "Datatype"]
 - ["Ps16AbsoluteValuable", "WrappedType"]
@@ -55,6 +55,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fileName"]
 - !private ["Ps9AnyObject", "filePath"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "loadFromDB"]
 - !private ["Ps9AnyObject", "locations"]
 - !private ["Ps9AnyObject", "openDatabase"]
 - !private ["Ps9AnyObject", "prepare"]

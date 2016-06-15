@@ -9,7 +9,7 @@
 import UIKit
 
 class MapLocationDetailTableViewController: UITableViewController {
-    var location:Location?
+    var location:Location!
     @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationTypeLabel: UILabel!
@@ -18,7 +18,7 @@ class MapLocationDetailTableViewController: UITableViewController {
     @IBOutlet weak var locationWebsiteLabel: UILabel!
     @IBOutlet weak var locationVisitedButton: UIButton!
     @IBAction func callLocationPhoneNumber(sender: AnyObject) {
-        let optionMenu = UIAlertController(title: nil, message: "Call \(location!.name)", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let optionMenu = UIAlertController(title: nil, message: "Call \(location.name)", preferredStyle: UIAlertControllerStyle.ActionSheet)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         optionMenu.addAction(cancelAction)
         let callActionHandler = {(action:UIAlertAction!) -> () in
@@ -28,11 +28,11 @@ class MapLocationDetailTableViewController: UITableViewController {
 //                    application.openURL(phoneCallURL);
 //                }
 //            }
-            if let url = NSURL(string: "tel://\(self.location!.phoneNumber)") {
+            if let url = NSURL(string: "tel://\(self.location.phoneNumber)") {
                 UIApplication.sharedApplication().openURL(url)
             }
         }
-        let callAction = UIAlertAction(title: "Call "+"\(location!.name)?", style: UIAlertActionStyle.Default, handler: callActionHandler)
+        let callAction = UIAlertAction(title: "Call "+"\(location.name)?", style: UIAlertActionStyle.Default, handler: callActionHandler)
         optionMenu.addAction(callAction)
         
         //show alertSheet
@@ -48,29 +48,31 @@ class MapLocationDetailTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        print("name: \(location!.name)")
-        if(location?.imagePath != ""){
-            let imagePath = location?.imagePath
-            locationImageView.image = UIImage(contentsOfFile: imagePath!)
+        if(location.imagePath != ""){
+            let documentFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+            let filePath = (documentFolder as NSString).stringByAppendingPathComponent(location.imagePath)
+//            let imagePath = location?.imagePath
+//            print("Load from:" + filePath)
+            locationImageView.image = UIImage(contentsOfFile: filePath)
             locationImageView.contentMode = UIViewContentMode.ScaleAspectFill
             locationImageView.clipsToBounds = true
         }
-        if(location?.name != ""){
-            locationNameLabel.text = location?.name
+        if(location.name != ""){
+            locationNameLabel.text = location.name
         }
-        if(location?.tags.joinWithSeparator(" ") != ""){
-            locationTypeLabel.text = location?.tags.joinWithSeparator(" ")
+        if(location.tags.joinWithSeparator(" ") != ""){
+            locationTypeLabel.text = location.tags.joinWithSeparator(" ")
         }
-        if(location?.phoneNumber != ""){
-            locationPhoneNumberLabel.text = location?.phoneNumber
+        if(location.phoneNumber != ""){
+            locationPhoneNumberLabel.text = location.phoneNumber
         }
-        if(location?.address != ""){
-            locationAddressLabel.text = location?.address
+        if(location.address != ""){
+            locationAddressLabel.text = location.address
         }
-        if(location?.url != ""){
-            locationWebsiteLabel.text = location?.url
+        if(location.url != ""){
+            locationWebsiteLabel.text = location.url
         }
-        if(location?.visited == true){
+        if(location.visited == true){
             locationVisitedButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
         }
         else{
