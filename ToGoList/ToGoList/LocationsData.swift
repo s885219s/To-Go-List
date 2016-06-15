@@ -149,6 +149,7 @@ class LocationsSource{
     }
     
     func getLocationList() -> [Location] {
+        self.loadFromDB()
         return self.locations
     }
     
