@@ -18,6 +18,8 @@ class EditLocationTableViewController: UITableViewController {
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
+    
     //沒有ImageOutlet
 
     override func viewDidLoad() {

@@ -1282,6 +1282,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="addressTextField" destination="dab-mp-7zb" id="cKE-TZ-phA"/>
+                        <outlet property="imageView" destination="EOl-Ev-wzf" id="Vne-Ig-YTL"/>
                         <outlet property="linkTextField" destination="b8I-9R-n10" id="m7y-9s-nH7"/>
                         <outlet property="nameTextField" destination="zWJ-ZL-MGa" id="CyX-fh-aHW"/>
                         <outlet property="phoneNumberTextField" destination="6up-FX-TgM" id="TpU-5f-C4H"/>
