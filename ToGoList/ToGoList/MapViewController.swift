@@ -71,6 +71,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         locations = LocationsSource.sharedInstance.getLocationList()
+        // clear all locations on map
+        self.mapView.clear()
         for location in locations! {
             print("location name\(location.name) lati\(location.coordinate!.latitude) long\(location.coordinate!.longitude)")
             forwardGeocoding(location.address, findedLocation: location)
