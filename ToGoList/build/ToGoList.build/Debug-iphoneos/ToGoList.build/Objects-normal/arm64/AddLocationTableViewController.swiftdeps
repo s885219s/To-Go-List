@@ -5,101 +5,120 @@ provides-nominal:
 - "C8ToGoList30AddLocationTableViewController"
 provides-member:
 - ["C8ToGoList30AddLocationTableViewController", ""]
+- ["CSo7UIImage", ""]
+- ["CSo7UIImage", "fixOrientation"]
 provides-dynamic-lookup:
-- "tableView"
-- "checkSetCurrentLocation"
-- "locationPhoneNumber"
-- "typesTextField"
-- "locationManager"
-- "didSetNewImage"
-- "locationVisitButton"
-- "imagePickerController"
-- "locationVisited"
-- "locationVisited"
-- "getDocumentsDirectory"
-- "linkTextField"
-- "imageFileLocation"
-- "dismissKeyboard"
-- "getLatLngForZip"
-- "phoneNumberTextField"
-- "placePickerButton"
-- "forwardGeocoding"
-- "imageView"
-- "locationLink"
-- "clickSaveButton"
-- "nameTextField"
-- "baseUrl"
-- "locationType"
 - "checkPlacePickerButton"
-- "setCurrentCoordinateButton"
-- "reverseGeocoding"
-- "locationAddress"
-- "setCurrentCoordinate"
-- "apikey"
-- "searchLocationInfoFromGoogleMap"
+- "tableView"
+- "imageView"
+- "baseUrl"
+- "linkTextField"
 - "locationName"
+- "apikey"
+- "didSetNewImage"
+- "clickSaveButton"
+- "locationLink"
+- "imagePickerController"
+- "imageFileLocation"
+- "getLatLngForZip"
+- "checkSetCurrentLocation"
+- "placePickerButton"
 - "addressTextField"
-- "viewDidLoad"
+- "fixOrientation"
+- "locationAddress"
+- "typesTextField"
+- "setCurrentCoordinateButton"
+- "getDocumentsDirectory"
+- "forwardGeocoding"
 - "getAddressForLatLng"
+- "phoneNumberTextField"
+- "searchLocationInfoFromGoogleMap"
+- "setCurrentCoordinate"
+- "dismissKeyboard"
+- "locationManager"
+- "locationType"
+- "nameTextField"
+- "locationVisited"
+- "locationVisited"
+- "viewDidLoad"
+- "locationVisitButton"
+- "reverseGeocoding"
+- "locationPhoneNumber"
 depends-top-level:
-- "UIImagePickerController"
-- "UIButton"
-- "UITableView"
-- "CLLocationDegrees"
-- !private "NSJSONReadingOptions"
-- "CLLocationManagerDelegate"
-- !private "UIImagePNGRepresentation"
-- !private "GMSPlace"
-- !private "LocationsSource"
-- !private "UIAlertActionStyle"
-- "NSString"
-- !private "UIAlertAction"
-- "String"
-- "Bool"
-- !private "ABCreateStringWithAddressDictionary"
-- "CLLocationManager"
-- !private "GMSCoordinateBounds"
-- !private "NSArray"
-- !private "NSJSONSerialization"
-- !private "Void"
-- !private "+"
-- !private "NSCharacterSet"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "StringLiteralType"
-- !private "NSDictionary"
-- !private "UnicodeScalarType"
-- !private "||"
-- !private "Float"
-- !private "CLGeocoder"
-- "BooleanLiteralType"
-- !private "Location"
-- "UITableViewController"
-- !private "UITapGestureRecognizer"
-- !private "GMSPlacePickerConfig"
-- !private "!="
-- !private "NSURL"
-- !private "UIViewContentMode"
-- "NSIndexPath"
-- "GMSMapViewDelegate"
-- "AnyObject"
+- !private "CGBitmapContextCreate"
 - !private "CLLocationCoordinate2DMake"
-- "UIImagePickerControllerDelegate"
-- "UINavigationControllerDelegate"
-- "UIImageView"
-- "CLLocationCoordinate2D"
+- !private "CGImageGetBitmapInfo"
 - !private "GMSPlacePicker"
-- !private "NSError"
-- !private "NSData"
-- !private "UIAlertController"
+- !private "Location"
+- !private "NSURL"
+- !private "CGAffineTransformScale"
+- "CLLocationDegrees"
+- "String"
+- !private "NSJSONReadingOptions"
+- !private "||"
+- !private "=="
+- !private "UnicodeScalarType"
+- !private "CGBitmapContextCreateImage"
 - !private ">"
 - !private "UIImagePickerControllerOriginalImage"
-- !private "print"
-- "UITextField"
-- "AddLocationTableViewController"
-- !private "=="
+- !private "UIViewContentMode"
+- !private "+"
 - !private "-"
-- !private "UIImage"
+- !private "NSError"
+- "UIImageView"
+- "AddLocationTableViewController"
+- !private "GMSPlace"
+- "NSIndexPath"
 - !private "CLLocation"
+- !private "NSData"
+- "Bool"
+- !private "CGImageGetBitsPerComponent"
+- !private "!="
+- "UIImagePickerControllerDelegate"
+- "AnyObject"
+- !private "CGContextDrawImage"
+- !private "CGImageGetColorSpace"
+- "UITableViewController"
+- "GMSMapViewDelegate"
+- !private "UITapGestureRecognizer"
+- !private "NSJSONSerialization"
+- "UINavigationControllerDelegate"
+- !private "CGRectMake"
+- !private "CGAffineTransformTranslate"
+- !private "Void"
+- !private "CGAffineTransformRotate"
+- !private "ABCreateStringWithAddressDictionary"
+- !private "CLGeocoder"
+- "UITableView"
+- !private "GMSCoordinateBounds"
+- !private "print"
+- !private "LocationsSource"
+- "NSString"
+- "StringLiteralType"
+- !private "UIAlertActionStyle"
+- "CLLocationManagerDelegate"
+- "CLLocationCoordinate2D"
+- !private "UIAlertAction"
+- !private "CGAffineTransformIdentity"
+- !private "UIImagePNGRepresentation"
+- !private "CGContextConcatCTM"
+- !private "NSArray"
+- "UIImage"
+- !private "M_PI_2"
+- !private "Int"
+- !private "UIAlertController"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "Float"
+- !private "NSCharacterSet"
+- "CLLocationManager"
+- "UITextField"
+- !private "GMSPlacePickerConfig"
+- !private "NSDictionary"
+- !private "M_PI"
+- "BooleanLiteralType"
+- "UIButton"
+- "UIImagePickerController"
+- !private "CGFloat"
 - !private "UIAlertControllerStyle"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -200,6 +219,20 @@ depends-member:
 - !private ["C8ToGoList30AddLocationTableViewController", "view"]
 - ["C8ToGoList30AddLocationTableViewController", "viewDidLoad"]
 - !private ["Ps9AnyObject", "ABCreateStringWithAddressDictionary"]
+- !private ["Ps9AnyObject", "CGAffineTransformIdentity"]
+- !private ["Ps9AnyObject", "CGAffineTransformRotate"]
+- !private ["Ps9AnyObject", "CGAffineTransformScale"]
+- !private ["Ps9AnyObject", "CGAffineTransformTranslate"]
+- !private ["Ps9AnyObject", "CGBitmapContextCreate"]
+- !private ["Ps9AnyObject", "CGBitmapContextCreateImage"]
+- !private ["Ps9AnyObject", "CGContextConcatCTM"]
+- !private ["Ps9AnyObject", "CGContextDrawImage"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "CGImage"]
+- !private ["Ps9AnyObject", "CGImageGetBitmapInfo"]
+- !private ["Ps9AnyObject", "CGImageGetBitsPerComponent"]
+- !private ["Ps9AnyObject", "CGImageGetColorSpace"]
+- !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "CLGeocoder"]
 - !private ["Ps9AnyObject", "CLLocation"]
 - !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
@@ -208,9 +241,12 @@ depends-member:
 - !private ["Ps9AnyObject", "GMSCoordinateBounds"]
 - !private ["Ps9AnyObject", "GMSPlacePicker"]
 - !private ["Ps9AnyObject", "GMSPlacePickerConfig"]
+- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]
 - !private ["Ps9AnyObject", "Location"]
 - !private ["Ps9AnyObject", "LocationsSource"]
+- !private ["Ps9AnyObject", "M_PI"]
+- !private ["Ps9AnyObject", "M_PI_2"]
 - !private ["Ps9AnyObject", "NSCharacterSet"]
 - !private ["Ps9AnyObject", "NSData"]
 - !private ["Ps9AnyObject", "NSJSONReadingOptions"]
@@ -252,6 +288,7 @@ depends-member:
 - ["Ps9AnyObject", "dismissKeyboard"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - !private ["Ps9AnyObject", "endEditing"]
+- ["Ps9AnyObject", "fixOrientation"]
 - !private ["Ps9AnyObject", "formattedAddress"]
 - ["Ps9AnyObject", "forwardGeocoding"]
 - !private ["Ps9AnyObject", "geocodeAddressString"]
@@ -260,6 +297,7 @@ depends-member:
 - ["Ps9AnyObject", "getLatLngForZip"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageFileLocation"]
+- !private ["Ps9AnyObject", "imageOrientation"]
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
 - ["Ps9AnyObject", "imageView"]
@@ -306,6 +344,7 @@ depends-member:
 - ["Ps9AnyObject", "setCurrentCoordinateButton"]
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "size"]
 - !private ["Ps9AnyObject", "sourceType"]
 - !private ["Ps9AnyObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps9AnyObject", "stringByAppendingPathComponent"]
@@ -322,8 +361,10 @@ depends-member:
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "first"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23ArrayLiteralConvertible", "AllowFragments"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
@@ -331,12 +372,16 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "UserDomainMask"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "first"]
+- !private ["Ps23ArrayLiteralConvertible", "rawValue"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps22BidirectionalIndexType", "init"]
 - !private ["P6SQLite7Binding", "Distance"]
 - !private ["P6SQLite7Binding", "IntegerLiteralType"]
 - !private ["P6SQLite7Binding", "_getBuiltinLogicValue"]
@@ -344,10 +389,16 @@ depends-member:
 - !private ["P6SQLite7Binding", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["VSC12CGBitmapInfo", "rawValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
 - !private ["CSo10CLGeocoder", "geocodeAddressString"]
 - !private ["CSo10CLGeocoder", "init"]
 - !private ["CSo10CLGeocoder", "reverseGeocodeLocation"]
@@ -435,6 +486,20 @@ depends-member:
 - !private ["CSo11CLPlacemark", "areasOfInterest"]
 - !private ["CSo11CLPlacemark", "location"]
 - !private ["Ps11CVarArgType", "ABCreateStringWithAddressDictionary"]
+- !private ["Ps11CVarArgType", "CGAffineTransformIdentity"]
+- !private ["Ps11CVarArgType", "CGAffineTransformRotate"]
+- !private ["Ps11CVarArgType", "CGAffineTransformScale"]
+- !private ["Ps11CVarArgType", "CGAffineTransformTranslate"]
+- !private ["Ps11CVarArgType", "CGBitmapContextCreate"]
+- !private ["Ps11CVarArgType", "CGBitmapContextCreateImage"]
+- !private ["Ps11CVarArgType", "CGContextConcatCTM"]
+- !private ["Ps11CVarArgType", "CGContextDrawImage"]
+- !private ["Ps11CVarArgType", "CGFloat"]
+- !private ["Ps11CVarArgType", "CGImage"]
+- !private ["Ps11CVarArgType", "CGImageGetBitmapInfo"]
+- !private ["Ps11CVarArgType", "CGImageGetBitsPerComponent"]
+- !private ["Ps11CVarArgType", "CGImageGetColorSpace"]
+- !private ["Ps11CVarArgType", "CGRectMake"]
 - !private ["Ps11CVarArgType", "CLGeocoder"]
 - !private ["Ps11CVarArgType", "CLLocation"]
 - !private ["Ps11CVarArgType", "CLLocationCoordinate2DMake"]
@@ -444,10 +509,13 @@ depends-member:
 - !private ["Ps11CVarArgType", "GMSCoordinateBounds"]
 - !private ["Ps11CVarArgType", "GMSPlacePicker"]
 - !private ["Ps11CVarArgType", "GMSPlacePickerConfig"]
+- !private ["Ps11CVarArgType", "Int"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "JSONObjectWithData"]
 - !private ["Ps11CVarArgType", "Location"]
 - !private ["Ps11CVarArgType", "LocationsSource"]
+- !private ["Ps11CVarArgType", "M_PI"]
+- !private ["Ps11CVarArgType", "M_PI_2"]
 - !private ["Ps11CVarArgType", "NSCharacterSet"]
 - !private ["Ps11CVarArgType", "NSData"]
 - !private ["Ps11CVarArgType", "NSJSONReadingOptions"]
@@ -489,6 +557,7 @@ depends-member:
 - ["Ps11CVarArgType", "dismissKeyboard"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "endEditing"]
+- ["Ps11CVarArgType", "fixOrientation"]
 - !private ["Ps11CVarArgType", "formattedAddress"]
 - ["Ps11CVarArgType", "forwardGeocoding"]
 - !private ["Ps11CVarArgType", "geocodeAddressString"]
@@ -497,6 +566,7 @@ depends-member:
 - ["Ps11CVarArgType", "getLatLngForZip"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "imageFileLocation"]
+- !private ["Ps11CVarArgType", "imageOrientation"]
 - ["Ps11CVarArgType", "imagePickerController"]
 - ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
 - ["Ps11CVarArgType", "imageView"]
@@ -541,6 +611,7 @@ depends-member:
 - ["Ps11CVarArgType", "setCurrentCoordinate"]
 - ["Ps11CVarArgType", "setCurrentCoordinateButton"]
 - !private ["Ps11CVarArgType", "setImage"]
+- !private ["Ps11CVarArgType", "size"]
 - !private ["Ps11CVarArgType", "sourceType"]
 - !private ["Ps11CVarArgType", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps11CVarArgType", "stringByAppendingPathComponent"]
@@ -560,12 +631,27 @@ depends-member:
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
+- !private ["Ps14CollectionType", "first"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps28CustomDebugStringConvertible", "ABCreateStringWithAddressDictionary"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransformIdentity"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransformRotate"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransformScale"]
+- !private ["Ps28CustomDebugStringConvertible", "CGAffineTransformTranslate"]
+- !private ["Ps28CustomDebugStringConvertible", "CGBitmapContextCreate"]
+- !private ["Ps28CustomDebugStringConvertible", "CGBitmapContextCreateImage"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextConcatCTM"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextDrawImage"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImage"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImageGetBitmapInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImageGetBitsPerComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImageGetColorSpace"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - !private ["Ps28CustomDebugStringConvertible", "CLGeocoder"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2DMake"]
@@ -576,9 +662,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "GMSPlacePickerConfig"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
 - !private ["Ps28CustomDebugStringConvertible", "JSONObjectWithData"]
 - !private ["Ps28CustomDebugStringConvertible", "Location"]
 - !private ["Ps28CustomDebugStringConvertible", "LocationsSource"]
+- !private ["Ps28CustomDebugStringConvertible", "M_PI"]
+- !private ["Ps28CustomDebugStringConvertible", "M_PI_2"]
 - !private ["Ps28CustomDebugStringConvertible", "NSCharacterSet"]
 - !private ["Ps28CustomDebugStringConvertible", "NSData"]
 - !private ["Ps28CustomDebugStringConvertible", "NSJSONReadingOptions"]
@@ -599,6 +688,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UIViewContentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "URLQueryAllowedCharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "absoluteString"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
@@ -623,6 +713,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- ["Ps28CustomDebugStringConvertible", "fixOrientation"]
 - !private ["Ps28CustomDebugStringConvertible", "formattedAddress"]
 - ["Ps28CustomDebugStringConvertible", "forwardGeocoding"]
 - !private ["Ps28CustomDebugStringConvertible", "geocodeAddressString"]
@@ -631,6 +723,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "getLatLngForZip"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageFileLocation"]
+- !private ["Ps28CustomDebugStringConvertible", "imageOrientation"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps28CustomDebugStringConvertible", "imageView"]
@@ -675,6 +768,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setCurrentCoordinate"]
 - ["Ps28CustomDebugStringConvertible", "setCurrentCoordinateButton"]
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "sourceType"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps28CustomDebugStringConvertible", "stringByAppendingPathComponent"]
@@ -689,6 +783,20 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "writeToFile"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "ABCreateStringWithAddressDictionary"]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransformIdentity"]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransformRotate"]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransformScale"]
+- !private ["Ps23CustomStringConvertible", "CGAffineTransformTranslate"]
+- !private ["Ps23CustomStringConvertible", "CGBitmapContextCreate"]
+- !private ["Ps23CustomStringConvertible", "CGBitmapContextCreateImage"]
+- !private ["Ps23CustomStringConvertible", "CGContextConcatCTM"]
+- !private ["Ps23CustomStringConvertible", "CGContextDrawImage"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "CGImage"]
+- !private ["Ps23CustomStringConvertible", "CGImageGetBitmapInfo"]
+- !private ["Ps23CustomStringConvertible", "CGImageGetBitsPerComponent"]
+- !private ["Ps23CustomStringConvertible", "CGImageGetColorSpace"]
+- !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "CLGeocoder"]
 - !private ["Ps23CustomStringConvertible", "CLLocation"]
 - !private ["Ps23CustomStringConvertible", "CLLocationCoordinate2DMake"]
@@ -700,10 +808,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "GMSPlacePickerConfig"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "JSONObjectWithData"]
 - !private ["Ps23CustomStringConvertible", "Location"]
 - !private ["Ps23CustomStringConvertible", "LocationsSource"]
+- !private ["Ps23CustomStringConvertible", "M_PI"]
+- !private ["Ps23CustomStringConvertible", "M_PI_2"]
 - !private ["Ps23CustomStringConvertible", "NSCharacterSet"]
 - !private ["Ps23CustomStringConvertible", "NSData"]
 - !private ["Ps23CustomStringConvertible", "NSJSONReadingOptions"]
@@ -723,6 +834,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UIViewContentMode"]
 - !private ["Ps23CustomStringConvertible", "URLQueryAllowedCharacterSet"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "absoluteString"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
@@ -748,6 +860,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- ["Ps23CustomStringConvertible", "fixOrientation"]
 - !private ["Ps23CustomStringConvertible", "formattedAddress"]
 - ["Ps23CustomStringConvertible", "forwardGeocoding"]
 - !private ["Ps23CustomStringConvertible", "geocodeAddressString"]
@@ -756,6 +870,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "getLatLngForZip"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageFileLocation"]
+- !private ["Ps23CustomStringConvertible", "imageOrientation"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps23CustomStringConvertible", "imageView"]
@@ -800,6 +915,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setCurrentCoordinate"]
 - ["Ps23CustomStringConvertible", "setCurrentCoordinateButton"]
 - !private ["Ps23CustomStringConvertible", "setImage"]
+- !private ["Ps23CustomStringConvertible", "size"]
 - !private ["Ps23CustomStringConvertible", "sourceType"]
 - !private ["Ps23CustomStringConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps23CustomStringConvertible", "stringByAppendingPathComponent"]
@@ -824,6 +940,20 @@ depends-member:
 - !private ["Ps9Equatable", "ActionSheet"]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "AllowFragments"]
+- !private ["Ps9Equatable", "CGAffineTransformIdentity"]
+- !private ["Ps9Equatable", "CGAffineTransformRotate"]
+- !private ["Ps9Equatable", "CGAffineTransformScale"]
+- !private ["Ps9Equatable", "CGAffineTransformTranslate"]
+- !private ["Ps9Equatable", "CGBitmapContextCreate"]
+- !private ["Ps9Equatable", "CGBitmapContextCreateImage"]
+- !private ["Ps9Equatable", "CGContextConcatCTM"]
+- !private ["Ps9Equatable", "CGContextDrawImage"]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "CGImage"]
+- !private ["Ps9Equatable", "CGImageGetBitmapInfo"]
+- !private ["Ps9Equatable", "CGImageGetBitsPerComponent"]
+- !private ["Ps9Equatable", "CGImageGetColorSpace"]
+- !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "CLGeocoder"]
 - !private ["Ps9Equatable", "CLLocation"]
 - !private ["Ps9Equatable", "CLLocationCoordinate2DMake"]
@@ -834,13 +964,20 @@ depends-member:
 - !private ["Ps9Equatable", "Default"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "DocumentDirectory"]
+- ["Ps9Equatable", "Down"]
+- ["Ps9Equatable", "DownMirrored"]
 - !private ["Ps9Equatable", "GMSCoordinateBounds"]
 - !private ["Ps9Equatable", "GMSPlacePicker"]
 - !private ["Ps9Equatable", "GMSPlacePickerConfig"]
+- !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "JSONObjectWithData"]
+- ["Ps9Equatable", "Left"]
+- ["Ps9Equatable", "LeftMirrored"]
 - !private ["Ps9Equatable", "Location"]
 - !private ["Ps9Equatable", "LocationsSource"]
+- !private ["Ps9Equatable", "M_PI"]
+- !private ["Ps9Equatable", "M_PI_2"]
 - !private ["Ps9Equatable", "NSCharacterSet"]
 - !private ["Ps9Equatable", "NSData"]
 - !private ["Ps9Equatable", "NSJSONReadingOptions"]
@@ -849,6 +986,9 @@ depends-member:
 - !private ["Ps9Equatable", "NSURL"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "PhotoLibrary"]
+- !private ["Ps9Equatable", "RawValue"]
+- ["Ps9Equatable", "Right"]
+- ["Ps9Equatable", "RightMirrored"]
 - !private ["Ps9Equatable", "ScaleAspectFill"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -862,6 +1002,8 @@ depends-member:
 - !private ["Ps9Equatable", "UITapGestureRecognizer"]
 - !private ["Ps9Equatable", "UIViewContentMode"]
 - !private ["Ps9Equatable", "URLQueryAllowedCharacterSet"]
+- !private ["Ps9Equatable", "Up"]
+- ["Ps9Equatable", "UpMirrored"]
 - !private ["Ps9Equatable", "UserDomainMask"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "absoluteString"]
@@ -887,14 +1029,17 @@ depends-member:
 - ["Ps9Equatable", "dismissKeyboard"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - !private ["Ps9Equatable", "endEditing"]
+- ["Ps9Equatable", "fixOrientation"]
 - !private ["Ps9Equatable", "formattedAddress"]
 - ["Ps9Equatable", "forwardGeocoding"]
 - !private ["Ps9Equatable", "geocodeAddressString"]
 - ["Ps9Equatable", "getAddressForLatLng"]
 - ["Ps9Equatable", "getDocumentsDirectory"]
 - ["Ps9Equatable", "getLatLngForZip"]
+- !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageFileLocation"]
+- !private ["Ps9Equatable", "imageOrientation"]
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
 - ["Ps9Equatable", "imageView"]
@@ -931,6 +1076,7 @@ depends-member:
 - !private ["Ps9Equatable", "popViewControllerAnimated"]
 - !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "requestWhenInUseAuthorization"]
 - !private ["Ps9Equatable", "reverseGeocodeLocation"]
 - ["Ps9Equatable", "reverseGeocoding"]
@@ -939,6 +1085,7 @@ depends-member:
 - ["Ps9Equatable", "setCurrentCoordinate"]
 - ["Ps9Equatable", "setCurrentCoordinateButton"]
 - !private ["Ps9Equatable", "setImage"]
+- !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "sourceType"]
 - !private ["Ps9Equatable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps9Equatable", "stringByAppendingPathComponent"]
@@ -950,6 +1097,7 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "website"]
+- !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "writeToFile"]
 - ["Ps9Equatable", ""]
 - !private ["Ps9ErrorType", "localizedDescription"]
@@ -967,6 +1115,7 @@ depends-member:
 - !private ["Ps17FloatingPointType", "init"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "init"]
 - !private ["CSo19GMSCoordinateBounds", "init"]
 - !private ["PSo18GMSMapViewDelegate", "ABCreateStringWithAddressDictionary"]
 - !private ["PSo18GMSMapViewDelegate", "CLGeocoder"]
@@ -1053,6 +1202,20 @@ depends-member:
 - !private ["Ps8Hashable", "ABCreateStringWithAddressDictionary"]
 - !private ["Ps8Hashable", "ActionSheet"]
 - !private ["Ps8Hashable", "Alert"]
+- !private ["Ps8Hashable", "CGAffineTransformIdentity"]
+- !private ["Ps8Hashable", "CGAffineTransformRotate"]
+- !private ["Ps8Hashable", "CGAffineTransformScale"]
+- !private ["Ps8Hashable", "CGAffineTransformTranslate"]
+- !private ["Ps8Hashable", "CGBitmapContextCreate"]
+- !private ["Ps8Hashable", "CGBitmapContextCreateImage"]
+- !private ["Ps8Hashable", "CGContextConcatCTM"]
+- !private ["Ps8Hashable", "CGContextDrawImage"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "CGImage"]
+- !private ["Ps8Hashable", "CGImageGetBitmapInfo"]
+- !private ["Ps8Hashable", "CGImageGetBitsPerComponent"]
+- !private ["Ps8Hashable", "CGImageGetColorSpace"]
+- !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "CLGeocoder"]
 - !private ["Ps8Hashable", "CLLocation"]
 - !private ["Ps8Hashable", "CLLocationCoordinate2DMake"]
@@ -1063,13 +1226,20 @@ depends-member:
 - !private ["Ps8Hashable", "Default"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "DocumentDirectory"]
+- ["Ps8Hashable", "Down"]
+- ["Ps8Hashable", "DownMirrored"]
 - !private ["Ps8Hashable", "GMSCoordinateBounds"]
 - !private ["Ps8Hashable", "GMSPlacePicker"]
 - !private ["Ps8Hashable", "GMSPlacePickerConfig"]
+- !private ["Ps8Hashable", "Int"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONObjectWithData"]
+- ["Ps8Hashable", "Left"]
+- ["Ps8Hashable", "LeftMirrored"]
 - !private ["Ps8Hashable", "Location"]
 - !private ["Ps8Hashable", "LocationsSource"]
+- !private ["Ps8Hashable", "M_PI"]
+- !private ["Ps8Hashable", "M_PI_2"]
 - !private ["Ps8Hashable", "NSCharacterSet"]
 - !private ["Ps8Hashable", "NSData"]
 - !private ["Ps8Hashable", "NSJSONReadingOptions"]
@@ -1077,6 +1247,9 @@ depends-member:
 - !private ["Ps8Hashable", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps8Hashable", "NSURL"]
 - !private ["Ps8Hashable", "PhotoLibrary"]
+- !private ["Ps8Hashable", "RawValue"]
+- ["Ps8Hashable", "Right"]
+- ["Ps8Hashable", "RightMirrored"]
 - !private ["Ps8Hashable", "ScaleAspectFill"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UIAlertAction"]
@@ -1090,6 +1263,8 @@ depends-member:
 - !private ["Ps8Hashable", "UITapGestureRecognizer"]
 - !private ["Ps8Hashable", "UIViewContentMode"]
 - !private ["Ps8Hashable", "URLQueryAllowedCharacterSet"]
+- !private ["Ps8Hashable", "Up"]
+- ["Ps8Hashable", "UpMirrored"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "absoluteString"]
 - !private ["Ps8Hashable", "addAction"]
@@ -1114,6 +1289,7 @@ depends-member:
 - ["Ps8Hashable", "dismissKeyboard"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - !private ["Ps8Hashable", "endEditing"]
+- ["Ps8Hashable", "fixOrientation"]
 - !private ["Ps8Hashable", "formattedAddress"]
 - ["Ps8Hashable", "forwardGeocoding"]
 - !private ["Ps8Hashable", "geocodeAddressString"]
@@ -1122,6 +1298,7 @@ depends-member:
 - ["Ps8Hashable", "getLatLngForZip"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageFileLocation"]
+- !private ["Ps8Hashable", "imageOrientation"]
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
 - ["Ps8Hashable", "imageView"]
@@ -1166,6 +1343,7 @@ depends-member:
 - ["Ps8Hashable", "setCurrentCoordinate"]
 - ["Ps8Hashable", "setCurrentCoordinateButton"]
 - !private ["Ps8Hashable", "setImage"]
+- !private ["Ps8Hashable", "size"]
 - !private ["Ps8Hashable", "sourceType"]
 - !private ["Ps8Hashable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps8Hashable", "stringByAppendingPathComponent"]
@@ -1185,22 +1363,26 @@ depends-member:
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "first"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["Si", "init"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps21IntegerArithmeticType", "Distance"]
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "init"]
 - !private ["V8ToGoList8Location", "init"]
 - !private ["C8ToGoList15LocationsSource", "insertLocationToList"]
 - !private ["C8ToGoList15LocationsSource", "sharedInstance"]
@@ -1211,21 +1393,41 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
 - !private ["Ps21MutableCollectionType", "count"]
+- !private ["Ps21MutableCollectionType", "first"]
 - !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "first"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
 - !private ["Ps16MutableSliceable", "count"]
+- !private ["Ps16MutableSliceable", "first"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["CSo7NSArray", "subscript"]
 - !private ["CSo14NSCharacterSet", "URLQueryAllowedCharacterSet"]
 - !private ["PSo8NSCoding", "ABCreateStringWithAddressDictionary"]
+- !private ["PSo8NSCoding", "CGAffineTransformIdentity"]
+- !private ["PSo8NSCoding", "CGAffineTransformRotate"]
+- !private ["PSo8NSCoding", "CGAffineTransformScale"]
+- !private ["PSo8NSCoding", "CGAffineTransformTranslate"]
+- !private ["PSo8NSCoding", "CGBitmapContextCreate"]
+- !private ["PSo8NSCoding", "CGBitmapContextCreateImage"]
+- !private ["PSo8NSCoding", "CGContextConcatCTM"]
+- !private ["PSo8NSCoding", "CGContextDrawImage"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "CGImage"]
+- !private ["PSo8NSCoding", "CGImageGetBitmapInfo"]
+- !private ["PSo8NSCoding", "CGImageGetBitsPerComponent"]
+- !private ["PSo8NSCoding", "CGImageGetColorSpace"]
+- !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "CLGeocoder"]
 - !private ["PSo8NSCoding", "CLLocation"]
 - !private ["PSo8NSCoding", "CLLocationCoordinate2DMake"]
@@ -1234,8 +1436,11 @@ depends-member:
 - !private ["PSo8NSCoding", "GMSCoordinateBounds"]
 - !private ["PSo8NSCoding", "GMSPlacePicker"]
 - !private ["PSo8NSCoding", "GMSPlacePickerConfig"]
+- !private ["PSo8NSCoding", "Int"]
 - !private ["PSo8NSCoding", "Location"]
 - !private ["PSo8NSCoding", "LocationsSource"]
+- !private ["PSo8NSCoding", "M_PI"]
+- !private ["PSo8NSCoding", "M_PI_2"]
 - !private ["PSo8NSCoding", "NSCharacterSet"]
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSJSONReadingOptions"]
@@ -1276,12 +1481,14 @@ depends-member:
 - ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "endEditing"]
+- !private ["PSo8NSCoding", "fixOrientation"]
 - ["PSo8NSCoding", "forwardGeocoding"]
 - ["PSo8NSCoding", "getAddressForLatLng"]
 - ["PSo8NSCoding", "getDocumentsDirectory"]
 - ["PSo8NSCoding", "getLatLngForZip"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageFileLocation"]
+- !private ["PSo8NSCoding", "imageOrientation"]
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
 - ["PSo8NSCoding", "imageView"]
@@ -1321,6 +1528,7 @@ depends-member:
 - ["PSo8NSCoding", "setCurrentCoordinate"]
 - ["PSo8NSCoding", "setCurrentCoordinateButton"]
 - !private ["PSo8NSCoding", "setImage"]
+- !private ["PSo8NSCoding", "size"]
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSo8NSCoding", "stringByAppendingPathComponent"]
@@ -1450,6 +1658,20 @@ depends-member:
 - !private ["CSo8NSObject", "ABCreateStringWithAddressDictionary"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGAffineTransformIdentity"]
+- !private ["CSo8NSObject", "CGAffineTransformRotate"]
+- !private ["CSo8NSObject", "CGAffineTransformScale"]
+- !private ["CSo8NSObject", "CGAffineTransformTranslate"]
+- !private ["CSo8NSObject", "CGBitmapContextCreate"]
+- !private ["CSo8NSObject", "CGBitmapContextCreateImage"]
+- !private ["CSo8NSObject", "CGContextConcatCTM"]
+- !private ["CSo8NSObject", "CGContextDrawImage"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGImage"]
+- !private ["CSo8NSObject", "CGImageGetBitmapInfo"]
+- !private ["CSo8NSObject", "CGImageGetBitsPerComponent"]
+- !private ["CSo8NSObject", "CGImageGetColorSpace"]
+- !private ["CSo8NSObject", "CGRectMake"]
 - !private ["CSo8NSObject", "CLGeocoder"]
 - !private ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationCoordinate2D"]
@@ -1461,9 +1683,12 @@ depends-member:
 - !private ["CSo8NSObject", "GMSPlace"]
 - !private ["CSo8NSObject", "GMSPlacePicker"]
 - !private ["CSo8NSObject", "GMSPlacePickerConfig"]
+- !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "JSONObjectWithData"]
 - !private ["CSo8NSObject", "Location"]
 - !private ["CSo8NSObject", "LocationsSource"]
+- !private ["CSo8NSObject", "M_PI"]
+- !private ["CSo8NSObject", "M_PI_2"]
 - !private ["CSo8NSObject", "NSArray"]
 - !private ["CSo8NSObject", "NSCharacterSet"]
 - !private ["CSo8NSObject", "NSData"]
@@ -1481,7 +1706,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIButton"]
-- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImagePNGRepresentation"]
 - ["CSo8NSObject", "UIImagePickerController"]
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
@@ -1515,6 +1740,7 @@ depends-member:
 - ["CSo8NSObject", "dismissKeyboard"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "endEditing"]
+- ["CSo8NSObject", "fixOrientation"]
 - !private ["CSo8NSObject", "formattedAddress"]
 - ["CSo8NSObject", "forwardGeocoding"]
 - !private ["CSo8NSObject", "geocodeAddressString"]
@@ -1523,6 +1749,7 @@ depends-member:
 - ["CSo8NSObject", "getLatLngForZip"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageFileLocation"]
+- !private ["CSo8NSObject", "imageOrientation"]
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
 - ["CSo8NSObject", "imageView"]
@@ -1567,6 +1794,7 @@ depends-member:
 - ["CSo8NSObject", "setCurrentCoordinate"]
 - ["CSo8NSObject", "setCurrentCoordinateButton"]
 - !private ["CSo8NSObject", "setImage"]
+- !private ["CSo8NSObject", "size"]
 - !private ["CSo8NSObject", "sourceType"]
 - !private ["CSo8NSObject", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["CSo8NSObject", "stringByAppendingPathComponent"]
@@ -1580,6 +1808,20 @@ depends-member:
 - !private ["CSo8NSObject", "website"]
 - !private ["CSo8NSObject", "writeToFile"]
 - !private ["PSo16NSObjectProtocol", "ABCreateStringWithAddressDictionary"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransformIdentity"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransformRotate"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransformScale"]
+- !private ["PSo16NSObjectProtocol", "CGAffineTransformTranslate"]
+- !private ["PSo16NSObjectProtocol", "CGBitmapContextCreate"]
+- !private ["PSo16NSObjectProtocol", "CGBitmapContextCreateImage"]
+- !private ["PSo16NSObjectProtocol", "CGContextConcatCTM"]
+- !private ["PSo16NSObjectProtocol", "CGContextDrawImage"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "CGImage"]
+- !private ["PSo16NSObjectProtocol", "CGImageGetBitmapInfo"]
+- !private ["PSo16NSObjectProtocol", "CGImageGetBitsPerComponent"]
+- !private ["PSo16NSObjectProtocol", "CGImageGetColorSpace"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "CLGeocoder"]
 - !private ["PSo16NSObjectProtocol", "CLLocation"]
 - !private ["PSo16NSObjectProtocol", "CLLocationCoordinate2DMake"]
@@ -1588,9 +1830,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "GMSCoordinateBounds"]
 - !private ["PSo16NSObjectProtocol", "GMSPlacePicker"]
 - !private ["PSo16NSObjectProtocol", "GMSPlacePickerConfig"]
+- !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "JSONObjectWithData"]
 - !private ["PSo16NSObjectProtocol", "Location"]
 - !private ["PSo16NSObjectProtocol", "LocationsSource"]
+- !private ["PSo16NSObjectProtocol", "M_PI"]
+- !private ["PSo16NSObjectProtocol", "M_PI_2"]
 - !private ["PSo16NSObjectProtocol", "NSCharacterSet"]
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSJSONReadingOptions"]
@@ -1632,6 +1877,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "dismissKeyboard"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
+- ["PSo16NSObjectProtocol", "fixOrientation"]
 - !private ["PSo16NSObjectProtocol", "formattedAddress"]
 - ["PSo16NSObjectProtocol", "forwardGeocoding"]
 - !private ["PSo16NSObjectProtocol", "geocodeAddressString"]
@@ -1640,6 +1886,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getLatLngForZip"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageFileLocation"]
+- !private ["PSo16NSObjectProtocol", "imageOrientation"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
 - ["PSo16NSObjectProtocol", "imageView"]
@@ -1684,6 +1931,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setCurrentCoordinate"]
 - ["PSo16NSObjectProtocol", "setCurrentCoordinateButton"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
+- !private ["PSo16NSObjectProtocol", "size"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
 - !private ["PSo16NSObjectProtocol", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSo16NSObjectProtocol", "stringByAppendingPathComponent"]
@@ -1699,14 +1947,35 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["OSC21NSSearchPathDirectory", "DocumentDirectory"]
 - !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
+- !private ["PSo14NSSecureCoding", "CGAffineTransformIdentity"]
+- !private ["PSo14NSSecureCoding", "CGAffineTransformRotate"]
+- !private ["PSo14NSSecureCoding", "CGAffineTransformScale"]
+- !private ["PSo14NSSecureCoding", "CGAffineTransformTranslate"]
+- !private ["PSo14NSSecureCoding", "CGBitmapContextCreate"]
+- !private ["PSo14NSSecureCoding", "CGBitmapContextCreateImage"]
+- !private ["PSo14NSSecureCoding", "CGContextConcatCTM"]
+- !private ["PSo14NSSecureCoding", "CGContextDrawImage"]
+- !private ["PSo14NSSecureCoding", "CGFloat"]
+- !private ["PSo14NSSecureCoding", "CGImage"]
+- !private ["PSo14NSSecureCoding", "CGImageGetBitmapInfo"]
+- !private ["PSo14NSSecureCoding", "CGImageGetBitsPerComponent"]
+- !private ["PSo14NSSecureCoding", "CGImageGetColorSpace"]
+- !private ["PSo14NSSecureCoding", "CGRectMake"]
+- !private ["PSo14NSSecureCoding", "Int"]
+- !private ["PSo14NSSecureCoding", "M_PI"]
+- !private ["PSo14NSSecureCoding", "M_PI_2"]
+- !private ["PSo14NSSecureCoding", "UIImage"]
 - !private ["PSo14NSSecureCoding", "absoluteString"]
 - !private ["PSo14NSSecureCoding", "addressDictionary"]
 - !private ["PSo14NSSecureCoding", "areasOfInterest"]
 - !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "fixOrientation"]
+- !private ["PSo14NSSecureCoding", "imageOrientation"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["PSo14NSSecureCoding", "location"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["PSo14NSSecureCoding", "size"]
 - !private ["PSo14NSSecureCoding", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["PSo14NSSecureCoding", "stringByAppendingPathComponent"]
 - !private ["PSo14NSSecureCoding", "subscript"]
@@ -1724,16 +1993,20 @@ depends-member:
 - !private ["Ps13OptionSetType", "AllowFragments"]
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "UserDomainMask"]
+- !private ["Ps13OptionSetType", "rawValue"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps21RandomAccessIndexType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
+- !private ["Ps30RangeReplaceableCollectionType", "first"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "ActionSheet"]
 - !private ["Ps16RawRepresentable", "Alert"]
@@ -1742,10 +2015,20 @@ depends-member:
 - !private ["Ps16RawRepresentable", "Cancel"]
 - !private ["Ps16RawRepresentable", "Default"]
 - !private ["Ps16RawRepresentable", "DocumentDirectory"]
+- ["Ps16RawRepresentable", "Down"]
+- ["Ps16RawRepresentable", "DownMirrored"]
+- ["Ps16RawRepresentable", "Left"]
+- ["Ps16RawRepresentable", "LeftMirrored"]
 - !private ["Ps16RawRepresentable", "Normal"]
 - !private ["Ps16RawRepresentable", "PhotoLibrary"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "Right"]
+- ["Ps16RawRepresentable", "RightMirrored"]
 - !private ["Ps16RawRepresentable", "ScaleAspectFill"]
+- !private ["Ps16RawRepresentable", "Up"]
+- ["Ps16RawRepresentable", "UpMirrored"]
 - !private ["Ps16RawRepresentable", "UserDomainMask"]
+- !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
@@ -1753,12 +2036,15 @@ depends-member:
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "first"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps14SetAlgebraType", "AllowFragments"]
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "UserDomainMask"]
+- !private ["Ps14SetAlgebraType", "rawValue"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps17SignedIntegerType", "init"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "init"]
@@ -1779,14 +2065,35 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps24StringLiteralConvertible", "stringByAppendingPathComponent"]
+- !private ["PSo29UIAccessibilityIdentification", "CGAffineTransformIdentity"]
+- !private ["PSo29UIAccessibilityIdentification", "CGAffineTransformRotate"]
+- !private ["PSo29UIAccessibilityIdentification", "CGAffineTransformScale"]
+- !private ["PSo29UIAccessibilityIdentification", "CGAffineTransformTranslate"]
+- !private ["PSo29UIAccessibilityIdentification", "CGBitmapContextCreate"]
+- !private ["PSo29UIAccessibilityIdentification", "CGBitmapContextCreateImage"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextConcatCTM"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextDrawImage"]
+- !private ["PSo29UIAccessibilityIdentification", "CGFloat"]
+- !private ["PSo29UIAccessibilityIdentification", "CGImage"]
+- !private ["PSo29UIAccessibilityIdentification", "CGImageGetBitmapInfo"]
+- !private ["PSo29UIAccessibilityIdentification", "CGImageGetBitsPerComponent"]
+- !private ["PSo29UIAccessibilityIdentification", "CGImageGetColorSpace"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectMake"]
+- !private ["PSo29UIAccessibilityIdentification", "Int"]
+- !private ["PSo29UIAccessibilityIdentification", "M_PI"]
+- !private ["PSo29UIAccessibilityIdentification", "M_PI_2"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "fixOrientation"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "imageOrientation"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
+- !private ["PSo29UIAccessibilityIdentification", "size"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Cancel"]
@@ -2101,7 +2408,38 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo7UIImage", "CGAffineTransformIdentity"]
+- !private ["CSo7UIImage", "CGAffineTransformRotate"]
+- !private ["CSo7UIImage", "CGAffineTransformScale"]
+- !private ["CSo7UIImage", "CGAffineTransformTranslate"]
+- !private ["CSo7UIImage", "CGBitmapContextCreate"]
+- !private ["CSo7UIImage", "CGBitmapContextCreateImage"]
+- !private ["CSo7UIImage", "CGContextConcatCTM"]
+- !private ["CSo7UIImage", "CGContextDrawImage"]
+- !private ["CSo7UIImage", "CGFloat"]
+- !private ["CSo7UIImage", "CGImage"]
+- !private ["CSo7UIImage", "CGImageGetBitmapInfo"]
+- !private ["CSo7UIImage", "CGImageGetBitsPerComponent"]
+- !private ["CSo7UIImage", "CGImageGetColorSpace"]
+- !private ["CSo7UIImage", "CGRectMake"]
+- !private ["CSo7UIImage", "Int"]
+- !private ["CSo7UIImage", "M_PI"]
+- !private ["CSo7UIImage", "M_PI_2"]
+- ["CSo7UIImage", "UIImage"]
+- ["CSo7UIImage", "fixOrientation"]
+- !private ["CSo7UIImage", "imageOrientation"]
 - !private ["CSo7UIImage", "init"]
+- !private ["CSo7UIImage", "size"]
+- ["OSC18UIImageOrientation", "Down"]
+- ["OSC18UIImageOrientation", "DownMirrored"]
+- ["OSC18UIImageOrientation", "Left"]
+- ["OSC18UIImageOrientation", "LeftMirrored"]
+- !private ["OSC18UIImageOrientation", "RawValue"]
+- ["OSC18UIImageOrientation", "Right"]
+- ["OSC18UIImageOrientation", "RightMirrored"]
+- !private ["OSC18UIImageOrientation", "Up"]
+- ["OSC18UIImageOrientation", "UpMirrored"]
+- !private ["OSC18UIImageOrientation", "deinit"]
 - !private ["CSo23UIImagePickerController", "allowsEditing"]
 - !private ["CSo23UIImagePickerController", "delegate"]
 - !private ["CSo23UIImagePickerController", "init"]
@@ -3025,7 +3363,9 @@ depends-member:
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps10_ArrayType", "count"]
+- !private ["Ps10_ArrayType", "first"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -3045,24 +3385,52 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "absoluteString"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "CGAffineTransformIdentity"]
+- !private ["Ps24_ImageLiteralConvertible", "CGAffineTransformRotate"]
+- !private ["Ps24_ImageLiteralConvertible", "CGAffineTransformScale"]
+- !private ["Ps24_ImageLiteralConvertible", "CGAffineTransformTranslate"]
+- !private ["Ps24_ImageLiteralConvertible", "CGBitmapContextCreate"]
+- !private ["Ps24_ImageLiteralConvertible", "CGBitmapContextCreateImage"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextConcatCTM"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextDrawImage"]
+- !private ["Ps24_ImageLiteralConvertible", "CGFloat"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImage"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImageGetBitmapInfo"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImageGetBitsPerComponent"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImageGetColorSpace"]
+- !private ["Ps24_ImageLiteralConvertible", "CGRectMake"]
+- !private ["Ps24_ImageLiteralConvertible", "Int"]
+- !private ["Ps24_ImageLiteralConvertible", "M_PI"]
+- !private ["Ps24_ImageLiteralConvertible", "M_PI_2"]
+- !private ["Ps24_ImageLiteralConvertible", "UIImage"]
+- !private ["Ps24_ImageLiteralConvertible", "fixOrientation"]
+- !private ["Ps24_ImageLiteralConvertible", "imageOrientation"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "size"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "init"]
 - !private ["Ps22_IntegerArithmeticType", "Distance"]
 - !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "init"]
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
@@ -3070,12 +3438,14 @@ depends-member:
 - ["P6SQLite13_OptionalType", "Some"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps22_RandomAccessAmbiguity", "init"]
 - !private ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "absoluteString"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
@@ -3084,6 +3454,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "deselectRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "endEditing"]
+- !private ["Ps12_Reflectable", "first"]
+- !private ["Ps12_Reflectable", "height"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "setImage"]
@@ -3091,8 +3463,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "stringByAppendingPathComponent"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "width"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps18_SignedIntegerType", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "C8ToGoList30AddLocationTableViewController"
@@ -3106,6 +3480,9 @@ depends-nominal:
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
+- !private "VSC12CGBitmapInfo"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGSize"
 - !private "CSo10CLGeocoder"
 - !private "CSo10CLLocation"
 - !private "VSC22CLLocationCoordinate2D"
@@ -3180,7 +3557,7 @@ depends-nominal:
 - !private "Ps16OutputStreamType"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
-- !private "Ps16RawRepresentable"
+- "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
@@ -3207,7 +3584,8 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "CSo19UIGestureRecognizer"
-- !private "CSo7UIImage"
+- "CSo7UIImage"
+- "OSC18UIImageOrientation"
 - !private "CSo23UIImagePickerController"
 - "PSo31UIImagePickerControllerDelegate"
 - !private "OSC33UIImagePickerControllerSourceType"
@@ -3340,4 +3718,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "03b4fe34d2aea42ee2e456ddfae8a71a"
+interface-hash: "77579d3be523ba2aba0c9ce7fc82ec58"
