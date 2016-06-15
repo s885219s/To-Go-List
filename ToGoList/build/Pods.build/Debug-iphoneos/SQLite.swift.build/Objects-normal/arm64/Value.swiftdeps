@@ -25,18 +25,18 @@ provides-member:
 - ["Si", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- "Number"
-- "Blob"
-- "Int"
 - "String"
-- "Value"
-- "Double"
-- !private "!="
-- "Int64"
-- "StringLiteralType"
-- "Binding"
 - "Expressible"
+- "StringLiteralType"
+- "Number"
+- "Int64"
+- "Value"
+- "Binding"
+- "Bool"
+- "Int"
+- !private "!="
+- "Double"
+- "Blob"
 depends-member:
 - ["Ps16AbsoluteValuable", "Datatype"]
 - ["Ps16AbsoluteValuable", "ValueType"]

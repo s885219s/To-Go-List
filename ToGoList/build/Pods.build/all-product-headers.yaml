@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/Pods_ToGoList.framework/Headers",
+      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -14,24 +14,24 @@
         {
           'type': 'file',
           'name': "Pods_ToGoList-Swift.h",
-          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/Pods_ToGoList.framework/Headers/Pods_ToGoList-Swift.h"
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Headers/Pods_ToGoList-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/Pods_ToGoList.framework/Modules",
+      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/Pods_ToGoList.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Pods.build/Debug-iphoneos/Pods-ToGoList.build/module.modulemap"
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/Pods-ToGoList.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers",
+      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,7 +41,7 @@
         {
           'type': 'file',
           'name': "SQLite-Swift.h",
-          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
         },
         {
           'type': 'file',
@@ -57,18 +57,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules",
+      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Pods.build/Debug-iphoneos/SQLite.swift.build/module.modulemap"
+          'external-contents': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Pods.build/Debug-iphonesimulator/SQLite.swift.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/PrivateHeaders",
+      'name': "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',

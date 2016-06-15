@@ -8,12 +8,12 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Value"
 - !private "Array"
+- "Int64"
+- "Expression"
+- !private "StringLiteralType"
 - "Double"
 - "Module"
-- "Expression"
 - !private "Expressible"
-- !private "StringLiteralType"
-- "Int64"
 depends-member:
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]

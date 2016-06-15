@@ -19,20 +19,20 @@ provides-member:
 - ["C6SQLite10Connection", "createFunction"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Binding"
-- "Value"
-- !private "UInt"
-- !private "Array"
 - "Expression"
+- !private "Binding"
 - !private "FloatLiteralType"
-- "String"
 - "BooleanLiteralType"
-- "Connection"
+- !private "Array"
+- "Value"
+- "String"
 - !private "value"
-- "Bool"
-- !private "IntegerLiteralType"
+- !private "UInt"
 - !private "Expressible"
+- "Connection"
+- !private "IntegerLiteralType"
 - !private "StringLiteralType"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "createFunction"]
 - !private ["Ps9AnyObject", "join"]

@@ -126,6 +126,7 @@
 				43E3ED071CF303F000DAAB54 /* Resources */,
 				0D03FDD2CCC4BF24B925CA6E /* 📦 Embed Pods Frameworks */,
 				818E8244643706CFDC292F8A /* 📦 Copy Pods Resources */,
+				145DFF9096811E247F3C57F4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +193,21 @@
 			inputPaths = (
 			);
 			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToGoList/Pods-ToGoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		145DFF9096811E247F3C57F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

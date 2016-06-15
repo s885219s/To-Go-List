@@ -24,6 +24,14 @@
 		<data>
 		CdgZAyUm4EiE4NjK5DnIRAcM29s=
 		</data>
+		<key>Modules/SQLite.swiftmodule/arm.swiftdoc</key>
+		<data>
+		kEP2XCFI34wwrH7tzMpnBWszm5o=
+		</data>
+		<key>Modules/SQLite.swiftmodule/arm.swiftmodule</key>
+		<data>
+		oYje9mDhV3Pgc7jlxqITH1tt3K8=
+		</data>
 		<key>Modules/SQLite.swiftmodule/arm64.swiftdoc</key>
 		<data>
 		EBmseAaibvf/nknfhpmVO/Eb3i4=
@@ -85,6 +93,28 @@
 			<key>hash2</key>
 			<data>
 			f4tqlecz0TzliiJp7GeLcvb7uqAk+pGcrJl5F+o8cFM=
+			</data>
+		</dict>
+		<key>Modules/SQLite.swiftmodule/arm.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kEP2XCFI34wwrH7tzMpnBWszm5o=
+			</data>
+			<key>hash2</key>
+			<data>
+			5N4FO/vfB2u7zo0nSOEYtDtu6amvWHQvWxiPPodQ4/k=
+			</data>
+		</dict>
+		<key>Modules/SQLite.swiftmodule/arm.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oYje9mDhV3Pgc7jlxqITH1tt3K8=
+			</data>
+			<key>hash2</key>
+			<data>
+			SZDNkC1sbgfS20EM2o+ad2DP13p2OQvfJXbo6sBjKkE=
 			</data>
 		</dict>
 		<key>Modules/SQLite.swiftmodule/arm64.swiftdoc</key>

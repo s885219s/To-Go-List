@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "locationTypeImage"
 - "locationPhoneNumberLabel"
-- "setSelected"
-- "locationNameLabel"
 - "locationAddressLabel"
 - "awakeFromNib"
+- "locationNameLabel"
+- "setSelected"
 depends-top-level:
-- "UITableViewCell"
+- "UIImageView"
+- "LocationListTableViewCell"
 - "UILabel"
 - "Bool"
-- "LocationListTableViewCell"
-- "UIImageView"
+- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]

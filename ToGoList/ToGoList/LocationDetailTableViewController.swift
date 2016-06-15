@@ -57,7 +57,15 @@ class LocationDetailTableViewController: UITableViewController {
         guard let location = self.location else{
             return
         }
-        //self.LocationName.text = UIImage(named: locaiton.imageName)
+        if(location.imagePath != ""){
+            let imagePath = location.imagePath
+            LocationPhoto.image = UIImage(contentsOfFile: imagePath)
+            LocationPhoto.contentMode = UIViewContentMode.ScaleAspectFill
+            LocationPhoto.clipsToBounds = true
+            print(location.imagePath)
+            print(LocationPhoto.image)
+            print(LocationPhoto.image?.imageOrientation)
+        }
         if(location.name != ""){
             self.LocationName.text = location.name
         }
