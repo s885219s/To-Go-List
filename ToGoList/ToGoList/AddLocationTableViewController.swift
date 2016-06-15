@@ -181,16 +181,11 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
 
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-=======
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
->>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

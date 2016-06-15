@@ -90,24 +90,14 @@ class LocationListTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-<<<<<<< HEAD
-            // Delete the row from the data source
-            self.locations?.removeAtIndex(indexPath.row)
-//            LocationsSource.sharedInstance.removeLocationFromList(locations![indexPath.row])
-=======
             let deleteTarget = self.locations![indexPath.row]
             LocationsSource.sharedInstance.removeLocationFromList(deleteTarget)
             locations!.removeAtIndex(indexPath.row)
->>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
         
         tableView.reloadData()
     }
-<<<<<<< HEAD
-    */
-=======
->>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
     
 
     /*

@@ -45,15 +45,11 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!
-<<<<<<< HEAD
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var placePickerButton: UIButton!
     @IBOutlet weak var currentLocationButton: UIButton!
     @IBOutlet weak var beenHereButton: UIButton!
-=======
-    @IBOutlet weak var imageView: UIImageView!
-    
->>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
+
     //沒有ImageOutlet
 
     //button action
@@ -130,7 +126,7 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         } else {
             checkSetCurrentLocation = false
             //            setCurrentCoordinateButton.imageView?.image = UIImage(named: "navigationBlueLine")
-            currentLocationButton.setImage(UIImage(named: "navigationBlueLine"), forState: .Normal)
+            currentLocationButton.setImage(UIImage(named: "navigationGray"), forState: .Normal)
         }
     }
     
@@ -160,6 +156,8 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         phoneNumberTextField.text = oldLocation!.phoneNumber
         addressTextField.text = oldLocation!.address
         linkTextField.text = oldLocation!.url
+        currentLocationButton.setImage(UIImage(named: "navigationGray"), forState: .Normal)
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
