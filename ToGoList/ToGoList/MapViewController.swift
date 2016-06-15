@@ -32,17 +32,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         print("MapView")
         
         //抓DB資料
-        print(LocationsSource.sharedInstance.getLocationList())
-//        print(locations1)
         locations = LocationsSource.sharedInstance.getLocationList()
-        //測試DB  把資料塞到db
-        /*
-        print(LocationsSource.sharedInstance.filePath)
-        for location in locations {
-            LocationsSource.sharedInstance.insertLocationToList(location)
-        }
-        LocationsSource.sharedInstance.writeBacktoDB()
-        */
+        
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -164,17 +155,36 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
                     print(areaOfInterest)
                     marker.title = findedLocation.name
                     marker.snippet = findedLocation.phoneNumber
-                    marker.icon = UIImage(named: "place")
+//                    marker.icon = UIImage(named: "place")
+                    marker.icon = self.markerIcon(findedLocation.tags[0])
                     marker.map = self.mapView
                 } else {
                     print("No area of interest found.")
-                    marker.icon = UIImage(named: "place")
+                    marker.icon = self.markerIcon(findedLocation.tags[0])
+//                    marker.icon = UIImage(named: "place")
                     marker.title = findedLocation.name
                     marker.snippet = findedLocation.phoneNumber
                     marker.map = self.mapView
                 }
             }
         })
+    }
+    
+    func markerIcon(type: String) -> UIImage {
+        switch type {
+        case "bar":
+            return UIImage(named:"barmarker")!
+        case "restaurant":
+            return UIImage(named:"restaurantmarker")!
+        case "hotel":
+            return UIImage(named:"hotelmarker")!
+        case "shopping":
+            return UIImage(named:"shoppingmaker")!
+        case "recreation":
+            return UIImage(named:"recreationmarker")!
+        default:
+            return UIImage(named:"placemarker")!
+        }
     }
     
     // MARK: - Navigation
