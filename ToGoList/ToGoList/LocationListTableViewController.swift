@@ -26,12 +26,12 @@ class LocationListTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    /*
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(false)
         self.tableView.reloadData()
     }
-    */
+ 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
