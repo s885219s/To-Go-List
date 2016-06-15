@@ -6,42 +6,43 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList31LocationListTableViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "searchController"
-- "didReceiveMemoryWarning"
 - "prepareForSegue"
-- "viewDidLoad"
+- "searchController"
 - "numberOfSectionsInTableView"
+- "viewWillAppear"
 - "updateSearchResultsForSearchController"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "filterContentForSearchText"
+- "viewDidLoad"
 depends-top-level:
-- !private "LocationsSource"
-- !private "!="
-- !private "LocationListTableViewCell"
-- "LocationListTableViewController"
 - !private "LocationDetailTableViewController"
-- "UITableViewCellEditingStyle"
-- !private "BooleanLiteralType"
+- "UITableView"
+- "AnyObject"
 - "Int"
-- "Location"
-- "UITableViewCell"
-- "String"
-- !private "Array"
-- "Bool"
+- "UISearchResultsUpdating"
+- !private "BooleanLiteralType"
+- !private "||"
+- "NSIndexPath"
 - "UIStoryboardSegue"
-- !private "=="
+- !private "LocationListTableViewCell"
+- !private "Array"
+- "UISearchController"
+- "UITableViewCellEditingStyle"
+- "UITableViewCell"
 - !private "NSStringCompareOptions"
 - !private "StringLiteralType"
-- "UITableView"
-- "UISearchResultsUpdating"
-- "UISearchController"
-- "NSIndexPath"
-- !private "||"
-- "AnyObject"
+- "LocationListTableViewController"
+- !private "LocationsSource"
+- "Bool"
+- !private "=="
+- "Location"
+- !private "!="
 - "UITableViewController"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "LocationsSource"]
 - !private ["Ps9AnyObject", "NSStringCompareOptions"]
@@ -79,6 +80,7 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "updateSearchResultsForSearchController"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -148,6 +150,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "updateSearchResultsForSearchController"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -204,6 +207,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "updateSearchResultsForSearchController"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
@@ -251,6 +255,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "updateSearchResultsForSearchController"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CaseInsensitiveSearch"]
 - !private ["Ps9Equatable", "Checkmark"]
@@ -294,6 +299,7 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "updateSearchResultsForSearchController"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
 - !private ["P6SQLite11Expressible", "Distance"]
 - !private ["P6SQLite11Expressible", "IntegerLiteralType"]
@@ -344,6 +350,7 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "updateSearchResultsForSearchController"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
 - ["SQ", "Some"]
 - !private ["Ps9Indexable", "Element"]
@@ -402,6 +409,7 @@ depends-member:
 - ["C8ToGoList31LocationListTableViewController", "tableView"]
 - ["C8ToGoList31LocationListTableViewController", "updateSearchResultsForSearchController"]
 - ["C8ToGoList31LocationListTableViewController", "viewDidLoad"]
+- ["C8ToGoList31LocationListTableViewController", "viewWillAppear"]
 - !private ["C8ToGoList15LocationsSource", "getLocationList"]
 - !private ["C8ToGoList15LocationsSource", "removeLocationFromList"]
 - !private ["C8ToGoList15LocationsSource", "sharedInstance"]
@@ -466,6 +474,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "updateSearchResultsForSearchController"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "rangeOfString"]
 - !private ["PSo9NSCopying", "row"]
@@ -488,6 +497,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "updateSearchResultsForSearchController"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "rangeOfString"]
@@ -536,6 +546,7 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "updateSearchResultsForSearchController"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "LocationsSource"]
 - !private ["PSo16NSObjectProtocol", "NSStringCompareOptions"]
 - !private ["PSo16NSObjectProtocol", "UISearchController"]
@@ -569,6 +580,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "updateSearchResultsForSearchController"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "rangeOfString"]
 - !private ["PSo14NSSecureCoding", "row"]
@@ -581,6 +593,7 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "rangeOfString"]
+- !private ["P8ToGoList15PassNewLocation", "location"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps30RangeReplaceableCollectionType", "Element"]
@@ -671,6 +684,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "updateSearchResultsForSearchController"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "text"]
 - !private ["PSo18UIContentContainer", "LocationsSource"]
@@ -692,6 +706,7 @@ depends-member:
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "updateSearchResultsForSearchController"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "accessoryType"]
 - !private ["PSo17UICoordinateSpace", "deleteRowsAtIndexPaths"]
@@ -742,6 +757,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "updateSearchResultsForSearchController"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "accessoryType"]
 - !private ["PSo27UIGestureRecognizerDelegate", "locationAddressLabel"]
@@ -789,6 +805,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "updateSearchResultsForSearchController"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - !private ["CSo12UIScrollView", "deleteRowsAtIndexPaths"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "indexPathForCell"]
@@ -809,6 +826,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "updateSearchResultsForSearchController"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", "viewWillAppear"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["CSo11UISearchBar", "text"]
 - !private ["CSo18UISearchController", "active"]
@@ -845,6 +863,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "updateSearchResultsForSearchController"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
 - !private ["CSo17UIStoryboardSegue", "identifier"]
@@ -890,6 +909,7 @@ depends-member:
 - ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "updateSearchResultsForSearchController"]
 - ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillAppear"]
 - ["CSo21UITableViewController", ""]
 - !private ["PSo21UITableViewDataSource", "LocationsSource"]
 - !private ["PSo21UITableViewDataSource", "NSStringCompareOptions"]
@@ -906,6 +926,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "updateSearchResultsForSearchController"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", "viewWillAppear"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "LocationsSource"]
 - !private ["PSo19UITableViewDelegate", "NSStringCompareOptions"]
@@ -922,6 +943,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "updateSearchResultsForSearchController"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", "viewWillAppear"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["OSC23UITableViewRowAnimation", "Fade"]
 - !private ["PSo17UITextInputTraits", "text"]
@@ -954,6 +976,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "updateSearchResultsForSearchController"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "accessoryType"]
 - !private ["CSo6UIView", "deleteRowsAtIndexPaths"]
@@ -997,6 +1020,7 @@ depends-member:
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "updateSearchResultsForSearchController"]
 - ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - !private ["PSo37UIViewControllerAnimatedTransitioning", "active"]
 - !private ["PSo37UIViewControllerAnimatedTransitioning", "dimsBackgroundDuringPresentation"]
 - !private ["PSo37UIViewControllerAnimatedTransitioning", "init"]
@@ -1140,6 +1164,7 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - "Sq"
 - !private "Ps16OutputStreamType"
+- !private "P8ToGoList15PassNewLocation"
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
@@ -1282,4 +1307,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "77b8f35ec804f16061c4355464b8445f"
+interface-hash: "e037b8942ee3e08c1d7ab0f16016293f"

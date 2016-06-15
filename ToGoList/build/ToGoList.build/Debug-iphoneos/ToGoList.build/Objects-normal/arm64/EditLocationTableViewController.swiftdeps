@@ -1,101 +1,108 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "PassNewLocation"
 - "EditLocationTableViewController"
 provides-nominal:
+- "P8ToGoList15PassNewLocation"
 - "C8ToGoList31EditLocationTableViewController"
 provides-member:
+- ["P8ToGoList15PassNewLocation", ""]
 - ["C8ToGoList31EditLocationTableViewController", ""]
 provides-dynamic-lookup:
-- "linkTextField"
-- "baseUrl"
-- "placePicker"
-- "checkPlacePickerButton"
-- "clickSvaeButton"
-- "typesTextField"
-- "dismissKeyboard"
-- "locationName"
-- "placePickerButton"
 - "locationAddress"
-- "viewWillDisappear"
-- "imagePickerController"
-- "locationPhoneNumber"
-- "checkSetCurrentLocation"
-- "beenHere"
+- "placePickerButton"
+- "typesTextField"
 - "getAddressForLatLng"
-- "imageFileLocation"
-- "addressTextField"
-- "setCurrentLocation"
-- "getLatLngForZip"
-- "locationType"
-- "nameTextField"
-- "viewDidLoad"
-- "locationImage"
-- "tableView"
-- "locationManager"
-- "beenHereButton"
-- "didSetNewImage"
-- "currentLocationButton"
-- "getDocumentsDirectory"
-- "apikey"
-- "phoneNumberTextField"
+- "beenHere"
 - "locationLink"
+- "phoneNumberTextField"
+- "clickSvaeButton"
 - "locationVisited"
+- "imageFileName"
+- "currentLocationButton"
+- "didSetNewImage"
+- "newLocationSaved"
+- "beenHereButton"
+- "addressTextField"
+- "viewWillDisappear"
+- "imageFileLocation"
+- "checkSetCurrentLocation"
+- "locationName"
+- "tableView"
+- "baseUrl"
+- "imagePickerController"
+- "getLatLngForZip"
+- "viewDidLoad"
+- "getDocumentsDirectory"
+- "dismissKeyboard"
+- "locationType"
+- "checkPlacePickerButton"
+- "apikey"
+- "placePicker"
+- "linkTextField"
+- "setCurrentLocation"
+- "locationImage"
+- "locationPhoneNumber"
+- "locationManager"
+- "nameTextField"
 depends-top-level:
-- "UIImagePickerController"
-- !private "Void"
-- !private "NSDictionary"
-- !private "NSURL"
-- !private "UIAlertControllerStyle"
-- !private "UIImagePNGRepresentation"
-- "Bool"
-- "AnyObject"
-- "UITableView"
-- !private "UIViewContentMode"
-- "NSIndexPath"
-- !private "GMSCoordinateBounds"
-- "NSString"
-- !private "NSJSONReadingOptions"
-- !private "Float"
-- !private "=="
-- !private "UIAlertController"
-- !private "NSError"
-- !private "GMSPlace"
-- !private "NSCharacterSet"
-- "String"
-- !private "NSSearchPathForDirectoriesInDomains"
-- "UIButton"
-- !private "NSData"
-- !private "CLLocationCoordinate2DMake"
-- "EditLocationTableViewController"
-- "GMSMapViewDelegate"
-- "UINavigationControllerDelegate"
-- "CLLocationManager"
-- "UIImagePickerControllerDelegate"
-- !private "||"
+- !private "GMSPlacePickerConfig"
+- !private "CLLocationDegrees"
 - "UITextField"
-- !private "NSArray"
-- "UITableViewController"
-- "BooleanLiteralType"
+- !private "NSDictionary"
+- "CLLocationManager"
+- !private "NSURL"
+- !private "UIAlertController"
 - "UIImageView"
-- !private "UIImage"
-- !private "!="
 - !private "LocationsSource"
-- !private "-"
+- "EditLocationTableViewController"
+- !private "!"
 - !private "+"
 - !private "print"
-- !private "GMSPlacePicker"
-- !private "UIImagePickerControllerOriginalImage"
+- !private "!="
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "NSCharacterSet"
 - !private "UITapGestureRecognizer"
-- "CLLocationManagerDelegate"
-- !private "CLLocationDegrees"
-- "StringLiteralType"
+- !private "UIViewContentMode"
+- !private "UIAlertControllerStyle"
 - "CLLocationCoordinate2D"
-- !private "UIAlertActionStyle"
-- !private "UIAlertAction"
-- "Location"
+- "UITableView"
+- !private "||"
+- "StringLiteralType"
+- !private "GMSPlacePicker"
+- !private "CLLocationCoordinate2DMake"
+- "UIButton"
+- "NSString"
+- "NSIndexPath"
 - !private "UnicodeScalarType"
-- !private "GMSPlacePickerConfig"
+- "AnyObject"
+- !private "NSData"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "Float"
+- "Location"
+- !private "NSArray"
+- !private "UIAlertActionStyle"
+- !private "=="
+- !private "GMSPlace"
+- !private "NSError"
+- "Bool"
+- !private "UIImage"
+- !private "-"
+- "String"
+- "PassNewLocation"
+- "UIImagePickerController"
+- !private "GMSCoordinateBounds"
+- !private "Void"
+- "CLLocationManagerDelegate"
 - !private "NSJSONSerialization"
+- !private "UIImagePNGRepresentation"
+- "GMSMapViewDelegate"
+- "BooleanLiteralType"
+- "UINavigationControllerDelegate"
+- "UIImagePickerControllerDelegate"
+- !private "UIAlertAction"
+- "UITableViewController"
+- !private "NSJSONReadingOptions"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CLLocationCoordinate2DMake"]
@@ -142,19 +149,21 @@ depends-member:
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "coordinate"]
 - ["Ps9AnyObject", "currentLocationButton"]
-- !private ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "deselectRowAtIndexPath"]
 - ["Ps9AnyObject", "didSetNewImage"]
 - ["Ps9AnyObject", "didTapMyLocationButtonForMapView"]
 - ["Ps9AnyObject", "dismissKeyboard"]
 - !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
 - !private ["Ps9AnyObject", "endEditing"]
+- !private ["Ps9AnyObject", "fixOrientation"]
 - !private ["Ps9AnyObject", "formattedAddress"]
 - ["Ps9AnyObject", "getAddressForLatLng"]
 - ["Ps9AnyObject", "getDocumentsDirectory"]
 - ["Ps9AnyObject", "getLatLngForZip"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageFileLocation"]
+- ["Ps9AnyObject", "imageFileName"]
 - ["Ps9AnyObject", "imagePickerController"]
 - ["Ps9AnyObject", "imagePickerControllerDidCancel"]
 - ["Ps9AnyObject", "init"]
@@ -185,6 +194,7 @@ depends-member:
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9AnyObject", "newLocation"]
+- ["Ps9AnyObject", "newLocationSaved"]
 - ["Ps9AnyObject", "oldLocation"]
 - !private ["Ps9AnyObject", "phoneNumber"]
 - ["Ps9AnyObject", "phoneNumberTextField"]
@@ -214,17 +224,33 @@ depends-member:
 - !private ["Ps9AnyObject", "website"]
 - !private ["Ps9AnyObject", "writeToFile"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "first"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23ArrayLiteralConvertible", "AllowFragments"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "UserDomainMask"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "first"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["P6SQLite7Binding", "Distance"]
+- !private ["P6SQLite7Binding", "IntegerLiteralType"]
 - !private ["P6SQLite7Binding", "_getBuiltinLogicValue"]
 - !private ["P6SQLite7Binding", "init"]
 - !private ["P6SQLite7Binding", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -267,6 +293,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "checkPlacePickerButton"]
 - !private ["PSo25CLLocationManagerDelegate", "checkSetCurrentLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "currentLocationButton"]
+- !private ["PSo25CLLocationManagerDelegate", "delegate"]
 - !private ["PSo25CLLocationManagerDelegate", "didSetNewImage"]
 - ["PSo25CLLocationManagerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo25CLLocationManagerDelegate", "dismissKeyboard"]
@@ -274,7 +301,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "getAddressForLatLng"]
 - !private ["PSo25CLLocationManagerDelegate", "getDocumentsDirectory"]
 - !private ["PSo25CLLocationManagerDelegate", "getLatLngForZip"]
-- !private ["PSo25CLLocationManagerDelegate", "imageFileLocation"]
+- !private ["PSo25CLLocationManagerDelegate", "imageFileName"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerController"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo25CLLocationManagerDelegate", "linkTextField"]
@@ -299,6 +326,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo25CLLocationManagerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo25CLLocationManagerDelegate", "newLocation"]
+- !private ["PSo25CLLocationManagerDelegate", "newLocationSaved"]
 - !private ["PSo25CLLocationManagerDelegate", "oldLocation"]
 - !private ["PSo25CLLocationManagerDelegate", "phoneNumberTextField"]
 - !private ["PSo25CLLocationManagerDelegate", "placePickerButton"]
@@ -310,9 +338,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "CLLocationCoordinate2DMake"]
 - !private ["Ps11CVarArgType", "CLLocationDegrees"]
 - ["Ps11CVarArgType", "CLLocationManager"]
+- !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "GMSCoordinateBounds"]
 - !private ["Ps11CVarArgType", "GMSPlacePicker"]
 - !private ["Ps11CVarArgType", "GMSPlacePickerConfig"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "JSONObjectWithData"]
 - !private ["Ps11CVarArgType", "Location"]
 - !private ["Ps11CVarArgType", "LocationsSource"]
@@ -351,19 +381,21 @@ depends-member:
 - !private ["Ps11CVarArgType", "contentMode"]
 - !private ["Ps11CVarArgType", "coordinate"]
 - ["Ps11CVarArgType", "currentLocationButton"]
-- !private ["Ps11CVarArgType", "delegate"]
+- ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "deselectRowAtIndexPath"]
 - ["Ps11CVarArgType", "didSetNewImage"]
 - ["Ps11CVarArgType", "didTapMyLocationButtonForMapView"]
 - ["Ps11CVarArgType", "dismissKeyboard"]
 - !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "endEditing"]
+- !private ["Ps11CVarArgType", "fixOrientation"]
 - !private ["Ps11CVarArgType", "formattedAddress"]
 - ["Ps11CVarArgType", "getAddressForLatLng"]
 - ["Ps11CVarArgType", "getDocumentsDirectory"]
 - ["Ps11CVarArgType", "getLatLngForZip"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "imageFileLocation"]
+- ["Ps11CVarArgType", "imageFileName"]
 - ["Ps11CVarArgType", "imagePickerController"]
 - ["Ps11CVarArgType", "imagePickerControllerDidCancel"]
 - ["Ps11CVarArgType", "init"]
@@ -393,6 +425,7 @@ depends-member:
 - ["Ps11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps11CVarArgType", "newLocation"]
+- ["Ps11CVarArgType", "newLocationSaved"]
 - ["Ps11CVarArgType", "oldLocation"]
 - !private ["Ps11CVarArgType", "phoneNumber"]
 - ["Ps11CVarArgType", "phoneNumberTextField"]
@@ -425,7 +458,10 @@ depends-member:
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
 - !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "first"]
 - !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationCoordinate2DMake"]
@@ -434,6 +470,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "GMSCoordinateBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "GMSPlacePicker"]
 - !private ["Ps28CustomDebugStringConvertible", "GMSPlacePickerConfig"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "JSONObjectWithData"]
 - !private ["Ps28CustomDebugStringConvertible", "Location"]
@@ -446,6 +483,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSURL"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
@@ -457,6 +495,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UIViewContentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "URLQueryAllowedCharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "absoluteString"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
@@ -474,19 +513,22 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "coordinate"]
 - ["Ps28CustomDebugStringConvertible", "currentLocationButton"]
-- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "deselectRowAtIndexPath"]
 - ["Ps28CustomDebugStringConvertible", "didSetNewImage"]
 - ["Ps28CustomDebugStringConvertible", "didTapMyLocationButtonForMapView"]
 - ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
+- !private ["Ps28CustomDebugStringConvertible", "fixOrientation"]
 - !private ["Ps28CustomDebugStringConvertible", "formattedAddress"]
 - ["Ps28CustomDebugStringConvertible", "getAddressForLatLng"]
 - ["Ps28CustomDebugStringConvertible", "getDocumentsDirectory"]
 - ["Ps28CustomDebugStringConvertible", "getLatLngForZip"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageFileLocation"]
+- ["Ps28CustomDebugStringConvertible", "imageFileName"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -516,6 +558,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps28CustomDebugStringConvertible", "newLocation"]
+- ["Ps28CustomDebugStringConvertible", "newLocationSaved"]
 - ["Ps28CustomDebugStringConvertible", "oldLocation"]
 - !private ["Ps28CustomDebugStringConvertible", "phoneNumber"]
 - ["Ps28CustomDebugStringConvertible", "phoneNumberTextField"]
@@ -546,10 +589,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CLLocationCoordinate2DMake"]
 - !private ["Ps23CustomStringConvertible", "CLLocationDegrees"]
 - ["Ps23CustomStringConvertible", "CLLocationManager"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "GMSCoordinateBounds"]
 - !private ["Ps23CustomStringConvertible", "GMSPlacePicker"]
 - !private ["Ps23CustomStringConvertible", "GMSPlacePickerConfig"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "JSONObjectWithData"]
 - !private ["Ps23CustomStringConvertible", "Location"]
 - !private ["Ps23CustomStringConvertible", "LocationsSource"]
@@ -560,6 +606,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSSearchPathForDirectoriesInDomains"]
 - !private ["Ps23CustomStringConvertible", "NSURL"]
 - !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertActionStyle"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
@@ -571,6 +618,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UIViewContentMode"]
 - !private ["Ps23CustomStringConvertible", "URLQueryAllowedCharacterSet"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "absoluteString"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
@@ -589,19 +637,22 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - !private ["Ps23CustomStringConvertible", "coordinate"]
 - ["Ps23CustomStringConvertible", "currentLocationButton"]
-- !private ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "deselectRowAtIndexPath"]
 - ["Ps23CustomStringConvertible", "didSetNewImage"]
 - ["Ps23CustomStringConvertible", "didTapMyLocationButtonForMapView"]
 - ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
+- !private ["Ps23CustomStringConvertible", "first"]
+- !private ["Ps23CustomStringConvertible", "fixOrientation"]
 - !private ["Ps23CustomStringConvertible", "formattedAddress"]
 - ["Ps23CustomStringConvertible", "getAddressForLatLng"]
 - ["Ps23CustomStringConvertible", "getDocumentsDirectory"]
 - ["Ps23CustomStringConvertible", "getLatLngForZip"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageFileLocation"]
+- ["Ps23CustomStringConvertible", "imageFileName"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
 - ["Ps23CustomStringConvertible", "imagePickerControllerDidCancel"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -631,6 +682,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps23CustomStringConvertible", "newLocation"]
+- ["Ps23CustomStringConvertible", "newLocationSaved"]
 - ["Ps23CustomStringConvertible", "oldLocation"]
 - !private ["Ps23CustomStringConvertible", "phoneNumber"]
 - ["Ps23CustomStringConvertible", "phoneNumberTextField"]
@@ -689,6 +741,7 @@ depends-member:
 - !private ["C8ToGoList31EditLocationTableViewController", "NSSearchPathForDirectoriesInDomains"]
 - ["C8ToGoList31EditLocationTableViewController", "NSString"]
 - !private ["C8ToGoList31EditLocationTableViewController", "NSURL"]
+- ["C8ToGoList31EditLocationTableViewController", "PassNewLocation"]
 - ["C8ToGoList31EditLocationTableViewController", "String"]
 - !private ["C8ToGoList31EditLocationTableViewController", "UIAlertAction"]
 - !private ["C8ToGoList31EditLocationTableViewController", "UIAlertActionStyle"]
@@ -715,6 +768,7 @@ depends-member:
 - ["C8ToGoList31EditLocationTableViewController", "clickSvaeButton"]
 - ["C8ToGoList31EditLocationTableViewController", "currentLocationButton"]
 - ["C8ToGoList31EditLocationTableViewController", "deinit"]
+- ["C8ToGoList31EditLocationTableViewController", "delegate"]
 - ["C8ToGoList31EditLocationTableViewController", "didSetNewImage"]
 - ["C8ToGoList31EditLocationTableViewController", "didTapMyLocationButtonForMapView"]
 - ["C8ToGoList31EditLocationTableViewController", "dismissKeyboard"]
@@ -723,6 +777,7 @@ depends-member:
 - ["C8ToGoList31EditLocationTableViewController", "getDocumentsDirectory"]
 - ["C8ToGoList31EditLocationTableViewController", "getLatLngForZip"]
 - ["C8ToGoList31EditLocationTableViewController", "imageFileLocation"]
+- ["C8ToGoList31EditLocationTableViewController", "imageFileName"]
 - ["C8ToGoList31EditLocationTableViewController", "imagePickerController"]
 - ["C8ToGoList31EditLocationTableViewController", "imagePickerControllerDidCancel"]
 - ["C8ToGoList31EditLocationTableViewController", "init"]
@@ -748,6 +803,7 @@ depends-member:
 - ["C8ToGoList31EditLocationTableViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["C8ToGoList31EditLocationTableViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["C8ToGoList31EditLocationTableViewController", "newLocation"]
+- ["C8ToGoList31EditLocationTableViewController", "newLocationSaved"]
 - ["C8ToGoList31EditLocationTableViewController", "oldLocation"]
 - ["C8ToGoList31EditLocationTableViewController", "phoneNumberTextField"]
 - ["C8ToGoList31EditLocationTableViewController", "placePicker"]
@@ -769,10 +825,12 @@ depends-member:
 - !private ["Ps9Equatable", "Camera"]
 - !private ["Ps9Equatable", "Cancel"]
 - !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "DocumentDirectory"]
 - !private ["Ps9Equatable", "GMSCoordinateBounds"]
 - !private ["Ps9Equatable", "GMSPlacePicker"]
 - !private ["Ps9Equatable", "GMSPlacePickerConfig"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "JSONObjectWithData"]
 - !private ["Ps9Equatable", "Location"]
 - !private ["Ps9Equatable", "LocationsSource"]
@@ -816,19 +874,21 @@ depends-member:
 - !private ["Ps9Equatable", "contentMode"]
 - !private ["Ps9Equatable", "coordinate"]
 - ["Ps9Equatable", "currentLocationButton"]
-- !private ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "deselectRowAtIndexPath"]
 - ["Ps9Equatable", "didSetNewImage"]
 - ["Ps9Equatable", "didTapMyLocationButtonForMapView"]
 - ["Ps9Equatable", "dismissKeyboard"]
 - !private ["Ps9Equatable", "dismissViewControllerAnimated"]
 - !private ["Ps9Equatable", "endEditing"]
+- !private ["Ps9Equatable", "fixOrientation"]
 - !private ["Ps9Equatable", "formattedAddress"]
 - ["Ps9Equatable", "getAddressForLatLng"]
 - ["Ps9Equatable", "getDocumentsDirectory"]
 - ["Ps9Equatable", "getLatLngForZip"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageFileLocation"]
+- ["Ps9Equatable", "imageFileName"]
 - ["Ps9Equatable", "imagePickerController"]
 - ["Ps9Equatable", "imagePickerControllerDidCancel"]
 - ["Ps9Equatable", "init"]
@@ -858,6 +918,7 @@ depends-member:
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9Equatable", "newLocation"]
+- ["Ps9Equatable", "newLocationSaved"]
 - ["Ps9Equatable", "oldLocation"]
 - !private ["Ps9Equatable", "phoneNumber"]
 - ["Ps9Equatable", "phoneNumberTextField"]
@@ -886,6 +947,8 @@ depends-member:
 - !private ["Ps9Equatable", "writeToFile"]
 - ["Ps9Equatable", ""]
 - !private ["Ps9ErrorType", "localizedDescription"]
+- !private ["P6SQLite11Expressible", "Distance"]
+- !private ["P6SQLite11Expressible", "IntegerLiteralType"]
 - !private ["P6SQLite11Expressible", "_getBuiltinLogicValue"]
 - !private ["P6SQLite11Expressible", "init"]
 - !private ["P6SQLite11Expressible", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -896,6 +959,8 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["Ps23FloatLiteralConvertible", "init"]
 - !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["CSo19GMSCoordinateBounds", "init"]
 - !private ["PSo18GMSMapViewDelegate", "CLLocationCoordinate2DMake"]
 - !private ["PSo18GMSMapViewDelegate", "CLLocationDegrees"]
@@ -927,6 +992,7 @@ depends-member:
 - !private ["PSo18GMSMapViewDelegate", "checkPlacePickerButton"]
 - !private ["PSo18GMSMapViewDelegate", "checkSetCurrentLocation"]
 - !private ["PSo18GMSMapViewDelegate", "currentLocationButton"]
+- !private ["PSo18GMSMapViewDelegate", "delegate"]
 - !private ["PSo18GMSMapViewDelegate", "didSetNewImage"]
 - ["PSo18GMSMapViewDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo18GMSMapViewDelegate", "dismissKeyboard"]
@@ -934,7 +1000,7 @@ depends-member:
 - !private ["PSo18GMSMapViewDelegate", "getAddressForLatLng"]
 - !private ["PSo18GMSMapViewDelegate", "getDocumentsDirectory"]
 - !private ["PSo18GMSMapViewDelegate", "getLatLngForZip"]
-- !private ["PSo18GMSMapViewDelegate", "imageFileLocation"]
+- !private ["PSo18GMSMapViewDelegate", "imageFileName"]
 - ["PSo18GMSMapViewDelegate", "imagePickerController"]
 - ["PSo18GMSMapViewDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo18GMSMapViewDelegate", "linkTextField"]
@@ -959,6 +1025,7 @@ depends-member:
 - ["PSo18GMSMapViewDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18GMSMapViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo18GMSMapViewDelegate", "newLocation"]
+- !private ["PSo18GMSMapViewDelegate", "newLocationSaved"]
 - !private ["PSo18GMSMapViewDelegate", "oldLocation"]
 - !private ["PSo18GMSMapViewDelegate", "phoneNumberTextField"]
 - !private ["PSo18GMSMapViewDelegate", "placePickerButton"]
@@ -986,10 +1053,12 @@ depends-member:
 - !private ["Ps8Hashable", "Camera"]
 - !private ["Ps8Hashable", "Cancel"]
 - !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "DocumentDirectory"]
 - !private ["Ps8Hashable", "GMSCoordinateBounds"]
 - !private ["Ps8Hashable", "GMSPlacePicker"]
 - !private ["Ps8Hashable", "GMSPlacePickerConfig"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "JSONObjectWithData"]
 - !private ["Ps8Hashable", "Location"]
 - !private ["Ps8Hashable", "LocationsSource"]
@@ -1031,19 +1100,21 @@ depends-member:
 - !private ["Ps8Hashable", "contentMode"]
 - !private ["Ps8Hashable", "coordinate"]
 - ["Ps8Hashable", "currentLocationButton"]
-- !private ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "deselectRowAtIndexPath"]
 - ["Ps8Hashable", "didSetNewImage"]
 - ["Ps8Hashable", "didTapMyLocationButtonForMapView"]
 - ["Ps8Hashable", "dismissKeyboard"]
 - !private ["Ps8Hashable", "dismissViewControllerAnimated"]
 - !private ["Ps8Hashable", "endEditing"]
+- !private ["Ps8Hashable", "fixOrientation"]
 - !private ["Ps8Hashable", "formattedAddress"]
 - ["Ps8Hashable", "getAddressForLatLng"]
 - ["Ps8Hashable", "getDocumentsDirectory"]
 - ["Ps8Hashable", "getLatLngForZip"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageFileLocation"]
+- ["Ps8Hashable", "imageFileName"]
 - ["Ps8Hashable", "imagePickerController"]
 - ["Ps8Hashable", "imagePickerControllerDidCancel"]
 - ["Ps8Hashable", "init"]
@@ -1073,6 +1144,7 @@ depends-member:
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps8Hashable", "newLocation"]
+- ["Ps8Hashable", "newLocationSaved"]
 - ["Ps8Hashable", "oldLocation"]
 - !private ["Ps8Hashable", "phoneNumber"]
 - ["Ps8Hashable", "phoneNumberTextField"]
@@ -1105,16 +1177,26 @@ depends-member:
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "first"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["V8ToGoList8Location", "address"]
 - !private ["V8ToGoList8Location", "coordinate"]
+- !private ["V8ToGoList8Location", "imagePath"]
 - !private ["V8ToGoList8Location", "init"]
 - !private ["V8ToGoList8Location", "name"]
 - !private ["V8ToGoList8Location", "phoneNumber"]
@@ -1124,13 +1206,27 @@ depends-member:
 - !private ["C8ToGoList15LocationsSource", "insertLocationToList"]
 - !private ["C8ToGoList15LocationsSource", "removeLocationFromList"]
 - !private ["C8ToGoList15LocationsSource", "sharedInstance"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps14MirrorPathType", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- !private ["Ps21MutableCollectionType", "Generator"]
 - !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "first"]
 - !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "first"]
 - !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "first"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["CSo7NSArray", "subscript"]
 - !private ["CSo14NSCharacterSet", "URLQueryAllowedCharacterSet"]
@@ -1176,18 +1272,20 @@ depends-member:
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "coordinate"]
 - ["PSo8NSCoding", "currentLocationButton"]
-- !private ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "deselectRowAtIndexPath"]
 - ["PSo8NSCoding", "didSetNewImage"]
 - ["PSo8NSCoding", "didTapMyLocationButtonForMapView"]
 - ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "endEditing"]
+- !private ["PSo8NSCoding", "fixOrientation"]
 - ["PSo8NSCoding", "getAddressForLatLng"]
 - ["PSo8NSCoding", "getDocumentsDirectory"]
 - ["PSo8NSCoding", "getLatLngForZip"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageFileLocation"]
+- ["PSo8NSCoding", "imageFileName"]
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
 - ["PSo8NSCoding", "init"]
@@ -1215,6 +1313,7 @@ depends-member:
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo8NSCoding", "newLocation"]
+- ["PSo8NSCoding", "newLocationSaved"]
 - ["PSo8NSCoding", "oldLocation"]
 - ["PSo8NSCoding", "phoneNumberTextField"]
 - ["PSo8NSCoding", "placePicker"]
@@ -1288,7 +1387,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "checkSetCurrentLocation"]
 - ["PSo26NSExtensionRequestHandling", "clickSvaeButton"]
 - ["PSo26NSExtensionRequestHandling", "currentLocationButton"]
-- !private ["PSo26NSExtensionRequestHandling", "delegate"]
+- ["PSo26NSExtensionRequestHandling", "delegate"]
 - ["PSo26NSExtensionRequestHandling", "didSetNewImage"]
 - ["PSo26NSExtensionRequestHandling", "didTapMyLocationButtonForMapView"]
 - ["PSo26NSExtensionRequestHandling", "dismissKeyboard"]
@@ -1297,6 +1396,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getDocumentsDirectory"]
 - ["PSo26NSExtensionRequestHandling", "getLatLngForZip"]
 - ["PSo26NSExtensionRequestHandling", "imageFileLocation"]
+- ["PSo26NSExtensionRequestHandling", "imageFileName"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -1323,6 +1423,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo26NSExtensionRequestHandling", "newLocation"]
+- ["PSo26NSExtensionRequestHandling", "newLocationSaved"]
 - ["PSo26NSExtensionRequestHandling", "oldLocation"]
 - ["PSo26NSExtensionRequestHandling", "phoneNumberTextField"]
 - ["PSo26NSExtensionRequestHandling", "placePicker"]
@@ -1373,6 +1474,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSSearchPathForDirectoriesInDomains"]
 - ["CSo8NSObject", "NSString"]
 - !private ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "PassNewLocation"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertActionStyle"]
@@ -1407,19 +1509,21 @@ depends-member:
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "coordinate"]
 - ["CSo8NSObject", "currentLocationButton"]
-- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "deselectRowAtIndexPath"]
 - ["CSo8NSObject", "didSetNewImage"]
 - ["CSo8NSObject", "didTapMyLocationButtonForMapView"]
 - ["CSo8NSObject", "dismissKeyboard"]
 - !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "endEditing"]
+- !private ["CSo8NSObject", "fixOrientation"]
 - !private ["CSo8NSObject", "formattedAddress"]
 - ["CSo8NSObject", "getAddressForLatLng"]
 - ["CSo8NSObject", "getDocumentsDirectory"]
 - ["CSo8NSObject", "getLatLngForZip"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageFileLocation"]
+- ["CSo8NSObject", "imageFileName"]
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
 - ["CSo8NSObject", "init"]
@@ -1449,6 +1553,7 @@ depends-member:
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo8NSObject", "newLocation"]
+- ["CSo8NSObject", "newLocationSaved"]
 - ["CSo8NSObject", "oldLocation"]
 - !private ["CSo8NSObject", "phoneNumber"]
 - ["CSo8NSObject", "phoneNumberTextField"]
@@ -1519,19 +1624,21 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
 - ["PSo16NSObjectProtocol", "currentLocationButton"]
-- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "deselectRowAtIndexPath"]
 - ["PSo16NSObjectProtocol", "didSetNewImage"]
 - ["PSo16NSObjectProtocol", "didTapMyLocationButtonForMapView"]
 - ["PSo16NSObjectProtocol", "dismissKeyboard"]
 - !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
+- !private ["PSo16NSObjectProtocol", "fixOrientation"]
 - !private ["PSo16NSObjectProtocol", "formattedAddress"]
 - ["PSo16NSObjectProtocol", "getAddressForLatLng"]
 - ["PSo16NSObjectProtocol", "getDocumentsDirectory"]
 - ["PSo16NSObjectProtocol", "getLatLngForZip"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageFileLocation"]
+- ["PSo16NSObjectProtocol", "imageFileName"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -1561,6 +1668,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo16NSObjectProtocol", "newLocation"]
+- ["PSo16NSObjectProtocol", "newLocationSaved"]
 - ["PSo16NSObjectProtocol", "oldLocation"]
 - !private ["PSo16NSObjectProtocol", "phoneNumber"]
 - ["PSo16NSObjectProtocol", "phoneNumberTextField"]
@@ -1592,6 +1700,7 @@ depends-member:
 - !private ["VSC22NSSearchPathDomainMask", "UserDomainMask"]
 - !private ["PSo14NSSecureCoding", "absoluteString"]
 - !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "fixOrientation"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["PSo14NSSecureCoding", "row"]
@@ -1606,6 +1715,8 @@ depends-member:
 - !private ["CSo5NSURL", "absoluteString"]
 - !private ["CSo5NSURL", "init"]
 - ["Ps21NilLiteralConvertible", "Some"]
+- !private ["P6SQLite6Number", "Distance"]
+- !private ["P6SQLite6Number", "IntegerLiteralType"]
 - !private ["P6SQLite6Number", "init"]
 - !private ["Ps13OptionSetType", "AllowFragments"]
 - !private ["Ps13OptionSetType", "Normal"]
@@ -1614,7 +1725,15 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- ["P8ToGoList15PassNewLocation", "Location"]
+- ["P8ToGoList15PassNewLocation", "getNewLocation"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "first"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "ActionSheet"]
 - !private ["Ps16RawRepresentable", "Alert"]
@@ -1633,10 +1752,15 @@ depends-member:
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "first"]
 - !private ["Ps12SequenceType", "subscript"]
 - !private ["Ps14SetAlgebraType", "AllowFragments"]
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "UserDomainMask"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "init"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
@@ -1644,6 +1768,8 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Streamable", "stringByAddingPercentEncodingWithAllowedCharacters"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "init"]
 - !private ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -1658,6 +1784,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
+- !private ["PSo29UIAccessibilityIdentification", "fixOrientation"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
@@ -1716,7 +1843,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - ["PSo21UIAppearanceContainer", "currentLocationButton"]
-- !private ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "deselectRowAtIndexPath"]
 - ["PSo21UIAppearanceContainer", "didSetNewImage"]
 - ["PSo21UIAppearanceContainer", "didTapMyLocationButtonForMapView"]
@@ -1728,6 +1855,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "getLatLngForZip"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imageFileLocation"]
+- ["PSo21UIAppearanceContainer", "imageFileName"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -1754,6 +1882,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo21UIAppearanceContainer", "newLocation"]
+- ["PSo21UIAppearanceContainer", "newLocationSaved"]
 - ["PSo21UIAppearanceContainer", "oldLocation"]
 - ["PSo21UIAppearanceContainer", "phoneNumberTextField"]
 - ["PSo21UIAppearanceContainer", "placePicker"]
@@ -1808,7 +1937,7 @@ depends-member:
 - ["PSo18UIContentContainer", "checkSetCurrentLocation"]
 - ["PSo18UIContentContainer", "clickSvaeButton"]
 - ["PSo18UIContentContainer", "currentLocationButton"]
-- !private ["PSo18UIContentContainer", "delegate"]
+- ["PSo18UIContentContainer", "delegate"]
 - ["PSo18UIContentContainer", "didSetNewImage"]
 - ["PSo18UIContentContainer", "didTapMyLocationButtonForMapView"]
 - ["PSo18UIContentContainer", "dismissKeyboard"]
@@ -1817,6 +1946,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getDocumentsDirectory"]
 - ["PSo18UIContentContainer", "getLatLngForZip"]
 - ["PSo18UIContentContainer", "imageFileLocation"]
+- ["PSo18UIContentContainer", "imageFileName"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
 - ["PSo18UIContentContainer", "init"]
@@ -1843,6 +1973,7 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UIContentContainer", "newLocation"]
+- ["PSo18UIContentContainer", "newLocationSaved"]
 - ["PSo18UIContentContainer", "oldLocation"]
 - ["PSo18UIContentContainer", "phoneNumberTextField"]
 - ["PSo18UIContentContainer", "placePicker"]
@@ -1916,7 +2047,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - ["PSo18UIFocusEnvironment", "currentLocationButton"]
-- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UIFocusEnvironment", "didSetNewImage"]
 - ["PSo18UIFocusEnvironment", "didTapMyLocationButtonForMapView"]
@@ -1928,6 +2059,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "getLatLngForZip"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imageFileLocation"]
+- ["PSo18UIFocusEnvironment", "imageFileName"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -1954,6 +2086,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UIFocusEnvironment", "newLocation"]
+- ["PSo18UIFocusEnvironment", "newLocationSaved"]
 - ["PSo18UIFocusEnvironment", "oldLocation"]
 - ["PSo18UIFocusEnvironment", "phoneNumberTextField"]
 - ["PSo18UIFocusEnvironment", "placePicker"]
@@ -1972,6 +2105,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["CSo7UIImage", "fixOrientation"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo23UIImagePickerController", "allowsEditing"]
 - !private ["CSo23UIImagePickerController", "delegate"]
@@ -2008,6 +2142,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "checkPlacePickerButton"]
 - !private ["PSo31UIImagePickerControllerDelegate", "checkSetCurrentLocation"]
 - !private ["PSo31UIImagePickerControllerDelegate", "currentLocationButton"]
+- !private ["PSo31UIImagePickerControllerDelegate", "delegate"]
 - !private ["PSo31UIImagePickerControllerDelegate", "didSetNewImage"]
 - ["PSo31UIImagePickerControllerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dismissKeyboard"]
@@ -2015,7 +2150,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "getAddressForLatLng"]
 - !private ["PSo31UIImagePickerControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo31UIImagePickerControllerDelegate", "getLatLngForZip"]
-- !private ["PSo31UIImagePickerControllerDelegate", "imageFileLocation"]
+- !private ["PSo31UIImagePickerControllerDelegate", "imageFileName"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo31UIImagePickerControllerDelegate", "linkTextField"]
@@ -2040,6 +2175,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo31UIImagePickerControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo31UIImagePickerControllerDelegate", "newLocation"]
+- !private ["PSo31UIImagePickerControllerDelegate", "newLocationSaved"]
 - !private ["PSo31UIImagePickerControllerDelegate", "oldLocation"]
 - !private ["PSo31UIImagePickerControllerDelegate", "phoneNumberTextField"]
 - !private ["PSo31UIImagePickerControllerDelegate", "placePickerButton"]
@@ -2090,6 +2226,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "checkPlacePickerButton"]
 - !private ["PSo30UINavigationControllerDelegate", "checkSetCurrentLocation"]
 - !private ["PSo30UINavigationControllerDelegate", "currentLocationButton"]
+- !private ["PSo30UINavigationControllerDelegate", "delegate"]
 - !private ["PSo30UINavigationControllerDelegate", "didSetNewImage"]
 - ["PSo30UINavigationControllerDelegate", "didTapMyLocationButtonForMapView"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissKeyboard"]
@@ -2097,7 +2234,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "getAddressForLatLng"]
 - !private ["PSo30UINavigationControllerDelegate", "getDocumentsDirectory"]
 - !private ["PSo30UINavigationControllerDelegate", "getLatLngForZip"]
-- !private ["PSo30UINavigationControllerDelegate", "imageFileLocation"]
+- !private ["PSo30UINavigationControllerDelegate", "imageFileName"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
 - !private ["PSo30UINavigationControllerDelegate", "linkTextField"]
@@ -2122,6 +2259,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo30UINavigationControllerDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["PSo30UINavigationControllerDelegate", "newLocation"]
+- !private ["PSo30UINavigationControllerDelegate", "newLocationSaved"]
 - !private ["PSo30UINavigationControllerDelegate", "oldLocation"]
 - !private ["PSo30UINavigationControllerDelegate", "phoneNumberTextField"]
 - !private ["PSo30UINavigationControllerDelegate", "placePickerButton"]
@@ -2154,6 +2292,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSSearchPathForDirectoriesInDomains"]
 - ["CSo11UIResponder", "NSString"]
 - !private ["CSo11UIResponder", "NSURL"]
+- ["CSo11UIResponder", "PassNewLocation"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertActionStyle"]
@@ -2184,7 +2323,7 @@ depends-member:
 - !private ["CSo11UIResponder", "clipsToBounds"]
 - !private ["CSo11UIResponder", "contentMode"]
 - ["CSo11UIResponder", "currentLocationButton"]
-- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "deselectRowAtIndexPath"]
 - ["CSo11UIResponder", "didSetNewImage"]
 - ["CSo11UIResponder", "didTapMyLocationButtonForMapView"]
@@ -2196,6 +2335,7 @@ depends-member:
 - ["CSo11UIResponder", "getLatLngForZip"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imageFileLocation"]
+- ["CSo11UIResponder", "imageFileName"]
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
 - ["CSo11UIResponder", "init"]
@@ -2222,6 +2362,7 @@ depends-member:
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo11UIResponder", "newLocation"]
+- ["CSo11UIResponder", "newLocationSaved"]
 - ["CSo11UIResponder", "oldLocation"]
 - ["CSo11UIResponder", "phoneNumberTextField"]
 - ["CSo11UIResponder", "placePicker"]
@@ -2273,6 +2414,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "checkSetCurrentLocation"]
 - ["PSo20UIScrollViewDelegate", "clickSvaeButton"]
 - ["PSo20UIScrollViewDelegate", "currentLocationButton"]
+- ["PSo20UIScrollViewDelegate", "delegate"]
 - ["PSo20UIScrollViewDelegate", "didSetNewImage"]
 - ["PSo20UIScrollViewDelegate", "didTapMyLocationButtonForMapView"]
 - ["PSo20UIScrollViewDelegate", "dismissKeyboard"]
@@ -2281,6 +2423,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "getDocumentsDirectory"]
 - ["PSo20UIScrollViewDelegate", "getLatLngForZip"]
 - ["PSo20UIScrollViewDelegate", "imageFileLocation"]
+- ["PSo20UIScrollViewDelegate", "imageFileName"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo20UIScrollViewDelegate", "init"]
@@ -2306,6 +2449,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo20UIScrollViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo20UIScrollViewDelegate", "newLocation"]
+- ["PSo20UIScrollViewDelegate", "newLocationSaved"]
 - ["PSo20UIScrollViewDelegate", "oldLocation"]
 - ["PSo20UIScrollViewDelegate", "phoneNumberTextField"]
 - ["PSo20UIScrollViewDelegate", "placePicker"]
@@ -2355,7 +2499,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "checkSetCurrentLocation"]
 - ["PSo16UIStateRestoring", "clickSvaeButton"]
 - ["PSo16UIStateRestoring", "currentLocationButton"]
-- !private ["PSo16UIStateRestoring", "delegate"]
+- ["PSo16UIStateRestoring", "delegate"]
 - ["PSo16UIStateRestoring", "didSetNewImage"]
 - ["PSo16UIStateRestoring", "didTapMyLocationButtonForMapView"]
 - ["PSo16UIStateRestoring", "dismissKeyboard"]
@@ -2364,6 +2508,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getDocumentsDirectory"]
 - ["PSo16UIStateRestoring", "getLatLngForZip"]
 - ["PSo16UIStateRestoring", "imageFileLocation"]
+- ["PSo16UIStateRestoring", "imageFileName"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
 - ["PSo16UIStateRestoring", "init"]
@@ -2390,6 +2535,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo16UIStateRestoring", "newLocation"]
+- ["PSo16UIStateRestoring", "newLocationSaved"]
 - ["PSo16UIStateRestoring", "oldLocation"]
 - ["PSo16UIStateRestoring", "phoneNumberTextField"]
 - ["PSo16UIStateRestoring", "placePicker"]
@@ -2430,6 +2576,7 @@ depends-member:
 - !private ["CSo21UITableViewController", "NSSearchPathForDirectoriesInDomains"]
 - ["CSo21UITableViewController", "NSString"]
 - !private ["CSo21UITableViewController", "NSURL"]
+- ["CSo21UITableViewController", "PassNewLocation"]
 - ["CSo21UITableViewController", "String"]
 - !private ["CSo21UITableViewController", "UIAlertAction"]
 - !private ["CSo21UITableViewController", "UIAlertActionStyle"]
@@ -2455,6 +2602,7 @@ depends-member:
 - ["CSo21UITableViewController", "checkSetCurrentLocation"]
 - ["CSo21UITableViewController", "clickSvaeButton"]
 - ["CSo21UITableViewController", "currentLocationButton"]
+- ["CSo21UITableViewController", "delegate"]
 - ["CSo21UITableViewController", "didSetNewImage"]
 - ["CSo21UITableViewController", "didTapMyLocationButtonForMapView"]
 - ["CSo21UITableViewController", "dismissKeyboard"]
@@ -2463,6 +2611,7 @@ depends-member:
 - ["CSo21UITableViewController", "getDocumentsDirectory"]
 - ["CSo21UITableViewController", "getLatLngForZip"]
 - ["CSo21UITableViewController", "imageFileLocation"]
+- ["CSo21UITableViewController", "imageFileName"]
 - ["CSo21UITableViewController", "imagePickerController"]
 - ["CSo21UITableViewController", "imagePickerControllerDidCancel"]
 - ["CSo21UITableViewController", "init"]
@@ -2488,6 +2637,7 @@ depends-member:
 - ["CSo21UITableViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo21UITableViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo21UITableViewController", "newLocation"]
+- ["CSo21UITableViewController", "newLocationSaved"]
 - ["CSo21UITableViewController", "oldLocation"]
 - ["CSo21UITableViewController", "phoneNumberTextField"]
 - ["CSo21UITableViewController", "placePicker"]
@@ -2535,6 +2685,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "checkSetCurrentLocation"]
 - ["PSo21UITableViewDataSource", "clickSvaeButton"]
 - ["PSo21UITableViewDataSource", "currentLocationButton"]
+- ["PSo21UITableViewDataSource", "delegate"]
 - ["PSo21UITableViewDataSource", "didSetNewImage"]
 - ["PSo21UITableViewDataSource", "didTapMyLocationButtonForMapView"]
 - ["PSo21UITableViewDataSource", "dismissKeyboard"]
@@ -2543,6 +2694,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "getDocumentsDirectory"]
 - ["PSo21UITableViewDataSource", "getLatLngForZip"]
 - ["PSo21UITableViewDataSource", "imageFileLocation"]
+- ["PSo21UITableViewDataSource", "imageFileName"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
 - ["PSo21UITableViewDataSource", "init"]
@@ -2568,6 +2720,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UITableViewDataSource", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo21UITableViewDataSource", "newLocation"]
+- ["PSo21UITableViewDataSource", "newLocationSaved"]
 - ["PSo21UITableViewDataSource", "oldLocation"]
 - ["PSo21UITableViewDataSource", "phoneNumberTextField"]
 - ["PSo21UITableViewDataSource", "placePicker"]
@@ -2615,6 +2768,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "checkSetCurrentLocation"]
 - ["PSo19UITableViewDelegate", "clickSvaeButton"]
 - ["PSo19UITableViewDelegate", "currentLocationButton"]
+- ["PSo19UITableViewDelegate", "delegate"]
 - ["PSo19UITableViewDelegate", "didSetNewImage"]
 - ["PSo19UITableViewDelegate", "didTapMyLocationButtonForMapView"]
 - ["PSo19UITableViewDelegate", "dismissKeyboard"]
@@ -2623,6 +2777,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "getDocumentsDirectory"]
 - ["PSo19UITableViewDelegate", "getLatLngForZip"]
 - ["PSo19UITableViewDelegate", "imageFileLocation"]
+- ["PSo19UITableViewDelegate", "imageFileName"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo19UITableViewDelegate", "init"]
@@ -2648,6 +2803,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo19UITableViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo19UITableViewDelegate", "newLocation"]
+- ["PSo19UITableViewDelegate", "newLocationSaved"]
 - ["PSo19UITableViewDelegate", "oldLocation"]
 - ["PSo19UITableViewDelegate", "phoneNumberTextField"]
 - ["PSo19UITableViewDelegate", "placePicker"]
@@ -2704,7 +2860,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - ["PSo18UITraitEnvironment", "currentLocationButton"]
-- !private ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "deselectRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "didSetNewImage"]
 - ["PSo18UITraitEnvironment", "didTapMyLocationButtonForMapView"]
@@ -2716,6 +2872,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "getLatLngForZip"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imageFileLocation"]
+- ["PSo18UITraitEnvironment", "imageFileName"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -2742,6 +2899,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo18UITraitEnvironment", "newLocation"]
+- ["PSo18UITraitEnvironment", "newLocationSaved"]
 - ["PSo18UITraitEnvironment", "oldLocation"]
 - ["PSo18UITraitEnvironment", "phoneNumberTextField"]
 - ["PSo18UITraitEnvironment", "placePicker"]
@@ -2792,6 +2950,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSSearchPathForDirectoriesInDomains"]
 - ["CSo16UIViewController", "NSString"]
 - !private ["CSo16UIViewController", "NSURL"]
+- ["CSo16UIViewController", "PassNewLocation"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertActionStyle"]
@@ -2819,7 +2978,7 @@ depends-member:
 - ["CSo16UIViewController", "checkSetCurrentLocation"]
 - ["CSo16UIViewController", "clickSvaeButton"]
 - ["CSo16UIViewController", "currentLocationButton"]
-- !private ["CSo16UIViewController", "delegate"]
+- ["CSo16UIViewController", "delegate"]
 - ["CSo16UIViewController", "didSetNewImage"]
 - ["CSo16UIViewController", "didTapMyLocationButtonForMapView"]
 - ["CSo16UIViewController", "dismissKeyboard"]
@@ -2828,6 +2987,7 @@ depends-member:
 - ["CSo16UIViewController", "getDocumentsDirectory"]
 - ["CSo16UIViewController", "getLatLngForZip"]
 - ["CSo16UIViewController", "imageFileLocation"]
+- ["CSo16UIViewController", "imageFileName"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
 - ["CSo16UIViewController", "init"]
@@ -2854,6 +3014,7 @@ depends-member:
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo16UIViewController", "newLocation"]
+- ["CSo16UIViewController", "newLocationSaved"]
 - ["CSo16UIViewController", "oldLocation"]
 - ["CSo16UIViewController", "phoneNumberTextField"]
 - ["CSo16UIViewController", "placePicker"]
@@ -2877,16 +3038,24 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAppendingPathComponent"]
+- !private ["P6SQLite5Value", "Distance"]
+- !private ["P6SQLite5Value", "IntegerLiteralType"]
 - !private ["P6SQLite5Value", "_getBuiltinLogicValue"]
 - !private ["P6SQLite5Value", "init"]
 - !private ["P6SQLite5Value", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["P6SQLite5Value", "writeToFile"]
+- !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "first"]
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
@@ -2896,20 +3065,44 @@ depends-member:
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps19_CVarArgAlignedType", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "first"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "absoluteString"]
 - !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "fixOrientation"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "stringByAddingPercentEncodingWithAllowedCharacters"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["P6SQLite13_OptionalType", "Some"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "absoluteString"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
@@ -2917,6 +3110,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "contentMode"]
 - !private ["Ps12_Reflectable", "deselectRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "endEditing"]
+- !private ["Ps12_Reflectable", "first"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "setImage"]
@@ -2924,12 +3118,17 @@ depends-member:
 - !private ["Ps12_Reflectable", "stringByAppendingPathComponent"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
 - !private "P6SQLite7Binding"
+- !private "Ps21BitwiseOperationsType"
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
@@ -2954,6 +3153,7 @@ depends-nominal:
 - !private "Sf"
 - !private "Ps23FloatLiteralConvertible"
 - !private "Ps17FloatingPointType"
+- !private "Ps16ForwardIndexType"
 - !private "CSo19GMSCoordinateBounds"
 - "PSo18GMSMapViewDelegate"
 - !private "CSo8GMSPlace"
@@ -2969,7 +3169,9 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
 - !private "V8ToGoList8Location"
 - !private "C8ToGoList15LocationsSource"
 - !private "Ps14MirrorPathType"
@@ -3001,11 +3203,14 @@ depends-nominal:
 - !private "Ps13OptionSetType"
 - "Sq"
 - !private "Ps16OutputStreamType"
+- "P8ToGoList15PassNewLocation"
+- !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "V10ObjectiveC8Selector"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
 - !private "Vs5Slice"
 - !private "Ps10Streamable"
@@ -3073,10 +3278,15 @@ depends-nominal:
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps32_FileReferenceLiteralConvertible"
 - !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - "P6SQLite13_OptionalType"
+- !private "Ps22_RandomAccessAmbiguity"
 - "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 - !private "subscript"
 depends-external:
@@ -3156,4 +3366,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "03ee5365aced7ebf0b1a371fc4dd1c12"
+interface-hash: "4be922ff979a764360bb6b1f8aa81420"

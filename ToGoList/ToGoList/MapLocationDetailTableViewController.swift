@@ -8,7 +8,12 @@
 
 import UIKit
 
-class MapLocationDetailTableViewController: UITableViewController {
+class MapLocationDetailTableViewController: UITableViewController, PassNewLocation{
+    
+    func getNewLocation(newLocation: Location){
+        self.location = newLocation
+    }
+    
     var location:Location!
     @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var locationNameLabel: UILabel!
@@ -39,6 +44,9 @@ class MapLocationDetailTableViewController: UITableViewController {
         self.presentViewController(optionMenu, animated: true, completion: nil)
     }
     
+    override func viewWillAppear(animated: Bool) {
+        viewDidLoad()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -155,6 +163,7 @@ class MapLocationDetailTableViewController: UITableViewController {
         if segue.identifier == "DetailEdit" {
             let controller = segue.destinationViewController as! EditLocationTableViewController
             controller.oldLocation = self.location
+            controller.delegate = self
         }
     }
     

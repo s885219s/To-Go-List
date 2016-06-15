@@ -8,7 +8,12 @@
 
 import UIKit
 
-class LocationDetailTableViewController: UITableViewController {
+class LocationDetailTableViewController: UITableViewController, PassNewLocation{
+    
+    func getNewLocation(newLocation: Location){
+        self.location = newLocation
+    }
+    
     var locationVisited = 0
     @IBOutlet weak var LocationPhoto: UIImageView!
     @IBOutlet weak var LocationName: UILabel!
@@ -149,6 +154,7 @@ class LocationDetailTableViewController: UITableViewController {
         if segue.identifier == "DetailEdit" {
             let controller = segue.destinationViewController as! EditLocationTableViewController
             controller.oldLocation = self.location
+            controller.delegate = self
         }
         
     }

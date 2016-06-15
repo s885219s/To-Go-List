@@ -12,10 +12,15 @@ import GoogleMaps
 import CoreLocation
 import AddressBookUI
 
+protocol PassNewLocation{
+    func getNewLocation(newLocation: Location)
+}
+
 class EditLocationTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate {
     
-    var oldLocation: Location?
-    var newLocation: Location?
+    var delegate: PassNewLocation?
+    var oldLocation: Location!
+    var newLocation: Location!
     
     let baseUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
     let apikey = "AIzaSyAI1ncGtBm9pMxWFv58brRBK3hWwV6_ydE"
@@ -29,12 +34,14 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     var locationVisited = false
     var didSetNewImage = false
     var imageFileLocation = ""
+    var newLocationSaved = false
     
     var locationName:String?
     var locationType:String?
     var locationPhoneNumber:String?
     var locationAddress:String?
     var locationLink:String?
+    var imageFileName: String?
     
     //判斷用
     var checkSetCurrentLocation: Bool = false
@@ -131,7 +138,7 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     }
     
     @IBAction func beenHere(sender: AnyObject) {
-        if oldLocation!.visited == false {
+        if oldLocation.visited == false {
             //            locationVisitButton.imageView?.image = UIImage(named: "beenHere")
             beenHereButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
             print("set locationVisited true")
@@ -148,15 +155,24 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
+        LocationsSource.sharedInstance.removeLocationFromList(oldLocation)
         newLocation = oldLocation
-        locationCoordinate = oldLocation?.coordinate
+        locationCoordinate = oldLocation.coordinate
         
-        nameTextField.text = oldLocation!.name
-        typesTextField.text = oldLocation!.tagsToStr()
-        phoneNumberTextField.text = oldLocation!.phoneNumber
-        addressTextField.text = oldLocation!.address
-        linkTextField.text = oldLocation!.url
+        nameTextField.text = oldLocation.name
+        typesTextField.text = oldLocation.tagsToStr()
+        phoneNumberTextField.text = oldLocation.phoneNumber
+        addressTextField.text = oldLocation.address
+        linkTextField.text = oldLocation.url
         currentLocationButton.setImage(UIImage(named: "navigationGray"), forState: .Normal)
+        
+        if(oldLocation.imagePath != ""){
+            let documentFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+            let filePath = (documentFolder as NSString).stringByAppendingPathComponent(oldLocation.imagePath)
+            locationImage.image = UIImage(contentsOfFile: filePath)
+            locationImage.contentMode = UIViewContentMode.ScaleAspectFill
+            locationImage.clipsToBounds = true
+        }
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -190,16 +206,18 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         if didSetNewImage{
             if let image = self.locationImage.image{
                 if let data = UIImagePNGRepresentation(image){
-                    self.imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(nameTextField.text! + ".png")
+                    imageFileName = nameTextField.text! + ".png"
+                    let imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(imageFileName!)
                     data.writeToFile(imageFileLocation, atomically: true)
                 }
             }
         }
         
-        newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: self.imageFileLocation)
+        newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: imageFileName)
         
-        LocationsSource.sharedInstance.insertLocationToList(newLocation!)
-        //        dismissViewControllerAnimated(true, completion: nil)
+        LocationsSource.sharedInstance.insertLocationToList(newLocation)
+        newLocationSaved = true
+        self.delegate?.getNewLocation(newLocation)
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -210,7 +228,9 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     }
 
     override func viewWillDisappear(animated: Bool) {
-        LocationsSource.sharedInstance.insertLocationToList(oldLocation!)
+        if !newLocationSaved{
+            LocationsSource.sharedInstance.insertLocationToList(oldLocation!)
+        }
     }
     
     
@@ -225,6 +245,7 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         self.didSetNewImage = true
         locationImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        locationImage.image = locationImage.image!.fixOrientation()
         locationImage.contentMode = UIViewContentMode.ScaleAspectFill
         locationImage.clipsToBounds = true
         
@@ -379,5 +400,4 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         // Pass the selected object to the new view controller.
     }
     */
-
 }

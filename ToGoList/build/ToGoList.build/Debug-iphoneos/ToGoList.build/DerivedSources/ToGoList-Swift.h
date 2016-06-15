@@ -179,11 +179,13 @@ SWIFT_CLASS("_TtC8ToGoList31EditLocationTableViewController")
 @property (nonatomic) BOOL locationVisited;
 @property (nonatomic) BOOL didSetNewImage;
 @property (nonatomic, copy) NSString * _Nonnull imageFileLocation;
+@property (nonatomic) BOOL newLocationSaved;
 @property (nonatomic, copy) NSString * _Nullable locationName;
 @property (nonatomic, copy) NSString * _Nullable locationType;
 @property (nonatomic, copy) NSString * _Nullable locationPhoneNumber;
 @property (nonatomic, copy) NSString * _Nullable locationAddress;
 @property (nonatomic, copy) NSString * _Nullable locationLink;
+@property (nonatomic, copy) NSString * _Nullable imageFileName;
 @property (nonatomic) BOOL checkSetCurrentLocation;
 @property (nonatomic) BOOL checkPlacePickerButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
@@ -253,6 +255,7 @@ SWIFT_CLASS("_TtC8ToGoList31LocationListTableViewController")
 @interface LocationListTableViewController : UITableViewController <UISearchResultsUpdating>
 @property (nonatomic, strong) UISearchController * _Null_unspecified searchController;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -278,6 +281,7 @@ SWIFT_CLASS("_TtC8ToGoList36MapLocationDetailTableViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationWebsiteLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified locationVisitedButton;
 - (IBAction)callLocationPhoneNumber:(id _Nonnull)sender;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
