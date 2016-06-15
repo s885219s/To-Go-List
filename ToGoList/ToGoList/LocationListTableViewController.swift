@@ -9,15 +9,22 @@
 
 import UIKit
 
-class LocationListTableViewController: UITableViewController {
+class LocationListTableViewController: UITableViewController, UISearchResultsUpdating {
     
     var locations: [Location]?
+    var searchResults:[Location] = []
+    var searchController:UISearchController!
 //    var locations = [Location(_name: "home", _tags: "", _url: "", _address: "台北市內湖區成功路五段450巷21弄33號7樓", _lati: 12, _long: 21, _visited: 0, _phoneNumber: "0987654321", _imagePath: ""), Location(_name: "taipei 101", _tags: "", _url: "", _address: "臺北市信義區西村里8鄰信義路五段7號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "", _imagePath: ""), Location(_name: "覺旅", _tags: "", _url: "", _address: "114台北市內湖區瑞光路583巷24號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "1234567890", _imagePath: "")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         locations = LocationsSource.sharedInstance.getLocationList()
+        searchController = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = searchController.searchBar
+        
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -48,19 +55,29 @@ class LocationListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         locations = LocationsSource.sharedInstance.getLocationList()
-        print("LocationList numberOfRows")
-        let count = locations!.count
-        return count
+//        print("LocationList numberOfRows")
+//        let count = locations!.count
+        if searchController.active {
+            return searchResults.count
+        } else {
+            return (locations?.count)!
+        }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! LocationListTableViewCell
         
+        let location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
+        
         // Configure the cell...
-        cell.locationNameLabel.text = locations![indexPath.row].name
-        cell.locationAddressLabel.text = locations![indexPath.row].address
-        cell.locationPhoneNumberLabel.text = locations![indexPath.row].phoneNumber
+        cell.locationNameLabel.text = location.name
+        cell.locationAddressLabel.text = location.address
+        cell.locationPhoneNumberLabel.text = location.phoneNumber
+        
+        if let isVisited = location.visited {
+            cell.accessoryType = isVisited ? .Checkmark : .None
+        }
 
         return cell
     }
@@ -71,18 +88,18 @@ class LocationListTableViewController: UITableViewController {
             let location = self.locations![indexPath.row]
             
             let detailViewController = segue.destinationViewController as! LocationDetailTableViewController
+            detailViewController.location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
             detailViewController.location = location
             
         }
     }
-
     
-
-    
-    // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+        if searchController.active {
+            return false
+        } else {
+            return true
+        }
     }
     
 
@@ -97,6 +114,23 @@ class LocationListTableViewController: UITableViewController {
         }
         
         tableView.reloadData()
+    }
+    
+    //for searchcontroller
+    func filterContentForSearchText(searchText: String) {
+        searchResults = (locations?.filter({ (location:Location) -> Bool in
+            let nameMatch = location.name.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            let typeMatch = location.tags[0].rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return (nameMatch != nil || typeMatch != nil)
+        }))!
+    }
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        //do whatever with searchController here.
+        if let searText = searchController.searchBar.text {
+            filterContentForSearchText(searText)
+            tableView.reloadData()
+        }
     }
     
 
