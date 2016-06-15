@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillTerminate"
 - "applicationDidBecomeActive"
-- "applicationWillResignActive"
-- "applicationWillEnterForeground"
 - "application"
+- "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
+- "window"
 depends-top-level:
-- "NSObject"
-- !private "GMSServices"
-- !private "LocationsSource"
-- "UIApplicationDelegate"
-- !private "BooleanLiteralType"
-- "UIApplication"
-- "UIResponder"
 - "Bool"
+- !private "GMSServices"
+- !private "BooleanLiteralType"
+- "AnyObject"
+- "UIApplication"
 - "UIWindow"
 - "AppDelegate"
-- "AnyObject"
+- "NSObject"
+- !private "LocationsSource"
 - !private "StringLiteralType"
+- "UIApplicationDelegate"
+- "UIResponder"
 depends-member:
 - !private ["Ps9AnyObject", "GMSServices"]
 - !private ["Ps9AnyObject", "LocationsSource"]

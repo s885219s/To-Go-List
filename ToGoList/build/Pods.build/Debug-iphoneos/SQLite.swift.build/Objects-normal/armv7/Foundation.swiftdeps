@@ -20,22 +20,22 @@ provides-member:
 provides-dynamic-lookup:
 - "declaredDatatype"
 - "declaredDatatype"
-- "fromDatatypeValue"
 - "datatypeValue"
+- "fromDatatypeValue"
 depends-top-level:
-- "NSLocale"
-- "NSDateFormatter"
-- "NSTimeZone"
-- "String"
 - "Blob"
-- "Value"
-- "NSData"
-- "NSDate"
-- "dateFormatter"
+- "String"
 - "Expression"
-- "StringLiteralType"
+- "Value"
 - "Row"
 - "QueryType"
+- "dateFormatter"
+- "NSLocale"
+- "NSDateFormatter"
+- "NSDate"
+- "NSData"
+- "StringLiteralType"
+- "NSTimeZone"
 depends-member:
 - !private ["Ps9AnyObject", "Blob"]
 - ["Ps9AnyObject", "Datatype"]

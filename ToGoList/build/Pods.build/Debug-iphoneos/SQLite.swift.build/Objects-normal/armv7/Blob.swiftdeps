@@ -8,22 +8,22 @@ provides-member:
 - ["V6SQLite4Blob", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- "Equatable"
-- !private "UnicodeScalarType"
-- !private "+"
-- !private "BooleanLiteralType"
-- !private "UnsafeBufferPointer"
 - "Blob"
+- !private "+"
+- !private "UnsafeBufferPointer"
+- "String"
+- !private "BooleanLiteralType"
 - "CustomStringConvertible"
-- !private "<"
-- "Int"
 - "UInt8"
-- !private "StringLiteralType"
+- "Equatable"
+- !private "<"
+- !private "UnicodeScalarType"
 - "=="
 - "Void"
 - "UnsafePointer"
-- "String"
+- !private "StringLiteralType"
+- "Bool"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sa", "Generator"]

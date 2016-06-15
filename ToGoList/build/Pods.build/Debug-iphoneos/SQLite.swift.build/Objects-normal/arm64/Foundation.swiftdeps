@@ -18,24 +18,24 @@ provides-member:
 - ["V6SQLite3Row", "subscript"]
 - ["V6SQLite3Row", "subscript"]
 provides-dynamic-lookup:
-- "datatypeValue"
-- "declaredDatatype"
-- "declaredDatatype"
 - "fromDatatypeValue"
+- "declaredDatatype"
+- "declaredDatatype"
+- "datatypeValue"
 depends-top-level:
-- "dateFormatter"
-- "NSDateFormatter"
-- "Value"
-- "Blob"
-- "String"
-- "NSLocale"
 - "NSData"
 - "QueryType"
 - "NSDate"
-- "Row"
+- "dateFormatter"
+- "NSLocale"
+- "NSDateFormatter"
 - "Expression"
 - "NSTimeZone"
+- "Row"
 - "StringLiteralType"
+- "Blob"
+- "String"
+- "Value"
 depends-member:
 - !private ["Ps9AnyObject", "Blob"]
 - ["Ps9AnyObject", "Datatype"]

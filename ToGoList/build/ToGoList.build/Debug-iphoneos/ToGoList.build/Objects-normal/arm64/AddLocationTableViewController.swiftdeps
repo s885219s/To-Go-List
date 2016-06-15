@@ -9,117 +9,119 @@ provides-member:
 - ["CSo7UIImage", "fixOrientation"]
 provides-dynamic-lookup:
 - "imageFileName"
-- "checkPlacePickerButton"
-- "baseUrl"
+- "locationType"
+- "apikey"
 - "fixOrientation"
-- "checkSetCurrentLocation"
+- "nameTextField"
+- "imageView"
+- "locationManager"
+- "getDocumentsDirectory"
+- "forwardGeocoding"
+- "searchLocationInfoFromGoogleMap"
 - "linkTextField"
 - "imagePickerController"
-- "locationType"
-- "locationVisited"
-- "locationVisited"
-- "forwardGeocoding"
-- "locationManager"
-- "locationName"
-- "apikey"
-- "addressTextField"
+- "checkPlacePickerButton"
 - "viewDidLoad"
-- "setCurrentCoordinateButton"
-- "typesTextField"
-- "locationAddress"
-- "locationPhoneNumber"
-- "dismissKeyboard"
-- "tableView"
-- "getDocumentsDirectory"
+- "locationName"
 - "getLatLngForZip"
-- "phoneNumberTextField"
-- "placePickerButton"
-- "setCurrentCoordinate"
-- "clickSaveButton"
-- "didSetNewImage"
-- "locationLink"
-- "nameTextField"
+- "baseUrl"
+- "checkSetCurrentLocation"
+- "addressTextField"
 - "locationVisitButton"
-- "imageView"
-- "searchLocationInfoFromGoogleMap"
+- "locationVisited"
+- "locationVisited"
+- "setCurrentCoordinateButton"
 - "reverseGeocoding"
+- "prepareForSegue"
+- "didSetNewImage"
+- "phoneNumberTextField"
+- "locationLink"
+- "tableView"
+- "typesTextField"
+- "clickSaveButton"
+- "placePickerButton"
+- "locationAddress"
+- "dismissKeyboard"
+- "locationPhoneNumber"
+- "setCurrentCoordinate"
 - "getAddressForLatLng"
 depends-top-level:
-- !private "NSJSONSerialization"
-- !private "NSError"
-- !private "Location"
-- !private "NSData"
-- !private "GMSPlacePicker"
-- !private "M_PI_2"
 - !private "+"
-- "Bool"
-- !private "GMSPlacePickerConfig"
-- "UIImagePickerControllerDelegate"
-- "AnyObject"
-- "BooleanLiteralType"
-- "UINavigationControllerDelegate"
-- !private "Float"
-- "GMSMapViewDelegate"
-- !private "CLLocationCoordinate2DMake"
 - !private "print"
-- !private "UIAlertActionStyle"
-- !private "NSJSONReadingOptions"
-- !private "NSURL"
-- !private "CLGeocoder"
-- !private "=="
-- "CLLocationManager"
-- !private "UITapGestureRecognizer"
+- !private "CGAffineTransformRotate"
+- !private "!="
+- !private "UIAlertAction"
+- "AddLocationTableViewController"
+- !private "LocationsSource"
+- !private "Int"
+- !private "Float"
 - !private "CGFloat"
 - !private "M_PI"
-- "UITableViewController"
-- !private ">"
-- !private "UIAlertAction"
-- "UITableView"
+- !private "GMSPlacePickerConfig"
+- !private "UITapGestureRecognizer"
 - "String"
-- !private "Int"
+- !private "NSCharacterSet"
+- !private "NSSearchPathForDirectoriesInDomains"
+- !private "UIAlertActionStyle"
+- !private "=="
+- !private "CGRectMake"
+- !private "CLGeocoder"
+- "Bool"
+- "UIImagePickerController"
+- !private "NSDictionary"
+- !private "NSURL"
+- !private "UIViewContentMode"
+- !private "CGAffineTransformTranslate"
+- !private "CGImageGetColorSpace"
+- "UIStoryboardSegue"
+- !private "NSJSONReadingOptions"
+- !private "GMSPlacePicker"
+- !private "CGImageGetBitsPerComponent"
+- !private "CGContextDrawImage"
 - !private "||"
+- !private "-"
+- "NSString"
+- !private "CGImageGetBitmapInfo"
+- "CLLocationDegrees"
+- "UIImage"
+- !private "NSJSONSerialization"
+- "CLLocationManagerDelegate"
+- !private "CGBitmapContextCreateImage"
+- !private ">"
+- "CLLocationCoordinate2D"
+- !private "UIImagePickerControllerOriginalImage"
+- "BooleanLiteralType"
+- !private "UIAlertController"
+- !private "CLLocation"
+- !private "GMSPlace"
+- !private "CLLocationCoordinate2DMake"
+- !private "CGAffineTransformIdentity"
+- !private "NSError"
+- !private "CGAffineTransformScale"
+- !private "Location"
+- !private "UIAlertControllerStyle"
+- !private "UIImagePNGRepresentation"
+- "UIButton"
+- !private "Void"
+- !private "UnicodeScalarType"
+- !private "NSData"
+- "CLLocationManager"
 - "NSIndexPath"
 - !private "CGContextConcatCTM"
-- "CLLocationManagerDelegate"
-- !private "CGAffineTransformRotate"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "CGBitmapContextCreate"
-- !private "CGImageGetBitmapInfo"
-- !private "UIAlertControllerStyle"
-- !private "UIViewContentMode"
-- !private "LocationsSource"
-- !private "NSDictionary"
-- !private "ABCreateStringWithAddressDictionary"
-- !private "GMSCoordinateBounds"
-- !private "Void"
-- !private "CGAffineTransformScale"
+- "UITableView"
 - !private "NSArray"
-- !private "CGAffineTransformIdentity"
-- "UIImage"
-- !private "NSCharacterSet"
-- !private "CGBitmapContextCreateImage"
-- !private "UIImagePickerControllerOriginalImage"
-- "UIButton"
-- "CLLocationDegrees"
-- "AddLocationTableViewController"
-- !private "!="
-- !private "CGContextDrawImage"
-- "UIImagePickerController"
-- !private "GMSPlace"
-- !private "UIImagePNGRepresentation"
-- !private "CLLocation"
-- "StringLiteralType"
-- "UIImageView"
-- "NSString"
-- !private "CGImageGetBitsPerComponent"
+- "UINavigationControllerDelegate"
+- !private "GMSCoordinateBounds"
+- "GMSMapViewDelegate"
+- !private "M_PI_2"
 - "UITextField"
-- "CLLocationCoordinate2D"
-- !private "UIAlertController"
-- !private "CGImageGetColorSpace"
-- !private "-"
-- !private "CGAffineTransformTranslate"
-- !private "UnicodeScalarType"
-- !private "CGRectMake"
+- "AnyObject"
+- "UITableViewController"
+- !private "ABCreateStringWithAddressDictionary"
+- "UIImageView"
+- !private "CGBitmapContextCreate"
+- "UIImagePickerControllerDelegate"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C8ToGoList30AddLocationTableViewController", "ABCreateStringWithAddressDictionary"]
@@ -160,6 +162,7 @@ depends-member:
 - ["C8ToGoList30AddLocationTableViewController", "UIImagePickerController"]
 - !private ["C8ToGoList30AddLocationTableViewController", "UIImagePickerControllerOriginalImage"]
 - ["C8ToGoList30AddLocationTableViewController", "UIImageView"]
+- ["C8ToGoList30AddLocationTableViewController", "UIStoryboardSegue"]
 - ["C8ToGoList30AddLocationTableViewController", "UITableView"]
 - !private ["C8ToGoList30AddLocationTableViewController", "UITapGestureRecognizer"]
 - ["C8ToGoList30AddLocationTableViewController", "UITextField"]
@@ -208,6 +211,7 @@ depends-member:
 - ["C8ToGoList30AddLocationTableViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["C8ToGoList30AddLocationTableViewController", "phoneNumberTextField"]
 - ["C8ToGoList30AddLocationTableViewController", "placePickerButton"]
+- ["C8ToGoList30AddLocationTableViewController", "prepareForSegue"]
 - !private ["C8ToGoList30AddLocationTableViewController", "presentViewController"]
 - !private ["C8ToGoList30AddLocationTableViewController", "print"]
 - ["C8ToGoList30AddLocationTableViewController", "reverseGeocoding"]
@@ -333,6 +337,7 @@ depends-member:
 - !private ["Ps9AnyObject", "pickPlaceWithCallback"]
 - ["Ps9AnyObject", "placePickerButton"]
 - !private ["Ps9AnyObject", "popViewControllerAnimated"]
+- ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "presentViewController"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "requestWhenInUseAuthorization"]
@@ -601,6 +606,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "pickPlaceWithCallback"]
 - ["Ps11CVarArgType", "placePickerButton"]
 - !private ["Ps11CVarArgType", "popViewControllerAnimated"]
+- ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "presentViewController"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "requestWhenInUseAuthorization"]
@@ -758,6 +764,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "pickPlaceWithCallback"]
 - ["Ps28CustomDebugStringConvertible", "placePickerButton"]
 - !private ["Ps28CustomDebugStringConvertible", "popViewControllerAnimated"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "requestWhenInUseAuthorization"]
@@ -905,6 +912,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "pickPlaceWithCallback"]
 - ["Ps23CustomStringConvertible", "placePickerButton"]
 - !private ["Ps23CustomStringConvertible", "popViewControllerAnimated"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "requestWhenInUseAuthorization"]
@@ -1074,6 +1082,7 @@ depends-member:
 - !private ["Ps9Equatable", "pickPlaceWithCallback"]
 - ["Ps9Equatable", "placePickerButton"]
 - !private ["Ps9Equatable", "popViewControllerAnimated"]
+- ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "presentViewController"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rawValue"]
@@ -1333,6 +1342,7 @@ depends-member:
 - !private ["Ps8Hashable", "pickPlaceWithCallback"]
 - ["Ps8Hashable", "placePickerButton"]
 - !private ["Ps8Hashable", "popViewControllerAnimated"]
+- ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "presentViewController"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "requestWhenInUseAuthorization"]
@@ -1520,6 +1530,7 @@ depends-member:
 - ["PSo8NSCoding", "phoneNumberTextField"]
 - ["PSo8NSCoding", "placePickerButton"]
 - !private ["PSo8NSCoding", "popViewControllerAnimated"]
+- ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "reverseGeocoding"]
@@ -1633,6 +1644,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "phoneNumberTextField"]
 - ["PSo26NSExtensionRequestHandling", "placePickerButton"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "reverseGeocoding"]
@@ -1711,6 +1723,7 @@ depends-member:
 - ["CSo8NSObject", "UIImagePickerController"]
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
 - ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - !private ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
@@ -1784,6 +1797,7 @@ depends-member:
 - !private ["CSo8NSObject", "pickPlaceWithCallback"]
 - ["CSo8NSObject", "placePickerButton"]
 - !private ["CSo8NSObject", "popViewControllerAnimated"]
+- ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
@@ -1921,6 +1935,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "pickPlaceWithCallback"]
 - ["PSo16NSObjectProtocol", "placePickerButton"]
 - !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
@@ -2191,6 +2206,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "phoneNumberTextField"]
 - ["PSo21UIAppearanceContainer", "placePickerButton"]
 - !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "reverseGeocoding"]
@@ -2281,6 +2297,7 @@ depends-member:
 - ["PSo18UIContentContainer", "phoneNumberTextField"]
 - ["PSo18UIContentContainer", "placePickerButton"]
 - !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "reverseGeocoding"]
@@ -2393,6 +2410,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "phoneNumberTextField"]
 - ["PSo18UIFocusEnvironment", "placePickerButton"]
 - !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "reverseGeocoding"]
@@ -2637,6 +2655,7 @@ depends-member:
 - ["CSo11UIResponder", "UIImagePickerController"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
 - ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - !private ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
@@ -2695,6 +2714,7 @@ depends-member:
 - ["CSo11UIResponder", "phoneNumberTextField"]
 - ["CSo11UIResponder", "placePickerButton"]
 - !private ["CSo11UIResponder", "popViewControllerAnimated"]
+- ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "reverseGeocoding"]
@@ -2779,6 +2799,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo20UIScrollViewDelegate", "phoneNumberTextField"]
 - ["PSo20UIScrollViewDelegate", "placePickerButton"]
+- ["PSo20UIScrollViewDelegate", "prepareForSegue"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "reverseGeocoding"]
@@ -2865,6 +2886,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "phoneNumberTextField"]
 - ["PSo16UIStateRestoring", "placePickerButton"]
 - !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "reverseGeocoding"]
@@ -2916,6 +2938,7 @@ depends-member:
 - ["CSo21UITableViewController", "UIImagePickerController"]
 - !private ["CSo21UITableViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo21UITableViewController", "UIImageView"]
+- ["CSo21UITableViewController", "UIStoryboardSegue"]
 - ["CSo21UITableViewController", "UITableView"]
 - !private ["CSo21UITableViewController", "UITapGestureRecognizer"]
 - ["CSo21UITableViewController", "UITextField"]
@@ -2963,6 +2986,7 @@ depends-member:
 - ["CSo21UITableViewController", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo21UITableViewController", "phoneNumberTextField"]
 - ["CSo21UITableViewController", "placePickerButton"]
+- ["CSo21UITableViewController", "prepareForSegue"]
 - !private ["CSo21UITableViewController", "presentViewController"]
 - !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "reverseGeocoding"]
@@ -3044,6 +3068,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo21UITableViewDataSource", "phoneNumberTextField"]
 - ["PSo21UITableViewDataSource", "placePickerButton"]
+- ["PSo21UITableViewDataSource", "prepareForSegue"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "reverseGeocoding"]
@@ -3125,6 +3150,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo19UITableViewDelegate", "phoneNumberTextField"]
 - ["PSo19UITableViewDelegate", "placePickerButton"]
+- ["PSo19UITableViewDelegate", "prepareForSegue"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "reverseGeocoding"]
@@ -3221,6 +3247,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "phoneNumberTextField"]
 - ["PSo18UITraitEnvironment", "placePickerButton"]
 - !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "reverseGeocoding"]
@@ -3282,6 +3309,7 @@ depends-member:
 - ["CSo16UIViewController", "UIImagePickerController"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - !private ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
@@ -3334,6 +3362,7 @@ depends-member:
 - ["CSo16UIViewController", "phoneNumberTextField"]
 - ["CSo16UIViewController", "placePickerButton"]
 - !private ["CSo16UIViewController", "popViewControllerAnimated"]
+- ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "reverseGeocoding"]
@@ -3718,4 +3747,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/To-Go-List/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "7995c7f8465f087e1308ab9278f8ebac"
+interface-hash: "68b0a553f11875b6d8e20fde514c5c8b"

@@ -6,14 +6,14 @@ provides-member:
 - ["V6SQLite6Module", "RTree"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Expressible"
 - "Value"
-- !private "Array"
 - "Int64"
+- "Module"
+- !private "Array"
+- "Double"
 - "Expression"
 - !private "StringLiteralType"
-- "Double"
-- "Module"
-- !private "Expressible"
 depends-member:
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]

@@ -104,6 +104,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @class UITableView;
 @class NSIndexPath;
 @class UIImagePickerController;
+@class UIStoryboardSegue;
 @class UITextField;
 @class UIImageView;
 @class UIButton;
@@ -147,6 +148,7 @@ SWIFT_CLASS("_TtC8ToGoList30AddLocationTableViewController")
 - (void)getLatLngForZip:(NSString * _Nonnull)zipCode;
 - (void)getAddressForLatLng:(NSString * _Nonnull)latitude longitude:(NSString * _Nonnull)longitude;
 - (void)forwardGeocoding:(NSString * _Nonnull)address;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -170,16 +172,41 @@ SWIFT_CLASS("_TtC8ToGoList11AppDelegate")
 
 
 SWIFT_CLASS("_TtC8ToGoList31EditLocationTableViewController")
-@interface EditLocationTableViewController : UITableViewController
+@interface EditLocationTableViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, GMSMapViewDelegate, CLLocationManagerDelegate>
+@property (nonatomic, readonly, copy) NSString * _Nonnull baseUrl;
+@property (nonatomic, readonly, copy) NSString * _Nonnull apikey;
+@property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
+@property (nonatomic) BOOL locationVisited;
+@property (nonatomic) BOOL didSetNewImage;
+@property (nonatomic, copy) NSString * _Nonnull imageFileLocation;
+@property (nonatomic, copy) NSString * _Nullable locationName;
+@property (nonatomic, copy) NSString * _Nullable locationType;
+@property (nonatomic, copy) NSString * _Nullable locationPhoneNumber;
+@property (nonatomic, copy) NSString * _Nullable locationAddress;
+@property (nonatomic, copy) NSString * _Nullable locationLink;
+@property (nonatomic) BOOL checkSetCurrentLocation;
+@property (nonatomic) BOOL checkPlacePickerButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified typesTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified phoneNumberTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified addressTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified linkTextField;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified locationImage;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified placePickerButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified currentLocationButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified beenHereButton;
+- (IBAction)placePicker:(id _Nonnull)sender;
+- (IBAction)setCurrentLocation:(id _Nonnull)sender;
+- (IBAction)beenHere:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (IBAction)clickSvaeButton:(id _Nonnull)sender;
+- (NSString * _Nonnull)getDocumentsDirectory;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)dismissKeyboard;
+- (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
+- (void)getLatLngForZip:(NSString * _Nonnull)zipCode;
+- (void)getAddressForLatLng:(NSString * _Nonnull)latitude longitude:(NSString * _Nonnull)longitude;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -201,6 +228,7 @@ SWIFT_CLASS("_TtC8ToGoList33LocationDetailTableViewController")
 - (void)viewDidLoad;
 - (void)fillData;
 - (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -219,12 +247,12 @@ SWIFT_CLASS("_TtC8ToGoList25LocationListTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIStoryboardSegue;
+@class UISearchController;
 
 SWIFT_CLASS("_TtC8ToGoList31LocationListTableViewController")
-@interface LocationListTableViewController : UITableViewController
+@interface LocationListTableViewController : UITableViewController <UISearchResultsUpdating>
+@property (nonatomic, strong) UISearchController * _Null_unspecified searchController;
 - (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -232,6 +260,8 @@ SWIFT_CLASS("_TtC8ToGoList31LocationListTableViewController")
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)filterContentForSearchText:(NSString * _Nonnull)searchText;
+- (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -250,6 +280,7 @@ SWIFT_CLASS("_TtC8ToGoList36MapLocationDetailTableViewController")
 - (IBAction)callLocationPhoneNumber:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

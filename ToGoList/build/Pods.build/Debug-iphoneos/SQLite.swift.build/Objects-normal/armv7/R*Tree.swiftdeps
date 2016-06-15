@@ -7,13 +7,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Expression"
-- "Double"
-- !private "Array"
-- "Module"
-- "Int64"
 - !private "Expressible"
 - "Value"
+- "Int64"
+- "Module"
 - !private "StringLiteralType"
+- "Double"
+- !private "Array"
 depends-member:
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]

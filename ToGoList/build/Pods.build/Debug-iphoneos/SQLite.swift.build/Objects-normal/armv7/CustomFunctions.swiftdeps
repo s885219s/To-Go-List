@@ -20,19 +20,19 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Connection"
-- !private "UInt"
-- !private "Array"
 - "Bool"
 - !private "FloatLiteralType"
-- "Value"
-- "Expression"
 - "String"
+- "Expression"
 - "BooleanLiteralType"
 - !private "value"
+- !private "UInt"
 - !private "IntegerLiteralType"
-- !private "StringLiteralType"
+- !private "Array"
 - !private "Expressible"
+- !private "StringLiteralType"
 - !private "Binding"
+- "Value"
 depends-member:
 - !private ["Ps9AnyObject", "createFunction"]
 - !private ["Ps9AnyObject", "join"]
