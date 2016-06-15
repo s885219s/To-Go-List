@@ -161,6 +161,7 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
             if let image = self.imageView.image{
                 if let data = UIImagePNGRepresentation(image){
                     self.imageFileLocation = getDocumentsDirectory().stringByAppendingPathComponent(nameTextField.text! + ".png")
+                    print(self.imageFileLocation)
                     data.writeToFile(imageFileLocation, atomically: true)
                 }
             }
@@ -174,18 +175,22 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
     func getDocumentsDirectory() -> NSString {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
+        let path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+        return path
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
 
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
+=======
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+>>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -257,9 +262,9 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         self.didSetNewImage = true
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        imageView.image = imageView.image!.fixOrientation()
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         imageView.clipsToBounds = true
-        
         dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -424,4 +429,62 @@ class AddLocationTableViewController: UITableViewController, UIImagePickerContro
     }
     
 
+}
+extension UIImage {
+    
+    func fixOrientation() -> UIImage {
+        if (self.imageOrientation == .Up) {
+            return self
+        }
+        
+        var transform = CGAffineTransformIdentity
+        
+        switch (self.imageOrientation) {
+        case .Down, .DownMirrored:
+            transform = CGAffineTransformTranslate(transform, self.size.width, self.size.height)
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI))
+            
+        case .Left, .LeftMirrored:
+            transform = CGAffineTransformTranslate(transform, self.size.width, 0)
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI_2))
+            
+        case .Right, .RightMirrored:
+            transform = CGAffineTransformTranslate(transform, 0, self.size.height)
+            transform = CGAffineTransformRotate(transform, CGFloat(-M_PI_2))
+            
+        default:
+            break
+        }
+        
+        switch (self.imageOrientation) {
+        case .UpMirrored, .DownMirrored:
+            transform = CGAffineTransformTranslate(transform, self.size.width, 0)
+            transform = CGAffineTransformScale(transform, -1, 1)
+            
+        case .LeftMirrored, .RightMirrored:
+            transform = CGAffineTransformTranslate(transform, self.size.height, 0)
+            transform = CGAffineTransformScale(transform, -1, 1)
+            
+        default:
+            break
+        }
+        
+        let ctx = CGBitmapContextCreate(nil, Int(self.size.width), Int(self.size.height),
+                                        CGImageGetBitsPerComponent(self.CGImage), 0,
+                                        CGImageGetColorSpace(self.CGImage),
+                                        CGImageGetBitmapInfo(self.CGImage).rawValue)
+        CGContextConcatCTM(ctx, transform)
+        
+        switch (self.imageOrientation) {
+        case .Left, .LeftMirrored, .Right, .RightMirrored:
+            CGContextDrawImage(ctx, CGRectMake(0,0,self.size.height,self.size.width), self.CGImage)
+            
+        default:
+            CGContextDrawImage(ctx, CGRectMake(0,0,self.size.width,self.size.height), self.CGImage)
+        }
+        
+        // And now we just create a new UIImage from the drawing context
+        let cgimg = CGBitmapContextCreateImage(ctx)
+        return UIImage(CGImage: cgimg!)
+    }
 }

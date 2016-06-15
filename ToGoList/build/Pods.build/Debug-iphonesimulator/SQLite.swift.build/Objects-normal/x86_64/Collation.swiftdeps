@@ -7,13 +7,13 @@ provides-member:
 - ["O6SQLite9Collation", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Void"
-- "String"
-- "CustomStringConvertible"
 - "Expressible"
-- !private "StringLiteralType"
+- "String"
 - "Expression"
 - "Collation"
+- "Void"
+- !private "StringLiteralType"
+- "CustomStringConvertible"
 depends-member:
 - !private ["Ps9AnyObject", "quote"]
 - !private ["P6SQLite7Binding", "quote"]

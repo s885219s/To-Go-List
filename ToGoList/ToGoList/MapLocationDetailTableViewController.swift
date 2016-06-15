@@ -10,7 +10,7 @@ import UIKit
 
 class MapLocationDetailTableViewController: UITableViewController {
     var location:Location?
-    
+    @IBOutlet weak var locationImageView: UIImageView!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationTypeLabel: UILabel!
     @IBOutlet weak var locationPhoneNumberLabel: UILabel!
@@ -49,6 +49,12 @@ class MapLocationDetailTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         print("name: \(location!.name)")
+        if(location?.imagePath != ""){
+            let imagePath = location?.imagePath
+            locationImageView.image = UIImage(contentsOfFile: imagePath!)
+            locationImageView.contentMode = UIViewContentMode.ScaleAspectFill
+            locationImageView.clipsToBounds = true
+        }
         if(location?.name != ""){
             locationNameLabel.text = location?.name
         }

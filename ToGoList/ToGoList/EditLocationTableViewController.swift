@@ -45,10 +45,15 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var linkTextField: UITextField!
+<<<<<<< HEAD
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var placePickerButton: UIButton!
     @IBOutlet weak var currentLocationButton: UIButton!
     @IBOutlet weak var beenHereButton: UIButton!
+=======
+    @IBOutlet weak var imageView: UIImageView!
+    
+>>>>>>> 127c95b383e813779c985c3a3204b92d23ec3411
     //沒有ImageOutlet
 
     //button action
