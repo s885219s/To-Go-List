@@ -216,6 +216,8 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
                     data.writeToFile(imageFileLocation, atomically: true)
                 }
             }
+        } else {
+            imageFileName = oldLocation.imagePath
         }
         
         newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: imageFileName)
