@@ -165,6 +165,11 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
         addressTextField.text = oldLocation.address
         linkTextField.text = oldLocation.url
         currentLocationButton.setImage(UIImage(named: "navigationGray"), forState: .Normal)
+        if oldLocation.visited == true {
+            beenHereButton.setImage(UIImage(named: "beenHere"), forState: .Normal)
+        } else {
+            beenHereButton.setImage(UIImage(named: "BeenHereGray"), forState: .Normal)
+        }
         
         if(oldLocation.imagePath != ""){
             let documentFolder = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
