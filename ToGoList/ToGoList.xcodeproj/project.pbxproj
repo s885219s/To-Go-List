@@ -92,14 +92,14 @@
 				A39F6EB81D06CADB00DFF2E8 /* EditLocationTableViewController.swift */,
 				6675DC531D0F1FFF00433548 /* LocationListTableViewController.swift */,
 				6675DC551D0F227500433548 /* LocationListTableViewCell.swift */,
-				43E3ED101CF303F000DAAB54 /* Main.storyboard */,
 				A39F6EBA1D06CC0100DFF2E8 /* LocationDetailTableViewController.swift */,
+				66C7B61D1D098AB200E02847 /* MapViewController.swift */,
+				665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */,
+				2E9888D21CFC339C00521030 /* LocationsData.swift */,
+				43E3ED101CF303F000DAAB54 /* Main.storyboard */,
 				43E3ED131CF303F000DAAB54 /* Assets.xcassets */,
 				43E3ED151CF303F000DAAB54 /* LaunchScreen.storyboard */,
 				43E3ED181CF303F000DAAB54 /* Info.plist */,
-				2E9888D21CFC339C00521030 /* LocationsData.swift */,
-				66C7B61D1D098AB200E02847 /* MapViewController.swift */,
-				665DC6D91D0C05F200DA8B6D /* MapLocationDetailTableViewController.swift */,
 			);
 			path = ToGoList;
 			sourceTree = "<group>";
