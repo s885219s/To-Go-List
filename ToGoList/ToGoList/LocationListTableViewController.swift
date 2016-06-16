@@ -14,7 +14,8 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
     var locations: [Location]?
     var searchResults:[Location] = []
     var searchController:UISearchController!
-//    var locations = [Location(_name: "home", _tags: "", _url: "", _address: "台北市內湖區成功路五段450巷21弄33號7樓", _lati: 12, _long: 21, _visited: 0, _phoneNumber: "0987654321", _imagePath: ""), Location(_name: "taipei 101", _tags: "", _url: "", _address: "臺北市信義區西村里8鄰信義路五段7號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "", _imagePath: ""), Location(_name: "覺旅", _tags: "", _url: "", _address: "114台北市內湖區瑞光路583巷24號", _lati: 0, _long: 0, _visited: 0, _phoneNumber: "1234567890", _imagePath: "")]
+    var locationTypes:[String:[Location]] = [:]
+    var locationTypesNumber:[String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
         
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
+        
+        //section tableView
+        fullLocationTypes(locations!)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,10 +50,24 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if searchController.active {
+            return "Search"
+        } else {
+            return locationTypesNumber[section]
+//            return "Locations"
+        }
+    }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        if searchController.active {
+            return 1
+        } else {
+            return locationTypesNumber.count
+//            return 1
+        }
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,12 +78,15 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
         if searchController.active {
             return searchResults.count
         } else {
-            return (locations?.count)!
+//            return (locations?.count)!
+            return locationTypes[locationTypesNumber[section]]!.count
         }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        /*
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! LocationListTableViewCell
         
         let location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
@@ -94,17 +115,92 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
         }
 
         return cell
+        */
+        if searchController.active {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! LocationListTableViewCell
+            
+            let location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
+            
+            // Configure the cell...
+            cell.locationNameLabel.text = location.name
+            cell.locationAddressLabel.text = location.address
+            cell.locationPhoneNumberLabel.text = location.phoneNumber
+            switch location.tags[0] {
+            case "bar":
+                cell.locationTypeImage.image = UIImage(named:"barmarker")
+            case "restaurant":
+                cell.locationTypeImage.image = UIImage(named:"restaurantmarker")
+            case "hotel":
+                cell.locationTypeImage.image = UIImage(named:"hotelmarker")
+            case "shopping":
+                cell.locationTypeImage.image = UIImage(named:"shoppingmarker")
+            case "recreation":
+                cell.locationTypeImage.image = UIImage(named:"recreationmarker")
+            default:
+                cell.locationTypeImage.image = UIImage(named:"placemarker")
+            }
+            
+            if let isVisited = location.visited {
+                cell.accessoryType = isVisited ? .Checkmark : .None
+            }
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! LocationListTableViewCell
+            
+            let locationType = locationTypes[locationTypesNumber[indexPath.section]]
+            let location = locationType![indexPath.row]
+            
+            // Configure the cell...
+            cell.locationNameLabel.text = location.name
+            cell.locationAddressLabel.text = location.address
+            cell.locationPhoneNumberLabel.text = location.phoneNumber
+            switch location.tags[0] {
+            case "bar":
+                cell.locationTypeImage.image = UIImage(named:"barmarker")
+            case "restaurant":
+                cell.locationTypeImage.image = UIImage(named:"restaurantmarker")
+            case "hotel":
+                cell.locationTypeImage.image = UIImage(named:"hotelmarker")
+            case "shopping":
+                cell.locationTypeImage.image = UIImage(named:"shoppingmarker")
+            case "recreation":
+                cell.locationTypeImage.image = UIImage(named:"recreationmarker")
+            default:
+                cell.locationTypeImage.image = UIImage(named:"placemarker")
+            }
+            
+            if let isVisited = location.visited {
+                cell.accessoryType = isVisited ? .Checkmark : .None
+            }
+            
+            return cell
+        }
+        
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ListShowDetail" {
+            
+            /* //原本的
             let cell = sender as! UITableViewCell
             let indexPath = self.tableView.indexPathForCell(cell)!
             let location = self.locations![indexPath.row]
             
             let detailViewController = segue.destinationViewController as! LocationDetailTableViewController
             detailViewController.location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
+//            detailViewController.location = searchController.active ? searchResults[indexPath.row] : locationTypes[locationTypesNumber[indexPath.section]]![indexPath.row]
             detailViewController.location = location
+            */
             
+            
+            let cell = sender as! UITableViewCell
+            let indexPath = self.tableView.indexPathForCell(cell)!
+//            let location = self.locations![indexPath.row]
+            
+            let detailViewController = segue.destinationViewController as! LocationDetailTableViewController
+            //                detailViewController.location = searchController.active ? searchResults[indexPath.row] : locations![indexPath.row]
+            let location = searchController.active ? searchResults[indexPath.row] : locationTypes[locationTypesNumber[indexPath.section]]![indexPath.row]
+            detailViewController.location = location
         }
     }
     
@@ -130,6 +226,8 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
         tableView.reloadData()
     }
     
+    // MARK :- SearchController
+    
     //for searchcontroller
     func filterContentForSearchText(searchText: String) {
         searchResults = (locations?.filter({ (location:Location) -> Bool in
@@ -146,6 +244,21 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
             tableView.reloadData()
         }
     }
+    
+     //會亂掉
+    func fullLocationTypes(locations:[Location]){
+        for location in locations {
+            for type in location.tags{
+                if locationTypes[type] == nil {
+                    locationTypes[type] = [location]
+                    locationTypesNumber.append(type)
+                } else {
+                    locationTypes[type]?.append(location)
+                }
+            }
+        }
+    }
+    
     
 
     /*
