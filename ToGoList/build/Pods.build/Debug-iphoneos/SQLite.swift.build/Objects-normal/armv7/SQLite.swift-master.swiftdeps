@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "29d872f6978e8c2f096f09ebda2663ba"
+build_time: [519877541, 119783000]
+inputs:
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/AggregateFunctions.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Core/Blob.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Collation.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Core/Connection.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/CoreFunctions.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/CustomFunctions.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Expression.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Foundation.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Extensions/FTS4.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Helpers.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Operators.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Query.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Extensions/R*Tree.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Schema.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Typed/Setter.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Core/Statement.swift": [519841444, 0]
+  "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Core/Value.swift": [519841444, 0]

@@ -1,0 +1,215 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "count"
+provides-nominal:
+provides-member:
+- ["P6SQLite14ExpressionType", ""]
+- ["P6SQLite14ExpressionType", "distinct"]
+- ["P6SQLite14ExpressionType", "count"]
+- ["P6SQLite14ExpressionType", "distinct"]
+- ["P6SQLite14ExpressionType", "count"]
+- ["P6SQLite14ExpressionType", "max"]
+- ["P6SQLite14ExpressionType", "min"]
+- ["P6SQLite14ExpressionType", "max"]
+- ["P6SQLite14ExpressionType", "min"]
+- ["P6SQLite14ExpressionType", "average"]
+- ["P6SQLite14ExpressionType", "sum"]
+- ["P6SQLite14ExpressionType", "total"]
+- ["P6SQLite14ExpressionType", "average"]
+- ["P6SQLite14ExpressionType", "sum"]
+- ["P6SQLite14ExpressionType", "total"]
+- ["P6SQLite14ExpressionType", "count"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Star"
+- "ExpressionType"
+- !private "wrap"
+- "count"
+- "Double"
+- "_OptionalType"
+- "Value"
+- "Int"
+- "Number"
+- !private "StringLiteralType"
+- "Comparable"
+- "Expression"
+depends-member:
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "wrap"]
+- !private ["P6SQLite7Binding", "init"]
+- !private ["P6SQLite7Binding", "wrap"]
+- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "wrap"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "wrap"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "wrap"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "wrap"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "wrap"]
+- ["P6SQLite11Expressible", "Comparable"]
+- ["P6SQLite11Expressible", "Double"]
+- ["P6SQLite11Expressible", "Expression"]
+- ["P6SQLite11Expressible", "Int"]
+- ["P6SQLite11Expressible", "Number"]
+- ["P6SQLite11Expressible", "Star"]
+- ["P6SQLite11Expressible", "UnderlyingType"]
+- ["P6SQLite11Expressible", "Value"]
+- ["P6SQLite11Expressible", "_OptionalType"]
+- !private ["P6SQLite11Expressible", "bindings"]
+- !private ["P6SQLite11Expressible", "count"]
+- !private ["P6SQLite11Expressible", "init"]
+- !private ["P6SQLite11Expressible", "template"]
+- !private ["P6SQLite11Expressible", "wrap"]
+- !private ["V6SQLite10Expression", "UnderlyingType"]
+- !private ["V6SQLite10Expression", "count"]
+- !private ["V6SQLite10Expression", "deinit"]
+- !private ["V6SQLite10Expression", "init"]
+- ["P6SQLite14ExpressionType", "Comparable"]
+- ["P6SQLite14ExpressionType", "Double"]
+- ["P6SQLite14ExpressionType", "Expression"]
+- ["P6SQLite14ExpressionType", "Int"]
+- ["P6SQLite14ExpressionType", "Number"]
+- ["P6SQLite14ExpressionType", "Star"]
+- ["P6SQLite14ExpressionType", "UnderlyingType"]
+- ["P6SQLite14ExpressionType", "Value"]
+- ["P6SQLite14ExpressionType", "_OptionalType"]
+- ["P6SQLite14ExpressionType", "average"]
+- !private ["P6SQLite14ExpressionType", "bindings"]
+- ["P6SQLite14ExpressionType", "count"]
+- ["P6SQLite14ExpressionType", "distinct"]
+- !private ["P6SQLite14ExpressionType", "init"]
+- ["P6SQLite14ExpressionType", "max"]
+- ["P6SQLite14ExpressionType", "min"]
+- ["P6SQLite14ExpressionType", "sum"]
+- !private ["P6SQLite14ExpressionType", "template"]
+- ["P6SQLite14ExpressionType", "total"]
+- !private ["P6SQLite14ExpressionType", "wrap"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "wrap"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "wrap"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps14MirrorPathType", "wrap"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "wrap"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "wrap"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "wrap"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "wrap"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "wrap"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "wrap"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "wrap"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "wrap"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Streamable", "wrap"]
+- !private ["SS", "init"]
+- !private ["SS", "wrap"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "wrap"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "wrap"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "wrap"]
+- !private ["P6SQLite5Value", "init"]
+- !private ["P6SQLite5Value", "wrap"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "wrap"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "wrap"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "wrap"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "wrap"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "wrap"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "wrap"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "P6SQLite7Binding"
+- !private "Sb"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- "P6SQLite11Expressible"
+- !private "V6SQLite10Expression"
+- "P6SQLite14ExpressionType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "P6SQLite5Value"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/SQLite.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/Target Support Files/SQLite.swift/SQLite.swift-umbrella.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Pods.build/Debug-iphoneos/SQLite.swift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/usr/include/module.modulemap"
+interface-hash: "1d936bac76efc7dbde8dbaf0e0fd6fb7"

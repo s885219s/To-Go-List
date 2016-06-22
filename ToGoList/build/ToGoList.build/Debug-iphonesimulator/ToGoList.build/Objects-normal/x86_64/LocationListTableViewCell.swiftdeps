@@ -1,0 +1,311 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LocationListTableViewCell"
+provides-nominal:
+- "C8ToGoList25LocationListTableViewCell"
+provides-member:
+- ["C8ToGoList25LocationListTableViewCell", ""]
+provides-dynamic-lookup:
+- "setSelected"
+- "locationPhoneNumberLabel"
+- "locationNameLabel"
+- "awakeFromNib"
+- "locationAddressLabel"
+- "locationTypeImage"
+depends-top-level:
+- "UITableViewCell"
+- "UIImageView"
+- "Bool"
+- "UILabel"
+- "LocationListTableViewCell"
+depends-member:
+- ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "locationAddressLabel"]
+- ["Ps9AnyObject", "locationNameLabel"]
+- ["Ps9AnyObject", "locationPhoneNumberLabel"]
+- ["Ps9AnyObject", "locationTypeImage"]
+- ["Ps9AnyObject", "setSelected"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "locationAddressLabel"]
+- ["Ps11CVarArgType", "locationNameLabel"]
+- ["Ps11CVarArgType", "locationPhoneNumberLabel"]
+- ["Ps11CVarArgType", "locationTypeImage"]
+- ["Ps11CVarArgType", "setSelected"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "locationAddressLabel"]
+- ["Ps28CustomDebugStringConvertible", "locationNameLabel"]
+- ["Ps28CustomDebugStringConvertible", "locationPhoneNumberLabel"]
+- ["Ps28CustomDebugStringConvertible", "locationTypeImage"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "locationAddressLabel"]
+- ["Ps23CustomStringConvertible", "locationNameLabel"]
+- ["Ps23CustomStringConvertible", "locationPhoneNumberLabel"]
+- ["Ps23CustomStringConvertible", "locationTypeImage"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "locationAddressLabel"]
+- ["Ps9Equatable", "locationNameLabel"]
+- ["Ps9Equatable", "locationPhoneNumberLabel"]
+- ["Ps9Equatable", "locationTypeImage"]
+- ["Ps9Equatable", "setSelected"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "locationAddressLabel"]
+- ["Ps8Hashable", "locationNameLabel"]
+- ["Ps8Hashable", "locationPhoneNumberLabel"]
+- ["Ps8Hashable", "locationTypeImage"]
+- ["Ps8Hashable", "setSelected"]
+- ["Ps8Hashable", ""]
+- ["C8ToGoList25LocationListTableViewCell", "Bool"]
+- ["C8ToGoList25LocationListTableViewCell", "UIImageView"]
+- ["C8ToGoList25LocationListTableViewCell", "UILabel"]
+- ["C8ToGoList25LocationListTableViewCell", "awakeFromNib"]
+- ["C8ToGoList25LocationListTableViewCell", "deinit"]
+- ["C8ToGoList25LocationListTableViewCell", "init"]
+- ["C8ToGoList25LocationListTableViewCell", "locationAddressLabel"]
+- ["C8ToGoList25LocationListTableViewCell", "locationNameLabel"]
+- ["C8ToGoList25LocationListTableViewCell", "locationPhoneNumberLabel"]
+- ["C8ToGoList25LocationListTableViewCell", "locationTypeImage"]
+- ["C8ToGoList25LocationListTableViewCell", "setSelected"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "locationAddressLabel"]
+- ["PSo8NSCoding", "locationNameLabel"]
+- ["PSo8NSCoding", "locationPhoneNumberLabel"]
+- ["PSo8NSCoding", "locationTypeImage"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "locationAddressLabel"]
+- ["CSo8NSObject", "locationNameLabel"]
+- ["CSo8NSObject", "locationPhoneNumberLabel"]
+- ["CSo8NSObject", "locationTypeImage"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "locationAddressLabel"]
+- ["PSo16NSObjectProtocol", "locationNameLabel"]
+- ["PSo16NSObjectProtocol", "locationPhoneNumberLabel"]
+- ["PSo16NSObjectProtocol", "locationTypeImage"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "locationAddressLabel"]
+- ["PSo29UIAccessibilityIdentification", "locationNameLabel"]
+- ["PSo29UIAccessibilityIdentification", "locationPhoneNumberLabel"]
+- ["PSo29UIAccessibilityIdentification", "locationTypeImage"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "locationAddressLabel"]
+- ["PSo12UIAppearance", "locationNameLabel"]
+- ["PSo12UIAppearance", "locationPhoneNumberLabel"]
+- ["PSo12UIAppearance", "locationTypeImage"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "locationAddressLabel"]
+- ["PSo21UIAppearanceContainer", "locationNameLabel"]
+- ["PSo21UIAppearanceContainer", "locationPhoneNumberLabel"]
+- ["PSo21UIAppearanceContainer", "locationTypeImage"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "locationAddressLabel"]
+- ["PSo17UICoordinateSpace", "locationNameLabel"]
+- ["PSo17UICoordinateSpace", "locationPhoneNumberLabel"]
+- ["PSo17UICoordinateSpace", "locationTypeImage"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "locationAddressLabel"]
+- ["PSo13UIDynamicItem", "locationNameLabel"]
+- ["PSo13UIDynamicItem", "locationPhoneNumberLabel"]
+- ["PSo13UIDynamicItem", "locationTypeImage"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "locationAddressLabel"]
+- ["PSo18UIFocusEnvironment", "locationNameLabel"]
+- ["PSo18UIFocusEnvironment", "locationPhoneNumberLabel"]
+- ["PSo18UIFocusEnvironment", "locationTypeImage"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "locationAddressLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "locationNameLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "locationPhoneNumberLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "locationTypeImage"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "locationAddressLabel"]
+- ["CSo11UIResponder", "locationNameLabel"]
+- ["CSo11UIResponder", "locationPhoneNumberLabel"]
+- ["CSo11UIResponder", "locationTypeImage"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "locationAddressLabel"]
+- ["CSo15UITableViewCell", "locationNameLabel"]
+- ["CSo15UITableViewCell", "locationPhoneNumberLabel"]
+- ["CSo15UITableViewCell", "locationTypeImage"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "locationAddressLabel"]
+- ["PSo18UITraitEnvironment", "locationNameLabel"]
+- ["PSo18UITraitEnvironment", "locationPhoneNumberLabel"]
+- ["PSo18UITraitEnvironment", "locationTypeImage"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "locationAddressLabel"]
+- ["CSo6UIView", "locationNameLabel"]
+- ["CSo6UIView", "locationPhoneNumberLabel"]
+- ["CSo6UIView", "locationTypeImage"]
+- ["CSo6UIView", "setSelected"]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "locationAddressLabel"]
+- ["Ps12_Reflectable", "locationNameLabel"]
+- ["Ps12_Reflectable", "locationPhoneNumberLabel"]
+- ["Ps12_Reflectable", "locationTypeImage"]
+- ["Ps12_Reflectable", "setSelected"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C8ToGoList25LocationListTableViewCell"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSURLTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSSyncTileLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSServices.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolyline.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPolygon.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceTypes.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUserAddedPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesErrors.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacesClient.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePickerConfig.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePicker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadataList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlacePhotoMetadata.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihoodList.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlaceLikelihood.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaService.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLink.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanoramaCamera.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPanorama.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOrientation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMutablePath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarkerLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMarker.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSUISettings.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapView+Animation.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSMapLayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorLevel.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorDisplay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSIndoorBuilding.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGroundOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPath.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeometryUtils.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSGeocoder.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSOverlay.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCircle.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraUpdate.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCameraPosition.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCALayer.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteTableDataSource.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSPlace.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteResultsViewController.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompletePrediction.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteMatchFragment.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFilter.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSProjection.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCoordinateBounds.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAutocompleteFetcher.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddressComponent.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSDeprecationMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSCompatabilityMacros.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GMSAddress.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Headers/GoogleMaps.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/GoogleMaps/Frameworks/GoogleMaps.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/SQLite.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk/usr/include/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Swift.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite-Bridging.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/CocoaPods/iphonesimulator/module.modulemap"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
+- "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphonesimulator/SQLite.swift/SQLite.framework/Modules/module.modulemap"
+interface-hash: "5ba5aba74916cdfac00405743deb82e0"

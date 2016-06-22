@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="gqv-T9-KTW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--Loading View-->
+        <scene sceneID="BvG-BY-vV8">
+            <objects>
+                <viewController id="gqv-T9-KTW" userLabel="Loading View" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L9e-yU-ZYg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZFi-ZX-muf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JcD-tP-bMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="toGoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-rn-OTc">
+                                <rect key="frame" x="102" y="257" width="170" height="153"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This app is designed to help those that love traveling but have bad memory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6w-rK-xXx">
+                                <rect key="frame" x="20" y="605" width="335" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="u6w-rK-xXx" secondAttribute="leading" id="NjL-ez-Q5h"/>
+                            <constraint firstItem="KO0-rn-OTc" firstAttribute="centerY" secondItem="JcD-tP-bMd" secondAttribute="centerY" id="fab-6Y-NLe"/>
+                            <constraint firstItem="KO0-rn-OTc" firstAttribute="centerX" secondItem="JcD-tP-bMd" secondAttribute="centerX" id="mEf-fA-9Yc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u6w-rK-xXx" secondAttribute="trailing" id="yfY-0v-iga"/>
+                            <constraint firstItem="ZFi-ZX-muf" firstAttribute="top" secondItem="u6w-rK-xXx" secondAttribute="bottom" constant="20" id="zjQ-ev-UF7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1As-97-tdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.5" y="-482.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="toGoIcon" width="170" height="153"/>
+    </resources>
+</document>
