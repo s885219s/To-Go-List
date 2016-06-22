@@ -21,8 +21,10 @@ struct Location{
     var visited: Bool! = false
     var phoneNumber: String = ""
     var imagePath: String = ""
+    var enableMonitor = false
+    var radious = 500.0
     
-    init(_name: String, _tags: String?, _url: String?, _address: String?, _lati: Double, _long: Double , _visited: Bool, _phoneNumber: String?, _imagePath: String?){
+    init(_name: String, _tags: String?, _url: String?, _address: String?, _lati: Double, _long: Double , _visited: Bool, _phoneNumber: String?, _imagePath: String?, _enableMonitor: Bool, _radius: Double){
         self.name = _name
         if _tags != nil {
             self.tags = _tags!.componentsSeparatedByString(" ")
@@ -47,6 +49,8 @@ struct Location{
         if _imagePath != nil{
             self.imagePath = _imagePath!
         }
+        self.enableMonitor = _enableMonitor
+        self.radious = _radius
     }
     
     func tagsToStr() -> String {
@@ -82,6 +86,8 @@ struct LocationTable {
     static let visited = Expression<Int>("visited")
     static let phoneNumber = Expression<String>("phoneNumber")
     static let imagePath = Expression<String>("imagePath")
+    static let enableMonitor = Expression<Int>("enableMonitor")
+    static let radius = Expression<Double>("radius")
 }
 
 class LocationsSource{
@@ -118,6 +124,8 @@ class LocationsSource{
                 t.column(LocationTable.visited)
                 t.column(LocationTable.phoneNumber)
                 t.column(LocationTable.imagePath)
+                t.column(LocationTable.enableMonitor)
+                t.column(LocationTable.radius)
                 })
         } catch {
             print("Cannot open database")
@@ -137,7 +145,9 @@ class LocationsSource{
                                  _long: l[LocationTable.long],
                                  _visited: Bool(l[LocationTable.visited]),
                                  _phoneNumber: l[LocationTable.phoneNumber],
-                                 _imagePath: l[LocationTable.imagePath])
+                                 _imagePath: l[LocationTable.imagePath],
+                                 _enableMonitor: Bool(l[LocationTable.enableMonitor]),
+                                 _radius: l[LocationTable.radius])
                 _list.append(l)
             }
         } catch{
@@ -185,7 +195,9 @@ class LocationsSource{
                         LocationTable.long <- l.getLong(),
                         LocationTable.visited <- Int(l.visited),
                         LocationTable.phoneNumber <- l.phoneNumber,
-                        LocationTable.imagePath <- l.imagePath))
+                        LocationTable.imagePath <- l.imagePath,
+                        LocationTable.enableMonitor <- Int(l.enableMonitor),
+                        LocationTable.radius <- l.radious))
                 }
             } catch {
                 print("Cannot insert data")
@@ -213,5 +225,5 @@ class LocationsSource{
  LocationsSource.sharedInstance.getLocationList()
  LocationsSource.sharedInstance.writeBacktoDB() this func should be called when app is being closed
  
-*/
+ */
 
