@@ -14,29 +14,29 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "exit"
-- !private "<-"
-- "Int"
-- !private "UnicodeScalarType"
+- "Int64"
+- "Expression"
 - "Double"
-- "String"
 - "StringLiteralType"
-- "Bool"
-- "Table"
+- !private "<-"
+- !private "print"
+- "Int"
+- "Connection"
+- !private "Array"
 - !private "CLLocationCoordinate2DMake"
 - !private "=="
 - "CLLocationCoordinate2D"
-- "Int64"
-- "BooleanLiteralType"
-- "Expression"
-- !private "NSSearchPathForDirectoriesInDomains"
-- !private "Array"
-- "LocationTable"
-- "Connection"
-- "Location"
+- "Table"
 - !private "!="
 - "LocationsSource"
+- "BooleanLiteralType"
+- !private "NSSearchPathForDirectoriesInDomains"
+- "String"
+- !private "UnicodeScalarType"
+- "Bool"
+- "LocationTable"
 - !private "NSString"
-- !private "print"
+- "Location"
 depends-member:
 - ["Ps16AbsoluteValuable", "Datatype"]
 - ["Ps16AbsoluteValuable", "WrappedType"]
@@ -288,12 +288,14 @@ depends-member:
 - ["V8ToGoList8Location", "String"]
 - ["V8ToGoList8Location", "address"]
 - ["V8ToGoList8Location", "coordinate"]
+- ["V8ToGoList8Location", "enableMonitor"]
 - ["V8ToGoList8Location", "getLati"]
 - ["V8ToGoList8Location", "getLong"]
 - ["V8ToGoList8Location", "imagePath"]
 - ["V8ToGoList8Location", "init"]
 - ["V8ToGoList8Location", "name"]
 - ["V8ToGoList8Location", "phoneNumber"]
+- ["V8ToGoList8Location", "radious"]
 - ["V8ToGoList8Location", "setCoordinate"]
 - ["V8ToGoList8Location", "tags"]
 - ["V8ToGoList8Location", "tagsToStr"]
@@ -306,6 +308,7 @@ depends-member:
 - ["V8ToGoList13LocationTable", "String"]
 - ["V8ToGoList13LocationTable", "Table"]
 - ["V8ToGoList13LocationTable", "address"]
+- ["V8ToGoList13LocationTable", "enableMonitor"]
 - ["V8ToGoList13LocationTable", "imagePath"]
 - ["V8ToGoList13LocationTable", "init"]
 - ["V8ToGoList13LocationTable", "itemId"]
@@ -313,6 +316,7 @@ depends-member:
 - ["V8ToGoList13LocationTable", "long"]
 - ["V8ToGoList13LocationTable", "name"]
 - ["V8ToGoList13LocationTable", "phoneNumber"]
+- ["V8ToGoList13LocationTable", "radius"]
 - ["V8ToGoList13LocationTable", "table"]
 - ["V8ToGoList13LocationTable", "tags"]
 - ["V8ToGoList13LocationTable", "url"]
@@ -814,4 +818,4 @@ depends-external:
 - "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/Pods/SQLite.swift/CocoaPods/iphoneos/module.modulemap"
 - "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Headers/SQLite.swift-umbrella.h"
 - "/Users/Arick/Documents/swift/To-Go-List-master/ToGoList/build/Debug-iphoneos/SQLite.swift/SQLite.framework/Modules/module.modulemap"
-interface-hash: "66640bb13605f721184801d5a330388e"
+interface-hash: "088087789c597bcc76fde15307072b35"

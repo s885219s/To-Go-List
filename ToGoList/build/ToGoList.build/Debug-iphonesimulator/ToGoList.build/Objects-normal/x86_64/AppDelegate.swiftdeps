@@ -6,46 +6,47 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList11AppDelegate", ""]
 provides-dynamic-lookup:
-- "handleRegionEvent"
 - "applicationWillEnterForeground"
+- "handleRegionEvent"
+- "locationManager"
+- "locationManager"
+- "locationManager"
 - "applicationDidBecomeActive"
-- "notefromRegionIdentifier"
-- "locationManager"
-- "locationManager"
-- "locationManager"
 - "applicationWillTerminate"
+- "notefromRegionIdentifier"
 - "applicationWillResignActive"
-- "window"
 - "applicationDidEnterBackground"
-- "application"
 - "showSimpleAlertWithTitle"
+- "application"
+- "window"
 depends-top-level:
-- !private "StringLiteralType"
-- "CLLocationManagerDelegate"
-- !private "UIUserNotificationSettings"
-- "AnyObject"
-- !private "CLCircularRegion"
-- !private "LocationsSource"
-- "CLRegion"
+- !private "UILocalNotificationDefaultSoundName"
+- !private "UIAlertController"
 - !private "=="
-- "Location"
-- "UIApplication"
+- !private "UIUserNotificationSettings"
+- "String"
+- !private "StringLiteralType"
 - !private "print"
 - "Bool"
-- "NSObject"
-- "CLLocationManager"
-- "UIWindow"
+- "UIApplication"
 - "AppDelegate"
+- "NSObject"
 - !private "UIAlertAction"
-- "UIApplicationDelegate"
-- !private "BooleanLiteralType"
-- "String"
-- !private "UIAlertController"
-- "UIResponder"
-- !private "Array"
 - !private "UILocalNotification"
 - !private "GMSServices"
+- "UIApplicationDelegate"
+- "UIResponder"
+- "CLRegion"
+- "CLLocationManager"
+- "CLLocationManagerDelegate"
+- "Location"
 - "UIViewController"
+- "AnyObject"
+- !private "LocationsSource"
+- "UIWindow"
+- !private "Array"
+- !private "CLCircularRegion"
+- !private "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "CLLocationManager"]
 - !private ["Ps9AnyObject", "GMSServices"]
@@ -54,6 +55,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIApplication"]
 - !private ["Ps9AnyObject", "UILocalNotification"]
+- !private ["Ps9AnyObject", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps9AnyObject", "UIUserNotificationSettings"]
 - !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "alertBody"]
@@ -110,6 +112,7 @@ depends-member:
 - !private ["C8ToGoList11AppDelegate", "UIAlertController"]
 - ["C8ToGoList11AppDelegate", "UIApplication"]
 - !private ["C8ToGoList11AppDelegate", "UILocalNotification"]
+- !private ["C8ToGoList11AppDelegate", "UILocalNotificationDefaultSoundName"]
 - !private ["C8ToGoList11AppDelegate", "UIUserNotificationSettings"]
 - ["C8ToGoList11AppDelegate", "UIViewController"]
 - ["C8ToGoList11AppDelegate", "UIWindow"]
@@ -171,6 +174,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "UIAlertController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIApplication"]
 - !private ["PSo25CLLocationManagerDelegate", "UILocalNotification"]
+- !private ["PSo25CLLocationManagerDelegate", "UILocalNotificationDefaultSoundName"]
 - !private ["PSo25CLLocationManagerDelegate", "UIUserNotificationSettings"]
 - ["PSo25CLLocationManagerDelegate", "application"]
 - ["PSo25CLLocationManagerDelegate", "applicationDidBecomeActive"]
@@ -206,6 +210,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIApplication"]
 - !private ["Ps11CVarArgType", "UILocalNotification"]
+- !private ["Ps11CVarArgType", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps11CVarArgType", "UIUserNotificationSettings"]
 - !private ["Ps11CVarArgType", "addAction"]
 - !private ["Ps11CVarArgType", "alertBody"]
@@ -262,6 +267,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
 - !private ["Ps28CustomDebugStringConvertible", "UILocalNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
@@ -314,6 +320,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIApplication"]
 - !private ["Ps23CustomStringConvertible", "UILocalNotification"]
+- !private ["Ps23CustomStringConvertible", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps23CustomStringConvertible", "UIUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -371,6 +378,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIApplication"]
 - !private ["Ps9Equatable", "UILocalNotification"]
+- !private ["Ps9Equatable", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps9Equatable", "UIUserNotificationSettings"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
@@ -431,6 +439,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIApplication"]
 - !private ["Ps8Hashable", "UILocalNotification"]
+- !private ["Ps8Hashable", "UILocalNotificationDefaultSoundName"]
 - !private ["Ps8Hashable", "UIUserNotificationSettings"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
@@ -531,6 +540,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIApplication"]
 - !private ["CSo8NSObject", "UILocalNotification"]
+- !private ["CSo8NSObject", "UILocalNotificationDefaultSoundName"]
 - !private ["CSo8NSObject", "UIUserNotificationSettings"]
 - ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "UIWindow"]
@@ -578,6 +588,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "UILocalNotification"]
+- !private ["PSo16NSObjectProtocol", "UILocalNotificationDefaultSoundName"]
 - !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "alertBody"]
@@ -678,6 +689,7 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "UIAlertController"]
 - !private ["PSo21UIApplicationDelegate", "UIApplication"]
 - !private ["PSo21UIApplicationDelegate", "UILocalNotification"]
+- !private ["PSo21UIApplicationDelegate", "UILocalNotificationDefaultSoundName"]
 - !private ["PSo21UIApplicationDelegate", "UIUserNotificationSettings"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
@@ -731,6 +743,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIApplication"]
 - !private ["CSo11UIResponder", "UILocalNotification"]
+- !private ["CSo11UIResponder", "UILocalNotificationDefaultSoundName"]
 - !private ["CSo11UIResponder", "UIUserNotificationSettings"]
 - ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "UIWindow"]

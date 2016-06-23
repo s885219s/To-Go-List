@@ -34,6 +34,7 @@ class LocationListTableViewController: UITableViewController, UISearchResultsUpd
     
     
     override func viewWillAppear(animated: Bool) {
+        print("willappear")
         super.viewWillAppear(false)
         self.tableView.reloadData()
     }

@@ -6,48 +6,49 @@ provides-nominal:
 provides-member:
 - ["C8ToGoList31LocationListTableViewController", ""]
 provides-dynamic-lookup:
-- "prepareForSegue"
 - "numberOfSectionsInTableView"
-- "searchController"
-- "locationTypesNumber"
 - "viewWillAppear"
-- "updateSearchResultsForSearchController"
+- "locationTypesNumber"
+- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
+- "searchController"
 - "didReceiveMemoryWarning"
 - "filterContentForSearchText"
-- "viewDidLoad"
+- "updateSearchResultsForSearchController"
+- "prepareForSegue"
 depends-top-level:
-- "UISearchResultsUpdating"
-- "Bool"
-- "UITableViewController"
-- "Location"
+- "UISearchController"
+- !private "NSStringCompareOptions"
+- "UITableViewCellEditingStyle"
+- !private "print"
+- !private "StringLiteralType"
+- !private "Array"
+- "Dictionary"
+- !private "LocationListTableViewCell"
 - !private "~="
 - !private "=="
-- "String"
-- "AnyObject"
-- !private "StringLiteralType"
-- "NSIndexPath"
-- "UITableView"
-- "UITableViewCellEditingStyle"
-- !private "UIImage"
+- "Location"
 - !private "LocationDetailTableViewController"
-- "UITableViewCell"
-- !private "||"
-- "LocationListTableViewController"
-- !private "NSStringCompareOptions"
-- "Dictionary"
 - "Int"
-- "UIStoryboardSegue"
-- !private "LocationListTableViewCell"
+- "LocationListTableViewController"
+- !private "||"
+- "UITableViewController"
 - !private "BooleanLiteralType"
-- "UISearchController"
-- !private "Array"
-- !private "!="
+- "AnyObject"
+- "UITableView"
+- "UITableViewCell"
+- "String"
+- "Bool"
+- "NSIndexPath"
+- "UIStoryboardSegue"
 - !private "LocationsSource"
+- !private "!="
+- !private "UIImage"
+- "UISearchResultsUpdating"
 depends-member:
 - !private ["Ps9AnyObject", "LocationsSource"]
 - !private ["Ps9AnyObject", "NSStringCompareOptions"]
@@ -77,6 +78,7 @@ depends-member:
 - ["Ps9AnyObject", "locations"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "prepareForSegue"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rangeOfString"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "removeLocationFromList"]
@@ -158,6 +160,7 @@ depends-member:
 - ["Ps11CVarArgType", "locations"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - ["Ps11CVarArgType", "prepareForSegue"]
+- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "rangeOfString"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "row"]
@@ -227,6 +230,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "locations"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "rangeOfString"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
@@ -285,6 +289,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "locations"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rangeOfString"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "removeAtIndex"]
@@ -356,6 +361,7 @@ depends-member:
 - ["Ps9Equatable", "locations"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "prepareForSegue"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rangeOfString"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
@@ -415,6 +421,7 @@ depends-member:
 - ["Ps8Hashable", "locations"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "prepareForSegue"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rangeOfString"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
@@ -490,6 +497,7 @@ depends-member:
 - ["C8ToGoList31LocationListTableViewController", "locations"]
 - ["C8ToGoList31LocationListTableViewController", "numberOfSectionsInTableView"]
 - ["C8ToGoList31LocationListTableViewController", "prepareForSegue"]
+- !private ["C8ToGoList31LocationListTableViewController", "print"]
 - ["C8ToGoList31LocationListTableViewController", "searchController"]
 - ["C8ToGoList31LocationListTableViewController", "searchResults"]
 - ["C8ToGoList31LocationListTableViewController", "tableView"]
@@ -557,6 +565,7 @@ depends-member:
 - ["PSo8NSCoding", "locations"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "prepareForSegue"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rangeOfString"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
@@ -591,6 +600,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locations"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "searchBar"]
 - ["PSo26NSExtensionRequestHandling", "searchController"]
 - ["PSo26NSExtensionRequestHandling", "searchResults"]
@@ -643,6 +653,7 @@ depends-member:
 - ["CSo8NSObject", "locations"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "prepareForSegue"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "rangeOfString"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
@@ -684,6 +695,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "locations"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "rangeOfString"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
@@ -811,6 +823,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locations"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "searchBar"]
 - ["PSo21UIAppearanceContainer", "searchController"]
@@ -840,6 +853,7 @@ depends-member:
 - ["PSo18UIContentContainer", "locations"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "prepareForSegue"]
+- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "searchBar"]
 - ["PSo18UIContentContainer", "searchController"]
 - ["PSo18UIContentContainer", "searchResults"]
@@ -898,6 +912,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locations"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "searchBar"]
 - ["PSo18UIFocusEnvironment", "searchController"]
@@ -955,6 +970,7 @@ depends-member:
 - ["CSo11UIResponder", "locations"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "prepareForSegue"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "searchBar"]
 - ["CSo11UIResponder", "searchController"]
@@ -985,6 +1001,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "locations"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - ["PSo20UIScrollViewDelegate", "prepareForSegue"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "searchController"]
 - ["PSo20UIScrollViewDelegate", "searchResults"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
@@ -1007,6 +1024,7 @@ depends-member:
 - !private ["PSo23UISearchResultsUpdating", "locationTypes"]
 - !private ["PSo23UISearchResultsUpdating", "locationTypesNumber"]
 - !private ["PSo23UISearchResultsUpdating", "locations"]
+- !private ["PSo23UISearchResultsUpdating", "print"]
 - !private ["PSo23UISearchResultsUpdating", "searchController"]
 - !private ["PSo23UISearchResultsUpdating", "searchResults"]
 - !private ["PSo23UISearchResultsUpdating", "tableView"]
@@ -1028,6 +1046,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "locations"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "prepareForSegue"]
+- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "searchBar"]
 - ["PSo16UIStateRestoring", "searchController"]
 - ["PSo16UIStateRestoring", "searchResults"]
@@ -1081,6 +1100,7 @@ depends-member:
 - ["CSo21UITableViewController", "locations"]
 - ["CSo21UITableViewController", "numberOfSectionsInTableView"]
 - ["CSo21UITableViewController", "prepareForSegue"]
+- !private ["CSo21UITableViewController", "print"]
 - ["CSo21UITableViewController", "searchController"]
 - ["CSo21UITableViewController", "searchResults"]
 - ["CSo21UITableViewController", "tableView"]
@@ -1102,6 +1122,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "locations"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - ["PSo21UITableViewDataSource", "prepareForSegue"]
+- !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "searchController"]
 - ["PSo21UITableViewDataSource", "searchResults"]
 - ["PSo21UITableViewDataSource", "tableView"]
@@ -1123,6 +1144,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "locations"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - ["PSo19UITableViewDelegate", "prepareForSegue"]
+- !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "searchController"]
 - ["PSo19UITableViewDelegate", "searchResults"]
 - ["PSo19UITableViewDelegate", "tableView"]
@@ -1157,6 +1179,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locations"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "searchBar"]
 - ["PSo18UITraitEnvironment", "searchController"]
@@ -1210,6 +1233,7 @@ depends-member:
 - ["CSo16UIViewController", "locations"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "prepareForSegue"]
+- !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "searchBar"]
 - ["CSo16UIViewController", "searchController"]
 - ["CSo16UIViewController", "searchResults"]

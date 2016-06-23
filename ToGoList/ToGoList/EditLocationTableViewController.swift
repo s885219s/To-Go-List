@@ -206,7 +206,7 @@ class EditLocationTableViewController: UITableViewController, UIImagePickerContr
             imageFileName = oldLocation.imagePath
         }
         
-        newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: imageFileName)
+        newLocation = Location(_name: nameTextField.text!, _tags: typesTextField.text, _url: linkTextField.text, _address: addressTextField.text, _lati: locationCoordinate!.latitude, _long: locationCoordinate!.longitude, _visited: locationVisited, _phoneNumber: phoneNumberTextField.text, _imagePath: imageFileName, _enableMonitor: true, _radius: 500.0)
         
         LocationsSource.sharedInstance.insertLocationToList(newLocation)
         newLocationSaved = true
