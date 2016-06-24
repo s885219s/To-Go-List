@@ -13,4 +13,4 @@ Probably it is that we tried to add section to our tableviewlist introduced bugs
 
 Our working on notification function is on going at branch "notification" and still has bug to fix for now.
 
-An implementation of "Route", which was not demonstrated at presentation, is at [here](https://github.com/ssiang1627/To-Go-List). But scince it is based on the newest commit in master(which is problematic), It may work not well.
+An implementation of "Route", which was not demonstrated at presentation, is at [here](https://github.com/ssiang1627/To-Go-List). But scince it is based on the newest commit in master(which is problematic), it may work not well.
